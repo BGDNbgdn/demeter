@@ -1,0 +1,4368 @@
+[
+ {
+  "id": "usda-170379",
+  "name": "Broccoli, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.8,
+  "carbsPer100g": 6.6,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 34,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup chopped",
+    "grams": 91
+   },
+   {
+    "label": "1 bunch",
+    "grams": 608
+   },
+   {
+    "label": "1 spear",
+    "grams": 31
+   }
+  ],
+  "usdaId": 170379
+ },
+ {
+  "id": "usda-169967",
+  "name": "Broccoli, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.4,
+  "carbsPer100g": 7.2,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 3.3,
+  "isLiquid": false,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup, chopped",
+    "grams": 78
+   },
+   {
+    "label": "1 stalk, large",
+    "grams": 280
+   },
+   {
+    "label": "1 stalk, medium",
+    "grams": 180
+   }
+  ],
+  "usdaId": 169967
+ },
+ {
+  "id": "usda-169986",
+  "name": "Cauliflower, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 5,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 25,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup chopped",
+    "grams": 107
+   },
+   {
+    "label": "1 floweret",
+    "grams": 13
+   },
+   {
+    "label": "1 head large",
+    "grams": 840
+   }
+  ],
+  "usdaId": 169986
+ },
+ {
+  "id": "usda-170397",
+  "name": "Cauliflower, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 4.1,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 23,
+  "fiberPer100g": 2.3,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 62
+   },
+   {
+    "label": "3 flowerets",
+    "grams": 54
+   }
+  ],
+  "usdaId": 170397
+ },
+ {
+  "id": "usda-170393",
+  "name": "Carrot, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 9.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 41,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "aliases": [
+   "carrots"
+  ],
+  "servings": [
+   {
+    "label": "1 medium carrot",
+    "grams": 61
+   }
+  ],
+  "usdaId": 170393
+ },
+ {
+  "id": "usda-170394",
+  "name": "Carrot, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 8.2,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "aliases": [
+   "carrots"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 9.7
+   },
+   {
+    "label": "0.5 cup slices",
+    "grams": 78
+   },
+   {
+    "label": "1 carrot",
+    "grams": 46
+   }
+  ],
+  "usdaId": 170394
+ },
+ {
+  "id": "usda-168462",
+  "name": "Spinach, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 23,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 60,
+  "aliases": [
+   "greens",
+   "leafy"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 30
+   },
+   {
+    "label": "1 bunch",
+    "grams": 340
+   },
+   {
+    "label": "1 leaf",
+    "grams": 10
+   }
+  ],
+  "usdaId": 168462
+ },
+ {
+  "id": "usda-168463",
+  "name": "Spinach, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3,
+  "carbsPer100g": 3.8,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 23,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "greens",
+   "leafy"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 180
+   }
+  ],
+  "usdaId": 168463
+ },
+ {
+  "id": "usda-168421",
+  "name": "Kale, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 4.4,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 4.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "greens",
+   "leafy"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 21
+   }
+  ],
+  "usdaId": 168421
+ },
+ {
+  "id": "usda-169238",
+  "name": "Kale, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 5.3,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 36,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "aliases": [
+   "greens",
+   "leafy"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 118
+   }
+  ],
+  "usdaId": 169238
+ },
+ {
+  "id": "usda-169975",
+  "name": "Cabbage, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.3,
+  "carbsPer100g": 5.8,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 25,
+  "fiberPer100g": 2.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 89
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 70
+   },
+   {
+    "label": "1 head, large",
+    "grams": 1248
+   }
+  ],
+  "usdaId": 169975
+ },
+ {
+  "id": "usda-169976",
+  "name": "Cabbage, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.3,
+  "carbsPer100g": 5.5,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 23,
+  "fiberPer100g": 1.9,
+  "isLiquid": false,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup, shredded",
+    "grams": 75
+   },
+   {
+    "label": "1 head",
+    "grams": 1262
+   }
+  ],
+  "usdaId": 169976
+ },
+ {
+  "id": "usda-169977",
+  "name": "Red cabbage, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 7.4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 89
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 70
+   },
+   {
+    "label": "1 head, large",
+    "grams": 1134
+   }
+  ],
+  "usdaId": 169977
+ },
+ {
+  "id": "usda-169978",
+  "name": "Red cabbage, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 6.9,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 leaf",
+    "grams": 22
+   },
+   {
+    "label": "0.5 cup, shredded",
+    "grams": 75
+   }
+  ],
+  "usdaId": 169978
+ },
+ {
+  "id": "usda-170383",
+  "name": "Brussels sprouts, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 9,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 43,
+  "fiberPer100g": 3.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "sprouts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 88
+   },
+   {
+    "label": "1 sprout",
+    "grams": 19
+   }
+  ],
+  "usdaId": 170383
+ },
+ {
+  "id": "usda-169971",
+  "name": "Brussels sprouts, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.6,
+  "carbsPer100g": 7.1,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 36,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "aliases": [
+   "sprouts"
+  ],
+  "servings": [
+   {
+    "label": "1 sprout",
+    "grams": 21
+   },
+   {
+    "label": "0.5 cup",
+    "grams": 78
+   }
+  ],
+  "usdaId": 169971
+ },
+ {
+  "id": "usda-168389",
+  "name": "Asparagus, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 20,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 134
+   },
+   {
+    "label": "1 spear, small",
+    "grams": 12
+   },
+   {
+    "label": "1 spear, medium",
+    "grams": 16
+   }
+  ],
+  "usdaId": 168389
+ },
+ {
+  "id": "usda-168390",
+  "name": "Asparagus, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.4,
+  "carbsPer100g": 4.1,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 22,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 90
+   },
+   {
+    "label": "4 spears",
+    "grams": 60
+   }
+  ],
+  "usdaId": 168390
+ },
+ {
+  "id": "usda-169961",
+  "name": "Green beans, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "string beans",
+   "french beans"
+  ],
+  "servings": [
+   {
+    "label": "1 cup 1/2\" pieces",
+    "grams": 100
+   },
+   {
+    "label": "10 beans",
+    "grams": 55
+   }
+  ],
+  "usdaId": 169961
+ },
+ {
+  "id": "usda-169141",
+  "name": "Green beans, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 7.9,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "aliases": [
+   "string beans",
+   "french beans"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 125
+   }
+  ],
+  "usdaId": 169141
+ },
+ {
+  "id": "usda-170419",
+  "name": "Green peas, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 5.4,
+  "carbsPer100g": 14.5,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 81,
+  "fiberPer100g": 5.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "garden peas"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 145
+   }
+  ],
+  "usdaId": 170419
+ },
+ {
+  "id": "usda-170420",
+  "name": "Green peas, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 5.4,
+  "carbsPer100g": 15.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 84,
+  "fiberPer100g": 5.5,
+  "isLiquid": false,
+  "aliases": [
+   "garden peas"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 160
+   }
+  ],
+  "usdaId": 170420
+ },
+ {
+  "id": "usda-169998",
+  "name": "Sweetcorn, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 18.7,
+  "fatPer100g": 1.4,
+  "caloriesPer100g": 86,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "corn",
+   "maize"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 145
+   },
+   {
+    "label": "1 ear, small",
+    "grams": 73
+   }
+  ],
+  "usdaId": 169998
+ },
+ {
+  "id": "usda-169999",
+  "name": "Sweetcorn, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 21,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 96,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "corn",
+   "maize"
+  ],
+  "servings": [
+   {
+    "label": "1 ear small",
+    "grams": 89
+   },
+   {
+    "label": "1 ear medium",
+    "grams": 103
+   },
+   {
+    "label": "1 ear large",
+    "grams": 118
+   }
+  ],
+  "usdaId": 169999
+ },
+ {
+  "id": "usda-169291",
+  "name": "Zucchini (courgette), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 3.1,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 17,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "courgette"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 124
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 113
+   },
+   {
+    "label": "1 large",
+    "grams": 323
+   }
+  ],
+  "usdaId": 169291
+ },
+ {
+  "id": "usda-169292",
+  "name": "Zucchini (courgette), boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 2.7,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 15,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "courgette"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, sliced",
+    "grams": 180
+   },
+   {
+    "label": "0.5 cup, mashed",
+    "grams": 120
+   }
+  ],
+  "usdaId": 169292
+ },
+ {
+  "id": "usda-169228",
+  "name": "Aubergine (eggplant), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1,
+  "carbsPer100g": 5.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 25,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "eggplant"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 82
+   },
+   {
+    "label": "1 eggplant, peeled",
+    "grams": 458
+   },
+   {
+    "label": "1 eggplant, unpeeled",
+    "grams": 548
+   }
+  ],
+  "usdaId": 169228
+ },
+ {
+  "id": "usda-169229",
+  "name": "Aubergine (eggplant), boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 8.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 2.5,
+  "isLiquid": false,
+  "aliases": [
+   "eggplant"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 99
+   }
+  ],
+  "usdaId": 169229
+ },
+ {
+  "id": "usda-169145",
+  "name": "Beetroot, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.6,
+  "carbsPer100g": 9.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 43,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "beets"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 136
+   },
+   {
+    "label": "1 beet",
+    "grams": 82
+   }
+  ],
+  "usdaId": 169145
+ },
+ {
+  "id": "usda-169146",
+  "name": "Beetroot, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.7,
+  "carbsPer100g": 10,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 44,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "beets"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup slices",
+    "grams": 85
+   },
+   {
+    "label": "2 beets",
+    "grams": 100
+   }
+  ],
+  "usdaId": 169146
+ },
+ {
+  "id": "usda-170000",
+  "name": "Onion, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 9.3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 40,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "onions"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 160
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 115
+   },
+   {
+    "label": "1 tbsp chopped",
+    "grams": 10
+   }
+  ],
+  "usdaId": 170000
+ },
+ {
+  "id": "usda-170001",
+  "name": "Onion, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 10.2,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 44,
+  "fiberPer100g": 1.4,
+  "isLiquid": false,
+  "aliases": [
+   "onions"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 210
+   },
+   {
+    "label": "1 tbsp chopped",
+    "grams": 15
+   },
+   {
+    "label": "1 large",
+    "grams": 128
+   }
+  ],
+  "usdaId": 170001
+ },
+ {
+  "id": "usda-170108",
+  "name": "Red bell pepper, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1,
+  "carbsPer100g": 6,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 26,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "pepper",
+   "capsicum"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 149
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 92
+   },
+   {
+    "label": "1 tablespoon",
+    "grams": 9.3
+   }
+  ],
+  "usdaId": 170108
+ },
+ {
+  "id": "usda-170110",
+  "name": "Red bell pepper, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 28,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [
+   "pepper",
+   "capsicum"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, strips",
+    "grams": 135
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 11.6
+   },
+   {
+    "label": "0.5 cup, chopped",
+    "grams": 68
+   }
+  ],
+  "usdaId": 170110
+ },
+ {
+  "id": "usda-170427",
+  "name": "Green bell pepper, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 4.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 20,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "pepper",
+   "capsicum"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 149
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 92
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 9.3
+   }
+  ],
+  "usdaId": 170427
+ },
+ {
+  "id": "usda-170428",
+  "name": "Green bell pepper, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 28,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [
+   "pepper",
+   "capsicum"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped or strips",
+    "grams": 135
+   },
+   {
+    "label": "1 tablespoon, chopped",
+    "grams": 11.6
+   }
+  ],
+  "usdaId": 170428
+ },
+ {
+  "id": "usda-169383",
+  "name": "Yellow bell pepper, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1,
+  "carbsPer100g": 6.3,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 27,
+  "fiberPer100g": 0.9,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "pepper",
+   "capsicum"
+  ],
+  "servings": [
+   {
+    "label": "1 pepper, large",
+    "grams": 186
+   },
+   {
+    "label": "10 strips",
+    "grams": 52
+   }
+  ],
+  "usdaId": 169383
+ },
+ {
+  "id": "usda-169251",
+  "name": "Mushrooms, white, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3.1,
+  "carbsPer100g": 3.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 22,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "champignon"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, pieces or slices",
+    "grams": 70
+   },
+   {
+    "label": "1 cup, whole",
+    "grams": 96
+   },
+   {
+    "label": "1 large",
+    "grams": 23
+   }
+  ],
+  "usdaId": 169251
+ },
+ {
+  "id": "usda-169252",
+  "name": "Mushrooms, white, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 5.3,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 28,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "champignon"
+  ],
+  "servings": [
+   {
+    "label": "1 cup pieces",
+    "grams": 156
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 9.8
+   },
+   {
+    "label": "1 mushroom",
+    "grams": 12
+   }
+  ],
+  "usdaId": 169252
+ },
+ {
+  "id": "usda-169255",
+  "name": "Mushrooms, portobello, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.1,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 22,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "portabella"
+  ],
+  "servings": [
+   {
+    "label": "1 cup diced",
+    "grams": 86
+   },
+   {
+    "label": "1 piece whole",
+    "grams": 84
+   }
+  ],
+  "usdaId": 169255
+ },
+ {
+  "id": "usda-169243",
+  "name": "Mushrooms, portobello, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 4.4,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "portabella"
+  ],
+  "servings": [
+   {
+    "label": "1 cup sliced",
+    "grams": 121
+   }
+  ],
+  "usdaId": 169243
+ },
+ {
+  "id": "usda-169242",
+  "name": "Mushrooms, shiitake, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 6.8,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 34,
+  "fiberPer100g": 2.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 piece whole",
+    "grams": 19
+   }
+  ],
+  "usdaId": 169242
+ },
+ {
+  "id": "usda-168437",
+  "name": "Mushrooms, shiitake, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.6,
+  "carbsPer100g": 14.4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 56,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup pieces",
+    "grams": 145
+   },
+   {
+    "label": "4 mushrooms",
+    "grams": 72
+   }
+  ],
+  "usdaId": 168437
+ },
+ {
+  "id": "usda-170457",
+  "name": "Tomato, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 18,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "tomatoes"
+  ],
+  "servings": [
+   {
+    "label": "1 cup cherry tomatoes",
+    "grams": 149
+   },
+   {
+    "label": "1 cup, chopped or sliced",
+    "grams": 180
+   },
+   {
+    "label": "1 Italian tomato",
+    "grams": 62
+   }
+  ],
+  "usdaId": 170457
+ },
+ {
+  "id": "usda-170050",
+  "name": "Tomato, cooked",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1,
+  "carbsPer100g": 4,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 18,
+  "fiberPer100g": 0.7,
+  "isLiquid": false,
+  "aliases": [
+   "tomatoes"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 240
+   },
+   {
+    "label": "2 medium",
+    "grams": 246
+   }
+  ],
+  "usdaId": 170050
+ },
+ {
+  "id": "usda-169295",
+  "name": "Butternut squash, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1,
+  "carbsPer100g": 11.7,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 45,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "squash"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 140
+   }
+  ],
+  "usdaId": 169295
+ },
+ {
+  "id": "usda-169296",
+  "name": "Butternut squash, baked",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 10.5,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 40,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "aliases": [
+   "squash"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 205
+   }
+  ],
+  "usdaId": 169296
+ },
+ {
+  "id": "usda-169298",
+  "name": "Spaghetti squash, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 6.9,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "squash"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 101
+   }
+  ],
+  "usdaId": 169298
+ },
+ {
+  "id": "usda-168448",
+  "name": "Pumpkin, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1,
+  "carbsPer100g": 6.5,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 26,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 116
+   }
+  ],
+  "usdaId": 168448
+ },
+ {
+  "id": "usda-168449",
+  "name": "Pumpkin, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 4.9,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 20,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup, mashed",
+    "grams": 245
+   }
+  ],
+  "usdaId": 168449
+ },
+ {
+  "id": "usda-170465",
+  "name": "Turnip, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 6.4,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 28,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 130
+   },
+   {
+    "label": "1 large",
+    "grams": 183
+   },
+   {
+    "label": "1 medium",
+    "grams": 122
+   }
+  ],
+  "usdaId": 170465
+ },
+ {
+  "id": "usda-170058",
+  "name": "Turnip, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 5.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 22,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 156
+   },
+   {
+    "label": "1 cup, mashed",
+    "grams": 230
+   }
+  ],
+  "usdaId": 170058
+ },
+ {
+  "id": "usda-170417",
+  "name": "Parsnip, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 18,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 75,
+  "fiberPer100g": 4.9,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup slices",
+    "grams": 133
+   }
+  ],
+  "usdaId": 170417
+ },
+ {
+  "id": "usda-170009",
+  "name": "Parsnip, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.3,
+  "carbsPer100g": 17,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 71,
+  "fiberPer100g": 3.6,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "0.5 cup slices",
+    "grams": 78
+   },
+   {
+    "label": "1 parsnip",
+    "grams": 160
+   }
+  ],
+  "usdaId": 170009
+ },
+ {
+  "id": "usda-168454",
+  "name": "Swede (rutabaga), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 8.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 37,
+  "fiberPer100g": 2.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "aliases": [
+   "rutabaga"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 140
+   },
+   {
+    "label": "1 large",
+    "grams": 772
+   },
+   {
+    "label": "1 medium",
+    "grams": 386
+   }
+  ],
+  "usdaId": 168454
+ },
+ {
+  "id": "usda-168455",
+  "name": "Swede (rutabaga), boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 6.8,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "rutabaga"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 170
+   },
+   {
+    "label": "1 cup, mashed",
+    "grams": 240
+   }
+  ],
+  "usdaId": 168455
+ },
+ {
+  "id": "usda-169276",
+  "name": "Radish, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 3.4,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 16,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup slices",
+    "grams": 116
+   },
+   {
+    "label": "1 large",
+    "grams": 9
+   },
+   {
+    "label": "1 medium",
+    "grams": 4.5
+   }
+  ],
+  "usdaId": 169276
+ },
+ {
+  "id": "usda-169991",
+  "name": "Swiss chard, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 3.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 19,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 65,
+  "aliases": [
+   "leafy",
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 36
+   },
+   {
+    "label": "1 leaf",
+    "grams": 48
+   }
+  ],
+  "usdaId": 169991
+ },
+ {
+  "id": "usda-170401",
+  "name": "Swiss chard, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 4.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 20,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "aliases": [
+   "leafy",
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 175
+   }
+  ],
+  "usdaId": 170401
+ },
+ {
+  "id": "usda-170406",
+  "name": "Collard greens, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3,
+  "carbsPer100g": 5.4,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 32,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 36
+   }
+  ],
+  "usdaId": 170406
+ },
+ {
+  "id": "usda-170407",
+  "name": "Collard greens, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.7,
+  "carbsPer100g": 5.7,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 33,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "aliases": [
+   "greens"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 190
+   }
+  ],
+  "usdaId": 170407
+ },
+ {
+  "id": "usda-170390",
+  "name": "Bok choy (pak choi), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 2.2,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 13,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "pak choi",
+   "chinese cabbage"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, shredded",
+    "grams": 70
+   },
+   {
+    "label": "1 head",
+    "grams": 840
+   },
+   {
+    "label": "1 leaf",
+    "grams": 14
+   }
+  ],
+  "usdaId": 170390
+ },
+ {
+  "id": "usda-170391",
+  "name": "Bok choy (pak choi), boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.6,
+  "carbsPer100g": 1.8,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 12,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "pak choi",
+   "chinese cabbage"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, shredded",
+    "grams": 170
+   }
+  ],
+  "usdaId": 170391
+ },
+ {
+  "id": "usda-169260",
+  "name": "Okra, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 7.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 33,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 100
+   },
+   {
+    "label": "8 pods",
+    "grams": 95
+   }
+  ],
+  "usdaId": 169260
+ },
+ {
+  "id": "usda-169261",
+  "name": "Okra, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 4.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 22,
+  "fiberPer100g": 2.5,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "0.5 cup slices",
+    "grams": 80
+   },
+   {
+    "label": "8 pods",
+    "grams": 85
+   }
+  ],
+  "usdaId": 169261
+ },
+ {
+  "id": "usda-169246",
+  "name": "Leek, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 14.2,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 61,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 89
+   },
+   {
+    "label": "1 leek",
+    "grams": 89
+   },
+   {
+    "label": "1 slice",
+    "grams": 6
+   }
+  ],
+  "usdaId": 169246
+ },
+ {
+  "id": "usda-168426",
+  "name": "Leek, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 7.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 leek",
+    "grams": 124
+   }
+  ],
+  "usdaId": 168426
+ },
+ {
+  "id": "usda-169385",
+  "name": "Fennel bulb, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 7.3,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 3.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup, sliced",
+    "grams": 87
+   },
+   {
+    "label": "1 bulb",
+    "grams": 234
+   }
+  ],
+  "usdaId": 169385
+ },
+ {
+  "id": "usda-168424",
+  "name": "Kohlrabi, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.7,
+  "carbsPer100g": 6.2,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 27,
+  "fiberPer100g": 3.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 135
+   },
+   {
+    "label": "1 slice",
+    "grams": 16
+   }
+  ],
+  "usdaId": 168424
+ },
+ {
+  "id": "usda-168425",
+  "name": "Kohlrabi, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup slices",
+    "grams": 165
+   }
+  ],
+  "usdaId": 168425
+ },
+ {
+  "id": "usda-169205",
+  "name": "Artichoke, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 10.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 47,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "globe artichoke"
+  ],
+  "servings": [
+   {
+    "label": "1 artichoke, medium",
+    "grams": 128
+   },
+   {
+    "label": "1 artichoke, large",
+    "grams": 162
+   }
+  ],
+  "usdaId": 169205
+ },
+ {
+  "id": "usda-168386",
+  "name": "Artichoke, boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 12,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 53,
+  "fiberPer100g": 5.7,
+  "isLiquid": false,
+  "aliases": [
+   "globe artichoke"
+  ],
+  "servings": [
+   {
+    "label": "1 artichoke, medium",
+    "grams": 120
+   },
+   {
+    "label": "0.5 cup hearts",
+    "grams": 84
+   }
+  ],
+  "usdaId": 168386
+ },
+ {
+  "id": "usda-169988",
+  "name": "Celery, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 3,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 14,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "stalk"
+  ],
+  "servings": [
+   {
+    "label": "1 cup chopped",
+    "grams": 101
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 7.5
+   },
+   {
+    "label": "1 stalk, large",
+    "grams": 64
+   }
+  ],
+  "usdaId": 169988
+ },
+ {
+  "id": "usda-168409",
+  "name": "Cucumber, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 15,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "0.5 cup slices",
+    "grams": 52
+   },
+   {
+    "label": "1 cucumber",
+    "grams": 301
+   }
+  ],
+  "usdaId": 168409
+ },
+ {
+  "id": "usda-169247",
+  "name": "Romaine lettuce, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 3.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 17,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "salad",
+   "cos"
+  ],
+  "servings": [
+   {
+    "label": "1 cup shredded",
+    "grams": 47
+   },
+   {
+    "label": "1 leaf inner",
+    "grams": 6
+   },
+   {
+    "label": "1 leaf outer",
+    "grams": 28
+   }
+  ],
+  "usdaId": 169247
+ },
+ {
+  "id": "usda-169248",
+  "name": "Iceberg lettuce, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 14,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "salad"
+  ],
+  "servings": [
+   {
+    "label": "1 cup shredded",
+    "grams": 72
+   },
+   {
+    "label": "1 cup, chopped",
+    "grams": 57
+   },
+   {
+    "label": "1 head, large",
+    "grams": 755
+   }
+  ],
+  "usdaId": 169248
+ },
+ {
+  "id": "usda-169249",
+  "name": "Green leaf lettuce, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 2.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 15,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "salad"
+  ],
+  "servings": [
+   {
+    "label": "1 cup shredded",
+    "grams": 36
+   },
+   {
+    "label": "1 head",
+    "grams": 360
+   },
+   {
+    "label": "1 leaf inner",
+    "grams": 4.8
+   }
+  ],
+  "usdaId": 169249
+ },
+ {
+  "id": "usda-169387",
+  "name": "Rocket (arugula), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.6,
+  "carbsPer100g": 3.7,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 25,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "arugula",
+   "salad"
+  ],
+  "servings": [
+   {
+    "label": "1 leaf",
+    "grams": 2
+   },
+   {
+    "label": "0.5 cup",
+    "grams": 10
+   }
+  ],
+  "usdaId": 169387
+ },
+ {
+  "id": "usda-170068",
+  "name": "Watercress, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.3,
+  "carbsPer100g": 1.3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 11,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "salad"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 34
+   },
+   {
+    "label": "1 sprig",
+    "grams": 2.5
+   },
+   {
+    "label": "10 sprigs",
+    "grams": 25
+   }
+  ],
+  "usdaId": 170068
+ },
+ {
+  "id": "usda-168384",
+  "name": "Alfalfa sprouts, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 4,
+  "carbsPer100g": 2.1,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 23,
+  "fiberPer100g": 1.9,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 33
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 3
+   }
+  ],
+  "usdaId": 168384
+ },
+ {
+  "id": "usda-169957",
+  "name": "Bean sprouts (mung), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3,
+  "carbsPer100g": 5.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "beansprouts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 104
+   },
+   {
+    "label": "1 package",
+    "grams": 340
+   }
+  ],
+  "usdaId": 169957
+ },
+ {
+  "id": "usda-169137",
+  "name": "Bean sprouts (mung), boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2,
+  "carbsPer100g": 4.2,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 21,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "beansprouts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 124
+   }
+  ],
+  "usdaId": 169137
+ },
+ {
+  "id": "usda-169230",
+  "name": "Garlic, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 6.4,
+  "carbsPer100g": 33.1,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 149,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 clove",
+    "grams": 3
+   }
+  ],
+  "usdaId": 169230
+ },
+ {
+  "id": "usda-169231",
+  "name": "Ginger root, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 17.8,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 80,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 2
+   },
+   {
+    "label": "0.25 cup slices",
+    "grams": 24
+   },
+   {
+    "label": "5 slices",
+    "grams": 11
+   }
+  ],
+  "usdaId": 169231
+ },
+ {
+  "id": "usda-168576",
+  "name": "Jalapeño pepper, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 6.5,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "chili"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, sliced",
+    "grams": 90
+   },
+   {
+    "label": "1 pepper",
+    "grams": 14
+   }
+  ],
+  "usdaId": 168576
+ },
+ {
+  "id": "usda-170106",
+  "name": "Red chili pepper, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 8.8,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 40,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "chilli"
+  ],
+  "servings": [
+   {
+    "label": "1 pepper",
+    "grams": 45
+   }
+  ],
+  "usdaId": 170106
+ },
+ {
+  "id": "usda-170005",
+  "name": "Spring onion (scallion), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 7.3,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 32,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "scallion",
+   "green onion"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 100
+   },
+   {
+    "label": "1 tbsp chopped",
+    "grams": 6
+   },
+   {
+    "label": "1 large",
+    "grams": 25
+   }
+  ],
+  "usdaId": 170005
+ },
+ {
+  "id": "usda-170499",
+  "name": "Shallot, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.5,
+  "carbsPer100g": 16.8,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 72,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 tbsp chopped",
+    "grams": 10
+   }
+  ],
+  "usdaId": 170499
+ },
+ {
+  "id": "usda-170400",
+  "name": "Celeriac (celery root), raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 9.2,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 42,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 156
+   }
+  ],
+  "usdaId": 170400
+ },
+ {
+  "id": "usda-169987",
+  "name": "Celeriac (celery root), boiled",
+  "category": "vegetable",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1,
+  "carbsPer100g": 5.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 27,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup pieces",
+    "grams": 155
+   }
+  ],
+  "usdaId": 169987
+ },
+ {
+  "id": "usda-168458",
+  "name": "Nori (laver) seaweed, raw",
+  "category": "vegetable",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 5.8,
+  "carbsPer100g": 5.1,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "seaweed"
+  ],
+  "servings": [
+   {
+    "label": "10 sheets",
+    "grams": 26
+   },
+   {
+    "label": "2 tbsp",
+    "grams": 10
+   }
+  ],
+  "usdaId": 168458
+ },
+ {
+  "id": "usda-170051",
+  "name": "Tomatoes, canned (whole, in juice)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 16,
+  "fiberPer100g": 1.9,
+  "isLiquid": false,
+  "aliases": [
+   "tinned tomatoes"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 240
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 can",
+    "grams": 190
+   }
+  ],
+  "usdaId": 170051
+ },
+ {
+  "id": "usda-170460",
+  "name": "Tomato puree, canned",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.7,
+  "carbsPer100g": 9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 38,
+  "fiberPer100g": 1.9,
+  "isLiquid": false,
+  "aliases": [
+   "passata"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 250
+   },
+   {
+    "label": "1 can",
+    "grams": 822
+   }
+  ],
+  "usdaId": 170460
+ },
+ {
+  "id": "usda-170459",
+  "name": "Tomato paste",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.3,
+  "carbsPer100g": 18.9,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 82,
+  "fiberPer100g": 4.1,
+  "isLiquid": false,
+  "aliases": [
+   "concentrate"
+  ],
+  "servings": [
+   {
+    "label": "0.25 cup",
+    "grams": 66
+   },
+   {
+    "label": "1 cup",
+    "grams": 262
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 170459
+ },
+ {
+  "id": "usda-168567",
+  "name": "Sun-dried tomatoes",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14.1,
+  "carbsPer100g": 55.8,
+  "fatPer100g": 3,
+  "caloriesPer100g": 258,
+  "fiberPer100g": 12.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 54
+   },
+   {
+    "label": "1 piece",
+    "grams": 2
+   }
+  ],
+  "usdaId": 168567
+ },
+ {
+  "id": "usda-169214",
+  "name": "Sweetcorn, canned (drained)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.3,
+  "carbsPer100g": 14.3,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 67,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "corn"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 164
+   },
+   {
+    "label": "1 can",
+    "grams": 298
+   }
+  ],
+  "usdaId": 169214
+ },
+ {
+  "id": "usda-170015",
+  "name": "Green peas, canned (drained)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.3,
+  "carbsPer100g": 11.8,
+  "fatPer100g": 1,
+  "caloriesPer100g": 71,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 can",
+    "grams": 257
+   },
+   {
+    "label": "1 cup",
+    "grams": 163
+   }
+  ],
+  "usdaId": 170015
+ },
+ {
+  "id": "usda-169966",
+  "name": "Beetroot, canned (drained)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 7.2,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "beets"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 157
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 195
+   },
+   {
+    "label": "1 cup slices",
+    "grams": 170
+   }
+  ],
+  "usdaId": 169966
+ },
+ {
+  "id": "usda-170396",
+  "name": "Carrots, canned (drained)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 5.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 25,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup, sliced",
+    "grams": 146
+   },
+   {
+    "label": "1 cup, mashed",
+    "grams": 228
+   },
+   {
+    "label": "1 slice",
+    "grams": 2.8
+   }
+  ],
+  "usdaId": 170396
+ },
+ {
+  "id": "usda-169254",
+  "name": "Mushrooms, canned (drained)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 5.1,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 25,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 156
+   },
+   {
+    "label": "1 can",
+    "grams": 132
+   },
+   {
+    "label": "1 large",
+    "grams": 16
+   }
+  ],
+  "usdaId": 169254
+ },
+ {
+  "id": "usda-169279",
+  "name": "Sauerkraut",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 4.3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 19,
+  "fiberPer100g": 2.9,
+  "isLiquid": false,
+  "aliases": [
+   "fermented cabbage"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 142
+   },
+   {
+    "label": "1 cup, undrained",
+    "grams": 236
+   }
+  ],
+  "usdaId": 169279
+ },
+ {
+  "id": "usda-168558",
+  "name": "Dill pickles (gherkins)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 2.4,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 12,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "pickled cucumber"
+  ],
+  "servings": [
+   {
+    "label": "1 spear, small",
+    "grams": 35
+   },
+   {
+    "label": "1 slice",
+    "grams": 7
+   },
+   {
+    "label": "1 large",
+    "grams": 135
+   }
+  ],
+  "usdaId": 168558
+ },
+ {
+  "id": "usda-172238",
+  "name": "Capers",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.4,
+  "carbsPer100g": 4.9,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 23,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp, drained",
+    "grams": 8.6
+   }
+  ],
+  "usdaId": 172238
+ },
+ {
+  "id": "usda-169287",
+  "name": "Spinach, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.6,
+  "carbsPer100g": 4.2,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 2.9,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 156
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 169287
+ },
+ {
+  "id": "usda-169968",
+  "name": "Broccoli, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.8,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 26,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 156
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 169968
+ },
+ {
+  "id": "usda-170471",
+  "name": "Mixed vegetables, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 13.5,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 72,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "servings": [
+   {
+    "label": "0.33 package",
+    "grams": 95
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   },
+   {
+    "label": "1 pack",
+    "grams": 1134
+   }
+  ],
+  "usdaId": 170471
+ },
+ {
+  "id": "usda-170016",
+  "name": "Green peas, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.2,
+  "carbsPer100g": 13.6,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 77,
+  "fiberPer100g": 4.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 134
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 170016
+ },
+ {
+  "id": "usda-170398",
+  "name": "Cauliflower, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 4.7,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 24,
+  "fiberPer100g": 2.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 66
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 170398
+ },
+ {
+  "id": "usda-169983",
+  "name": "Carrots, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 7.9,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 36,
+  "fiberPer100g": 3.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 92,
+  "servings": [
+   {
+    "label": "0.5 cup slices",
+    "grams": 64
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 169983
+ },
+ {
+  "id": "usda-168398",
+  "name": "Sweetcorn, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3,
+  "carbsPer100g": 20.7,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 88,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 136
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 168398
+ },
+ {
+  "id": "usda-169962",
+  "name": "Green beans, frozen",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 7.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 33,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 121
+   },
+   {
+    "label": "1 package",
+    "grams": 284
+   }
+  ],
+  "usdaId": 169962
+ },
+ {
+  "id": "usda-170392",
+  "name": "Kimchi",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 2.4,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 15,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "aliases": [
+   "fermented cabbage",
+   "korean"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 150
+   }
+  ],
+  "usdaId": 170392
+ },
+ {
+  "id": "usda-171688",
+  "name": "Apple",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 13.8,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 52,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "apples"
+  ],
+  "servings": [
+   {
+    "label": "1 medium apple",
+    "grams": 182
+   },
+   {
+    "label": "1 small apple",
+    "grams": 149
+   }
+  ],
+  "usdaId": 171688
+ },
+ {
+  "id": "usda-173944",
+  "name": "Banana",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 22.8,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 89,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "aliases": [
+   "bananas"
+  ],
+  "servings": [
+   {
+    "label": "1 medium banana (peeled)",
+    "grams": 118
+   },
+   {
+    "label": "1 large banana (peeled)",
+    "grams": 136
+   }
+  ],
+  "usdaId": 173944
+ },
+ {
+  "id": "usda-169097",
+  "name": "Orange",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 11.8,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 47,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "oranges",
+   "citrus"
+  ],
+  "servings": [
+   {
+    "label": "1 medium orange",
+    "grams": 131
+   }
+  ],
+  "usdaId": 169097
+ },
+ {
+  "id": "usda-167762",
+  "name": "Strawberries",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 7.7,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 32,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 152
+   }
+  ],
+  "usdaId": 167762
+ },
+ {
+  "id": "usda-171711",
+  "name": "Blueberries",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 14.5,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 57,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 148
+   }
+  ],
+  "usdaId": 171711
+ },
+ {
+  "id": "usda-167755",
+  "name": "Raspberries",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 11.9,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 52,
+  "fiberPer100g": 6.5,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 123
+   }
+  ],
+  "usdaId": 167755
+ },
+ {
+  "id": "usda-173946",
+  "name": "Blackberries",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 9.6,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 43,
+  "fiberPer100g": 5.3,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 144
+   }
+  ],
+  "usdaId": 173946
+ },
+ {
+  "id": "usda-174683",
+  "name": "Grapes",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 18.1,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 69,
+  "fiberPer100g": 0.9,
+  "isLiquid": false,
+  "aliases": [
+   "grape"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 151
+   }
+  ],
+  "usdaId": 174683
+ },
+ {
+  "id": "usda-167765",
+  "name": "Watermelon",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 7.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 0.4,
+  "isLiquid": false,
+  "aliases": [
+   "melon"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, balls",
+    "grams": 154
+   },
+   {
+    "label": "1 cup, diced",
+    "grams": 152
+   },
+   {
+    "label": "1 melon",
+    "grams": 4518
+   }
+  ],
+  "usdaId": 167765
+ },
+ {
+  "id": "usda-169092",
+  "name": "Cantaloupe melon",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 8.2,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 34,
+  "fiberPer100g": 0.9,
+  "isLiquid": false,
+  "aliases": [
+   "melon"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, balls",
+    "grams": 177
+   },
+   {
+    "label": "1 cup, cubes",
+    "grams": 160
+   },
+   {
+    "label": "1 cup, diced",
+    "grams": 156
+   }
+  ],
+  "usdaId": 169092
+ },
+ {
+  "id": "usda-169911",
+  "name": "Honeydew melon",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 9.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 36,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "melon"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 170
+   },
+   {
+    "label": "1 cup, balls",
+    "grams": 177
+   },
+   {
+    "label": "1 melon",
+    "grams": 1000
+   }
+  ],
+  "usdaId": 169911
+ },
+ {
+  "id": "usda-169124",
+  "name": "Pineapple",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 13.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 50,
+  "fiberPer100g": 1.4,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup chunks",
+    "grams": 165
+   }
+  ],
+  "usdaId": 169124
+ },
+ {
+  "id": "usda-169910",
+  "name": "Mango",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 15,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 60,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "aliases": [
+   "mangoes"
+  ],
+  "servings": [
+   {
+    "label": "1 cup pieces",
+    "grams": 165
+   }
+  ],
+  "usdaId": 169910
+ },
+ {
+  "id": "usda-169926",
+  "name": "Papaya",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 10.8,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 43,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "aliases": [
+   "pawpaw"
+  ],
+  "servings": [
+   {
+    "label": "1 cup 1\" pieces",
+    "grams": 145
+   },
+   {
+    "label": "1 cup, mashed",
+    "grams": 230
+   },
+   {
+    "label": "1 fruit, small",
+    "grams": 157
+   }
+  ],
+  "usdaId": 169926
+ },
+ {
+  "id": "usda-168153",
+  "name": "Kiwi",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 14.7,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 61,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "aliases": [
+   "kiwifruit"
+  ],
+  "servings": [
+   {
+    "label": "1 medium kiwi",
+    "grams": 69
+   }
+  ],
+  "usdaId": 168153
+ },
+ {
+  "id": "usda-169928",
+  "name": "Peach",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 9.5,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 39,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "aliases": [
+   "peaches"
+  ],
+  "servings": [
+   {
+    "label": "1 medium peach",
+    "grams": 150
+   }
+  ],
+  "usdaId": 169928
+ },
+ {
+  "id": "usda-169118",
+  "name": "Pear",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 15.2,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 57,
+  "fiberPer100g": 3.1,
+  "isLiquid": false,
+  "aliases": [
+   "pears"
+  ],
+  "servings": [
+   {
+    "label": "1 medium pear",
+    "grams": 178
+   }
+  ],
+  "usdaId": 169118
+ },
+ {
+  "id": "usda-169949",
+  "name": "Plum",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 11.4,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 46,
+  "fiberPer100g": 1.4,
+  "isLiquid": false,
+  "aliases": [
+   "plums"
+  ],
+  "servings": [
+   {
+    "label": "1 plum",
+    "grams": 66
+   }
+  ],
+  "usdaId": 169949
+ },
+ {
+  "id": "usda-171719",
+  "name": "Cherries, sweet",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 16,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 63,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "aliases": [
+   "cherry"
+  ],
+  "servings": [
+   {
+    "label": "1 cup (with pits)",
+    "grams": 138
+   }
+  ],
+  "usdaId": 171719
+ },
+ {
+  "id": "usda-171697",
+  "name": "Apricot",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 11.1,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 48,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "apricots"
+  ],
+  "servings": [
+   {
+    "label": "1 apricot",
+    "grams": 35
+   }
+  ],
+  "usdaId": 171697
+ },
+ {
+  "id": "usda-174675",
+  "name": "Grapefruit, pink",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 7.5,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [
+   "citrus"
+  ],
+  "servings": [
+   {
+    "label": "0.5 fruit",
+    "grams": 123
+   }
+  ],
+  "usdaId": 174675
+ },
+ {
+  "id": "usda-167746",
+  "name": "Lemon",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 9.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "aliases": [
+   "citrus"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, sections",
+    "grams": 212
+   },
+   {
+    "label": "1 fruit",
+    "grams": 58
+   },
+   {
+    "label": "1 fruit",
+    "grams": 84
+   }
+  ],
+  "usdaId": 167746
+ },
+ {
+  "id": "usda-168155",
+  "name": "Lime",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 10.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "aliases": [
+   "citrus"
+  ],
+  "servings": [
+   {
+    "label": "1 fruit",
+    "grams": 67
+   }
+  ],
+  "usdaId": 168155
+ },
+ {
+  "id": "usda-169134",
+  "name": "Pomegranate",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.7,
+  "carbsPer100g": 18.7,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 83,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "0.5 cup arils",
+    "grams": 87
+   },
+   {
+    "label": "1 pomegranate",
+    "grams": 282
+   }
+  ],
+  "usdaId": 169134
+ },
+ {
+  "id": "usda-173021",
+  "name": "Figs, fresh",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 19.2,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 74,
+  "fiberPer100g": 2.9,
+  "isLiquid": false,
+  "aliases": [
+   "fig"
+  ],
+  "servings": [
+   {
+    "label": "1 large",
+    "grams": 64
+   },
+   {
+    "label": "1 medium",
+    "grams": 50
+   },
+   {
+    "label": "1 small",
+    "grams": 40
+   }
+  ],
+  "usdaId": 173021
+ },
+ {
+  "id": "usda-171722",
+  "name": "Cranberries",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 12,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 46,
+  "fiberPer100g": 3.6,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 110
+   },
+   {
+    "label": "1 cup, whole",
+    "grams": 100
+   }
+  ],
+  "usdaId": 171722
+ },
+ {
+  "id": "usda-169105",
+  "name": "Tangerine / mandarin",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 13.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 53,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "clementine",
+   "satsuma",
+   "citrus"
+  ],
+  "servings": [
+   {
+    "label": "1 medium",
+    "grams": 88
+   }
+  ],
+  "usdaId": 169105
+ },
+ {
+  "id": "usda-169914",
+  "name": "Nectarine",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 10.6,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 44,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup slices",
+    "grams": 143
+   },
+   {
+    "label": "1 small",
+    "grams": 129
+   },
+   {
+    "label": "1 medium",
+    "grams": 142
+   }
+  ],
+  "usdaId": 169914
+ },
+ {
+  "id": "usda-169086",
+  "name": "Lychee",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 16.5,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 66,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "aliases": [
+   "litchi"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 190
+   },
+   {
+    "label": "1 fruit without refuse",
+    "grams": 9.6
+   }
+  ],
+  "usdaId": 169086
+ },
+ {
+  "id": "usda-169108",
+  "name": "Passion fruit",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 23.4,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 97,
+  "fiberPer100g": 10.4,
+  "isLiquid": false,
+  "aliases": [
+   "granadilla"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 236
+   },
+   {
+    "label": "1 fruit without refuse",
+    "grams": 18
+   }
+  ],
+  "usdaId": 169108
+ },
+ {
+  "id": "usda-173044",
+  "name": "Guava",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.6,
+  "carbsPer100g": 14.3,
+  "fatPer100g": 1,
+  "caloriesPer100g": 68,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 165
+   },
+   {
+    "label": "1 fruit, without refuse",
+    "grams": 55
+   }
+  ],
+  "usdaId": 173044
+ },
+ {
+  "id": "usda-169941",
+  "name": "Persimmon",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 18.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 70,
+  "fiberPer100g": 3.6,
+  "isLiquid": false,
+  "aliases": [
+   "kaki"
+  ],
+  "servings": [
+   {
+    "label": "1 fruit",
+    "grams": 168
+   }
+  ],
+  "usdaId": 169941
+ },
+ {
+  "id": "usda-173963",
+  "name": "Blackcurrants",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 15.4,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 63,
+  "isLiquid": false,
+  "aliases": [
+   "currants",
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 112
+   }
+  ],
+  "usdaId": 173963
+ },
+ {
+  "id": "usda-173030",
+  "name": "Gooseberries",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 10.2,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 44,
+  "fiberPer100g": 4.3,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 150
+   }
+  ],
+  "usdaId": 173030
+ },
+ {
+  "id": "usda-167758",
+  "name": "Rhubarb",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 4.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 21,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 122
+   },
+   {
+    "label": "1 stalk",
+    "grams": 51
+   }
+  ],
+  "usdaId": 167758
+ },
+ {
+  "id": "usda-171715",
+  "name": "Starfruit",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 31,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 132
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 108
+   },
+   {
+    "label": "1 large",
+    "grams": 124
+   }
+  ],
+  "usdaId": 171715
+ },
+ {
+  "id": "usda-174669",
+  "name": "Fruit salad, canned in water",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 7.9,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "fruit cocktail"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 245
+   }
+  ],
+  "usdaId": 174669
+ },
+ {
+  "id": "usda-168191",
+  "name": "Dates, Medjool",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 75,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 277,
+  "fiberPer100g": 6.7,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 date",
+    "grams": 24
+   }
+  ],
+  "usdaId": 168191
+ },
+ {
+  "id": "usda-171726",
+  "name": "Dates, Deglet Noor",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.5,
+  "carbsPer100g": 75,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 282,
+  "fiberPer100g": 8,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 date",
+    "grams": 7
+   }
+  ],
+  "usdaId": 171726
+ },
+ {
+  "id": "usda-168165",
+  "name": "Raisins",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 79.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 299,
+  "fiberPer100g": 4.5,
+  "isLiquid": false,
+  "aliases": [
+   "sultanas",
+   "dried fruit"
+  ],
+  "servings": [
+   {
+    "label": "1 small box",
+    "grams": 43
+   }
+  ],
+  "usdaId": 168165
+ },
+ {
+  "id": "usda-168162",
+  "name": "Prunes (dried plums)",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 63.9,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 240,
+  "fiberPer100g": 7.1,
+  "isLiquid": false,
+  "aliases": [
+   "dried fruit"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, pitted",
+    "grams": 174
+   },
+   {
+    "label": "1 prune, pitted",
+    "grams": 9.5
+   }
+  ],
+  "usdaId": 168162
+ },
+ {
+  "id": "usda-173941",
+  "name": "Dried apricots",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 62.6,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 241,
+  "fiberPer100g": 7.3,
+  "isLiquid": false,
+  "aliases": [
+   "dried fruit"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, halves",
+    "grams": 130
+   },
+   {
+    "label": "1 half",
+    "grams": 3.5
+   }
+  ],
+  "usdaId": 173941
+ },
+ {
+  "id": "usda-174665",
+  "name": "Dried figs",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 63.9,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 249,
+  "fiberPer100g": 9.8,
+  "isLiquid": false,
+  "aliases": [
+   "dried fruit"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 149
+   },
+   {
+    "label": "1 fig",
+    "grams": 8.4
+   }
+  ],
+  "usdaId": 174665
+ },
+ {
+  "id": "usda-171723",
+  "name": "Dried cranberries",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 82.8,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 308,
+  "fiberPer100g": 5.3,
+  "isLiquid": false,
+  "aliases": [
+   "craisins",
+   "dried fruit"
+  ],
+  "servings": [
+   {
+    "label": "0.25 cup",
+    "grams": 40
+   }
+  ],
+  "usdaId": 171723
+ },
+ {
+  "id": "usda-173945",
+  "name": "Banana powder",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.9,
+  "carbsPer100g": 88.3,
+  "fatPer100g": 1.8,
+  "caloriesPer100g": 346,
+  "fiberPer100g": 9.9,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 100
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 6.2
+   }
+  ],
+  "usdaId": 173945
+ },
+ {
+  "id": "usda-171691",
+  "name": "Dried apple rings",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 65.9,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 243,
+  "fiberPer100g": 8.7,
+  "isLiquid": false,
+  "aliases": [
+   "dried fruit"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 86
+   },
+   {
+    "label": "1 ring",
+    "grams": 6.4
+   }
+  ],
+  "usdaId": 171691
+ },
+ {
+  "id": "usda-169091",
+  "name": "Dried mango",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.5,
+  "carbsPer100g": 78.6,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 319,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "dried fruit"
+  ],
+  "usdaId": 169091
+ },
+ {
+  "id": "usda-171695",
+  "name": "Applesauce, unsweetened",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 11.3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 42,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [
+   "apple puree"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 244
+   }
+  ],
+  "usdaId": 171695
+ },
+ {
+  "id": "usda-169930",
+  "name": "Peaches, canned in juice",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 11.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 44,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 250
+   },
+   {
+    "label": "1 cup, halves or slices",
+    "grams": 248
+   },
+   {
+    "label": "1 half, with liquid",
+    "grams": 98
+   }
+  ],
+  "usdaId": 169930
+ },
+ {
+  "id": "usda-169126",
+  "name": "Pineapple, canned in juice",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 15.7,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 60,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "usdaId": 169126
+ },
+ {
+  "id": "usda-174668",
+  "name": "Fruit cocktail, canned in juice",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 11.9,
+  "fatPer100g": 0,
+  "caloriesPer100g": 46,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 237
+   }
+  ],
+  "usdaId": 174668
+ },
+ {
+  "id": "usda-168209",
+  "name": "Raspberries, frozen",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 12.6,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 56,
+  "fiberPer100g": 4.3,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, unthawed",
+    "grams": 140
+   }
+  ],
+  "usdaId": 168209
+ },
+ {
+  "id": "usda-173950",
+  "name": "Blueberries, frozen",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 12.2,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 51,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, unthawed",
+    "grams": 155
+   },
+   {
+    "label": "1 package",
+    "grams": 567
+   }
+  ],
+  "usdaId": 173950
+ },
+ {
+  "id": "usda-168173",
+  "name": "Strawberries, frozen",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 9.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 35,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "aliases": [
+   "berries"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, thawed",
+    "grams": 221
+   },
+   {
+    "label": "1 cup, unthawed",
+    "grams": 149
+   },
+   {
+    "label": "1 berry",
+    "grams": 10.6
+   }
+  ],
+  "usdaId": 168173
+ },
+ {
+  "id": "bi-mixed-berries-frozen",
+  "name": "Mixed berries, frozen",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 12,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 52,
+  "fiberPer100g": 3.5,
+  "isLiquid": false,
+  "aliases": [
+   "berries",
+   "smoothie"
+  ],
+  "note": "Typical frozen berry mix."
+ },
+ {
+  "id": "bi-dragon-fruit-pitaya",
+  "name": "Dragon fruit (pitaya)",
+  "category": "fruit",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 11,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 50,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "aliases": [
+   "pitaya"
+  ],
+  "note": "Typical values."
+ },
+ {
+  "id": "bi-a-a-pulp-unsweetened-frozen",
+  "name": "Açaí pulp, unsweetened (frozen)",
+  "category": "fruit",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 4,
+  "fatPer100g": 5,
+  "caloriesPer100g": 70,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "acai",
+   "smoothie bowl"
+  ],
+  "note": "Typical frozen pulp."
+ },
+ {
+  "id": "bi-coconut-water",
+  "name": "Coconut water",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 3.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 19,
+  "isLiquid": true,
+  "aliases": [
+   "coconut"
+  ],
+  "note": "Typical values."
+ },
+ {
+  "id": "bi-salad-mix-bagged",
+  "name": "Salad mix, bagged",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 3,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 17,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "aliases": [
+   "leaves",
+   "greens"
+  ],
+  "note": "Typical mixed leaves."
+ },
+ {
+  "id": "bi-coleslaw-with-mayo",
+  "name": "Coleslaw (with mayo)",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 10,
+  "fatPer100g": 12,
+  "caloriesPer100g": 160,
+  "isLiquid": false,
+  "aliases": [
+   "slaw"
+  ],
+  "note": "Typical deli coleslaw."
+ },
+ {
+  "id": "bi-stir-fry-vegetables-frozen-mix",
+  "name": "Stir-fry vegetables, frozen mix",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 6,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 36,
+  "fiberPer100g": 2.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "veg"
+  ],
+  "note": "Typical frozen stir-fry mix."
+ },
+ {
+  "id": "bi-cauliflower-rice",
+  "name": "Cauliflower rice",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 4,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 28,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "low carb"
+  ],
+  "note": "Typical packaged values."
+ },
+ {
+  "id": "bi-courgette-zucchini-noodles",
+  "name": "Courgette / zucchini noodles",
+  "category": "vegetable",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.2,
+  "carbsPer100g": 3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 18,
+  "isLiquid": false,
+  "aliases": [
+   "zoodles"
+  ],
+  "note": "Typical packaged values."
+ }
+]

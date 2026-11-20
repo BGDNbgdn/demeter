@@ -1,0 +1,3794 @@
+[
+ {
+  "id": "usda-171077",
+  "name": "Chicken breast, raw (skinless)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.6,
+  "caloriesPer100g": 120,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "chicken",
+   "poultry",
+   "filet"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 piece",
+    "grams": 272
+   },
+   {
+    "label": "1 package",
+    "grams": 926
+   }
+  ],
+  "usdaId": 171077
+ },
+ {
+  "id": "usda-171534",
+  "name": "Chicken breast, grilled (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.2,
+  "caloriesPer100g": 151,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece",
+    "grams": 196
+   }
+  ],
+  "usdaId": 171534
+ },
+ {
+  "id": "usda-171477",
+  "name": "Chicken breast, roasted or baked (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 31,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.6,
+  "caloriesPer100g": 165,
+  "isLiquid": false,
+  "aliases": [
+   "chicken",
+   "oven"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   }
+  ],
+  "usdaId": 171477
+ },
+ {
+  "id": "usda-171478",
+  "name": "Chicken breast, boiled or poached (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29,
+  "carbsPer100g": 0,
+  "fatPer100g": 3,
+  "caloriesPer100g": 151,
+  "isLiquid": false,
+  "aliases": [
+   "chicken",
+   "stewed",
+   "simmered"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   }
+  ],
+  "usdaId": 171478
+ },
+ {
+  "id": "usda-171140",
+  "name": "Chicken breast, braised (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 32.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.2,
+  "caloriesPer100g": 157,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece",
+    "grams": 181
+   }
+  ],
+  "usdaId": 171140
+ },
+ {
+  "id": "usda-171078",
+  "name": "Chicken breast, pan-fried (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 33.4,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 4.7,
+  "caloriesPer100g": 187,
+  "isLiquid": false,
+  "aliases": [
+   "chicken",
+   "fried"
+  ],
+  "usdaId": 171078
+ },
+ {
+  "id": "usda-171474",
+  "name": "Chicken breast with skin, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.3,
+  "caloriesPer100g": 172,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "chicken"
+  ],
+  "usdaId": 171474
+ },
+ {
+  "id": "usda-171075",
+  "name": "Chicken breast with skin, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.8,
+  "caloriesPer100g": 197,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   }
+  ],
+  "usdaId": 171075
+ },
+ {
+  "id": "usda-171476",
+  "name": "Chicken breast with skin, fried in flour",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 31.8,
+  "carbsPer100g": 1.6,
+  "fatPer100g": 8.9,
+  "caloriesPer100g": 222,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "usdaId": 171476
+ },
+ {
+  "id": "usda-173627",
+  "name": "Chicken thigh, raw (boneless, skinless)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.1,
+  "caloriesPer100g": 121,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 73,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 173627
+ },
+ {
+  "id": "usda-172388",
+  "name": "Chicken thigh, roasted (boneless, skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.2,
+  "caloriesPer100g": 179,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 172388
+ },
+ {
+  "id": "usda-172389",
+  "name": "Chicken thigh, boiled or stewed (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.8,
+  "caloriesPer100g": 195,
+  "isLiquid": false,
+  "aliases": [
+   "chicken",
+   "poached"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   }
+  ],
+  "usdaId": 172389
+ },
+ {
+  "id": "usda-172387",
+  "name": "Chicken thigh, fried (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.2,
+  "carbsPer100g": 1.2,
+  "fatPer100g": 10.3,
+  "caloriesPer100g": 218,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 172387
+ },
+ {
+  "id": "usda-172385",
+  "name": "Chicken thigh with skin, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16.5,
+  "carbsPer100g": 0.3,
+  "fatPer100g": 16.6,
+  "caloriesPer100g": 221,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 172385
+ },
+ {
+  "id": "usda-173625",
+  "name": "Chicken thigh with skin, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 14.7,
+  "caloriesPer100g": 232,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173625
+ },
+ {
+  "id": "usda-173619",
+  "name": "Chicken leg, raw (meat only)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.2,
+  "caloriesPer100g": 120,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 173619
+ },
+ {
+  "id": "usda-172380",
+  "name": "Chicken leg, roasted (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.8,
+  "caloriesPer100g": 174,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 leg",
+    "grams": 199
+   }
+  ],
+  "usdaId": 172380
+ },
+ {
+  "id": "usda-172373",
+  "name": "Chicken drumstick with skin, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.1,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 9.2,
+  "caloriesPer100g": 161,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 68,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 drumstick",
+    "grams": 130
+   }
+  ],
+  "usdaId": 172373
+ },
+ {
+  "id": "usda-173612",
+  "name": "Chicken drumstick with skin, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.2,
+  "caloriesPer100g": 191,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173612
+ },
+ {
+  "id": "usda-172375",
+  "name": "Chicken drumstick, fried (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.1,
+  "caloriesPer100g": 195,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "usdaId": 172375
+ },
+ {
+  "id": "usda-172390",
+  "name": "Chicken wing with skin, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 12.9,
+  "caloriesPer100g": 191,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 60,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 piece",
+    "grams": 107
+   },
+   {
+    "label": "1 package",
+    "grams": 1150
+   }
+  ],
+  "usdaId": 172390
+ },
+ {
+  "id": "usda-173630",
+  "name": "Chicken wing with skin, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 16.9,
+  "caloriesPer100g": 254,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173630
+ },
+ {
+  "id": "usda-171052",
+  "name": "Chicken, mixed cuts meat only, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.1,
+  "caloriesPer100g": 119,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "chicken",
+   "whole chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 171052
+ },
+ {
+  "id": "usda-171054",
+  "name": "Chicken, mixed cuts meat only, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.4,
+  "caloriesPer100g": 190,
+  "isLiquid": false,
+  "aliases": [
+   "chicken",
+   "whole chicken"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 8.7
+   }
+  ],
+  "usdaId": 171054
+ },
+ {
+  "id": "usda-171447",
+  "name": "Chicken, meat and skin, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 15.1,
+  "caloriesPer100g": 215,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "whole chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 171447
+ },
+ {
+  "id": "usda-171450",
+  "name": "Chicken, meat and skin, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.6,
+  "caloriesPer100g": 239,
+  "isLiquid": false,
+  "aliases": [
+   "whole chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   }
+  ],
+  "usdaId": 171450
+ },
+ {
+  "id": "usda-171116",
+  "name": "Chicken mince, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.1,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "ground chicken",
+   "minced chicken"
+  ],
+  "servings": [
+   {
+    "label": "4 oz crumbled",
+    "grams": 113
+   }
+  ],
+  "usdaId": 171116
+ },
+ {
+  "id": "usda-171117",
+  "name": "Chicken mince, pan-browned",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.9,
+  "caloriesPer100g": 189,
+  "isLiquid": false,
+  "aliases": [
+   "ground chicken",
+   "minced chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz crumbled",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171117
+ },
+ {
+  "id": "usda-171518",
+  "name": "Rotisserie chicken breast (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.8,
+  "caloriesPer100g": 137,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 171518
+ },
+ {
+  "id": "usda-171123",
+  "name": "Rotisserie chicken breast with skin",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.2,
+  "caloriesPer100g": 184,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "1 serving",
+    "grams": 85
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 breast",
+    "grams": 343
+   }
+  ],
+  "usdaId": 171123
+ },
+ {
+  "id": "usda-171120",
+  "name": "Rotisserie chicken thigh (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.1,
+  "caloriesPer100g": 196,
+  "isLiquid": false,
+  "aliases": [
+   "chicken"
+  ],
+  "servings": [
+   {
+    "label": "1 thigh",
+    "grams": 89
+   },
+   {
+    "label": "1 serving",
+    "grams": 85
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 171120
+ },
+ {
+  "id": "usda-172963",
+  "name": "Chicken breast, deli sliced (fat-free)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 16.8,
+  "carbsPer100g": 2.2,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 79,
+  "isLiquid": false,
+  "aliases": [
+   "cold cut",
+   "sandwich meat"
+  ],
+  "servings": [
+   {
+    "label": "1 serving 2 slices",
+    "grams": 42
+   }
+  ],
+  "usdaId": 172963
+ },
+ {
+  "id": "usda-171098",
+  "name": "Turkey breast, raw (skinless)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.7,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 114,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 breast",
+    "grams": 1769
+   }
+  ],
+  "usdaId": 171098
+ },
+ {
+  "id": "usda-171496",
+  "name": "Turkey breast, roasted (skinless)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.1,
+  "caloriesPer100g": 147,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 breast",
+    "grams": 1413
+   }
+  ],
+  "usdaId": 171496
+ },
+ {
+  "id": "usda-171093",
+  "name": "Turkey breast with skin, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 7,
+  "caloriesPer100g": 157,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "usdaId": 171093
+ },
+ {
+  "id": "usda-171492",
+  "name": "Turkey breast with skin, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.4,
+  "caloriesPer100g": 189,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171492
+ },
+ {
+  "id": "usda-171505",
+  "name": "Turkey mince, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.7,
+  "caloriesPer100g": 148,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "ground turkey",
+   "minced turkey"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   },
+   {
+    "label": "1 patty, 4 oz",
+    "grams": 114
+   }
+  ],
+  "usdaId": 171505
+ },
+ {
+  "id": "usda-171506",
+  "name": "Turkey mince, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.4,
+  "caloriesPer100g": 203,
+  "isLiquid": false,
+  "aliases": [
+   "ground turkey",
+   "minced turkey"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 patty",
+    "grams": 82
+   }
+  ],
+  "usdaId": 171506
+ },
+ {
+  "id": "usda-171531",
+  "name": "Turkey thigh, raw (meat only)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.3,
+  "carbsPer100g": 0.2,
+  "fatPer100g": 2.5,
+  "caloriesPer100g": 108,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 thigh",
+    "grams": 367
+   }
+  ],
+  "usdaId": 171531
+ },
+ {
+  "id": "usda-171532",
+  "name": "Turkey thigh, roasted (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 6,
+  "caloriesPer100g": 165,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 thigh",
+    "grams": 319
+   }
+  ],
+  "usdaId": 171532
+ },
+ {
+  "id": "usda-171136",
+  "name": "Turkey drumstick, raw (meat only)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.7,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 109,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 drumstick",
+    "grams": 337
+   }
+  ],
+  "usdaId": 171136
+ },
+ {
+  "id": "usda-171530",
+  "name": "Turkey drumstick, roasted (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.1,
+  "caloriesPer100g": 139,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 drumstick",
+    "grams": 206
+   }
+  ],
+  "usdaId": 171530
+ },
+ {
+  "id": "usda-171480",
+  "name": "Turkey, whole meat only, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22.6,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 1.9,
+  "caloriesPer100g": 115,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 bird",
+    "grams": 5002
+   }
+  ],
+  "usdaId": 171480
+ },
+ {
+  "id": "usda-171481",
+  "name": "Turkey, whole meat only, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.8,
+  "caloriesPer100g": 159,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 bird",
+    "grams": 3812
+   }
+  ],
+  "usdaId": 171481
+ },
+ {
+  "id": "usda-171639",
+  "name": "Turkey bacon, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.5,
+  "carbsPer100g": 4.2,
+  "fatPer100g": 25.9,
+  "caloriesPer100g": 368,
+  "isLiquid": false,
+  "aliases": [
+   "bacon"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 8.1
+   }
+  ],
+  "usdaId": 171639
+ },
+ {
+  "id": "usda-168092",
+  "name": "Turkey ham, sliced (extra lean)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19.6,
+  "carbsPer100g": 0.9,
+  "fatPer100g": 5.8,
+  "caloriesPer100g": 134,
+  "isLiquid": false,
+  "aliases": [
+   "deli",
+   "cold cut"
+  ],
+  "servings": [
+   {
+    "label": "1 cup pieces",
+    "grams": 138
+   }
+  ],
+  "usdaId": 168092
+ },
+ {
+  "id": "usda-173871",
+  "name": "Turkey sausage, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.4,
+  "caloriesPer100g": 196,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 serving",
+    "grams": 57
+   }
+  ],
+  "usdaId": 173871
+ },
+ {
+  "id": "usda-171790",
+  "name": "Beef mince 95% lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 5,
+  "caloriesPer100g": 137,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "5% fat"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 171790
+ },
+ {
+  "id": "usda-174030",
+  "name": "Beef mince 90% lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20,
+  "carbsPer100g": 0,
+  "fatPer100g": 10,
+  "caloriesPer100g": 176,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "10% fat"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 174030
+ },
+ {
+  "id": "usda-171796",
+  "name": "Beef mince 85% lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 15,
+  "caloriesPer100g": 215,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 73,
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "15% fat"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 171796
+ },
+ {
+  "id": "usda-174036",
+  "name": "Beef mince 80% lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 20,
+  "caloriesPer100g": 254,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 71,
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "20% fat"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 174036
+ },
+ {
+  "id": "usda-174037",
+  "name": "Beef mince 75% lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 15.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 25,
+  "caloriesPer100g": 293,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 69,
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "25% fat"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 serving",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174037
+ },
+ {
+  "id": "usda-168652",
+  "name": "Beef mince 70% lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 30,
+  "caloriesPer100g": 332,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 66,
+  "aliases": [
+   "ground beef",
+   "minced beef",
+   "30% fat"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 168652
+ },
+ {
+  "id": "usda-171792",
+  "name": "Beef mince 95% lean, pan-browned patty",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.9,
+  "caloriesPer100g": 164,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "burger"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171792
+ },
+ {
+  "id": "usda-171793",
+  "name": "Beef mince 90% lean, pan-browned patty",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.7,
+  "caloriesPer100g": 204,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "burger"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171793
+ },
+ {
+  "id": "usda-174033",
+  "name": "Beef mince 85% lean, pan-browned patty",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 14,
+  "caloriesPer100g": 232,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "burger"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 patty",
+    "grams": 83
+   }
+  ],
+  "usdaId": 174033
+ },
+ {
+  "id": "usda-171798",
+  "name": "Beef mince 80% lean, pan-browned patty",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24,
+  "carbsPer100g": 0,
+  "fatPer100g": 15.9,
+  "caloriesPer100g": 246,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "burger"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171798
+ },
+ {
+  "id": "usda-174028",
+  "name": "Beef mince 95% lean, cooked crumbles",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.6,
+  "caloriesPer100g": 193,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "minced beef"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174028
+ },
+ {
+  "id": "usda-171794",
+  "name": "Beef mince 90% lean, cooked crumbles",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 12,
+  "caloriesPer100g": 230,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "minced beef"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 portion",
+    "grams": 154
+   }
+  ],
+  "usdaId": 171794
+ },
+ {
+  "id": "usda-174034",
+  "name": "Beef mince 85% lean, cooked crumbles",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 15.3,
+  "caloriesPer100g": 256,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "minced beef"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174034
+ },
+ {
+  "id": "usda-171799",
+  "name": "Beef mince 80% lean, cooked crumbles",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27,
+  "carbsPer100g": 0,
+  "fatPer100g": 17.4,
+  "caloriesPer100g": 272,
+  "isLiquid": false,
+  "aliases": [
+   "ground beef",
+   "minced beef"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171799
+ },
+ {
+  "id": "usda-171757",
+  "name": "Beef top round steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.9,
+  "caloriesPer100g": 121,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "steak",
+   "london broil"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 344
+   }
+  ],
+  "usdaId": 171757
+ },
+ {
+  "id": "usda-168649",
+  "name": "Beef top round steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.8,
+  "caloriesPer100g": 162,
+  "isLiquid": false,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 steak",
+    "grams": 277
+   }
+  ],
+  "usdaId": 168649
+ },
+ {
+  "id": "usda-171762",
+  "name": "Beef eye of round steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 3,
+  "caloriesPer100g": 121,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 140
+   }
+  ],
+  "usdaId": 171762
+ },
+ {
+  "id": "usda-171772",
+  "name": "Beef eye of round steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.9,
+  "caloriesPer100g": 155,
+  "isLiquid": false,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171772
+ },
+ {
+  "id": "usda-170633",
+  "name": "Beef eye of round roast, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.9,
+  "caloriesPer100g": 163,
+  "isLiquid": false,
+  "aliases": [
+   "roast beef"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 roast",
+    "grams": 346
+   }
+  ],
+  "usdaId": 170633
+ },
+ {
+  "id": "usda-171767",
+  "name": "Beef tenderloin steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.7,
+  "caloriesPer100g": 139,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 74,
+  "aliases": [
+   "steak",
+   "filet mignon",
+   "fillet"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 170
+   }
+  ],
+  "usdaId": 171767
+ },
+ {
+  "id": "usda-170641",
+  "name": "Beef tenderloin steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.3,
+  "caloriesPer100g": 198,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "filet mignon",
+   "fillet"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 steak",
+    "grams": 119
+   }
+  ],
+  "usdaId": 170641
+ },
+ {
+  "id": "usda-172143",
+  "name": "Beef ribeye steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.4,
+  "caloriesPer100g": 154,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "steak",
+   "rib eye"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 172143
+ },
+ {
+  "id": "usda-172142",
+  "name": "Beef ribeye steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.4,
+  "caloriesPer100g": 206,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "rib eye"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 172142
+ },
+ {
+  "id": "usda-173053",
+  "name": "Beef top sirloin petite roast, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23,
+  "carbsPer100g": 0,
+  "fatPer100g": 4,
+  "caloriesPer100g": 128,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "steak",
+   "sirloin"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 fillet",
+    "grams": 180
+   },
+   {
+    "label": "1 roast",
+    "grams": 970
+   }
+  ],
+  "usdaId": 173053
+ },
+ {
+  "id": "usda-168634",
+  "name": "Beef top sirloin steak, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.8,
+  "caloriesPer100g": 183,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "sirloin"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 168634
+ },
+ {
+  "id": "usda-173051",
+  "name": "Beef top sirloin petite roast, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.9,
+  "caloriesPer100g": 170,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "sirloin"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 roast",
+    "grams": 768
+   }
+  ],
+  "usdaId": 173051
+ },
+ {
+  "id": "usda-168609",
+  "name": "Beef flank steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.3,
+  "caloriesPer100g": 149,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 202
+   }
+  ],
+  "usdaId": 168609
+ },
+ {
+  "id": "usda-168611",
+  "name": "Beef flank steak, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.3,
+  "caloriesPer100g": 194,
+  "isLiquid": false,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 steak",
+    "grams": 387
+   }
+  ],
+  "usdaId": 168611
+ },
+ {
+  "id": "usda-168610",
+  "name": "Beef flank steak, braised (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28,
+  "carbsPer100g": 0,
+  "fatPer100g": 13,
+  "caloriesPer100g": 237,
+  "isLiquid": false,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 168610
+ },
+ {
+  "id": "usda-173374",
+  "name": "Beef inside skirt steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.8,
+  "caloriesPer100g": 164,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "steak",
+   "fajita"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 382
+   }
+  ],
+  "usdaId": 173374
+ },
+ {
+  "id": "usda-173373",
+  "name": "Beef inside skirt steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30,
+  "carbsPer100g": 0,
+  "fatPer100g": 12.7,
+  "caloriesPer100g": 234,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "fajita"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 steak",
+    "grams": 254
+   }
+  ],
+  "usdaId": 173373
+ },
+ {
+  "id": "usda-168632",
+  "name": "Beef top loin (strip) steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.4,
+  "caloriesPer100g": 202,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "new york strip",
+   "striploin"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 168632
+ },
+ {
+  "id": "usda-168638",
+  "name": "Beef porterhouse steak, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.2,
+  "caloriesPer100g": 212,
+  "isLiquid": false,
+  "aliases": [
+   "steak",
+   "t-bone"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 168638
+ },
+ {
+  "id": "usda-170804",
+  "name": "Beef chuck eye steak, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.6,
+  "caloriesPer100g": 153,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 384
+   }
+  ],
+  "usdaId": 170804
+ },
+ {
+  "id": "usda-170801",
+  "name": "Beef chuck eye steak, grilled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.8,
+  "caloriesPer100g": 209,
+  "isLiquid": false,
+  "aliases": [
+   "steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 steak",
+    "grams": 308
+   }
+  ],
+  "usdaId": 170801
+ },
+ {
+  "id": "usda-169445",
+  "name": "Beef chuck pot roast, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.1,
+  "carbsPer100g": 0.3,
+  "fatPer100g": 6.1,
+  "caloriesPer100g": 140,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 62,
+  "aliases": [
+   "stewing beef",
+   "braising steak",
+   "roast"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 steak",
+    "grams": 679
+   },
+   {
+    "label": "1 roast",
+    "grams": 960
+   }
+  ],
+  "usdaId": 169445
+ },
+ {
+  "id": "usda-169444",
+  "name": "Beef chuck pot roast, braised (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.5,
+  "caloriesPer100g": 216,
+  "isLiquid": false,
+  "aliases": [
+   "stewing beef",
+   "braising steak",
+   "roast"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 roast",
+    "grams": 647
+   }
+  ],
+  "usdaId": 169444
+ },
+ {
+  "id": "usda-168656",
+  "name": "Beef brisket flat half, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.1,
+  "caloriesPer100g": 132,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 60,
+  "aliases": [
+   "brisket"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 piece",
+    "grams": 1855
+   }
+  ],
+  "usdaId": 168656
+ },
+ {
+  "id": "usda-170210",
+  "name": "Beef brisket flat half, braised (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 33.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 7,
+  "caloriesPer100g": 205,
+  "isLiquid": false,
+  "aliases": [
+   "brisket"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 steak",
+    "grams": 270
+   }
+  ],
+  "usdaId": 170210
+ },
+ {
+  "id": "usda-170796",
+  "name": "Beef short ribs boneless, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.7,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 10,
+  "caloriesPer100g": 169,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 60,
+  "aliases": [
+   "ribs"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 piece",
+    "grams": 432
+   }
+  ],
+  "usdaId": 170796
+ },
+ {
+  "id": "usda-169569",
+  "name": "Beef short ribs boneless, braised (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.8,
+  "caloriesPer100g": 240,
+  "isLiquid": false,
+  "aliases": [
+   "ribs"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece",
+    "grams": 289
+   }
+  ],
+  "usdaId": 169569
+ },
+ {
+  "id": "usda-170629",
+  "name": "Beef bottom round roast, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.5,
+  "caloriesPer100g": 177,
+  "isLiquid": false,
+  "aliases": [
+   "roast beef"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 roast",
+    "grams": 489
+   }
+  ],
+  "usdaId": 170629
+ },
+ {
+  "id": "usda-168626",
+  "name": "Beef liver, braised",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.1,
+  "carbsPer100g": 5.1,
+  "fatPer100g": 5.3,
+  "caloriesPer100g": 191,
+  "isLiquid": false,
+  "aliases": [
+   "offal"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 slice",
+    "grams": 68
+   }
+  ],
+  "usdaId": 168626
+ },
+ {
+  "id": "usda-169451",
+  "name": "Beef liver, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.4,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 3.6,
+  "caloriesPer100g": 135,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "offal"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 169451
+ },
+ {
+  "id": "usda-170604",
+  "name": "Beef jerky (dried beef)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 31.1,
+  "carbsPer100g": 2.8,
+  "fatPer100g": 1.9,
+  "caloriesPer100g": 153,
+  "isLiquid": false,
+  "aliases": [
+   "biltong"
+  ],
+  "servings": [
+   {
+    "label": "10 slices",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170604
+ },
+ {
+  "id": "usda-170200",
+  "name": "Corned beef, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.2,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 19,
+  "caloriesPer100g": 251,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 170200
+ },
+ {
+  "id": "usda-170204",
+  "name": "Pastrami (deli)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 21.8,
+  "carbsPer100g": 0.4,
+  "fatPer100g": 5.8,
+  "caloriesPer100g": 147,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 package, 2.5 oz",
+    "grams": 71
+   },
+   {
+    "label": "1 slice",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170204
+ },
+ {
+  "id": "usda-170202",
+  "name": "Roast beef, deli sliced",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.3,
+  "caloriesPer100g": 111,
+  "isLiquid": false,
+  "aliases": [
+   "cold cut",
+   "sandwich meat"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170202
+ },
+ {
+  "id": "usda-171638",
+  "name": "Meatballs, Italian style (frozen)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14.4,
+  "carbsPer100g": 8.1,
+  "fatPer100g": 22.2,
+  "caloriesPer100g": 286,
+  "fiberPer100g": 2.3,
+  "isLiquid": false,
+  "aliases": [
+   "meatball"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "3 pieces",
+    "grams": 56
+   }
+  ],
+  "usdaId": 171638
+ },
+ {
+  "id": "usda-169449",
+  "name": "Beef kidney, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.4,
+  "carbsPer100g": 0.3,
+  "fatPer100g": 3.1,
+  "caloriesPer100g": 99,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 169449
+ },
+ {
+  "id": "usda-168625",
+  "name": "Beef heart, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.7,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 3.9,
+  "caloriesPer100g": 112,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 168625
+ },
+ {
+  "id": "usda-170598",
+  "name": "Beef tongue, simmered",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 19.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 22.3,
+  "caloriesPer100g": 284,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 170598
+ },
+ {
+  "id": "usda-168249",
+  "name": "Pork tenderloin, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.2,
+  "caloriesPer100g": 109,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "pork fillet"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   },
+   {
+    "label": "1 roast",
+    "grams": 505
+   }
+  ],
+  "usdaId": 168249
+ },
+ {
+  "id": "usda-168250",
+  "name": "Pork tenderloin, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.5,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 roast",
+    "grams": 402
+   }
+  ],
+  "usdaId": 168250
+ },
+ {
+  "id": "usda-168313",
+  "name": "Pork tenderloin, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.3,
+  "caloriesPer100g": 187,
+  "isLiquid": false,
+  "aliases": [
+   "grilled"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 chop, excluding refuse",
+    "grams": 73
+   }
+  ],
+  "usdaId": 168313
+ },
+ {
+  "id": "usda-168230",
+  "name": "Pork loin, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.7,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 chop, excluding refuse",
+    "grams": 106
+   }
+  ],
+  "usdaId": 168230
+ },
+ {
+  "id": "usda-168233",
+  "name": "Pork loin, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.6,
+  "caloriesPer100g": 209,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 chop, excluding refuse",
+    "grams": 81
+   }
+  ],
+  "usdaId": 168233
+ },
+ {
+  "id": "usda-168232",
+  "name": "Pork loin, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.8,
+  "caloriesPer100g": 210,
+  "isLiquid": false,
+  "aliases": [
+   "grilled"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 chop, excluding refuse",
+    "grams": 79
+   }
+  ],
+  "usdaId": 168232
+ },
+ {
+  "id": "usda-168263",
+  "name": "Pork loin chop, boneless, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.1,
+  "caloriesPer100g": 123,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "pork chop",
+   "pork steak"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 chop",
+    "grams": 170
+   }
+  ],
+  "usdaId": 168263
+ },
+ {
+  "id": "usda-168285",
+  "name": "Pork loin chop, boneless, pan-fried (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.7,
+  "caloriesPer100g": 162,
+  "isLiquid": false,
+  "aliases": [
+   "pork chop",
+   "pork steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 chop",
+    "grams": 137
+   }
+  ],
+  "usdaId": 168285
+ },
+ {
+  "id": "usda-168224",
+  "name": "Pork leg (ham), raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.4,
+  "caloriesPer100g": 136,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 168224
+ },
+ {
+  "id": "usda-168225",
+  "name": "Pork leg (ham), roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.4,
+  "caloriesPer100g": 211,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 135
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 168225
+ },
+ {
+  "id": "usda-167845",
+  "name": "Pork shoulder, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.1,
+  "caloriesPer100g": 148,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 65,
+  "aliases": [
+   "pulled pork",
+   "pork butt"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 167845
+ },
+ {
+  "id": "usda-167846",
+  "name": "Pork shoulder, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.5,
+  "caloriesPer100g": 230,
+  "isLiquid": false,
+  "aliases": [
+   "pulled pork",
+   "pork butt"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 135
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 167846
+ },
+ {
+  "id": "usda-167902",
+  "name": "Pork mince, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 21.2,
+  "caloriesPer100g": 263,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 68,
+  "aliases": [
+   "ground pork",
+   "minced pork"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 167902
+ },
+ {
+  "id": "usda-167903",
+  "name": "Pork mince, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 20.8,
+  "caloriesPer100g": 297,
+  "isLiquid": false,
+  "aliases": [
+   "ground pork",
+   "minced pork"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 167903
+ },
+ {
+  "id": "usda-167812",
+  "name": "Pork belly, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 9.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 53,
+  "caloriesPer100g": 518,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 55,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 167812
+ },
+ {
+  "id": "usda-168277",
+  "name": "Bacon, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 37.1,
+  "caloriesPer100g": 393,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 35,
+  "aliases": [
+   "streaky bacon"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 slice raw",
+    "grams": 28
+   },
+   {
+    "label": "1 package",
+    "grams": 442
+   }
+  ],
+  "usdaId": 168277
+ },
+ {
+  "id": "usda-168322",
+  "name": "Bacon, pan-fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 33.9,
+  "carbsPer100g": 1.7,
+  "fatPer100g": 35.1,
+  "caloriesPer100g": 468,
+  "isLiquid": false,
+  "aliases": [
+   "streaky bacon"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 slice",
+    "grams": 11.5
+   }
+  ],
+  "usdaId": 168322
+ },
+ {
+  "id": "usda-167914",
+  "name": "Bacon, oven-baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 35.7,
+  "carbsPer100g": 1.4,
+  "fatPer100g": 43.3,
+  "caloriesPer100g": 548,
+  "isLiquid": false,
+  "aliases": [
+   "streaky bacon"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 slice cooked",
+    "grams": 8.1
+   }
+  ],
+  "usdaId": 167914
+ },
+ {
+  "id": "usda-168383",
+  "name": "Back bacon (Canadian), cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.3,
+  "carbsPer100g": 1.8,
+  "fatPer100g": 2.8,
+  "caloriesPer100g": 146,
+  "isLiquid": false,
+  "aliases": [
+   "bacon"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 13.8
+   }
+  ],
+  "usdaId": 168383
+ },
+ {
+  "id": "usda-167871",
+  "name": "Ham, extra lean, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 20.9,
+  "carbsPer100g": 1.5,
+  "fatPer100g": 5.5,
+  "caloriesPer100g": 145,
+  "isLiquid": false,
+  "aliases": [
+   "deli",
+   "cold cut"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 140
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 167871
+ },
+ {
+  "id": "usda-168296",
+  "name": "Ham, boneless regular, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 22,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 7.7,
+  "caloriesPer100g": 165,
+  "isLiquid": false,
+  "aliases": [
+   "deli",
+   "cold cut"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 140
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 168296
+ },
+ {
+  "id": "usda-167854",
+  "name": "Pork spare ribs, braised",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 30.3,
+  "caloriesPer100g": 397,
+  "isLiquid": false,
+  "aliases": [
+   "ribs"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 167854
+ },
+ {
+  "id": "usda-174578",
+  "name": "Pork sausage, pan-fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.5,
+  "carbsPer100g": 1.4,
+  "fatPer100g": 27.3,
+  "caloriesPer100g": 325,
+  "isLiquid": false,
+  "aliases": [
+   "sausage",
+   "bangers"
+  ],
+  "servings": [
+   {
+    "label": "1 patty",
+    "grams": 27
+   },
+   {
+    "label": "1 link",
+    "grams": 23
+   },
+   {
+    "label": "1 serving",
+    "grams": 48
+   }
+  ],
+  "usdaId": 174578
+ },
+ {
+  "id": "usda-174586",
+  "name": "Italian pork sausage, pan-fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.4,
+  "carbsPer100g": 1.9,
+  "fatPer100g": 26.4,
+  "caloriesPer100g": 324,
+  "isLiquid": false,
+  "aliases": [
+   "sausage"
+  ],
+  "servings": [
+   {
+    "label": "1 link",
+    "grams": 87
+   }
+  ],
+  "usdaId": 174586
+ },
+ {
+  "id": "usda-171631",
+  "name": "Italian pork sausage, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.9,
+  "carbsPer100g": 3,
+  "fatPer100g": 24.3,
+  "caloriesPer100g": 290,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "sausage"
+  ],
+  "servings": [
+   {
+    "label": "1 link",
+    "grams": 101
+   }
+  ],
+  "usdaId": 171631
+ },
+ {
+  "id": "usda-173859",
+  "name": "Chorizo, pork",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 13.6,
+  "carbsPer100g": 3.8,
+  "fatPer100g": 25.1,
+  "caloriesPer100g": 296,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 link",
+    "grams": 60
+   }
+  ],
+  "usdaId": 173859
+ },
+ {
+  "id": "usda-174614",
+  "name": "Beef hot dog (frankfurter)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11.7,
+  "carbsPer100g": 2.7,
+  "fatPer100g": 29.4,
+  "caloriesPer100g": 322,
+  "isLiquid": false,
+  "aliases": [
+   "sausage"
+  ],
+  "servings": [
+   {
+    "label": "1 frankfurter",
+    "grams": 48
+   },
+   {
+    "label": "1 package",
+    "grams": 451
+   }
+  ],
+  "usdaId": 174614
+ },
+ {
+  "id": "usda-172491",
+  "name": "Lamb loin, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.9,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 73,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 chop, excluding refuse",
+    "grams": 65
+   }
+  ],
+  "usdaId": 172491
+ },
+ {
+  "id": "usda-172492",
+  "name": "Lamb loin, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.7,
+  "caloriesPer100g": 216,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 chop, excluding refuse",
+    "grams": 46
+   }
+  ],
+  "usdaId": 172492
+ },
+ {
+  "id": "usda-174320",
+  "name": "Lamb loin, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.8,
+  "caloriesPer100g": 202,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174320
+ },
+ {
+  "id": "usda-174370",
+  "name": "Lamb mince, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 23.4,
+  "caloriesPer100g": 282,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 68,
+  "aliases": [
+   "ground lamb",
+   "minced lamb"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 174370
+ },
+ {
+  "id": "usda-172544",
+  "name": "Lamb mince, broiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 19.7,
+  "caloriesPer100g": 283,
+  "isLiquid": false,
+  "aliases": [
+   "ground lamb",
+   "minced lamb"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 unit, cooked",
+    "grams": 313
+   }
+  ],
+  "usdaId": 172544
+ },
+ {
+  "id": "usda-174313",
+  "name": "Lamb leg, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.5,
+  "caloriesPer100g": 128,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 174313
+ },
+ {
+  "id": "usda-174314",
+  "name": "Lamb leg, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.7,
+  "caloriesPer100g": 191,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174314
+ },
+ {
+  "id": "usda-174326",
+  "name": "Lamb shoulder, raw (lean)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.8,
+  "caloriesPer100g": 144,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 65,
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 174326
+ },
+ {
+  "id": "usda-172499",
+  "name": "Lamb shoulder, roasted (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.8,
+  "caloriesPer100g": 204,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 172499
+ },
+ {
+  "id": "usda-172494",
+  "name": "Lamb rib chop, broiled (lean)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 27.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 13,
+  "caloriesPer100g": 235,
+  "isLiquid": false,
+  "aliases": [
+   "cutlet"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 172494
+ },
+ {
+  "id": "usda-175290",
+  "name": "Veal mince, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.1,
+  "caloriesPer100g": 197,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "ground veal"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 175290
+ },
+ {
+  "id": "usda-175291",
+  "name": "Veal mince, broiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.6,
+  "caloriesPer100g": 172,
+  "isLiquid": false,
+  "aliases": [
+   "ground veal"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 unit, cooked",
+    "grams": 299
+   }
+  ],
+  "usdaId": 175291
+ },
+ {
+  "id": "usda-167622",
+  "name": "Venison, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.7,
+  "caloriesPer100g": 116,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "deer"
+  ],
+  "usdaId": 167622
+ },
+ {
+  "id": "usda-175085",
+  "name": "Venison, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 30.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.2,
+  "caloriesPer100g": 158,
+  "isLiquid": false,
+  "aliases": [
+   "deer"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece, cooked",
+    "grams": 340
+   }
+  ],
+  "usdaId": 175085
+ },
+ {
+  "id": "usda-173851",
+  "name": "Bison, lean, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.8,
+  "caloriesPer100g": 109,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 72,
+  "aliases": [
+   "buffalo"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 173851
+ },
+ {
+  "id": "usda-173852",
+  "name": "Bison, lean, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.4,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "aliases": [
+   "buffalo"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece, cooked",
+    "grams": 340
+   }
+  ],
+  "usdaId": 173852
+ },
+ {
+  "id": "usda-173847",
+  "name": "Bison mince (grass-fed), cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.6,
+  "caloriesPer100g": 179,
+  "isLiquid": false,
+  "aliases": [
+   "buffalo",
+   "ground bison"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173847
+ },
+ {
+  "id": "usda-172521",
+  "name": "Rabbit, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.6,
+  "caloriesPer100g": 136,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 65,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 lb",
+    "grams": 453.6
+   }
+  ],
+  "usdaId": 172521
+ },
+ {
+  "id": "usda-172522",
+  "name": "Rabbit, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.1,
+  "caloriesPer100g": 197,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece, cooked",
+    "grams": 313
+   }
+  ],
+  "usdaId": 172522
+ },
+ {
+  "id": "usda-172410",
+  "name": "Duck, meat only, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.3,
+  "carbsPer100g": 0.9,
+  "fatPer100g": 6,
+  "caloriesPer100g": 135,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 65,
+  "servings": [
+   {
+    "label": "0.5 duck",
+    "grams": 303
+   }
+  ],
+  "usdaId": 172410
+ },
+ {
+  "id": "usda-172411",
+  "name": "Duck, meat only, roasted",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.2,
+  "caloriesPer100g": 201,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup, chopped or diced",
+    "grams": 140
+   },
+   {
+    "label": "0.5 duck",
+    "grams": 221
+   }
+  ],
+  "usdaId": 172411
+ },
+ {
+  "id": "usda-171287",
+  "name": "Egg, whole, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 12.6,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 9.5,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "aliases": [
+   "eggs"
+  ],
+  "servings": [
+   {
+    "label": "1 large egg",
+    "grams": 50
+   },
+   {
+    "label": "1 medium egg",
+    "grams": 44
+   },
+   {
+    "label": "1 extra large egg",
+    "grams": 56
+   }
+  ],
+  "usdaId": 171287
+ },
+ {
+  "id": "usda-173424",
+  "name": "Egg, whole, hard-boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 12.6,
+  "carbsPer100g": 1.1,
+  "fatPer100g": 10.6,
+  "caloriesPer100g": 155,
+  "isLiquid": false,
+  "aliases": [
+   "eggs",
+   "boiled egg"
+  ],
+  "servings": [
+   {
+    "label": "1 large egg",
+    "grams": 50
+   },
+   {
+    "label": "1 medium egg",
+    "grams": 44
+   }
+  ],
+  "usdaId": 173424
+ },
+ {
+  "id": "usda-173423",
+  "name": "Egg, whole, fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 13.6,
+  "carbsPer100g": 0.8,
+  "fatPer100g": 14.8,
+  "caloriesPer100g": 196,
+  "isLiquid": false,
+  "aliases": [
+   "eggs",
+   "sunny side up"
+  ],
+  "servings": [
+   {
+    "label": "1 large egg",
+    "grams": 46
+   }
+  ],
+  "usdaId": 173423
+ },
+ {
+  "id": "usda-172187",
+  "name": "Egg, whole, scrambled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 10,
+  "carbsPer100g": 1.6,
+  "fatPer100g": 11,
+  "caloriesPer100g": 149,
+  "isLiquid": false,
+  "aliases": [
+   "eggs"
+  ],
+  "servings": [
+   {
+    "label": "1 large egg",
+    "grams": 61
+   }
+  ],
+  "usdaId": 172187
+ },
+ {
+  "id": "usda-172186",
+  "name": "Egg, whole, poached",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 12.5,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 9.5,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "aliases": [
+   "eggs"
+  ],
+  "servings": [
+   {
+    "label": "1 large egg",
+    "grams": 50
+   }
+  ],
+  "usdaId": 172186
+ },
+ {
+  "id": "usda-172185",
+  "name": "Egg, omelette (plain)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 10.6,
+  "carbsPer100g": 0.6,
+  "fatPer100g": 11.7,
+  "caloriesPer100g": 154,
+  "isLiquid": false,
+  "aliases": [
+   "eggs",
+   "omelet"
+  ],
+  "servings": [
+   {
+    "label": "1 large egg",
+    "grams": 61
+   }
+  ],
+  "usdaId": 172185
+ },
+ {
+  "id": "usda-172183",
+  "name": "Egg white, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 10.9,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 52,
+  "isLiquid": false,
+  "aliases": [
+   "egg whites"
+  ],
+  "servings": [
+   {
+    "label": "1 large white",
+    "grams": 33
+   }
+  ],
+  "usdaId": 172183
+ },
+ {
+  "id": "usda-172184",
+  "name": "Egg yolk, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 15.9,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 26.5,
+  "caloriesPer100g": 322,
+  "isLiquid": false,
+  "aliases": [
+   "egg yolks"
+  ],
+  "servings": [
+   {
+    "label": "1 large yolk",
+    "grams": 17
+   }
+  ],
+  "usdaId": 172184
+ },
+ {
+  "id": "usda-173427",
+  "name": "Egg white powder",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 82.4,
+  "carbsPer100g": 4.5,
+  "fatPer100g": 0,
+  "caloriesPer100g": 376,
+  "isLiquid": false,
+  "aliases": [
+   "egg whites"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, sifted",
+    "grams": 107
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 7
+   }
+  ],
+  "usdaId": 173427
+ },
+ {
+  "id": "usda-172189",
+  "name": "Duck egg, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 12.8,
+  "carbsPer100g": 1.5,
+  "fatPer100g": 13.8,
+  "caloriesPer100g": 185,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 egg",
+    "grams": 70
+   }
+  ],
+  "usdaId": 172189
+ },
+ {
+  "id": "usda-172191",
+  "name": "Quail egg, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.1,
+  "carbsPer100g": 0.4,
+  "fatPer100g": 11.1,
+  "caloriesPer100g": 158,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 quail egg",
+    "grams": 9
+   }
+  ],
+  "usdaId": 172191
+ },
+ {
+  "id": "bi-egg-whites-liquid-carton",
+  "name": "Egg whites, liquid (carton)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.5,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 0,
+  "caloriesPer100g": 46,
+  "isLiquid": false,
+  "aliases": [
+   "egg whites",
+   "liquid egg white"
+  ],
+  "note": "Typical carton label values."
+ },
+ {
+  "id": "bi-chicken-breast-canned-in-water-drained",
+  "name": "Chicken breast, canned in water (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 25,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.5,
+  "caloriesPer100g": 120,
+  "isLiquid": false,
+  "aliases": [
+   "canned chicken"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-chicken-nuggets-oven-baked-frozen",
+  "name": "Chicken nuggets, oven-baked (frozen)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 15,
+  "carbsPer100g": 18,
+  "fatPer100g": 12,
+  "caloriesPer100g": 245,
+  "isLiquid": false,
+  "aliases": [
+   "nuggets"
+  ],
+  "note": "Typical frozen product; check your pack."
+ },
+ {
+  "id": "bi-beef-burger-patty-20-fat-raw",
+  "name": "Beef burger patty 20% fat, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 20,
+  "caloriesPer100g": 254,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "hamburger patty",
+   "beef patty"
+  ],
+  "note": "Same as 80% lean mince."
+ },
+ {
+  "id": "bi-biltong-dried-beef",
+  "name": "Biltong (dried beef)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 55,
+  "carbsPer100g": 2,
+  "fatPer100g": 8,
+  "caloriesPer100g": 310,
+  "isLiquid": false,
+  "aliases": [
+   "jerky"
+  ],
+  "note": "Typical label values."
+ }
+]

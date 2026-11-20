@@ -1,0 +1,4066 @@
+[
+ {
+  "id": "usda-170026",
+  "name": "Potato, raw (with skin)",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2.1,
+  "carbsPer100g": 17.5,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 77,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "potatoes",
+   "spud"
+  ],
+  "servings": [
+   {
+    "label": "1 medium potato",
+    "grams": 173
+   },
+   {
+    "label": "1 large potato",
+    "grams": 299
+   }
+  ],
+  "usdaId": 170026
+ },
+ {
+  "id": "usda-170440",
+  "name": "Potato, boiled (peeled)",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.7,
+  "carbsPer100g": 20,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 86,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes",
+   "spud"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 78
+   },
+   {
+    "label": "1 large",
+    "grams": 300
+   },
+   {
+    "label": "1 medium",
+    "grams": 167
+   }
+  ],
+  "usdaId": 170440
+ },
+ {
+  "id": "usda-170438",
+  "name": "Potato, boiled in skin",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 20.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 87,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes",
+   "spud"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 78
+   },
+   {
+    "label": "1 potato",
+    "grams": 136
+   }
+  ],
+  "usdaId": 170438
+ },
+ {
+  "id": "usda-170093",
+  "name": "Potato, baked (with skin)",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.5,
+  "carbsPer100g": 21.2,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 93,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes",
+   "jacket potato"
+  ],
+  "servings": [
+   {
+    "label": "1 potato large",
+    "grams": 299
+   },
+   {
+    "label": "1 potato medium",
+    "grams": 173
+   },
+   {
+    "label": "1 potato small",
+    "grams": 138
+   }
+  ],
+  "usdaId": 170093
+ },
+ {
+  "id": "usda-170033",
+  "name": "Potato, baked (flesh only)",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2,
+  "carbsPer100g": 21.6,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 93,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 61
+   },
+   {
+    "label": "1 potato",
+    "grams": 156
+   }
+  ],
+  "usdaId": 170033
+ },
+ {
+  "id": "usda-170037",
+  "name": "Mashed potato, with milk and margarine",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2,
+  "carbsPer100g": 16.9,
+  "fatPer100g": 4.2,
+  "caloriesPer100g": 113,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes",
+   "mash"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 210
+   }
+  ],
+  "usdaId": 170037
+ },
+ {
+  "id": "usda-169264",
+  "name": "French fries, oven-baked (frozen)",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.8,
+  "carbsPer100g": 25.6,
+  "fatPer100g": 5.5,
+  "caloriesPer100g": 158,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "chips",
+   "fries"
+  ],
+  "servings": [
+   {
+    "label": "10 fries",
+    "grams": 76
+   }
+  ],
+  "usdaId": 169264
+ },
+ {
+  "id": "usda-170036",
+  "name": "Hash browns, home-prepared",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3,
+  "carbsPer100g": 35.1,
+  "fatPer100g": 12.5,
+  "caloriesPer100g": 265,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 156
+   }
+  ],
+  "usdaId": 170036
+ },
+ {
+  "id": "usda-168482",
+  "name": "Sweet potato, raw",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.6,
+  "carbsPer100g": 20.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 86,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "yam",
+   "kumara"
+  ],
+  "servings": [
+   {
+    "label": "1 medium",
+    "grams": 130
+   }
+  ],
+  "usdaId": 168482
+ },
+ {
+  "id": "usda-168483",
+  "name": "Sweet potato, baked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2,
+  "carbsPer100g": 20.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 90,
+  "fiberPer100g": 3.3,
+  "isLiquid": false,
+  "aliases": [
+   "yam",
+   "kumara"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 200
+   },
+   {
+    "label": "1 large",
+    "grams": 180
+   },
+   {
+    "label": "1 medium",
+    "grams": 114
+   }
+  ],
+  "usdaId": 168483
+ },
+ {
+  "id": "usda-168484",
+  "name": "Sweet potato, boiled",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 17.7,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 76,
+  "fiberPer100g": 2.5,
+  "isLiquid": false,
+  "aliases": [
+   "yam",
+   "kumara"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, mashed",
+    "grams": 328
+   },
+   {
+    "label": "1 medium",
+    "grams": 151
+   }
+  ],
+  "usdaId": 168484
+ },
+ {
+  "id": "usda-169985",
+  "name": "Cassava, raw",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 38.1,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 160,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "aliases": [
+   "yuca",
+   "manioc"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 206
+   },
+   {
+    "label": "1 root",
+    "grams": 408
+   }
+  ],
+  "usdaId": 169985
+ },
+ {
+  "id": "usda-169130",
+  "name": "Plantain, ripe, raw",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.3,
+  "carbsPer100g": 31.9,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 122,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "banana"
+  ],
+  "servings": [
+   {
+    "label": "1 plantain",
+    "grams": 270
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 148
+   }
+  ],
+  "usdaId": 169130
+ },
+ {
+  "id": "usda-168200",
+  "name": "Plantain, ripe, fried",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 40.8,
+  "fatPer100g": 7.5,
+  "caloriesPer100g": 236,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "aliases": [
+   "banana"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 169
+   }
+  ],
+  "usdaId": 168200
+ },
+ {
+  "id": "usda-169308",
+  "name": "Taro, raw",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 26.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 112,
+  "fiberPer100g": 4.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "servings": [
+   {
+    "label": "1 cup, sliced",
+    "grams": 104
+   }
+  ],
+  "usdaId": 169308
+ },
+ {
+  "id": "usda-170071",
+  "name": "Yam, raw",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 27.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 118,
+  "fiberPer100g": 4.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 90,
+  "servings": [
+   {
+    "label": "1 cup, cubes",
+    "grams": 150
+   }
+  ],
+  "usdaId": 170071
+ },
+ {
+  "id": "usda-168877",
+  "name": "White rice (long-grain), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 7.1,
+  "carbsPer100g": 80,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 365,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 280,
+  "aliases": [
+   "basmati",
+   "jasmine",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 185
+   }
+  ],
+  "usdaId": 168877
+ },
+ {
+  "id": "usda-168878",
+  "name": "White rice (long-grain), cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.7,
+  "carbsPer100g": 28.2,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 130,
+  "fiberPer100g": 0.4,
+  "isLiquid": false,
+  "aliases": [
+   "basmati",
+   "jasmine",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 158
+   }
+  ],
+  "usdaId": 168878
+ },
+ {
+  "id": "usda-169703",
+  "name": "Brown rice (long-grain), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 7.5,
+  "carbsPer100g": 76.3,
+  "fatPer100g": 3.2,
+  "caloriesPer100g": 367,
+  "fiberPer100g": 3.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 300,
+  "aliases": [
+   "rice",
+   "wholegrain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 185
+   }
+  ],
+  "usdaId": 169703
+ },
+ {
+  "id": "usda-169704",
+  "name": "Brown rice (long-grain), cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.7,
+  "carbsPer100g": 25.6,
+  "fatPer100g": 1,
+  "caloriesPer100g": 123,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "aliases": [
+   "rice",
+   "wholegrain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 202
+   }
+  ],
+  "usdaId": 169704
+ },
+ {
+  "id": "usda-168879",
+  "name": "White rice (medium-grain), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 6.6,
+  "carbsPer100g": 79.3,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 360,
+  "fiberPer100g": 1.4,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 275,
+  "aliases": [
+   "sushi rice",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 195
+   }
+  ],
+  "usdaId": 168879
+ },
+ {
+  "id": "usda-168880",
+  "name": "White rice (medium-grain), cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.4,
+  "carbsPer100g": 28.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 130,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "aliases": [
+   "sushi rice",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 186
+   }
+  ],
+  "usdaId": 168880
+ },
+ {
+  "id": "usda-168883",
+  "name": "Glutinous (sticky) rice, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 6.8,
+  "carbsPer100g": 81.7,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 370,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 380,
+  "aliases": [
+   "sticky rice",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 185
+   }
+  ],
+  "usdaId": 168883
+ },
+ {
+  "id": "usda-169711",
+  "name": "Glutinous (sticky) rice, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2,
+  "carbsPer100g": 21.1,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 97,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "sticky rice",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 174
+   }
+  ],
+  "usdaId": 169711
+ },
+ {
+  "id": "usda-169726",
+  "name": "Wild rice, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.7,
+  "carbsPer100g": 74.9,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 357,
+  "fiberPer100g": 6.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 355,
+  "aliases": [
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 160
+   }
+  ],
+  "usdaId": 169726
+ },
+ {
+  "id": "usda-168897",
+  "name": "Wild rice, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 4,
+  "carbsPer100g": 21.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 101,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 164
+   }
+  ],
+  "usdaId": 168897
+ },
+ {
+  "id": "usda-169707",
+  "name": "Parboiled rice, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 7.5,
+  "carbsPer100g": 80.9,
+  "fatPer100g": 1,
+  "caloriesPer100g": 374,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 280,
+  "aliases": [
+   "easy cook rice",
+   "rice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 185
+   }
+  ],
+  "usdaId": 169707
+ },
+ {
+  "id": "usda-169714",
+  "name": "Rice flour",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6,
+  "carbsPer100g": 80.1,
+  "fatPer100g": 1.4,
+  "caloriesPer100g": 366,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 158
+   }
+  ],
+  "usdaId": 169714
+ },
+ {
+  "id": "usda-169736",
+  "name": "Pasta (spaghetti, penne, etc.), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13,
+  "carbsPer100g": 74.7,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 371,
+  "fiberPer100g": 3.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 235,
+  "aliases": [
+   "spaghetti",
+   "penne",
+   "macaroni",
+   "fusilli",
+   "noodles"
+  ],
+  "servings": [
+   {
+    "label": "1 cup spaghetti",
+    "grams": 91
+   },
+   {
+    "label": "2 oz",
+    "grams": 57
+   },
+   {
+    "label": "1 cup elbows",
+    "grams": 122
+   }
+  ],
+  "usdaId": 169736
+ },
+ {
+  "id": "usda-169737",
+  "name": "Pasta (spaghetti, penne, etc.), cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 5.8,
+  "carbsPer100g": 30.9,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 158,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "spaghetti",
+   "penne",
+   "macaroni",
+   "fusilli",
+   "noodles"
+  ],
+  "servings": [
+   {
+    "label": "1 cup spaghetti packed",
+    "grams": 151
+   },
+   {
+    "label": "1 cup elbows not packed",
+    "grams": 120
+   },
+   {
+    "label": "1 cup elbows packed",
+    "grams": 132
+   }
+  ],
+  "usdaId": 169737
+ },
+ {
+  "id": "usda-169738",
+  "name": "Whole-wheat pasta, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.9,
+  "carbsPer100g": 73.4,
+  "fatPer100g": 2.9,
+  "caloriesPer100g": 352,
+  "fiberPer100g": 9.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 235,
+  "aliases": [
+   "spaghetti",
+   "penne",
+   "wholemeal"
+  ],
+  "servings": [
+   {
+    "label": "1 cup spaghetti",
+    "grams": 91
+   },
+   {
+    "label": "1 cup elbows",
+    "grams": 122
+   },
+   {
+    "label": "1 cup penne",
+    "grams": 95
+   }
+  ],
+  "usdaId": 169738
+ },
+ {
+  "id": "usda-168910",
+  "name": "Whole-wheat pasta, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 6,
+  "carbsPer100g": 30.1,
+  "fatPer100g": 1.7,
+  "caloriesPer100g": 149,
+  "fiberPer100g": 3.9,
+  "isLiquid": false,
+  "aliases": [
+   "spaghetti",
+   "penne",
+   "wholemeal"
+  ],
+  "servings": [
+   {
+    "label": "1 cup spaghetti packed",
+    "grams": 151
+   },
+   {
+    "label": "1 cup elbows",
+    "grams": 117
+   },
+   {
+    "label": "1 cup penne",
+    "grams": 97
+   }
+  ],
+  "usdaId": 168910
+ },
+ {
+  "id": "usda-169731",
+  "name": "Egg noodles, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.2,
+  "carbsPer100g": 71.3,
+  "fatPer100g": 4.4,
+  "caloriesPer100g": 384,
+  "fiberPer100g": 3.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 280,
+  "aliases": [
+   "tagliatelle"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 38
+   },
+   {
+    "label": "2 oz",
+    "grams": 57
+   }
+  ],
+  "usdaId": 169731
+ },
+ {
+  "id": "usda-168926",
+  "name": "Egg noodles, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 4.5,
+  "carbsPer100g": 25.2,
+  "fatPer100g": 2.1,
+  "caloriesPer100g": 138,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [
+   "tagliatelle"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 160
+   }
+  ],
+  "usdaId": 168926
+ },
+ {
+  "id": "usda-168906",
+  "name": "Soba noodles, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.4,
+  "carbsPer100g": 74.6,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 336,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 340,
+  "aliases": [
+   "buckwheat noodles"
+  ],
+  "servings": [
+   {
+    "label": "2 oz",
+    "grams": 57
+   }
+  ],
+  "usdaId": 168906
+ },
+ {
+  "id": "usda-168907",
+  "name": "Soba noodles, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 5.1,
+  "carbsPer100g": 21.4,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 99,
+  "isLiquid": false,
+  "aliases": [
+   "buckwheat noodles"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 114
+   }
+  ],
+  "usdaId": 168907
+ },
+ {
+  "id": "usda-168908",
+  "name": "Somen noodles, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 11.4,
+  "carbsPer100g": 74.1,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 356,
+  "fiberPer100g": 4.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 270,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "2 oz",
+    "grams": 57
+   }
+  ],
+  "usdaId": 168908
+ },
+ {
+  "id": "usda-168909",
+  "name": "Somen noodles, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 4,
+  "carbsPer100g": 27.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 131,
+  "isLiquid": false,
+  "aliases": [],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 176
+   }
+  ],
+  "usdaId": 168909
+ },
+ {
+  "id": "usda-174258",
+  "name": "Glass noodles (mung bean), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 86.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 351,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 100,
+  "aliases": [
+   "cellophane noodles"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 140
+   }
+  ],
+  "usdaId": 174258
+ },
+ {
+  "id": "usda-174258-glass-noodle",
+  "name": "Glass noodles, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 86.1,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 351,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "aliases": [
+   "cellophane noodles"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 140
+   }
+  ],
+  "usdaId": 174258
+ },
+ {
+  "id": "usda-169735",
+  "name": "Chow mein noodles, crispy",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.3,
+  "carbsPer100g": 51.9,
+  "fatPer100g": 31.7,
+  "caloriesPer100g": 521,
+  "fiberPer100g": 1.9,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 45
+   }
+  ],
+  "usdaId": 169735
+ },
+ {
+  "id": "usda-168911",
+  "name": "Spinach spaghetti, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.4,
+  "carbsPer100g": 74.8,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 372,
+  "fiberPer100g": 10.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 230,
+  "servings": [
+   {
+    "label": "2 oz",
+    "grams": 57
+   }
+  ],
+  "usdaId": 168911
+ },
+ {
+  "id": "usda-168903",
+  "name": "Vegetable macaroni, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.1,
+  "carbsPer100g": 74.9,
+  "fatPer100g": 1,
+  "caloriesPer100g": 367,
+  "fiberPer100g": 4.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 230,
+  "servings": [
+   {
+    "label": "1 cup spiral shaped",
+    "grams": 84
+   },
+   {
+    "label": "2 oz",
+    "grams": 57
+   }
+  ],
+  "usdaId": 168903
+ },
+ {
+  "id": "usda-174924",
+  "name": "White bread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.9,
+  "carbsPer100g": 49.4,
+  "fatPer100g": 3.3,
+  "caloriesPer100g": 266,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "aliases": [
+   "toast",
+   "sandwich bread"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 25
+   }
+  ],
+  "usdaId": 174924
+ },
+ {
+  "id": "usda-172688",
+  "name": "Whole-wheat bread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.5,
+  "carbsPer100g": 42.7,
+  "fatPer100g": 3.5,
+  "caloriesPer100g": 252,
+  "fiberPer100g": 6,
+  "isLiquid": false,
+  "aliases": [
+   "toast",
+   "wholemeal",
+   "brown bread"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 28
+   }
+  ],
+  "usdaId": 172688
+ },
+ {
+  "id": "usda-172684",
+  "name": "Rye bread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.5,
+  "carbsPer100g": 48.3,
+  "fatPer100g": 3.3,
+  "caloriesPer100g": 259,
+  "fiberPer100g": 5.8,
+  "isLiquid": false,
+  "aliases": [
+   "toast"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 32
+   }
+  ],
+  "usdaId": 172684
+ },
+ {
+  "id": "usda-168013",
+  "name": "Multigrain bread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 13.4,
+  "carbsPer100g": 43.3,
+  "fatPer100g": 4.2,
+  "caloriesPer100g": 265,
+  "fiberPer100g": 7.4,
+  "isLiquid": false,
+  "aliases": [
+   "toast",
+   "granary"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 26
+   }
+  ],
+  "usdaId": 168013
+ },
+ {
+  "id": "usda-172675",
+  "name": "French bread / sourdough",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.8,
+  "carbsPer100g": 51.9,
+  "fatPer100g": 2.4,
+  "caloriesPer100g": 272,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "baguette",
+   "sourdough"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 25
+   }
+  ],
+  "usdaId": 172675
+ },
+ {
+  "id": "usda-174915",
+  "name": "Pita bread, white",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.1,
+  "carbsPer100g": 55.7,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 275,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "pitta",
+   "flatbread"
+  ],
+  "servings": [
+   {
+    "label": "1 medium pita",
+    "grams": 60
+   }
+  ],
+  "usdaId": 174915
+ },
+ {
+  "id": "usda-174916",
+  "name": "Pita bread, whole-wheat",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.8,
+  "carbsPer100g": 55.9,
+  "fatPer100g": 1.7,
+  "caloriesPer100g": 262,
+  "fiberPer100g": 6.1,
+  "isLiquid": false,
+  "aliases": [
+   "pitta",
+   "flatbread"
+  ],
+  "servings": [
+   {
+    "label": "1 pita, large",
+    "grams": 64
+   },
+   {
+    "label": "1 pita, small",
+    "grams": 28
+   }
+  ],
+  "usdaId": 174916
+ },
+ {
+  "id": "usda-171845",
+  "name": "Naan bread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.6,
+  "carbsPer100g": 50.4,
+  "fatPer100g": 5.7,
+  "caloriesPer100g": 291,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "flatbread",
+   "indian"
+  ],
+  "servings": [
+   {
+    "label": "1 piece",
+    "grams": 90
+   }
+  ],
+  "usdaId": 171845
+ },
+ {
+  "id": "usda-174908",
+  "name": "Cornbread, dry mix",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7,
+  "carbsPer100g": 69.5,
+  "fatPer100g": 12.2,
+  "caloriesPer100g": 418,
+  "fiberPer100g": 6.5,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 package",
+    "grams": 241
+   }
+  ],
+  "usdaId": 174908
+ },
+ {
+  "id": "usda-167535",
+  "name": "Flour tortilla / wrap",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8,
+  "carbsPer100g": 49.3,
+  "fatPer100g": 7.6,
+  "caloriesPer100g": 297,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "wrap",
+   "burrito",
+   "fajita"
+  ],
+  "servings": [
+   {
+    "label": "1 medium tortilla",
+    "grams": 49
+   }
+  ],
+  "usdaId": 167535
+ },
+ {
+  "id": "usda-175036",
+  "name": "Corn tortilla",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.7,
+  "carbsPer100g": 44.6,
+  "fatPer100g": 2.9,
+  "caloriesPer100g": 218,
+  "fiberPer100g": 6.3,
+  "isLiquid": false,
+  "aliases": [
+   "taco",
+   "wrap"
+  ],
+  "servings": [
+   {
+    "label": "1 tortilla",
+    "grams": 26
+   }
+  ],
+  "usdaId": 175036
+ },
+ {
+  "id": "usda-174081",
+  "name": "Whole-wheat tortilla / wrap",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.8,
+  "carbsPer100g": 45.9,
+  "fatPer100g": 9.8,
+  "caloriesPer100g": 310,
+  "fiberPer100g": 9.8,
+  "isLiquid": false,
+  "aliases": [
+   "wrap",
+   "wholemeal"
+  ],
+  "servings": [
+   {
+    "label": "1 tortilla 1 serving",
+    "grams": 41
+   }
+  ],
+  "usdaId": 174081
+ },
+ {
+  "id": "usda-172800",
+  "name": "Taco shells, baked",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.4,
+  "carbsPer100g": 63.5,
+  "fatPer100g": 21.8,
+  "caloriesPer100g": 476,
+  "fiberPer100g": 6.7,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 shell",
+    "grams": 12.9
+   },
+   {
+    "label": "1 taco",
+    "grams": 12.7
+   },
+   {
+    "label": "1 medium",
+    "grams": 13.3
+   }
+  ],
+  "usdaId": 172800
+ },
+ {
+  "id": "usda-174899",
+  "name": "Bagel, plain",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.6,
+  "carbsPer100g": 52.4,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 264,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 medium bagel",
+    "grams": 105
+   }
+  ],
+  "usdaId": 174899
+ },
+ {
+  "id": "usda-172796",
+  "name": "Burger / hot dog bun",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.8,
+  "carbsPer100g": 50.1,
+  "fatPer100g": 3.9,
+  "caloriesPer100g": 279,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "roll"
+  ],
+  "servings": [
+   {
+    "label": "1 bun",
+    "grams": 43
+   }
+  ],
+  "usdaId": 172796
+ },
+ {
+  "id": "usda-172793",
+  "name": "Bread roll, plain",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.9,
+  "carbsPer100g": 52,
+  "fatPer100g": 6.5,
+  "caloriesPer100g": 310,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "bun"
+  ],
+  "servings": [
+   {
+    "label": "1 roll",
+    "grams": 28
+   },
+   {
+    "label": "1 each",
+    "grams": 25
+   },
+   {
+    "label": "1 roll",
+    "grams": 43
+   }
+  ],
+  "usdaId": 172793
+ },
+ {
+  "id": "usda-172828",
+  "name": "English muffin",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.7,
+  "carbsPer100g": 46,
+  "fatPer100g": 1.8,
+  "caloriesPer100g": 235,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 muffin",
+    "grams": 57
+   }
+  ],
+  "usdaId": 172828
+ },
+ {
+  "id": "usda-174987",
+  "name": "Croissant, butter",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.2,
+  "carbsPer100g": 45.8,
+  "fatPer100g": 21,
+  "caloriesPer100g": 406,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 medium croissant",
+    "grams": 57
+   }
+  ],
+  "usdaId": 174987
+ },
+ {
+  "id": "usda-172749",
+  "name": "Whole-wheat crackers",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.6,
+  "carbsPer100g": 69.6,
+  "fatPer100g": 14.1,
+  "caloriesPer100g": 427,
+  "fiberPer100g": 10.3,
+  "isLiquid": false,
+  "aliases": [
+   "cracker"
+  ],
+  "servings": [
+   {
+    "label": "1 serving",
+    "grams": 28
+   },
+   {
+    "label": "1 cracker",
+    "grams": 4.6
+   },
+   {
+    "label": "0.5 oz",
+    "grams": 14.2
+   }
+  ],
+  "usdaId": 172749
+ },
+ {
+  "id": "usda-174977",
+  "name": "Melba toast",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.1,
+  "carbsPer100g": 76.6,
+  "fatPer100g": 3.2,
+  "caloriesPer100g": 390,
+  "fiberPer100g": 6.3,
+  "isLiquid": false,
+  "aliases": [
+   "cracker"
+  ],
+  "servings": [
+   {
+    "label": "0.5 oz",
+    "grams": 14.2
+   },
+   {
+    "label": "1 cup pieces",
+    "grams": 30
+   },
+   {
+    "label": "1 cup, rounds",
+    "grams": 33
+   }
+  ],
+  "usdaId": 174977
+ },
+ {
+  "id": "usda-172739",
+  "name": "Rye crispbread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.9,
+  "carbsPer100g": 82.2,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 366,
+  "fiberPer100g": 16.5,
+  "isLiquid": false,
+  "aliases": [
+   "ryvita",
+   "cracker"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 10
+   }
+  ],
+  "usdaId": 172739
+ },
+ {
+  "id": "usda-172772",
+  "name": "Pancake mix, dry",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.8,
+  "carbsPer100g": 73.7,
+  "fatPer100g": 3.1,
+  "caloriesPer100g": 368,
+  "fiberPer100g": 2.9,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "0.33 cup",
+    "grams": 52
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cup, poured from box",
+    "grams": 130
+   }
+  ],
+  "usdaId": 172772
+ },
+ {
+  "id": "usda-175038",
+  "name": "Waffles, frozen",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.5,
+  "carbsPer100g": 43,
+  "fatPer100g": 9.7,
+  "caloriesPer100g": 285,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 waffle",
+    "grams": 35
+   }
+  ],
+  "usdaId": 175038
+ },
+ {
+  "id": "usda-172765",
+  "name": "Blueberry muffin",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.5,
+  "carbsPer100g": 53,
+  "fatPer100g": 16.1,
+  "caloriesPer100g": 375,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 medium muffin",
+    "grams": 113
+   }
+  ],
+  "usdaId": 172765
+ },
+ {
+  "id": "usda-172725",
+  "name": "Oatmeal cookies",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.2,
+  "carbsPer100g": 68.7,
+  "fatPer100g": 18.1,
+  "caloriesPer100g": 450,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "aliases": [
+   "biscuit"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cookie, big",
+    "grams": 25
+   },
+   {
+    "label": "1 large",
+    "grams": 18
+   }
+  ],
+  "usdaId": 172725
+ },
+ {
+  "id": "usda-172716",
+  "name": "Chocolate chip cookies",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.1,
+  "carbsPer100g": 65.4,
+  "fatPer100g": 24.7,
+  "caloriesPer100g": 492,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "biscuit"
+  ],
+  "servings": [
+   {
+    "label": "1 cookie",
+    "grams": 12.9
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cookie",
+    "grams": 12.2
+   }
+  ],
+  "usdaId": 172716
+ },
+ {
+  "id": "usda-168894",
+  "name": "Plain flour (all-purpose)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.3,
+  "carbsPer100g": 76.3,
+  "fatPer100g": 1,
+  "caloriesPer100g": 364,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "aliases": [
+   "flour"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 125
+   }
+  ],
+  "usdaId": 168894
+ },
+ {
+  "id": "usda-168944",
+  "name": "Whole-wheat flour",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.6,
+  "carbsPer100g": 74.5,
+  "fatPer100g": 2,
+  "caloriesPer100g": 332,
+  "fiberPer100g": 13.1,
+  "isLiquid": false,
+  "aliases": [
+   "flour",
+   "wholemeal"
+  ],
+  "usdaId": 168944
+ },
+ {
+  "id": "usda-170290",
+  "name": "Corn flour",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.9,
+  "carbsPer100g": 76.9,
+  "fatPer100g": 3.9,
+  "caloriesPer100g": 361,
+  "fiberPer100g": 7.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 117
+   }
+  ],
+  "usdaId": 170290
+ },
+ {
+  "id": "usda-169698",
+  "name": "Cornstarch",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 91.3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 381,
+  "fiberPer100g": 0.9,
+  "isLiquid": false,
+  "aliases": [
+   "cornflour",
+   "thickener"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 128
+   }
+  ],
+  "usdaId": 169698
+ },
+ {
+  "id": "usda-173904",
+  "name": "Rolled oats, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.2,
+  "carbsPer100g": 67.7,
+  "fatPer100g": 6.5,
+  "caloriesPer100g": 379,
+  "fiberPer100g": 10.1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 535,
+  "aliases": [
+   "porridge",
+   "oats",
+   "oatmeal",
+   "rolled oats"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 81
+   },
+   {
+    "label": "0.33 cup",
+    "grams": 27
+   }
+  ],
+  "usdaId": 173904
+ },
+ {
+  "id": "usda-173905",
+  "name": "Oatmeal / porridge, cooked with water",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.5,
+  "carbsPer100g": 12,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 71,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "aliases": [
+   "porridge",
+   "oats",
+   "oatmeal",
+   "rolled oats"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 234
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 14.6
+   },
+   {
+    "label": "0.75 cup",
+    "grams": 175
+   }
+  ],
+  "usdaId": 173905
+ },
+ {
+  "id": "usda-168872",
+  "name": "Oat bran, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.3,
+  "carbsPer100g": 66.2,
+  "fatPer100g": 7,
+  "caloriesPer100g": 246,
+  "fiberPer100g": 15.4,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 615,
+  "aliases": [
+   "oats",
+   "porridge"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 94
+   }
+  ],
+  "usdaId": 168872
+ },
+ {
+  "id": "usda-168873",
+  "name": "Oat bran, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.2,
+  "carbsPer100g": 11.4,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 40,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "aliases": [
+   "oats",
+   "porridge"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 219
+   }
+  ],
+  "usdaId": 168873
+ },
+ {
+  "id": "usda-168874",
+  "name": "Quinoa, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.1,
+  "carbsPer100g": 64.2,
+  "fatPer100g": 6.1,
+  "caloriesPer100g": 368,
+  "fiberPer100g": 7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 305,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 170
+   }
+  ],
+  "usdaId": 168874
+ },
+ {
+  "id": "usda-168917",
+  "name": "Quinoa, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 4.4,
+  "carbsPer100g": 21.3,
+  "fatPer100g": 1.9,
+  "caloriesPer100g": 120,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 185
+   }
+  ],
+  "usdaId": 168917
+ },
+ {
+  "id": "usda-169699",
+  "name": "Couscous, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 12.8,
+  "carbsPer100g": 77.4,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 376,
+  "fiberPer100g": 5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 335,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 173
+   }
+  ],
+  "usdaId": 169699
+ },
+ {
+  "id": "usda-169700",
+  "name": "Couscous, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.8,
+  "carbsPer100g": 23.2,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 112,
+  "fiberPer100g": 1.4,
+  "isLiquid": false,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, cooked",
+    "grams": 157
+   }
+  ],
+  "usdaId": 169700
+ },
+ {
+  "id": "usda-170688",
+  "name": "Bulgur wheat, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 12.3,
+  "carbsPer100g": 75.9,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 342,
+  "fiberPer100g": 12.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 410,
+  "aliases": [
+   "grain",
+   "cracked wheat"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 140
+   }
+  ],
+  "usdaId": 170688
+ },
+ {
+  "id": "usda-170287",
+  "name": "Bulgur wheat, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.1,
+  "carbsPer100g": 18.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 83,
+  "fiberPer100g": 4.5,
+  "isLiquid": false,
+  "aliases": [
+   "grain",
+   "cracked wheat"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 182
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 8.4
+   }
+  ],
+  "usdaId": 170287
+ },
+ {
+  "id": "usda-170284",
+  "name": "Pearl barley, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 9.9,
+  "carbsPer100g": 77.7,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 352,
+  "fiberPer100g": 15.6,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 285,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 200
+   }
+  ],
+  "usdaId": 170284
+ },
+ {
+  "id": "usda-170285",
+  "name": "Pearl barley, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.3,
+  "carbsPer100g": 28.2,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 123,
+  "fiberPer100g": 3.8,
+  "isLiquid": false,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 157
+   }
+  ],
+  "usdaId": 170285
+ },
+ {
+  "id": "usda-169702",
+  "name": "Millet, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 11,
+  "carbsPer100g": 72.9,
+  "fatPer100g": 4.2,
+  "caloriesPer100g": 378,
+  "fiberPer100g": 8.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 320,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 200
+   }
+  ],
+  "usdaId": 169702
+ },
+ {
+  "id": "usda-168871",
+  "name": "Millet, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 23.7,
+  "fatPer100g": 1,
+  "caloriesPer100g": 119,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 174
+   }
+  ],
+  "usdaId": 168871
+ },
+ {
+  "id": "usda-170685",
+  "name": "Buckwheat groats (kasha), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 11.7,
+  "carbsPer100g": 75,
+  "fatPer100g": 2.7,
+  "caloriesPer100g": 346,
+  "fiberPer100g": 10.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 375,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 164
+   }
+  ],
+  "usdaId": 170685
+ },
+ {
+  "id": "usda-170686",
+  "name": "Buckwheat groats (kasha), cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 19.9,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 92,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 168
+   }
+  ],
+  "usdaId": 170686
+ },
+ {
+  "id": "usda-170682",
+  "name": "Amaranth, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.6,
+  "carbsPer100g": 65.3,
+  "fatPer100g": 7,
+  "caloriesPer100g": 371,
+  "fiberPer100g": 6.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 365,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 193
+   }
+  ],
+  "usdaId": 170682
+ },
+ {
+  "id": "usda-170683",
+  "name": "Amaranth, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.8,
+  "carbsPer100g": 18.7,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 102,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "aliases": [
+   "grain"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 246
+   }
+  ],
+  "usdaId": 170683
+ },
+ {
+  "id": "usda-168867",
+  "name": "Cornmeal / polenta, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 7.1,
+  "carbsPer100g": 79.5,
+  "fatPer100g": 1.8,
+  "caloriesPer100g": 370,
+  "fiberPer100g": 3.9,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 520,
+  "aliases": [
+   "polenta",
+   "grits"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 157
+   }
+  ],
+  "usdaId": 168867
+ },
+ {
+  "id": "usda-171655",
+  "name": "Grits / polenta, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.7,
+  "carbsPer100g": 14.8,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 71,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "polenta",
+   "grits"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 257
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 171655
+ },
+ {
+  "id": "usda-171658",
+  "name": "Semolina / farina, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 11.6,
+  "carbsPer100g": 73.2,
+  "fatPer100g": 1.4,
+  "caloriesPer100g": 360,
+  "fiberPer100g": 4.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 680,
+  "aliases": [
+   "cream of wheat"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 11
+   },
+   {
+    "label": "1 cup",
+    "grams": 176
+   }
+  ],
+  "usdaId": 171658
+ },
+ {
+  "id": "usda-173917",
+  "name": "Semolina porridge, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 10.9,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 53,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "cream of wheat"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 233
+   }
+  ],
+  "usdaId": 173917
+ },
+ {
+  "id": "usda-174648",
+  "name": "Corn flakes",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.9,
+  "carbsPer100g": 88,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 384,
+  "fiberPer100g": 2.7,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 28
+   }
+  ],
+  "usdaId": 174648
+ },
+ {
+  "id": "usda-171646",
+  "name": "Granola",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 13.7,
+  "carbsPer100g": 53.9,
+  "fatPer100g": 24.3,
+  "caloriesPer100g": 489,
+  "fiberPer100g": 8.9,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 122
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 171646
+ },
+ {
+  "id": "usda-172987",
+  "name": "Shredded wheat",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11.2,
+  "carbsPer100g": 81,
+  "fatPer100g": 2,
+  "caloriesPer100g": 348,
+  "fiberPer100g": 11.8,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast",
+   "weetabix"
+  ],
+  "servings": [
+   {
+    "label": "3 biscuits",
+    "grams": 63
+   }
+  ],
+  "usdaId": 172987
+ },
+ {
+  "id": "usda-173884",
+  "name": "Cheerios (oat cereal)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.4,
+  "carbsPer100g": 73.2,
+  "fatPer100g": 6.6,
+  "caloriesPer100g": 372,
+  "fiberPer100g": 10.1,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 28
+   }
+  ],
+  "usdaId": 173884
+ },
+ {
+  "id": "usda-167725",
+  "name": "Oat bran cereal",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 78,
+  "fatPer100g": 3,
+  "caloriesPer100g": 380,
+  "fiberPer100g": 8,
+  "isLiquid": false,
+  "aliases": [
+   "cereal"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 50
+   }
+  ],
+  "usdaId": 167725
+ },
+ {
+  "id": "usda-171661",
+  "name": "Instant oatmeal, plain (dry)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11.9,
+  "carbsPer100g": 69.5,
+  "fatPer100g": 6.9,
+  "caloriesPer100g": 362,
+  "fiberPer100g": 10,
+  "isLiquid": false,
+  "aliases": [
+   "porridge",
+   "oats"
+  ],
+  "servings": [
+   {
+    "label": "1 packet",
+    "grams": 28
+   }
+  ],
+  "usdaId": 171661
+ },
+ {
+  "id": "usda-169722",
+  "name": "Wheat bran",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 15.6,
+  "carbsPer100g": 64.5,
+  "fatPer100g": 4.3,
+  "caloriesPer100g": 216,
+  "fiberPer100g": 42.8,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 58
+   }
+  ],
+  "usdaId": 169722
+ },
+ {
+  "id": "usda-167959",
+  "name": "Popcorn, air-popped",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.9,
+  "carbsPer100g": 77.8,
+  "fatPer100g": 4.5,
+  "caloriesPer100g": 387,
+  "fiberPer100g": 14.5,
+  "isLiquid": false,
+  "aliases": [
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 8
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 167959
+ },
+ {
+  "id": "usda-167549",
+  "name": "Popcorn, microwave",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.3,
+  "carbsPer100g": 45.1,
+  "fatPer100g": 43.6,
+  "caloriesPer100g": 583,
+  "fiberPer100g": 8.1,
+  "isLiquid": false,
+  "aliases": [
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 11
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 167549
+ },
+ {
+  "id": "usda-171413",
+  "name": "Olive oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "aliases": [
+   "evoo",
+   "extra virgin"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.5
+   },
+   {
+    "label": "1 tsp",
+    "grams": 4.5
+   }
+  ],
+  "usdaId": 171413
+ },
+ {
+  "id": "usda-172336",
+  "name": "Canola (rapeseed) oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "aliases": [
+   "rapeseed"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14
+   }
+  ],
+  "usdaId": 172336
+ },
+ {
+  "id": "usda-171412",
+  "name": "Coconut oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 99.1,
+  "caloriesPer100g": 892,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.6
+   }
+  ],
+  "usdaId": 171412
+ },
+ {
+  "id": "usda-171017",
+  "name": "Sunflower oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.6
+   }
+  ],
+  "usdaId": 171017
+ },
+ {
+  "id": "usda-173573",
+  "name": "Avocado oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.6
+   }
+  ],
+  "usdaId": 173573
+ },
+ {
+  "id": "usda-171016",
+  "name": "Sesame oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.6
+   }
+  ],
+  "usdaId": 171016
+ },
+ {
+  "id": "usda-171411",
+  "name": "Soybean (vegetable) oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "aliases": [
+   "vegetable oil"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.6
+   }
+  ],
+  "usdaId": 171411
+ },
+ {
+  "id": "usda-171410",
+  "name": "Peanut oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.5
+   }
+  ],
+  "usdaId": 171410
+ },
+ {
+  "id": "usda-171029",
+  "name": "Corn oil",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 900,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.6
+   }
+  ],
+  "usdaId": 171029
+ },
+ {
+  "id": "usda-173410",
+  "name": "Butter, salted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 81.1,
+  "caloriesPer100g": 717,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14.2
+   },
+   {
+    "label": "1 tsp",
+    "grams": 4.7
+   },
+   {
+    "label": "1 pat",
+    "grams": 5
+   }
+  ],
+  "usdaId": 173410
+ },
+ {
+  "id": "usda-173430",
+  "name": "Butter, unsalted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 81.1,
+  "caloriesPer100g": 717,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14.2
+   },
+   {
+    "label": "1 tsp",
+    "grams": 4.7
+   }
+  ],
+  "usdaId": 173430
+ },
+ {
+  "id": "usda-173412",
+  "name": "Ghee (clarified butter)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 99.5,
+  "caloriesPer100g": 876,
+  "isLiquid": false,
+  "aliases": [
+   "butter oil"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 12.8
+   }
+  ],
+  "usdaId": 173412
+ },
+ {
+  "id": "usda-172346",
+  "name": "Margarine, 80% fat",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 80.7,
+  "caloriesPer100g": 717,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14.2
+   }
+  ],
+  "usdaId": 172346
+ },
+ {
+  "id": "usda-173586",
+  "name": "Low-fat spread (40%)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 2,
+  "fatPer100g": 35,
+  "caloriesPer100g": 330,
+  "isLiquid": false,
+  "aliases": [
+   "margarine"
+  ],
+  "servings": [
+   {
+    "label": "1 tablespoon",
+    "grams": 14
+   }
+  ],
+  "usdaId": 173586
+ },
+ {
+  "id": "usda-172345",
+  "name": "Bacon fat (dripping)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 99.5,
+  "caloriesPer100g": 897,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 4.3
+   }
+  ],
+  "usdaId": 172345
+ },
+ {
+  "id": "usda-171401",
+  "name": "Lard",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 902,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 12.8
+   }
+  ],
+  "usdaId": 171401
+ },
+ {
+  "id": "usda-171011",
+  "name": "Vegetable shortening",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 884,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 12.8
+   },
+   {
+    "label": "1 cup",
+    "grams": 205
+   }
+  ],
+  "usdaId": 171011
+ },
+ {
+  "id": "usda-171705",
+  "name": "Avocado, raw",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2,
+  "carbsPer100g": 8.5,
+  "fatPer100g": 14.7,
+  "caloriesPer100g": 160,
+  "fiberPer100g": 6.7,
+  "isLiquid": false,
+  "aliases": [
+   "guacamole"
+  ],
+  "servings": [
+   {
+    "label": "1 medium avocado (flesh)",
+    "grams": 150
+   },
+   {
+    "label": "1/2 avocado",
+    "grams": 75
+   }
+  ],
+  "usdaId": 171705
+ },
+ {
+  "id": "usda-171706",
+  "name": "Avocado, California (Hass), raw",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 2,
+  "carbsPer100g": 8.6,
+  "fatPer100g": 15.4,
+  "caloriesPer100g": 167,
+  "fiberPer100g": 6.8,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 medium avocado (flesh)",
+    "grams": 136
+   }
+  ],
+  "usdaId": 171706
+ },
+ {
+  "id": "usda-169094",
+  "name": "Black olives, canned",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 6,
+  "fatPer100g": 10.9,
+  "caloriesPer100g": 116,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "5 large olives",
+    "grams": 22
+   }
+  ],
+  "usdaId": 169094
+ },
+ {
+  "id": "usda-169096",
+  "name": "Green olives, pickled",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 3.8,
+  "fatPer100g": 15.3,
+  "caloriesPer100g": 145,
+  "fiberPer100g": 3.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 olive",
+    "grams": 2.7
+   }
+  ],
+  "usdaId": 169096
+ },
+ {
+  "id": "usda-170169",
+  "name": "Coconut, fresh",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 15.2,
+  "fatPer100g": 33.5,
+  "caloriesPer100g": 354,
+  "fiberPer100g": 9,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup, shredded",
+    "grams": 80
+   },
+   {
+    "label": "1 medium",
+    "grams": 397
+   },
+   {
+    "label": "1 piece",
+    "grams": 45
+   }
+  ],
+  "usdaId": 170169
+ },
+ {
+  "id": "usda-170170",
+  "name": "Desiccated coconut, unsweetened",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.9,
+  "carbsPer100g": 23.7,
+  "fatPer100g": 64.5,
+  "caloriesPer100g": 660,
+  "fiberPer100g": 16.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170170
+ },
+ {
+  "id": "usda-170567",
+  "name": "Almonds, raw",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.2,
+  "carbsPer100g": 21.6,
+  "fatPer100g": 49.9,
+  "caloriesPer100g": 579,
+  "fiberPer100g": 12.5,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   },
+   {
+    "label": "1 almond",
+    "grams": 1.2
+   }
+  ],
+  "usdaId": 170567
+ },
+ {
+  "id": "usda-170158",
+  "name": "Almonds, dry-roasted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 21,
+  "carbsPer100g": 21,
+  "fatPer100g": 52.5,
+  "caloriesPer100g": 598,
+  "fiberPer100g": 10.9,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170158
+ },
+ {
+  "id": "usda-170187",
+  "name": "Walnuts",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 15.2,
+  "carbsPer100g": 13.7,
+  "fatPer100g": 65.2,
+  "caloriesPer100g": 654,
+  "fiberPer100g": 6.7,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170187
+ },
+ {
+  "id": "usda-170162",
+  "name": "Cashews, raw",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.2,
+  "carbsPer100g": 30.2,
+  "fatPer100g": 43.9,
+  "caloriesPer100g": 553,
+  "fiberPer100g": 3.3,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170162
+ },
+ {
+  "id": "usda-170571",
+  "name": "Cashews, dry-roasted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 15.3,
+  "carbsPer100g": 32.7,
+  "fatPer100g": 46.4,
+  "caloriesPer100g": 574,
+  "fiberPer100g": 3,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, halves and whole",
+    "grams": 137
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 8.6
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170571
+ },
+ {
+  "id": "usda-170184",
+  "name": "Pistachios, raw",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.2,
+  "carbsPer100g": 27.2,
+  "fatPer100g": 45.3,
+  "caloriesPer100g": 560,
+  "fiberPer100g": 10.6,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 123
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 kernel",
+    "grams": 0.7
+   }
+  ],
+  "usdaId": 170184
+ },
+ {
+  "id": "usda-170185",
+  "name": "Pistachios, dry-roasted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 21.1,
+  "carbsPer100g": 28.3,
+  "fatPer100g": 45.8,
+  "caloriesPer100g": 572,
+  "fiberPer100g": 10.3,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 123
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 kernel",
+    "grams": 0.7
+   }
+  ],
+  "usdaId": 170185
+ },
+ {
+  "id": "usda-170569",
+  "name": "Brazil nuts",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.3,
+  "carbsPer100g": 11.7,
+  "fatPer100g": 67.1,
+  "caloriesPer100g": 659,
+  "fiberPer100g": 7.5,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, whole",
+    "grams": 133
+   },
+   {
+    "label": "1 kernel",
+    "grams": 5
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170569
+ },
+ {
+  "id": "usda-170581",
+  "name": "Hazelnuts",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 15,
+  "carbsPer100g": 16.7,
+  "fatPer100g": 60.8,
+  "caloriesPer100g": 628,
+  "fiberPer100g": 9.7,
+  "isLiquid": false,
+  "aliases": [
+   "nuts",
+   "filberts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 115
+   },
+   {
+    "label": "1 cup, ground",
+    "grams": 75
+   },
+   {
+    "label": "1 cup, whole",
+    "grams": 135
+   }
+  ],
+  "usdaId": 170581
+ },
+ {
+  "id": "usda-170178",
+  "name": "Macadamia nuts",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 7.9,
+  "carbsPer100g": 13.8,
+  "fatPer100g": 75.8,
+  "caloriesPer100g": 718,
+  "fiberPer100g": 8.6,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, whole or halves",
+    "grams": 134
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170178
+ },
+ {
+  "id": "usda-170182",
+  "name": "Pecans",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 9.2,
+  "carbsPer100g": 13.9,
+  "fatPer100g": 72,
+  "caloriesPer100g": 691,
+  "fiberPer100g": 9.6,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, chopped",
+    "grams": 109
+   },
+   {
+    "label": "1 cup, halves",
+    "grams": 99
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170182
+ },
+ {
+  "id": "usda-170591",
+  "name": "Pine nuts",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13.7,
+  "carbsPer100g": 13.1,
+  "fatPer100g": 68.4,
+  "caloriesPer100g": 673,
+  "fiberPer100g": 3.7,
+  "isLiquid": false,
+  "aliases": [
+   "nuts",
+   "pesto"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 135
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "10 nuts",
+    "grams": 1.7
+   }
+  ],
+  "usdaId": 170591
+ },
+ {
+  "id": "usda-170190",
+  "name": "Chestnuts, roasted",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.2,
+  "carbsPer100g": 53,
+  "fatPer100g": 2.2,
+  "caloriesPer100g": 245,
+  "fiberPer100g": 5.1,
+  "isLiquid": false,
+  "aliases": [
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 143
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "10 kernels",
+    "grams": 84
+   }
+  ],
+  "usdaId": 170190
+ },
+ {
+  "id": "usda-172430",
+  "name": "Peanuts, raw",
+  "category": "fat",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 25.8,
+  "carbsPer100g": 16.1,
+  "fatPer100g": 49.2,
+  "caloriesPer100g": 567,
+  "fiberPer100g": 8.5,
+  "isLiquid": false,
+  "aliases": [
+   "groundnuts",
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cup",
+    "grams": 146
+   }
+  ],
+  "usdaId": 172430
+ },
+ {
+  "id": "usda-173806",
+  "name": "Peanuts, dry-roasted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.4,
+  "carbsPer100g": 21.3,
+  "fatPer100g": 49.7,
+  "caloriesPer100g": 587,
+  "fiberPer100g": 8.4,
+  "isLiquid": false,
+  "aliases": [
+   "groundnuts",
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 173806
+ },
+ {
+  "id": "usda-170585",
+  "name": "Mixed nuts, dry-roasted",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19.5,
+  "carbsPer100g": 22.4,
+  "fatPer100g": 53.5,
+  "caloriesPer100g": 607,
+  "fiberPer100g": 6.4,
+  "isLiquid": false,
+  "aliases": [
+   "nuts",
+   "trail mix"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170585
+ },
+ {
+  "id": "usda-172470",
+  "name": "Peanut butter, smooth (no salt)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 22.2,
+  "carbsPer100g": 22.3,
+  "fatPer100g": 51.4,
+  "caloriesPer100g": 598,
+  "fiberPer100g": 5,
+  "isLiquid": false,
+  "aliases": [
+   "nut butter"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 172470
+ },
+ {
+  "id": "usda-174265",
+  "name": "Peanut butter, crunchy",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.1,
+  "carbsPer100g": 21.6,
+  "fatPer100g": 49.9,
+  "caloriesPer100g": 589,
+  "fiberPer100g": 8,
+  "isLiquid": false,
+  "aliases": [
+   "nut butter"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 174265
+ },
+ {
+  "id": "usda-168603",
+  "name": "Almond butter",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 21,
+  "carbsPer100g": 18.8,
+  "fatPer100g": 55.5,
+  "caloriesPer100g": 614,
+  "fiberPer100g": 10.3,
+  "isLiquid": false,
+  "aliases": [
+   "nut butter"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 168603
+ },
+ {
+  "id": "usda-170189",
+  "name": "Tahini (sesame paste)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 17,
+  "carbsPer100g": 21.2,
+  "fatPer100g": 53.8,
+  "caloriesPer100g": 595,
+  "fiberPer100g": 9.3,
+  "isLiquid": false,
+  "aliases": [
+   "sesame butter"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 170189
+ },
+ {
+  "id": "usda-170554",
+  "name": "Chia seeds",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 16.5,
+  "carbsPer100g": 42.1,
+  "fatPer100g": 30.7,
+  "caloriesPer100g": 486,
+  "fiberPer100g": 34.4,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 12
+   }
+  ],
+  "usdaId": 170554
+ },
+ {
+  "id": "usda-169414",
+  "name": "Flaxseed (linseed)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 18.3,
+  "carbsPer100g": 28.9,
+  "fatPer100g": 42.2,
+  "caloriesPer100g": 534,
+  "fiberPer100g": 27.3,
+  "isLiquid": false,
+  "aliases": [
+   "linseed"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 10
+   }
+  ],
+  "usdaId": 169414
+ },
+ {
+  "id": "usda-170562",
+  "name": "Sunflower seeds, kernels",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 20.8,
+  "carbsPer100g": 20,
+  "fatPer100g": 51.5,
+  "caloriesPer100g": 584,
+  "fiberPer100g": 8.6,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170562
+ },
+ {
+  "id": "usda-170556",
+  "name": "Pumpkin seeds (pepitas)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 30.2,
+  "carbsPer100g": 10.7,
+  "fatPer100g": 49.1,
+  "caloriesPer100g": 559,
+  "fiberPer100g": 6,
+  "isLiquid": false,
+  "aliases": [
+   "pepitas"
+  ],
+  "servings": [
+   {
+    "label": "1 handful (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170556
+ },
+ {
+  "id": "usda-170150",
+  "name": "Sesame seeds",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 17.7,
+  "carbsPer100g": 23.5,
+  "fatPer100g": 49.7,
+  "caloriesPer100g": 573,
+  "fiberPer100g": 11.8,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 9
+   }
+  ],
+  "usdaId": 170150
+ },
+ {
+  "id": "usda-170148",
+  "name": "Hemp seeds, hulled",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 31.6,
+  "carbsPer100g": 8.7,
+  "fatPer100g": 48.8,
+  "caloriesPer100g": 553,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "aliases": [
+   "hemp hearts"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 10
+   }
+  ],
+  "usdaId": 170148
+ },
+ {
+  "id": "usda-168000",
+  "name": "Chocolate hazelnut spread",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.4,
+  "carbsPer100g": 62.4,
+  "fatPer100g": 29.7,
+  "caloriesPer100g": 539,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "aliases": [
+   "nutella"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 19
+   }
+  ],
+  "usdaId": 168000
+ },
+ {
+  "id": "bi-instant-noodles-dry-block",
+  "name": "Instant noodles (dry block)",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 9,
+  "carbsPer100g": 62,
+  "fatPer100g": 18,
+  "caloriesPer100g": 445,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 230,
+  "aliases": [
+   "ramen",
+   "noodles"
+  ],
+  "note": "Typical dry block incl. frying oil; flavour sachet extra."
+ },
+ {
+  "id": "bi-basmati-rice-dry",
+  "name": "Basmati rice, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 8.1,
+  "carbsPer100g": 77,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 349,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 280,
+  "aliases": [
+   "rice"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-jasmine-rice-dry",
+  "name": "Jasmine rice, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 7.2,
+  "carbsPer100g": 79,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 355,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 280,
+  "aliases": [
+   "rice"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-microwave-rice-pouch-cooked",
+  "name": "Microwave rice pouch, cooked",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.8,
+  "carbsPer100g": 28,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 135,
+  "isLiquid": false,
+  "aliases": [
+   "rice",
+   "uncle bens"
+  ],
+  "note": "Typical ready-to-heat pouch."
+ },
+ {
+  "id": "bi-udon-noodles-cooked",
+  "name": "Udon noodles, cooked",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.6,
+  "carbsPer100g": 21.4,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 99,
+  "isLiquid": false,
+  "aliases": [
+   "noodles"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-rice-noodles-dry",
+  "name": "Rice noodles, dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 6,
+  "carbsPer100g": 80,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 360,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 300,
+  "aliases": [
+   "noodles",
+   "pad thai"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-gnocchi-potato-packaged",
+  "name": "Gnocchi, potato (packaged)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.7,
+  "carbsPer100g": 34,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 160,
+  "isLiquid": false,
+  "aliases": [
+   "pasta"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-sourdough-bread",
+  "name": "Sourdough bread",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9,
+  "carbsPer100g": 49,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 250,
+  "isLiquid": false,
+  "aliases": [
+   "bread",
+   "toast"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 45
+   }
+  ],
+  "note": "Typical bakery loaf."
+ },
+ {
+  "id": "bi-protein-bread-high-protein-loaf",
+  "name": "Protein bread (high-protein loaf)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 20,
+  "carbsPer100g": 25,
+  "fatPer100g": 6,
+  "caloriesPer100g": 240,
+  "isLiquid": false,
+  "aliases": [
+   "bread",
+   "toast",
+   "low carb"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 35
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-wrap-low-carb-high-protein",
+  "name": "Wrap, low-carb / high-protein",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 17,
+  "carbsPer100g": 30,
+  "fatPer100g": 8,
+  "caloriesPer100g": 250,
+  "isLiquid": false,
+  "aliases": [
+   "tortilla",
+   "wrap"
+  ],
+  "servings": [
+   {
+    "label": "1 wrap",
+    "grams": 45
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-granola-bar-chewy",
+  "name": "Granola bar, chewy",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6,
+  "carbsPer100g": 68,
+  "fatPer100g": 12,
+  "caloriesPer100g": 410,
+  "isLiquid": false,
+  "aliases": [
+   "cereal bar"
+  ],
+  "servings": [
+   {
+    "label": "1 bar",
+    "grams": 25
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-roast-potatoes-in-oil",
+  "name": "Roast potatoes (in oil)",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 2.8,
+  "carbsPer100g": 24,
+  "fatPer100g": 5.5,
+  "caloriesPer100g": 150,
+  "isLiquid": false,
+  "aliases": [
+   "potatoes",
+   "roasties"
+  ],
+  "note": "Typical home recipe."
+ },
+ {
+  "id": "bi-pizza-cheese-regular-crust",
+  "name": "Pizza, cheese, regular crust",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11,
+  "carbsPer100g": 33,
+  "fatPer100g": 10,
+  "caloriesPer100g": 266,
+  "isLiquid": false,
+  "aliases": [
+   "takeaway"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 107
+   }
+  ],
+  "note": "Typical restaurant/frozen pizza."
+ },
+ {
+  "id": "bi-overnight-oats-with-milk-no-toppings",
+  "name": "Overnight oats (with milk, no toppings)",
+  "category": "carb",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 5,
+  "carbsPer100g": 15,
+  "fatPer100g": 3,
+  "caloriesPer100g": 107,
+  "isLiquid": false,
+  "aliases": [
+   "oats"
+  ],
+  "note": "Typical 1:1 oats and semi-skimmed milk."
+ },
+ {
+  "id": "bi-ghee",
+  "name": "Ghee",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 99.5,
+  "caloriesPer100g": 900,
+  "isLiquid": false,
+  "aliases": [
+   "clarified butter"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 12.8
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-spray-cooking-oil-1-spray-0-25-g",
+  "name": "Spray cooking oil (1 spray ≈ 0.25 g)",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 100,
+  "caloriesPer100g": 900,
+  "isLiquid": false,
+  "aliases": [
+   "frylight",
+   "cooking spray"
+  ],
+  "servings": [
+   {
+    "label": "1 spray",
+    "grams": 0.25
+   }
+  ],
+  "note": "Pure fat; sprays are tiny amounts."
+ },
+ {
+  "id": "bi-rice-cakes-plain-brown-rice",
+  "name": "Rice cakes, plain (brown rice)",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8,
+  "carbsPer100g": 81,
+  "fatPer100g": 2.8,
+  "caloriesPer100g": 387,
+  "isLiquid": false,
+  "aliases": [
+   "rice cake",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 cake",
+    "grams": 9
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-breadcrumbs-dry",
+  "name": "Breadcrumbs, dry",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 13,
+  "carbsPer100g": 72,
+  "fatPer100g": 5,
+  "caloriesPer100g": 395,
+  "isLiquid": false,
+  "aliases": [
+   "panko"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-rice-krispies-puffed-rice-cereal",
+  "name": "Rice Krispies (puffed rice cereal)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6,
+  "carbsPer100g": 87,
+  "fatPer100g": 1,
+  "caloriesPer100g": 382,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-muesli-no-added-sugar",
+  "name": "Muesli (no added sugar)",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 66,
+  "fatPer100g": 6,
+  "caloriesPer100g": 365,
+  "fiberPer100g": 8,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-all-bran-cereal",
+  "name": "All-Bran cereal",
+  "category": "carb",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14,
+  "carbsPer100g": 46,
+  "fatPer100g": 4,
+  "caloriesPer100g": 271,
+  "fiberPer100g": 30,
+  "isLiquid": false,
+  "aliases": [
+   "cereal",
+   "breakfast",
+   "bran"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-coconut-milk-canned",
+  "name": "Coconut milk, canned",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 2.8,
+  "fatPer100g": 21.3,
+  "caloriesPer100g": 197,
+  "isLiquid": true,
+  "aliases": [
+   "coconut"
+  ],
+  "note": "USDA-typical canned coconut milk."
+ },
+ {
+  "id": "bi-coconut-cream-canned",
+  "name": "Coconut cream, canned",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.6,
+  "carbsPer100g": 6.6,
+  "fatPer100g": 34.7,
+  "caloriesPer100g": 330,
+  "isLiquid": false,
+  "aliases": [
+   "coconut"
+  ],
+  "note": "USDA-typical canned coconut cream."
+ }
+]

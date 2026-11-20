@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Demeter</title>
+    <meta name="description" content="Offline calorie & protein tracker with raw-to-cooked conversion." />
+    <meta name="theme-color" content="#0c1210" />
+    <meta name="color-scheme" content="dark light" />
+    <!-- iOS "Add to Home Screen" -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Demeter" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <script>
+      // Apply the saved theme before first paint to avoid a flash. (localStorage is only used for this tiny hint.)
+      try {
+        var t = localStorage.getItem('demeter-theme-hint');
+        var dark = t === 'dark' || (t !== 'light' && (t === 'system' ? matchMedia('(prefers-color-scheme: dark)').matches : true));
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        document.querySelector('meta[name=theme-color]').setAttribute('content', dark ? '#0c1210' : '#f5f3ec');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

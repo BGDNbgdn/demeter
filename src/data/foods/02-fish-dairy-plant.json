@@ -1,0 +1,5124 @@
+[
+ {
+  "id": "usda-175167",
+  "name": "Salmon, Atlantic farmed, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.4,
+  "caloriesPer100g": 208,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 198
+   }
+  ],
+  "usdaId": 175167
+ },
+ {
+  "id": "usda-175168",
+  "name": "Salmon, Atlantic farmed, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 22.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 12.4,
+  "caloriesPer100g": 206,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "roasted",
+   "grilled"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 178
+   }
+  ],
+  "usdaId": 175168
+ },
+ {
+  "id": "usda-173686",
+  "name": "Salmon, Atlantic wild, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.3,
+  "caloriesPer100g": 142,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 198
+   }
+  ],
+  "usdaId": 173686
+ },
+ {
+  "id": "usda-171998",
+  "name": "Salmon, Atlantic wild, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.1,
+  "caloriesPer100g": 182,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 154
+   }
+  ],
+  "usdaId": 171998
+ },
+ {
+  "id": "usda-173691",
+  "name": "Salmon, sockeye, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.7,
+  "caloriesPer100g": 131,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish",
+   "red salmon"
+  ],
+  "servings": [
+   {
+    "label": "0.5 fillet",
+    "grams": 198
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173691
+ },
+ {
+  "id": "usda-173692",
+  "name": "Salmon, sockeye, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.6,
+  "caloriesPer100g": 156,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "red salmon"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 155
+   }
+  ],
+  "usdaId": 173692
+ },
+ {
+  "id": "usda-173688",
+  "name": "Salmon, chinook (king), raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 10.4,
+  "caloriesPer100g": 179,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 198
+   }
+  ],
+  "usdaId": 173688
+ },
+ {
+  "id": "usda-171999",
+  "name": "Salmon, chinook (king), baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.4,
+  "caloriesPer100g": 231,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 154
+   }
+  ],
+  "usdaId": 171999
+ },
+ {
+  "id": "usda-175138",
+  "name": "Salmon, pink, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.4,
+  "caloriesPer100g": 127,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 159
+   }
+  ],
+  "usdaId": 175138
+ },
+ {
+  "id": "usda-172001",
+  "name": "Salmon, pink, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.3,
+  "caloriesPer100g": 153,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 124
+   }
+  ],
+  "usdaId": 172001
+ },
+ {
+  "id": "usda-173724",
+  "name": "Salmon, pink, canned (drained, no skin or bones)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.2,
+  "caloriesPer100g": 136,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173724
+ },
+ {
+  "id": "usda-173693",
+  "name": "Salmon, sockeye, canned (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 23.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.4,
+  "caloriesPer100g": 167,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 can",
+    "grams": 337
+   }
+  ],
+  "usdaId": 173693
+ },
+ {
+  "id": "usda-173687",
+  "name": "Smoked salmon (lox)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 18.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.3,
+  "caloriesPer100g": 117,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "lox"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 cup, cooked",
+    "grams": 136
+   }
+  ],
+  "usdaId": 173687
+ },
+ {
+  "id": "usda-175159",
+  "name": "Tuna, yellowfin fresh, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 24.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 109,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish",
+   "tuna steak"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175159
+ },
+ {
+  "id": "usda-173706",
+  "name": "Tuna, bluefin fresh, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.9,
+  "caloriesPer100g": 144,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173706
+ },
+ {
+  "id": "usda-173707",
+  "name": "Tuna, bluefin fresh, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.3,
+  "caloriesPer100g": 184,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173707
+ },
+ {
+  "id": "usda-172005",
+  "name": "Tuna, skipjack fresh, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 28.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 132,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 154
+   }
+  ],
+  "usdaId": 172005
+ },
+ {
+  "id": "usda-171986",
+  "name": "Tuna, light, canned in water (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 25.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 116,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned",
+   "chunk light"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 can",
+    "grams": 165
+   }
+  ],
+  "usdaId": 171986
+ },
+ {
+  "id": "usda-171988",
+  "name": "Tuna, white (albacore), canned in water (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 23.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 3,
+  "caloriesPer100g": 128,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 can",
+    "grams": 172
+   }
+  ],
+  "usdaId": 171988
+ },
+ {
+  "id": "usda-173708",
+  "name": "Tuna, light, canned in oil (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 29.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.2,
+  "caloriesPer100g": 198,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, solid or chunks",
+    "grams": 146
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 can",
+    "grams": 171
+   }
+  ],
+  "usdaId": 173708
+ },
+ {
+  "id": "usda-171987",
+  "name": "Tuna, white (albacore), canned in oil (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 26.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 8.1,
+  "caloriesPer100g": 186,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 can",
+    "grams": 178
+   }
+  ],
+  "usdaId": 171987
+ },
+ {
+  "id": "usda-171955",
+  "name": "Cod, Atlantic, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 82,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 231
+   }
+  ],
+  "usdaId": 171955
+ },
+ {
+  "id": "usda-171956",
+  "name": "Cod, Atlantic, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 22.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 105,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 180
+   }
+  ],
+  "usdaId": 171956
+ },
+ {
+  "id": "usda-174191",
+  "name": "Cod, Pacific, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 15.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 69,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 116
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174191
+ },
+ {
+  "id": "usda-171990",
+  "name": "Cod, Pacific, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 85,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 90
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171990
+ },
+ {
+  "id": "usda-171964",
+  "name": "Haddock, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 74,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 82,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 193
+   }
+  ],
+  "usdaId": 171964
+ },
+ {
+  "id": "usda-174198",
+  "name": "Haddock, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 20,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 90,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 150
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174198
+ },
+ {
+  "id": "usda-173725",
+  "name": "Pollock, Alaska, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 76,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish",
+   "white fish",
+   "pollack"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173725
+ },
+ {
+  "id": "usda-173681",
+  "name": "Pollock, Alaska, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 111,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "white fish",
+   "pollack"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 60
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173681
+ },
+ {
+  "id": "usda-175139",
+  "name": "Sardines, canned in oil (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.5,
+  "caloriesPer100g": 208,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, drained",
+    "grams": 149
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 can",
+    "grams": 92
+   }
+  ],
+  "usdaId": 175139
+ },
+ {
+  "id": "usda-175140",
+  "name": "Sardines, canned in tomato sauce",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 20.9,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 10.5,
+  "caloriesPer100g": 185,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 89
+   },
+   {
+    "label": "1 can",
+    "grams": 370
+   },
+   {
+    "label": "1 sardine",
+    "grams": 38
+   }
+  ],
+  "usdaId": 175140
+ },
+ {
+  "id": "usda-175139-sardines-fre",
+  "name": "Sardines (fresh equivalent: canned)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.5,
+  "caloriesPer100g": 208,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup, drained",
+    "grams": 149
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 can",
+    "grams": 92
+   }
+  ],
+  "usdaId": 175139
+ },
+ {
+  "id": "usda-175119",
+  "name": "Mackerel, Atlantic, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 13.9,
+  "caloriesPer100g": 205,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 112
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175119
+ },
+ {
+  "id": "usda-175120",
+  "name": "Mackerel, Atlantic, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 17.8,
+  "caloriesPer100g": 262,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 88
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175120
+ },
+ {
+  "id": "usda-175122",
+  "name": "Mackerel, king, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 2,
+  "caloriesPer100g": 105,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 198
+   }
+  ],
+  "usdaId": 175122
+ },
+ {
+  "id": "usda-174236",
+  "name": "Mackerel, king, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.6,
+  "caloriesPer100g": 134,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 154
+   }
+  ],
+  "usdaId": 174236
+ },
+ {
+  "id": "usda-168149",
+  "name": "Mackerel, salted",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 18.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 25.1,
+  "caloriesPer100g": 305,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 piece",
+    "grams": 80
+   },
+   {
+    "label": "1 cup, cooked",
+    "grams": 136
+   }
+  ],
+  "usdaId": 168149
+ },
+ {
+  "id": "usda-175142",
+  "name": "Sea bass, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 2,
+  "caloriesPer100g": 97,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "fish",
+   "branzino"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 129
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175142
+ },
+ {
+  "id": "usda-173694",
+  "name": "Sea bass, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.6,
+  "caloriesPer100g": 124,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "branzino"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 101
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173694
+ },
+ {
+  "id": "usda-171948",
+  "name": "Striped bass, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 17.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.3,
+  "caloriesPer100g": 97,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 159
+   }
+  ],
+  "usdaId": 171948
+ },
+ {
+  "id": "usda-174228",
+  "name": "Striped bass, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 22.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 3,
+  "caloriesPer100g": 124,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 124
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174228
+ },
+ {
+  "id": "usda-175176",
+  "name": "Tilapia, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.7,
+  "caloriesPer100g": 96,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 116
+   }
+  ],
+  "usdaId": 175176
+ },
+ {
+  "id": "usda-175177",
+  "name": "Tilapia, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.7,
+  "caloriesPer100g": 128,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 87
+   }
+  ],
+  "usdaId": 175177
+ },
+ {
+  "id": "usda-173717",
+  "name": "Rainbow trout, farmed, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.2,
+  "caloriesPer100g": 141,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 82,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 79
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173717
+ },
+ {
+  "id": "usda-173718",
+  "name": "Rainbow trout, farmed, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.4,
+  "caloriesPer100g": 168,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 71
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173718
+ },
+ {
+  "id": "usda-174200",
+  "name": "Halibut, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.6,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 91,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 82,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 204
+   }
+  ],
+  "usdaId": 174200
+ },
+ {
+  "id": "usda-174201",
+  "name": "Halibut, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 22.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 111,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "white fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "0.5 fillet",
+    "grams": 159
+   }
+  ],
+  "usdaId": 174201
+ },
+ {
+  "id": "usda-175116",
+  "name": "Herring, Atlantic, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18,
+  "carbsPer100g": 0,
+  "fatPer100g": 9,
+  "caloriesPer100g": 158,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 184
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175116
+ },
+ {
+  "id": "usda-175117",
+  "name": "Herring, Atlantic, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.6,
+  "caloriesPer100g": 203,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 143
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175117
+ },
+ {
+  "id": "usda-173703",
+  "name": "Swordfish, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 6.7,
+  "caloriesPer100g": 144,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece",
+    "grams": 136
+   }
+  ],
+  "usdaId": 173703
+ },
+ {
+  "id": "usda-173704",
+  "name": "Swordfish, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.9,
+  "caloriesPer100g": 172,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 piece",
+    "grams": 106
+   }
+  ],
+  "usdaId": 173704
+ },
+ {
+  "id": "usda-173698",
+  "name": "Snapper, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 100,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 218
+   }
+  ],
+  "usdaId": 173698
+ },
+ {
+  "id": "usda-173699",
+  "name": "Snapper, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 26.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.7,
+  "caloriesPer100g": 128,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 170
+   }
+  ],
+  "usdaId": 173699
+ },
+ {
+  "id": "usda-171959",
+  "name": "Mahi-mahi, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 85,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish",
+   "dorado"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 204
+   }
+  ],
+  "usdaId": 171959
+ },
+ {
+  "id": "usda-171992",
+  "name": "Mahi-mahi, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 109,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "dorado"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 159
+   }
+  ],
+  "usdaId": 171992
+ },
+ {
+  "id": "usda-171962",
+  "name": "Grouper, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 1,
+  "caloriesPer100g": 92,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 259
+   }
+  ],
+  "usdaId": 171962
+ },
+ {
+  "id": "usda-171963",
+  "name": "Grouper, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 118,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 202
+   }
+  ],
+  "usdaId": 171963
+ },
+ {
+  "id": "usda-173678",
+  "name": "Perch, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 91,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 60
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173678
+ },
+ {
+  "id": "usda-173679",
+  "name": "Perch, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 117,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 46
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173679
+ },
+ {
+  "id": "usda-174186",
+  "name": "Catfish, wild, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.8,
+  "caloriesPer100g": 95,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 159
+   }
+  ],
+  "usdaId": 174186
+ },
+ {
+  "id": "usda-173714",
+  "name": "Catfish, wild, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.9,
+  "caloriesPer100g": 105,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 143
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173714
+ },
+ {
+  "id": "usda-174196",
+  "name": "Flounder / sole, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 12.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.9,
+  "caloriesPer100g": 70,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish",
+   "white fish",
+   "plaice"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 163
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174196
+ },
+ {
+  "id": "usda-174197",
+  "name": "Flounder / sole, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 15.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 2.4,
+  "caloriesPer100g": 86,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "white fish",
+   "plaice"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 127
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174197
+ },
+ {
+  "id": "usda-173683",
+  "name": "Pompano, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 12.1,
+  "caloriesPer100g": 211,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 88
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173683
+ },
+ {
+  "id": "usda-174182",
+  "name": "Anchovy, European, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 4.8,
+  "caloriesPer100g": 131,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174182
+ },
+ {
+  "id": "usda-174183",
+  "name": "Anchovies, canned in oil (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 28.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 9.7,
+  "caloriesPer100g": 210,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "tinned"
+  ],
+  "servings": [
+   {
+    "label": "1 anchovy",
+    "grams": 4
+   },
+   {
+    "label": "1 can",
+    "grams": 45
+   },
+   {
+    "label": "5 anchovies",
+    "grams": 20
+   }
+  ],
+  "usdaId": 174183
+ },
+ {
+  "id": "usda-174193",
+  "name": "Eel, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 11.7,
+  "caloriesPer100g": 184,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish",
+   "unagi"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 204
+   }
+  ],
+  "usdaId": 174193
+ },
+ {
+  "id": "usda-174194",
+  "name": "Eel, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.7,
+  "carbsPer100g": 0,
+  "fatPer100g": 15,
+  "caloriesPer100g": 236,
+  "isLiquid": false,
+  "aliases": [
+   "fish",
+   "unagi"
+  ],
+  "servings": [
+   {
+    "label": "1 fillet",
+    "grams": 159
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174194
+ },
+ {
+  "id": "usda-173711",
+  "name": "Whitefish, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 19.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 5.9,
+  "caloriesPer100g": 134,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 78,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 198
+   }
+  ],
+  "usdaId": 173711
+ },
+ {
+  "id": "usda-174246",
+  "name": "Whitefish, baked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 7.5,
+  "caloriesPer100g": 172,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 fillet",
+    "grams": 154
+   }
+  ],
+  "usdaId": 174246
+ },
+ {
+  "id": "usda-173702",
+  "name": "Surimi (fish paste)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 15.2,
+  "carbsPer100g": 6.9,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 99,
+  "isLiquid": false,
+  "aliases": [
+   "fish"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 173702
+ },
+ {
+  "id": "usda-174203",
+  "name": "Imitation crab (surimi)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.6,
+  "carbsPer100g": 15,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 95,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "aliases": [
+   "crab sticks",
+   "seafood sticks"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174203
+ },
+ {
+  "id": "usda-175132",
+  "name": "Fish roe, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22.3,
+  "carbsPer100g": 1.5,
+  "fatPer100g": 6.4,
+  "caloriesPer100g": 143,
+  "isLiquid": false,
+  "aliases": [
+   "caviar"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 can, solids and liquid",
+    "grams": 227
+   }
+  ],
+  "usdaId": 175132
+ },
+ {
+  "id": "usda-175179",
+  "name": "Shrimp / prawns, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 85,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "prawn",
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175179
+ },
+ {
+  "id": "usda-175180",
+  "name": "Shrimp / prawns, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 24,
+  "carbsPer100g": 0.2,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 99,
+  "isLiquid": false,
+  "aliases": [
+   "prawn",
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 175180
+ },
+ {
+  "id": "usda-171970",
+  "name": "Shrimp, breaded and fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 21.4,
+  "carbsPer100g": 11.5,
+  "fatPer100g": 12.3,
+  "caloriesPer100g": 242,
+  "fiberPer100g": 0.4,
+  "isLiquid": false,
+  "aliases": [
+   "prawn",
+   "scampi"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "4 large",
+    "grams": 30
+   }
+  ],
+  "usdaId": 171970
+ },
+ {
+  "id": "usda-175164",
+  "name": "Alaska king crab, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 84,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 leg",
+    "grams": 172
+   }
+  ],
+  "usdaId": 175164
+ },
+ {
+  "id": "usda-174202",
+  "name": "Alaska king crab, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 19.4,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 97,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "1 leg",
+    "grams": 134
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174202
+ },
+ {
+  "id": "usda-174204",
+  "name": "Blue crab, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 18.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 87,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 75,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 crab",
+    "grams": 21
+   }
+  ],
+  "usdaId": 174204
+ },
+ {
+  "id": "usda-174205",
+  "name": "Blue crab, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 17.9,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 83,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, flaked and pieces",
+    "grams": 118
+   },
+   {
+    "label": "1 cup",
+    "grams": 135
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 174205
+ },
+ {
+  "id": "usda-174208",
+  "name": "Lobster, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 77,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 85,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "1 lobster",
+    "grams": 150
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174208
+ },
+ {
+  "id": "usda-174209",
+  "name": "Lobster, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 19,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 89,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 145
+   },
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174209
+ },
+ {
+  "id": "usda-174206",
+  "name": "Crayfish, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 16,
+  "carbsPer100g": 0,
+  "fatPer100g": 1,
+  "caloriesPer100g": 77,
+  "isLiquid": false,
+  "aliases": [
+   "crawfish",
+   "shellfish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "8 crayfish",
+    "grams": 27
+   }
+  ],
+  "usdaId": 174206
+ },
+ {
+  "id": "usda-174207",
+  "name": "Crayfish, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 16.8,
+  "carbsPer100g": 0,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 82,
+  "isLiquid": false,
+  "aliases": [
+   "crawfish",
+   "shellfish"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174207
+ },
+ {
+  "id": "usda-174216",
+  "name": "Mussels, raw (meat only)",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 11.9,
+  "carbsPer100g": 3.7,
+  "fatPer100g": 2.2,
+  "caloriesPer100g": 86,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 55,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 150
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 large",
+    "grams": 20
+   }
+  ],
+  "usdaId": 174216
+ },
+ {
+  "id": "usda-174217",
+  "name": "Mussels, steamed (meat only)",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 23.8,
+  "carbsPer100g": 7.4,
+  "fatPer100g": 4.5,
+  "caloriesPer100g": 172,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174217
+ },
+ {
+  "id": "usda-174223",
+  "name": "Squid, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 15.6,
+  "carbsPer100g": 3.1,
+  "fatPer100g": 1.4,
+  "caloriesPer100g": 92,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "calamari",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174223
+ },
+ {
+  "id": "usda-171982",
+  "name": "Squid / calamari, fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 17.9,
+  "carbsPer100g": 7.8,
+  "fatPer100g": 7.5,
+  "caloriesPer100g": 175,
+  "isLiquid": false,
+  "aliases": [
+   "calamari"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 171982
+ },
+ {
+  "id": "usda-174218",
+  "name": "Octopus, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.9,
+  "carbsPer100g": 2.2,
+  "fatPer100g": 1,
+  "caloriesPer100g": 82,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 60,
+  "aliases": [
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174218
+ },
+ {
+  "id": "usda-174249",
+  "name": "Octopus, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 29.8,
+  "carbsPer100g": 4.4,
+  "fatPer100g": 2.1,
+  "caloriesPer100g": 164,
+  "isLiquid": false,
+  "aliases": [
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174249
+ },
+ {
+  "id": "usda-174220",
+  "name": "Scallops, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 12.1,
+  "carbsPer100g": 3.2,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 69,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 80,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 174220
+ },
+ {
+  "id": "usda-167742",
+  "name": "Scallops, steamed",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 20.5,
+  "carbsPer100g": 5.4,
+  "fatPer100g": 0.8,
+  "caloriesPer100g": 111,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   }
+  ],
+  "usdaId": 167742
+ },
+ {
+  "id": "usda-174214",
+  "name": "Clams, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 14.7,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 1,
+  "caloriesPer100g": 86,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 70,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 large",
+    "grams": 20
+   },
+   {
+    "label": "1 medium",
+    "grams": 14.5
+   }
+  ],
+  "usdaId": 174214
+ },
+ {
+  "id": "usda-171975",
+  "name": "Clams, steamed",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 25.6,
+  "carbsPer100g": 5.1,
+  "fatPer100g": 2,
+  "caloriesPer100g": 148,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "20 small",
+    "grams": 190
+   }
+  ],
+  "usdaId": 171975
+ },
+ {
+  "id": "usda-171978",
+  "name": "Oysters, wild, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 5.7,
+  "carbsPer100g": 2.7,
+  "fatPer100g": 1.7,
+  "caloriesPer100g": 51,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "6 medium",
+    "grams": 84
+   },
+   {
+    "label": "1 cup",
+    "grams": 248
+   }
+  ],
+  "usdaId": 171978
+ },
+ {
+  "id": "usda-171980",
+  "name": "Oysters, wild, steamed",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 11.4,
+  "carbsPer100g": 5.5,
+  "fatPer100g": 3.4,
+  "caloriesPer100g": 102,
+  "isLiquid": false,
+  "aliases": [
+   "shellfish",
+   "seafood"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "6 medium",
+    "grams": 42
+   }
+  ],
+  "usdaId": 171980
+ },
+ {
+  "id": "usda-170894",
+  "name": "Greek yogurt, plain, nonfat (0%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.2,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 59,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "yogurt"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 170
+   }
+  ],
+  "usdaId": 170894
+ },
+ {
+  "id": "usda-170903",
+  "name": "Greek yogurt, plain, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 1.9,
+  "caloriesPer100g": 73,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "yogurt"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 200
+   }
+  ],
+  "usdaId": 170903
+ },
+ {
+  "id": "usda-171304",
+  "name": "Greek yogurt, plain, whole milk",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9,
+  "carbsPer100g": 4,
+  "fatPer100g": 5,
+  "caloriesPer100g": 97,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "yogurt"
+  ],
+  "usdaId": 171304
+ },
+ {
+  "id": "usda-170902",
+  "name": "Greek yogurt, vanilla, nonfat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.6,
+  "carbsPer100g": 10.4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 78,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "yogurt",
+   "flavoured"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 150
+   }
+  ],
+  "usdaId": 170902
+ },
+ {
+  "id": "usda-170901",
+  "name": "Greek yogurt, strawberry, nonfat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.1,
+  "carbsPer100g": 12.1,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 82,
+  "fiberPer100g": 0.6,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "yogurt",
+   "flavoured"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 150
+   }
+  ],
+  "usdaId": 170901
+ },
+ {
+  "id": "usda-170907",
+  "name": "Greek yogurt, vanilla, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.6,
+  "carbsPer100g": 9.5,
+  "fatPer100g": 2.5,
+  "caloriesPer100g": 95,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "yogurt",
+   "flavoured"
+  ],
+  "usdaId": 170907
+ },
+ {
+  "id": "usda-170887",
+  "name": "Yogurt, plain, skim milk",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.7,
+  "carbsPer100g": 7.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 56,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 170
+   },
+   {
+    "label": "1 container",
+    "grams": 227
+   },
+   {
+    "label": "1 cup",
+    "grams": 245
+   }
+  ],
+  "usdaId": 170887
+ },
+ {
+  "id": "usda-170886",
+  "name": "Yogurt, plain, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.3,
+  "carbsPer100g": 7,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 63,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 170
+   },
+   {
+    "label": "1 container",
+    "grams": 227
+   },
+   {
+    "label": "0.5 container",
+    "grams": 113
+   }
+  ],
+  "usdaId": 170886
+ },
+ {
+  "id": "usda-171284",
+  "name": "Yogurt, plain, whole milk",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 4.7,
+  "fatPer100g": 3.3,
+  "caloriesPer100g": 61,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 170
+   },
+   {
+    "label": "1 container",
+    "grams": 227
+   },
+   {
+    "label": "0.5 container",
+    "grams": 113
+   }
+  ],
+  "usdaId": 171284
+ },
+ {
+  "id": "usda-170888",
+  "name": "Yogurt, vanilla, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.9,
+  "carbsPer100g": 13.8,
+  "fatPer100g": 1.3,
+  "caloriesPer100g": 85,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt"
+  ],
+  "servings": [
+   {
+    "label": "1 container",
+    "grams": 170
+   },
+   {
+    "label": "1 container",
+    "grams": 227
+   },
+   {
+    "label": "1 cup",
+    "grams": 245
+   }
+  ],
+  "usdaId": 170888
+ },
+ {
+  "id": "usda-170906",
+  "name": "Yogurt, vanilla, non-fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 17,
+  "fatPer100g": 0,
+  "caloriesPer100g": 78,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 245
+   },
+   {
+    "label": "1 container",
+    "grams": 227
+   },
+   {
+    "label": "0.5 container",
+    "grams": 113
+   }
+  ],
+  "usdaId": 170906
+ },
+ {
+  "id": "usda-170904",
+  "name": "Kefir, plain, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.8,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 1,
+  "caloriesPer100g": 43,
+  "isLiquid": true,
+  "aliases": [
+   "fermented milk"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 243
+   },
+   {
+    "label": "1 bottle",
+    "grams": 971
+   }
+  ],
+  "usdaId": 170904
+ },
+ {
+  "id": "usda-172179",
+  "name": "Cottage cheese, creamed (4%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11.1,
+  "carbsPer100g": 3.4,
+  "fatPer100g": 4.3,
+  "caloriesPer100g": 98,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 cup, large curd",
+    "grams": 210
+   },
+   {
+    "label": "1 cup, small curd",
+    "grams": 225
+   }
+  ],
+  "usdaId": 172179
+ },
+ {
+  "id": "usda-172182",
+  "name": "Cottage cheese, low fat (2%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.5,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 2.3,
+  "caloriesPer100g": 81,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 cup",
+    "grams": 226
+   }
+  ],
+  "usdaId": 172182
+ },
+ {
+  "id": "usda-168114",
+  "name": "Cottage cheese, low fat (1%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.4,
+  "carbsPer100g": 2.7,
+  "fatPer100g": 1,
+  "caloriesPer100g": 72,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "4 oz",
+    "grams": 113
+   },
+   {
+    "label": "1 cup",
+    "grams": 226
+   }
+  ],
+  "usdaId": 168114
+ },
+ {
+  "id": "usda-172181",
+  "name": "Cottage cheese, dry curd (nonfat)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.3,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 72,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 145
+   },
+   {
+    "label": "4 oz",
+    "grams": 113
+   }
+  ],
+  "usdaId": 172181
+ },
+ {
+  "id": "usda-170899",
+  "name": "Cheddar cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.3,
+  "carbsPer100g": 2.1,
+  "fatPer100g": 33.8,
+  "caloriesPer100g": 410,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 28
+   },
+   {
+    "label": "1 tbsp grated",
+    "grams": 7
+   }
+  ],
+  "usdaId": 170899
+ },
+ {
+  "id": "usda-170845",
+  "name": "Mozzarella, whole milk",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 22.2,
+  "carbsPer100g": 2.4,
+  "fatPer100g": 22.1,
+  "caloriesPer100g": 299,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, shredded",
+    "grams": 112
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "6 slices",
+    "grams": 170
+   }
+  ],
+  "usdaId": 170845
+ },
+ {
+  "id": "usda-170847",
+  "name": "Mozzarella, part-skim",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.3,
+  "carbsPer100g": 2.8,
+  "fatPer100g": 15.9,
+  "caloriesPer100g": 254,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170847
+ },
+ {
+  "id": "usda-169051",
+  "name": "Mozzarella, nonfat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 31.7,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 0,
+  "caloriesPer100g": 141,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, shredded",
+    "grams": 113
+   }
+  ],
+  "usdaId": 169051
+ },
+ {
+  "id": "usda-173420",
+  "name": "Feta cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14.2,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 21.5,
+  "caloriesPer100g": 265,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "greek"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, crumbled",
+    "grams": 150
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 wedge",
+    "grams": 38
+   }
+  ],
+  "usdaId": 173420
+ },
+ {
+  "id": "usda-170848",
+  "name": "Parmesan cheese, hard",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 35.8,
+  "carbsPer100g": 3.2,
+  "fatPer100g": 25,
+  "caloriesPer100g": 392,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "parmigiano"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "5 package",
+    "grams": 142
+   }
+  ],
+  "usdaId": 170848
+ },
+ {
+  "id": "usda-171251",
+  "name": "Swiss cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 27,
+  "carbsPer100g": 1.4,
+  "fatPer100g": 31,
+  "caloriesPer100g": 393,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "emmental"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 132
+   },
+   {
+    "label": "1 cup, melted",
+    "grams": 244
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 108
+   }
+  ],
+  "usdaId": 171251
+ },
+ {
+  "id": "usda-168141",
+  "name": "Swiss cheese, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 28.4,
+  "carbsPer100g": 3.4,
+  "fatPer100g": 5.1,
+  "caloriesPer100g": 179,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 slice",
+    "grams": 28
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 108
+   },
+   {
+    "label": "1 cup, diced",
+    "grams": 132
+   }
+  ],
+  "usdaId": 168141
+ },
+ {
+  "id": "usda-171241",
+  "name": "Gouda cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.9,
+  "carbsPer100g": 2.2,
+  "fatPer100g": 27.4,
+  "caloriesPer100g": 356,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 package",
+    "grams": 198
+   }
+  ],
+  "usdaId": 171241
+ },
+ {
+  "id": "usda-170850",
+  "name": "Provolone cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 25.6,
+  "carbsPer100g": 2.1,
+  "fatPer100g": 26.6,
+  "caloriesPer100g": 351,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 132
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 slice",
+    "grams": 28
+   }
+  ],
+  "usdaId": 170850
+ },
+ {
+  "id": "usda-172177",
+  "name": "Brie cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 20.8,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 27.7,
+  "caloriesPer100g": 334,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cup, sliced",
+    "grams": 144
+   },
+   {
+    "label": "1 cup, melted",
+    "grams": 240
+   }
+  ],
+  "usdaId": 172177
+ },
+ {
+  "id": "usda-172178",
+  "name": "Camembert cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19.8,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 24.3,
+  "caloriesPer100g": 300,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cup",
+    "grams": 246
+   },
+   {
+    "label": "1 wedge",
+    "grams": 38
+   }
+  ],
+  "usdaId": 172178
+ },
+ {
+  "id": "usda-172175",
+  "name": "Blue cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 21.4,
+  "carbsPer100g": 2.3,
+  "fatPer100g": 28.7,
+  "caloriesPer100g": 353,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "gorgonzola",
+   "roquefort"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 172175
+ },
+ {
+  "id": "usda-173435",
+  "name": "Goat cheese, soft",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 18.5,
+  "carbsPer100g": 0,
+  "fatPer100g": 21.1,
+  "caloriesPer100g": 264,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "chevre"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 173435
+ },
+ {
+  "id": "usda-173419",
+  "name": "Edam cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 25,
+  "carbsPer100g": 1.4,
+  "fatPer100g": 28.6,
+  "caloriesPer100g": 357,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 package",
+    "grams": 198
+   }
+  ],
+  "usdaId": 173419
+ },
+ {
+  "id": "usda-173416",
+  "name": "Colby cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 23.8,
+  "carbsPer100g": 2.6,
+  "fatPer100g": 32.1,
+  "caloriesPer100g": 394,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 132
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 113
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 173416
+ },
+ {
+  "id": "usda-170844",
+  "name": "Monterey Jack cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 24.5,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 30.3,
+  "caloriesPer100g": 373,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 132
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 113
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 170844
+ },
+ {
+  "id": "usda-168098",
+  "name": "Monterey Jack cheese, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 28.2,
+  "carbsPer100g": 0.7,
+  "fatPer100g": 21.6,
+  "caloriesPer100g": 313,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, diced",
+    "grams": 132
+   },
+   {
+    "label": "1 cup, shredded",
+    "grams": 113
+   },
+   {
+    "label": "1 slice",
+    "grams": 28
+   }
+  ],
+  "usdaId": 168098
+ },
+ {
+  "id": "usda-173418",
+  "name": "Cream cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.2,
+  "carbsPer100g": 5.5,
+  "fatPer100g": 34.4,
+  "caloriesPer100g": 350,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "philadelphia"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14.5
+   },
+   {
+    "label": "1 cup",
+    "grams": 232
+   },
+   {
+    "label": "1 tbsp, whipped",
+    "grams": 10
+   }
+  ],
+  "usdaId": 173418
+ },
+ {
+  "id": "usda-169079",
+  "name": "Cream cheese, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.9,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 16.7,
+  "caloriesPer100g": 208,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 240
+   },
+   {
+    "label": "1 tbsp, whipped",
+    "grams": 10
+   }
+  ],
+  "usdaId": 169079
+ },
+ {
+  "id": "usda-170851",
+  "name": "Ricotta, whole milk",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.5,
+  "carbsPer100g": 7.3,
+  "fatPer100g": 10.2,
+  "caloriesPer100g": 150,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 124
+   },
+   {
+    "label": "1 cup",
+    "grams": 246
+   }
+  ],
+  "usdaId": 170851
+ },
+ {
+  "id": "usda-171248",
+  "name": "Ricotta, part-skim",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11.4,
+  "carbsPer100g": 5.1,
+  "fatPer100g": 7.9,
+  "caloriesPer100g": 138,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 124
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cup",
+    "grams": 246
+   }
+  ],
+  "usdaId": 171248
+ },
+ {
+  "id": "usda-171290",
+  "name": "American cheese, processed slices",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 18.1,
+  "carbsPer100g": 3.7,
+  "fatPer100g": 31.8,
+  "caloriesPer100g": 371,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "burger cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 slice",
+    "grams": 21
+   },
+   {
+    "label": "1 slice",
+    "grams": 28
+   }
+  ],
+  "usdaId": 171290
+ },
+ {
+  "id": "usda-170863",
+  "name": "American cheese, fat-free",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 21.1,
+  "carbsPer100g": 10.5,
+  "fatPer100g": 0,
+  "caloriesPer100g": 126,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 serving",
+    "grams": 19
+   }
+  ],
+  "usdaId": 170863
+ },
+ {
+  "id": "usda-171249",
+  "name": "Romano cheese",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 31.8,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 26.9,
+  "caloriesPer100g": 387,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "pecorino"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "5 package",
+    "grams": 142
+   }
+  ],
+  "usdaId": 171249
+ },
+ {
+  "id": "usda-171265",
+  "name": "Whole milk (3.25%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.2,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 3.3,
+  "caloriesPer100g": 61,
+  "isLiquid": true,
+  "aliases": [
+   "milk"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 244
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 30.5
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 171265
+ },
+ {
+  "id": "usda-171267",
+  "name": "Semi-skimmed milk (2%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 2,
+  "caloriesPer100g": 50,
+  "isLiquid": true,
+  "aliases": [
+   "milk",
+   "reduced fat"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 244
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 30.5
+   },
+   {
+    "label": "1 quart",
+    "grams": 976
+   }
+  ],
+  "usdaId": 171267
+ },
+ {
+  "id": "usda-170872",
+  "name": "Low-fat milk (1%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 5,
+  "fatPer100g": 1,
+  "caloriesPer100g": 42,
+  "isLiquid": true,
+  "aliases": [
+   "milk"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 244
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 30.5
+   },
+   {
+    "label": "1 quart",
+    "grams": 976
+   }
+  ],
+  "usdaId": 170872
+ },
+ {
+  "id": "usda-173432",
+  "name": "Skimmed milk (fat-free)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 4.9,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 35,
+  "isLiquid": true,
+  "aliases": [
+   "milk",
+   "skim"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 245
+   },
+   {
+    "label": "1 quart",
+    "grams": 980
+   }
+  ],
+  "usdaId": 173432
+ },
+ {
+  "id": "usda-170874",
+  "name": "Buttermilk, low fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 40,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 245
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 30.6
+   },
+   {
+    "label": "1 quart",
+    "grams": 980
+   }
+  ],
+  "usdaId": 170874
+ },
+ {
+  "id": "usda-170859",
+  "name": "Heavy whipping cream",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.8,
+  "carbsPer100g": 2.8,
+  "fatPer100g": 36.1,
+  "caloriesPer100g": 340,
+  "isLiquid": true,
+  "aliases": [
+   "double cream"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, whipped",
+    "grams": 120
+   },
+   {
+    "label": "1 cup, fluid",
+    "grams": 238
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 170859
+ },
+ {
+  "id": "usda-170858",
+  "name": "Light whipping cream",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 3,
+  "fatPer100g": 30.9,
+  "caloriesPer100g": 292,
+  "isLiquid": true,
+  "aliases": [
+   "single cream"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, whipped",
+    "grams": 120
+   },
+   {
+    "label": "1 cup, fluid",
+    "grams": 239
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 170858
+ },
+ {
+  "id": "usda-171255",
+  "name": "Half and half cream",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.1,
+  "carbsPer100g": 4.3,
+  "fatPer100g": 11.5,
+  "caloriesPer100g": 131,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 30.2
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 242
+   }
+  ],
+  "usdaId": 171255
+ },
+ {
+  "id": "usda-171257",
+  "name": "Sour cream",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.4,
+  "carbsPer100g": 4.6,
+  "fatPer100g": 19.4,
+  "caloriesPer100g": 198,
+  "isLiquid": false,
+  "aliases": [
+   "soured cream"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 12
+   },
+   {
+    "label": "1 cup",
+    "grams": 230
+   }
+  ],
+  "usdaId": 171257
+ },
+ {
+  "id": "usda-171256",
+  "name": "Sour cream, reduced fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 4.3,
+  "fatPer100g": 12,
+  "caloriesPer100g": 135,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 242
+   }
+  ],
+  "usdaId": 171256
+ },
+ {
+  "id": "usda-167575",
+  "name": "Ice cream, vanilla",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 23.6,
+  "fatPer100g": 11,
+  "caloriesPer100g": 207,
+  "fiberPer100g": 0.7,
+  "isLiquid": false,
+  "aliases": [
+   "dessert"
+  ],
+  "servings": [
+   {
+    "label": "1 serving 1/2 cup",
+    "grams": 66
+   }
+  ],
+  "usdaId": 167575
+ },
+ {
+  "id": "usda-167572",
+  "name": "Ice cream, vanilla, light",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.8,
+  "carbsPer100g": 29.5,
+  "fatPer100g": 4.8,
+  "caloriesPer100g": 180,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "aliases": [
+   "dessert"
+  ],
+  "servings": [
+   {
+    "label": "1 serving 1/2 cup",
+    "grams": 76
+   }
+  ],
+  "usdaId": 167572
+ },
+ {
+  "id": "usda-172475",
+  "name": "Tofu, firm",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 17.3,
+  "carbsPer100g": 2.8,
+  "fatPer100g": 8.7,
+  "caloriesPer100g": 144,
+  "fiberPer100g": 2.3,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "bean curd",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 126
+   },
+   {
+    "label": "0.25 block",
+    "grams": 81
+   }
+  ],
+  "usdaId": 172475
+ },
+ {
+  "id": "usda-172476",
+  "name": "Tofu, regular",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.1,
+  "carbsPer100g": 1.9,
+  "fatPer100g": 4.8,
+  "caloriesPer100g": 76,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "bean curd",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 124
+   },
+   {
+    "label": "0.25 block",
+    "grams": 116
+   }
+  ],
+  "usdaId": 172476
+ },
+ {
+  "id": "usda-174290",
+  "name": "Tofu, extra firm",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 1.2,
+  "fatPer100g": 5.3,
+  "caloriesPer100g": 83,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "bean curd",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "0.2 block",
+    "grams": 91
+   }
+  ],
+  "usdaId": 174290
+ },
+ {
+  "id": "usda-172449",
+  "name": "Tofu, soft / silken",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.2,
+  "carbsPer100g": 1.2,
+  "fatPer100g": 3.7,
+  "caloriesPer100g": 61,
+  "fiberPer100g": 0.2,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "bean curd",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 piece",
+    "grams": 120
+   },
+   {
+    "label": "1 cup",
+    "grams": 248
+   },
+   {
+    "label": "0.25 block",
+    "grams": 116
+   }
+  ],
+  "usdaId": 172449
+ },
+ {
+  "id": "usda-174304",
+  "name": "Tofu, fried",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.8,
+  "carbsPer100g": 8.9,
+  "fatPer100g": 20.2,
+  "caloriesPer100g": 270,
+  "fiberPer100g": 3.9,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "bean curd",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 piece",
+    "grams": 13
+   }
+  ],
+  "usdaId": 174304
+ },
+ {
+  "id": "usda-174272",
+  "name": "Tempeh",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 20.3,
+  "carbsPer100g": 7.6,
+  "fatPer100g": 10.8,
+  "caloriesPer100g": 192,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "fermented",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 166
+   }
+  ],
+  "usdaId": 174272
+ },
+ {
+  "id": "usda-172467",
+  "name": "Tempeh, cooked",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 19.9,
+  "carbsPer100g": 7.6,
+  "fatPer100g": 11.4,
+  "caloriesPer100g": 195,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "fermented",
+   "vegan"
+  ],
+  "usdaId": 172467
+ },
+ {
+  "id": "usda-172443",
+  "name": "Natto",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19.4,
+  "carbsPer100g": 12.7,
+  "fatPer100g": 11,
+  "caloriesPer100g": 211,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "fermented"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 175
+   }
+  ],
+  "usdaId": 172443
+ },
+ {
+  "id": "usda-169282",
+  "name": "Edamame, raw",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 13,
+  "carbsPer100g": 11.1,
+  "fatPer100g": 6.8,
+  "caloriesPer100g": 147,
+  "fiberPer100g": 4.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 95,
+  "aliases": [
+   "soybeans",
+   "soy",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 256
+   }
+  ],
+  "usdaId": 169282
+ },
+ {
+  "id": "usda-169283",
+  "name": "Edamame, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 12.4,
+  "carbsPer100g": 11.1,
+  "fatPer100g": 6.4,
+  "caloriesPer100g": 141,
+  "fiberPer100g": 4.2,
+  "isLiquid": false,
+  "aliases": [
+   "soybeans",
+   "soy",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 180
+   }
+  ],
+  "usdaId": 169283
+ },
+ {
+  "id": "usda-174270",
+  "name": "Soybeans, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 36.5,
+  "carbsPer100g": 30.2,
+  "fatPer100g": 19.9,
+  "caloriesPer100g": 446,
+  "fiberPer100g": 9.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 260,
+  "aliases": [
+   "soy",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 186
+   }
+  ],
+  "usdaId": 174270
+ },
+ {
+  "id": "usda-174271",
+  "name": "Soybeans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 18.2,
+  "carbsPer100g": 8.4,
+  "fatPer100g": 9,
+  "caloriesPer100g": 172,
+  "fiberPer100g": 6,
+  "isLiquid": false,
+  "aliases": [
+   "soy",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 172
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 10.7
+   }
+  ],
+  "usdaId": 174271
+ },
+ {
+  "id": "usda-172420",
+  "name": "Lentils, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 24.6,
+  "carbsPer100g": 63.4,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 352,
+  "fiberPer100g": 10.7,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 305,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 192
+   },
+   {
+    "label": "1 tablespoon",
+    "grams": 12
+   }
+  ],
+  "usdaId": 172420
+ },
+ {
+  "id": "usda-172421",
+  "name": "Lentils, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 9,
+  "carbsPer100g": 20.1,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 116,
+  "fiberPer100g": 7.9,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 198
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.3
+   }
+  ],
+  "usdaId": 172421
+ },
+ {
+  "id": "usda-173756",
+  "name": "Chickpeas, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 20.5,
+  "carbsPer100g": 63,
+  "fatPer100g": 6,
+  "caloriesPer100g": 378,
+  "fiberPer100g": 12.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 230,
+  "aliases": [
+   "garbanzo",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 200
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.5
+   }
+  ],
+  "usdaId": 173756
+ },
+ {
+  "id": "usda-173757",
+  "name": "Chickpeas, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 8.9,
+  "carbsPer100g": 27.4,
+  "fatPer100g": 2.6,
+  "caloriesPer100g": 164,
+  "fiberPer100g": 7.6,
+  "isLiquid": false,
+  "aliases": [
+   "garbanzo",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 164
+   }
+  ],
+  "usdaId": 173757
+ },
+ {
+  "id": "usda-175206",
+  "name": "Chickpeas, canned (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.9,
+  "carbsPer100g": 13.5,
+  "fatPer100g": 2,
+  "caloriesPer100g": 88,
+  "fiberPer100g": 4.4,
+  "isLiquid": false,
+  "aliases": [
+   "garbanzo",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 240
+   },
+   {
+    "label": "1 can",
+    "grams": 448
+   }
+  ],
+  "usdaId": 175206
+ },
+ {
+  "id": "usda-173734",
+  "name": "Black beans, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.6,
+  "carbsPer100g": 62.4,
+  "fatPer100g": 1.4,
+  "caloriesPer100g": 341,
+  "fiberPer100g": 15.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 260,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 194
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.1
+   }
+  ],
+  "usdaId": 173734
+ },
+ {
+  "id": "usda-173735",
+  "name": "Black beans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 8.9,
+  "carbsPer100g": 23.7,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 132,
+  "fiberPer100g": 8.7,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 172
+   }
+  ],
+  "usdaId": 173735
+ },
+ {
+  "id": "usda-175238",
+  "name": "Black beans, canned (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6,
+  "carbsPer100g": 16.6,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 91,
+  "fiberPer100g": 6.9,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 240
+   }
+  ],
+  "usdaId": 175238
+ },
+ {
+  "id": "usda-173744",
+  "name": "Kidney beans, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22.5,
+  "carbsPer100g": 61.3,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 337,
+  "fiberPer100g": 15.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 265,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 184
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.2
+   }
+  ],
+  "usdaId": 173744
+ },
+ {
+  "id": "usda-175194",
+  "name": "Kidney beans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 8.7,
+  "carbsPer100g": 22.8,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 127,
+  "fiberPer100g": 7.4,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 177
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 11
+   }
+  ],
+  "usdaId": 175194
+ },
+ {
+  "id": "usda-174285",
+  "name": "Kidney beans, canned (drained)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8,
+  "carbsPer100g": 21.5,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 124,
+  "fiberPer100g": 5.5,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 can drained solids",
+    "grams": 266
+   }
+  ],
+  "usdaId": 174285
+ },
+ {
+  "id": "usda-175199",
+  "name": "Pinto beans, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 21.4,
+  "carbsPer100g": 62.6,
+  "fatPer100g": 1.2,
+  "caloriesPer100g": 347,
+  "fiberPer100g": 15.5,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 245,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 193
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12
+   }
+  ],
+  "usdaId": 175199
+ },
+ {
+  "id": "usda-175200",
+  "name": "Pinto beans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 9,
+  "carbsPer100g": 26.2,
+  "fatPer100g": 0.7,
+  "caloriesPer100g": 143,
+  "fiberPer100g": 9,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 171
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 10.6
+   }
+  ],
+  "usdaId": 175200
+ },
+ {
+  "id": "usda-173745",
+  "name": "Navy beans, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22.3,
+  "carbsPer100g": 60.8,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 337,
+  "fiberPer100g": 15.3,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 240,
+  "aliases": [
+   "haricot",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 208
+   }
+  ],
+  "usdaId": 173745
+ },
+ {
+  "id": "usda-173746",
+  "name": "Navy beans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 8.2,
+  "carbsPer100g": 26.1,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 140,
+  "fiberPer100g": 10.5,
+  "isLiquid": false,
+  "aliases": [
+   "haricot",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 182
+   }
+  ],
+  "usdaId": 173746
+ },
+ {
+  "id": "usda-175202",
+  "name": "White beans (cannellini), dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.4,
+  "carbsPer100g": 60.3,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 333,
+  "fiberPer100g": 15.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 240,
+  "aliases": [
+   "cannellini",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 202
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.6
+   }
+  ],
+  "usdaId": 175202
+ },
+ {
+  "id": "usda-175203",
+  "name": "White beans (cannellini), boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 9.7,
+  "carbsPer100g": 25.1,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 139,
+  "fiberPer100g": 6.3,
+  "isLiquid": false,
+  "aliases": [
+   "cannellini",
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 179
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 11.2
+   }
+  ],
+  "usdaId": 175203
+ },
+ {
+  "id": "usda-175182",
+  "name": "Baked beans, canned",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.8,
+  "carbsPer100g": 21.1,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 94,
+  "fiberPer100g": 4.1,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "heinz"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 254
+   }
+  ],
+  "usdaId": 175182
+ },
+ {
+  "id": "usda-174253",
+  "name": "Lima beans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 7.8,
+  "carbsPer100g": 20.9,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 115,
+  "fiberPer100g": 7,
+  "isLiquid": false,
+  "aliases": [
+   "butter beans",
+   "pulses"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 188
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 11.7
+   }
+  ],
+  "usdaId": 174253
+ },
+ {
+  "id": "usda-173753",
+  "name": "Fava beans, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 7.6,
+  "carbsPer100g": 19.7,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 110,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "aliases": [
+   "broad beans",
+   "pulses"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 170
+   }
+  ],
+  "usdaId": 173753
+ },
+ {
+  "id": "usda-172428",
+  "name": "Split peas, dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 23.1,
+  "carbsPer100g": 61.6,
+  "fatPer100g": 3.9,
+  "caloriesPer100g": 364,
+  "fiberPer100g": 22.2,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 310,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 196
+   }
+  ],
+  "usdaId": 172428
+ },
+ {
+  "id": "usda-172429",
+  "name": "Split peas, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 8.3,
+  "carbsPer100g": 21.1,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 118,
+  "fiberPer100g": 8.3,
+  "isLiquid": false,
+  "aliases": [
+   "pulses",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 196
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.2
+   }
+  ],
+  "usdaId": 172429
+ },
+ {
+  "id": "usda-173759",
+  "name": "Black-eyed peas, boiled",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 7.7,
+  "carbsPer100g": 20.8,
+  "fatPer100g": 0.5,
+  "caloriesPer100g": 116,
+  "fiberPer100g": 6.5,
+  "isLiquid": false,
+  "aliases": [
+   "pulses"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 171
+   }
+  ],
+  "usdaId": 173759
+ },
+ {
+  "id": "usda-174289",
+  "name": "Hummus",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.8,
+  "carbsPer100g": 15,
+  "fatPer100g": 17.8,
+  "caloriesPer100g": 237,
+  "fiberPer100g": 5.5,
+  "isLiquid": false,
+  "aliases": [
+   "chickpea",
+   "dip"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 246
+   }
+  ],
+  "usdaId": 174289
+ },
+ {
+  "id": "usda-172455",
+  "name": "Falafel",
+  "category": "protein",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 13.3,
+  "carbsPer100g": 31.8,
+  "fatPer100g": 17.8,
+  "caloriesPer100g": 333,
+  "isLiquid": false,
+  "aliases": [
+   "chickpea"
+  ],
+  "servings": [
+   {
+    "label": "1 patty",
+    "grams": 17
+   }
+  ],
+  "usdaId": 172455
+ },
+ {
+  "id": "usda-174287",
+  "name": "Veggie burger (soy-based)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 15.7,
+  "carbsPer100g": 14.3,
+  "fatPer100g": 6.3,
+  "caloriesPer100g": 177,
+  "fiberPer100g": 4.9,
+  "isLiquid": false,
+  "aliases": [
+   "vegan",
+   "meatless"
+  ],
+  "servings": [
+   {
+    "label": "1 pattie",
+    "grams": 70
+   }
+  ],
+  "usdaId": 174287
+ },
+ {
+  "id": "usda-174276",
+  "name": "Soy protein isolate powder",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 88.3,
+  "carbsPer100g": 0,
+  "fatPer100g": 3.4,
+  "caloriesPer100g": 335,
+  "isLiquid": false,
+  "aliases": [
+   "protein powder",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 174276
+ },
+ {
+  "id": "usda-174273",
+  "name": "Soy flour, full-fat",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 37.8,
+  "carbsPer100g": 31.9,
+  "fatPer100g": 20.7,
+  "caloriesPer100g": 434,
+  "fiberPer100g": 9.6,
+  "isLiquid": false,
+  "aliases": [
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup, stirred",
+    "grams": 84
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 5.2
+   }
+  ],
+  "usdaId": 174273
+ },
+ {
+  "id": "usda-174266",
+  "name": "Peanut butter, smooth",
+  "category": "fat",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 22.2,
+  "carbsPer100g": 22.3,
+  "fatPer100g": 51.4,
+  "caloriesPer100g": 598,
+  "fiberPer100g": 5,
+  "isLiquid": false,
+  "aliases": [
+   "nut butter"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   },
+   {
+    "label": "2 tbsp",
+    "grams": 32
+   }
+  ],
+  "usdaId": 174266
+ },
+ {
+  "id": "bi-skyr-plain-0-2-fat",
+  "name": "Skyr, plain (0.2% fat)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11,
+  "carbsPer100g": 4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 63,
+  "isLiquid": false,
+  "aliases": [
+   "icelandic yogurt",
+   "yoghurt"
+  ],
+  "note": "Typical label values (Icelandic-style skyr)."
+ },
+ {
+  "id": "bi-skyr-plain-high-protein",
+  "name": "Skyr, plain, high-protein",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 63,
+  "isLiquid": false,
+  "aliases": [
+   "icelandic yogurt",
+   "yoghurt"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-quark-low-fat-0-2",
+  "name": "Quark, low fat (0.2%)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12,
+  "carbsPer100g": 4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 66,
+  "isLiquid": false,
+  "aliases": [
+   "curd cheese",
+   "magerquark"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-quark-full-fat",
+  "name": "Quark, full fat",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 10,
+  "caloriesPer100g": 140,
+  "isLiquid": false,
+  "aliases": [
+   "curd cheese"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-high-protein-yogurt-plain-15-g-protein",
+  "name": "High-protein yogurt, plain (15 g protein)",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 4,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 59,
+  "isLiquid": false,
+  "aliases": [
+   "yoghurt",
+   "protein yogurt"
+  ],
+  "note": "Typical high-protein yogurt."
+ },
+ {
+  "id": "bi-cottage-cheese-high-protein",
+  "name": "Cottage cheese, high-protein",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 2.5,
+  "caloriesPer100g": 86,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-halloumi",
+  "name": "Halloumi",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 22,
+  "carbsPer100g": 2,
+  "fatPer100g": 25,
+  "caloriesPer100g": 321,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "grilling cheese"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-paneer",
+  "name": "Paneer",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 18,
+  "carbsPer100g": 3,
+  "fatPer100g": 22,
+  "caloriesPer100g": 285,
+  "isLiquid": false,
+  "aliases": [
+   "cheese",
+   "indian cheese"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-mascarpone",
+  "name": "Mascarpone",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.5,
+  "carbsPer100g": 4,
+  "fatPer100g": 42,
+  "caloriesPer100g": 429,
+  "isLiquid": false,
+  "aliases": [
+   "cheese"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-lactose-free-milk-semi-skimmed",
+  "name": "Lactose-free milk, semi-skimmed",
+  "category": "dairy",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 4.7,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 47,
+  "isLiquid": true,
+  "aliases": [
+   "milk"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-seitan-wheat-protein",
+  "name": "Seitan (wheat protein)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 25,
+  "carbsPer100g": 7,
+  "fatPer100g": 2,
+  "caloriesPer100g": 150,
+  "isLiquid": false,
+  "aliases": [
+   "wheat gluten",
+   "vegan",
+   "mock meat"
+  ],
+  "note": "Varies by brand; check your pack."
+ },
+ {
+  "id": "bi-textured-vegetable-protein-tvp-dry",
+  "name": "Textured vegetable protein (TVP), dry",
+  "category": "protein",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 52,
+  "carbsPer100g": 33,
+  "fatPer100g": 1,
+  "caloriesPer100g": 345,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 270,
+  "aliases": [
+   "soy mince",
+   "soya",
+   "vegan"
+  ],
+  "note": "Rehydrates to about 2.7x weight."
+ },
+ {
+  "id": "bi-plant-based-mince-soy-pea",
+  "name": "Plant-based mince (soy/pea)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 17,
+  "carbsPer100g": 5,
+  "fatPer100g": 10,
+  "caloriesPer100g": 175,
+  "isLiquid": false,
+  "aliases": [
+   "vegan",
+   "meatless",
+   "beyond",
+   "impossible"
+  ],
+  "note": "Typical plant-based mince."
+ },
+ {
+  "id": "bi-quorn-mince-mycoprotein",
+  "name": "Quorn mince (mycoprotein)",
+  "category": "protein",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14,
+  "carbsPer100g": 4,
+  "fatPer100g": 2,
+  "caloriesPer100g": 94,
+  "isLiquid": false,
+  "aliases": [
+   "vegetarian",
+   "meatless"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-protein-pasta-chickpea-lentil-dry",
+  "name": "Protein pasta (chickpea / lentil), dry",
+  "category": "carb",
+  "nutritionBasis": "raw",
+  "proteinPer100g": 22,
+  "carbsPer100g": 55,
+  "fatPer100g": 5,
+  "caloriesPer100g": 350,
+  "fiberPer100g": 8,
+  "isLiquid": false,
+  "defaultCookedWeightRetentionPercent": 220,
+  "aliases": [
+   "banza",
+   "high protein pasta"
+  ],
+  "note": "Typical label values."
+ }
+]

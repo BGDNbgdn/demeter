@@ -1,0 +1,4205 @@
+[
+ {
+  "id": "usda-168556",
+  "name": "Ketchup",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 27.4,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 101,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "aliases": [
+   "tomato ketchup",
+   "catsup"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 17
+   }
+  ],
+  "usdaId": 168556
+ },
+ {
+  "id": "usda-171009",
+  "name": "Mayonnaise, regular",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 0.6,
+  "fatPer100g": 74.9,
+  "caloriesPer100g": 680,
+  "isLiquid": false,
+  "aliases": [
+   "mayo"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 13.8
+   }
+  ],
+  "usdaId": 171009
+ },
+ {
+  "id": "usda-173594",
+  "name": "Mayonnaise, light",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 9.2,
+  "fatPer100g": 22.2,
+  "caloriesPer100g": 238,
+  "isLiquid": false,
+  "aliases": [
+   "mayo",
+   "reduced fat"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 173594
+ },
+ {
+  "id": "usda-171406",
+  "name": "Mayonnaise, fat-free / imitation",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 16,
+  "fatPer100g": 19.2,
+  "caloriesPer100g": 232,
+  "isLiquid": false,
+  "aliases": [
+   "mayo"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 240
+   }
+  ],
+  "usdaId": 171406
+ },
+ {
+  "id": "usda-174523",
+  "name": "BBQ sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 40.8,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 172,
+  "fiberPer100g": 0.9,
+  "isLiquid": false,
+  "aliases": [
+   "barbecue"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 17
+   }
+  ],
+  "usdaId": 174523
+ },
+ {
+  "id": "usda-174277",
+  "name": "Soy sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.1,
+  "carbsPer100g": 4.9,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 53,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "shoyu"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 174277
+ },
+ {
+  "id": "usda-172474",
+  "name": "Soy sauce, reduced sodium",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.2,
+  "carbsPer100g": 14.4,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 90,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "aliases": [
+   "shoyu"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 tsp",
+    "grams": 4.9
+   },
+   {
+    "label": "0.25 cup",
+    "grams": 58
+   }
+  ],
+  "usdaId": 172474
+ },
+ {
+  "id": "usda-171167",
+  "name": "Teriyaki sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.9,
+  "carbsPer100g": 15.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 89,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 18
+   }
+  ],
+  "usdaId": 171167
+ },
+ {
+  "id": "usda-171186",
+  "name": "Sriracha hot sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 19.2,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 93,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "chili sauce"
+  ],
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 6.5
+   }
+  ],
+  "usdaId": 171186
+ },
+ {
+  "id": "usda-174527",
+  "name": "Hot sauce (Tabasco-style)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 1.8,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 11,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "aliases": [
+   "pepper sauce"
+  ],
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 5
+   }
+  ],
+  "usdaId": 174527
+ },
+ {
+  "id": "usda-171579",
+  "name": "Pesto, basil",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9.8,
+  "carbsPer100g": 10.1,
+  "fatPer100g": 37.6,
+  "caloriesPer100g": 418,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 171579
+ },
+ {
+  "id": "usda-171192",
+  "name": "Tomato pasta sauce (marinara)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 7.4,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 50,
+  "fiberPer100g": 1.8,
+  "isLiquid": false,
+  "aliases": [
+   "passata",
+   "spaghetti sauce"
+  ],
+  "servings": [
+   {
+    "label": "1 serving 1/2 cup",
+    "grams": 132
+   }
+  ],
+  "usdaId": 171192
+ },
+ {
+  "id": "usda-172234",
+  "name": "Mustard, yellow",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.7,
+  "carbsPer100g": 5.8,
+  "fatPer100g": 3.3,
+  "caloriesPer100g": 60,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 5
+   }
+  ],
+  "usdaId": 172234
+ },
+ {
+  "id": "usda-173592",
+  "name": "Ranch dressing",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.3,
+  "carbsPer100g": 5.9,
+  "fatPer100g": 44.5,
+  "caloriesPer100g": 430,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 173592
+ },
+ {
+  "id": "usda-173593",
+  "name": "Ranch dressing, light",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.3,
+  "carbsPer100g": 21.3,
+  "fatPer100g": 12.4,
+  "caloriesPer100g": 196,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tablespoon",
+    "grams": 15
+   },
+   {
+    "label": "1 serving",
+    "grams": 30
+   }
+  ],
+  "usdaId": 173593
+ },
+ {
+  "id": "usda-169055",
+  "name": "Caesar dressing",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.2,
+  "carbsPer100g": 3.3,
+  "fatPer100g": 57.9,
+  "caloriesPer100g": 542,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 169055
+ },
+ {
+  "id": "usda-171019",
+  "name": "Italian vinaigrette dressing",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 12.1,
+  "fatPer100g": 21.1,
+  "caloriesPer100g": 240,
+  "isLiquid": false,
+  "aliases": [
+   "vinaigrette",
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 171019
+ },
+ {
+  "id": "usda-168096",
+  "name": "Italian dressing, light",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 6.7,
+  "fatPer100g": 20,
+  "caloriesPer100g": 200,
+  "fiberPer100g": 0.2,
+  "isLiquid": false,
+  "aliases": [
+   "vinaigrette",
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14
+   },
+   {
+    "label": "1 cup",
+    "grams": 216
+   }
+  ],
+  "usdaId": 168096
+ },
+ {
+  "id": "usda-171414",
+  "name": "French dressing",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 18.8,
+  "fatPer100g": 39.1,
+  "caloriesPer100g": 419,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 250
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   },
+   {
+    "label": "1 individual packet",
+    "grams": 12.3
+   }
+  ],
+  "usdaId": 171414
+ },
+ {
+  "id": "usda-173562",
+  "name": "Blue cheese dressing",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 51.1,
+  "caloriesPer100g": 484,
+  "fiberPer100g": 0.4,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 245
+   }
+  ],
+  "usdaId": 173562
+ },
+ {
+  "id": "usda-171402",
+  "name": "Thousand Island dressing",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 14.6,
+  "fatPer100g": 35.1,
+  "caloriesPer100g": 379,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   },
+   {
+    "label": "1 cup",
+    "grams": 250
+   },
+   {
+    "label": "1 serving",
+    "grams": 30
+   }
+  ],
+  "usdaId": 171402
+ },
+ {
+  "id": "usda-171034",
+  "name": "Honey mustard dressing, light",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 28.3,
+  "fatPer100g": 10,
+  "caloriesPer100g": 207,
+  "fiberPer100g": 0.8,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "servings": [
+   {
+    "label": "2 tbsp",
+    "grams": 30
+   }
+  ],
+  "usdaId": 171034
+ },
+ {
+  "id": "usda-172241",
+  "name": "Balsamic vinegar",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 17,
+  "fatPer100g": 0,
+  "caloriesPer100g": 88,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 172241
+ },
+ {
+  "id": "usda-173469",
+  "name": "Apple cider vinegar",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0.9,
+  "fatPer100g": 0,
+  "caloriesPer100g": 21,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "usdaId": 173469
+ },
+ {
+  "id": "usda-172237",
+  "name": "White vinegar",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 18,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 14.9
+   },
+   {
+    "label": "1 cup",
+    "grams": 238
+   },
+   {
+    "label": "1 tsp",
+    "grams": 5
+   }
+  ],
+  "usdaId": 172237
+ },
+ {
+  "id": "usda-174531",
+  "name": "Fish sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.1,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 35,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 18
+   }
+  ],
+  "usdaId": 174531
+ },
+ {
+  "id": "usda-172886",
+  "name": "Hoisin sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 44.1,
+  "fatPer100g": 3.4,
+  "caloriesPer100g": 220,
+  "fiberPer100g": 2.8,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 16
+   }
+  ],
+  "usdaId": 172886
+ },
+ {
+  "id": "usda-174529",
+  "name": "Oyster sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.4,
+  "carbsPer100g": 10.9,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 51,
+  "fiberPer100g": 0.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 18
+   }
+  ],
+  "usdaId": 174529
+ },
+ {
+  "id": "usda-171610",
+  "name": "Worcestershire sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 19.2,
+  "fatPer100g": 0,
+  "caloriesPer100g": 77,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 5
+   }
+  ],
+  "usdaId": 171610
+ },
+ {
+  "id": "usda-174524",
+  "name": "Salsa",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 6.6,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 29,
+  "fiberPer100g": 1.9,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "2 tbsp",
+    "grams": 32
+   }
+  ],
+  "usdaId": 174524
+ },
+ {
+  "id": "usda-171191",
+  "name": "Cheese sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.7,
+  "carbsPer100g": 6.8,
+  "fatPer100g": 13.3,
+  "caloriesPer100g": 174,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "0.25 cup",
+    "grams": 63
+   }
+  ],
+  "usdaId": 171191
+ },
+ {
+  "id": "usda-172879",
+  "name": "Plum sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 42.8,
+  "fatPer100g": 1,
+  "caloriesPer100g": 184,
+  "fiberPer100g": 0.7,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 19
+   },
+   {
+    "label": "1 cup",
+    "grams": 305
+   }
+  ],
+  "usdaId": 172879
+ },
+ {
+  "id": "usda-174066",
+  "name": "Sweet and sour sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 38.2,
+  "fatPer100g": 0,
+  "caloriesPer100g": 154,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "2 Tbsp",
+    "grams": 35
+   }
+  ],
+  "usdaId": 174066
+ },
+ {
+  "id": "usda-171826",
+  "name": "Tartar sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 13.3,
+  "fatPer100g": 16.7,
+  "caloriesPer100g": 211,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "2 tablespoons",
+    "grams": 30
+   }
+  ],
+  "usdaId": 171826
+ },
+ {
+  "id": "usda-171604",
+  "name": "Chili sauce (hot red pepper)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 3.9,
+  "fatPer100g": 0.6,
+  "caloriesPer100g": 21,
+  "fiberPer100g": 0.7,
+  "isLiquid": false,
+  "aliases": [
+   "hot sauce"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 245
+   }
+  ],
+  "usdaId": 171604
+ },
+ {
+  "id": "usda-174074",
+  "name": "Enchilada sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 4.9,
+  "fatPer100g": 0.9,
+  "caloriesPer100g": 30,
+  "fiberPer100g": 0.5,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "0.25 cup",
+    "grams": 56
+   },
+   {
+    "label": "1 cup",
+    "grams": 224
+   },
+   {
+    "label": "1 can",
+    "grams": 283
+   }
+  ],
+  "usdaId": 174074
+ },
+ {
+  "id": "usda-171833",
+  "name": "Horseradish sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 10.1,
+  "fatPer100g": 50.9,
+  "caloriesPer100g": 503,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 5.6
+   }
+  ],
+  "usdaId": 171833
+ },
+ {
+  "id": "usda-171564",
+  "name": "Beef gravy, canned",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.8,
+  "carbsPer100g": 4.8,
+  "fatPer100g": 2.4,
+  "caloriesPer100g": 53,
+  "fiberPer100g": 0.4,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 233
+   },
+   {
+    "label": "1 can",
+    "grams": 291
+   }
+  ],
+  "usdaId": 171564
+ },
+ {
+  "id": "usda-171566",
+  "name": "Chicken gravy, canned",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 5.3,
+  "fatPer100g": 2.6,
+  "caloriesPer100g": 48,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "0.25 cup",
+    "grams": 57
+   },
+   {
+    "label": "1 cup",
+    "grams": 228
+   },
+   {
+    "label": "1 jar 10.5 oz",
+    "grams": 273
+   }
+  ],
+  "usdaId": 171566
+ },
+ {
+  "id": "usda-169640",
+  "name": "Honey",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 82.4,
+  "fatPer100g": 0,
+  "caloriesPer100g": 304,
+  "fiberPer100g": 0.2,
+  "isLiquid": false,
+  "aliases": [
+   "sweetener"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 21
+   },
+   {
+    "label": "1 tsp",
+    "grams": 7
+   }
+  ],
+  "usdaId": 169640
+ },
+ {
+  "id": "usda-169661",
+  "name": "Maple syrup",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 67,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 260,
+  "isLiquid": false,
+  "aliases": [
+   "pancake syrup"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 20
+   }
+  ],
+  "usdaId": 169661
+ },
+ {
+  "id": "usda-169655",
+  "name": "Sugar, white",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 100,
+  "fatPer100g": 0,
+  "caloriesPer100g": 387,
+  "isLiquid": false,
+  "aliases": [
+   "sweetener"
+  ],
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 4.2
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 12.6
+   }
+  ],
+  "usdaId": 169655
+ },
+ {
+  "id": "usda-168833",
+  "name": "Sugar, brown",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 98.1,
+  "fatPer100g": 0,
+  "caloriesPer100g": 380,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 4.6
+   }
+  ],
+  "usdaId": 168833
+ },
+ {
+  "id": "usda-169641",
+  "name": "Jam / fruit preserves",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 68.9,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 278,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [
+   "jelly",
+   "marmalade"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 20
+   }
+  ],
+  "usdaId": 169641
+ },
+ {
+  "id": "usda-168820",
+  "name": "Molasses",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 74.7,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 290,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 337
+   },
+   {
+    "label": "1 serving 1 tbsp",
+    "grams": 20
+   }
+  ],
+  "usdaId": 168820
+ },
+ {
+  "id": "usda-169578",
+  "name": "Pancake syrup",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 61.5,
+  "fatPer100g": 0,
+  "caloriesPer100g": 234,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 314
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 20
+   }
+  ],
+  "usdaId": 169578
+ },
+ {
+  "id": "usda-172454",
+  "name": "Hummus, home-made",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.9,
+  "carbsPer100g": 20.1,
+  "fatPer100g": 8.6,
+  "caloriesPer100g": 177,
+  "fiberPer100g": 4,
+  "isLiquid": false,
+  "aliases": [
+   "dip"
+  ],
+  "servings": [
+   {
+    "label": "1 tablespoon",
+    "grams": 15
+   },
+   {
+    "label": "1 cup",
+    "grams": 246
+   }
+  ],
+  "usdaId": 172454
+ },
+ {
+  "id": "usda-172442",
+  "name": "Miso paste",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.8,
+  "carbsPer100g": 25.4,
+  "fatPer100g": 6,
+  "caloriesPer100g": 198,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 17
+   }
+  ],
+  "usdaId": 172442
+ },
+ {
+  "id": "usda-171922",
+  "name": "Water",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 0,
+  "isLiquid": true,
+  "aliases": [
+   "sparkling water",
+   "mineral water"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 29.6
+   },
+   {
+    "label": "1 bottle 11.2 fl oz",
+    "grams": 331
+   },
+   {
+    "label": "1 bottle 16.9 fl oz",
+    "grams": 500
+   }
+  ],
+  "usdaId": 171922
+ },
+ {
+  "id": "usda-171876",
+  "name": "Diet cola (zero sugar)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0.1,
+  "fatPer100g": 0,
+  "caloriesPer100g": 0,
+  "isLiquid": true,
+  "aliases": [
+   "diet coke",
+   "coke zero",
+   "soda"
+  ],
+  "servings": [
+   {
+    "label": "1 can (330 ml)",
+    "grams": 355
+   }
+  ],
+  "usdaId": 171876
+ },
+ {
+  "id": "usda-173205",
+  "name": "Lemon-lime soda",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 10.4,
+  "fatPer100g": 0,
+  "caloriesPer100g": 41,
+  "isLiquid": true,
+  "aliases": [
+   "sprite",
+   "7up",
+   "soda"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 30.8
+   },
+   {
+    "label": "1 drink",
+    "grams": 368
+   },
+   {
+    "label": "1 drink, small",
+    "grams": 491
+   }
+  ],
+  "usdaId": 173205
+ },
+ {
+  "id": "usda-174846",
+  "name": "Ginger ale",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 8.8,
+  "fatPer100g": 0,
+  "caloriesPer100g": 34,
+  "isLiquid": true,
+  "aliases": [
+   "soda"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 30.5
+   },
+   {
+    "label": "1 can or bottle",
+    "grams": 488
+   },
+   {
+    "label": "1 can or bottle",
+    "grams": 366
+   }
+  ],
+  "usdaId": 174846
+ },
+ {
+  "id": "usda-174854",
+  "name": "Orange soda",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 12.3,
+  "fatPer100g": 0,
+  "caloriesPer100g": 48,
+  "isLiquid": true,
+  "aliases": [
+   "fanta",
+   "soda"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 31
+   },
+   {
+    "label": "1 can or bottle",
+    "grams": 496
+   },
+   {
+    "label": "1 can or bottle",
+    "grams": 372
+   }
+  ],
+  "usdaId": 174854
+ },
+ {
+  "id": "usda-171869",
+  "name": "Tonic water",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 8.8,
+  "fatPer100g": 0,
+  "caloriesPer100g": 34,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 30.5
+   },
+   {
+    "label": "1 bottle",
+    "grams": 336
+   },
+   {
+    "label": "1 can or bottle",
+    "grams": 488
+   }
+  ],
+  "usdaId": 171869
+ },
+ {
+  "id": "usda-171890",
+  "name": "Coffee, black (brewed)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 1,
+  "isLiquid": true,
+  "aliases": [
+   "americano",
+   "filter"
+  ],
+  "servings": [
+   {
+    "label": "1 cup (240 ml)",
+    "grams": 237
+   }
+  ],
+  "usdaId": 171890
+ },
+ {
+  "id": "usda-171891",
+  "name": "Espresso",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 1.7,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 9,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 shot",
+    "grams": 30
+   }
+  ],
+  "usdaId": 171891
+ },
+ {
+  "id": "usda-173227",
+  "name": "Black tea (no milk)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0.3,
+  "fatPer100g": 0,
+  "caloriesPer100g": 1,
+  "isLiquid": true,
+  "aliases": [
+   "tea"
+  ],
+  "servings": [
+   {
+    "label": "1 cup (240 ml)",
+    "grams": 237
+   }
+  ],
+  "usdaId": 173227
+ },
+ {
+  "id": "usda-171917",
+  "name": "Green tea",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 1,
+  "isLiquid": true,
+  "aliases": [
+   "tea"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 245
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 29.6
+   }
+  ],
+  "usdaId": 171917
+ },
+ {
+  "id": "usda-174156",
+  "name": "Herbal tea",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0.2,
+  "fatPer100g": 0,
+  "caloriesPer100g": 1,
+  "isLiquid": true,
+  "aliases": [
+   "tea",
+   "chamomile"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 29.6
+   },
+   {
+    "label": "6 fl oz",
+    "grams": 178
+   },
+   {
+    "label": "1 cup",
+    "grams": 237
+   }
+  ],
+  "usdaId": 174156
+ },
+ {
+  "id": "usda-168746",
+  "name": "Beer, regular",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 43,
+  "isLiquid": true,
+  "aliases": [
+   "lager",
+   "ale",
+   "alcohol"
+  ],
+  "servings": [
+   {
+    "label": "1 can (330 ml)",
+    "grams": 356
+   },
+   {
+    "label": "1 pint (568 ml)",
+    "grams": 610
+   }
+  ],
+  "usdaId": 168746
+ },
+ {
+  "id": "usda-168749",
+  "name": "Beer, light",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 1.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 29,
+  "isLiquid": true,
+  "aliases": [
+   "lager",
+   "alcohol"
+  ],
+  "servings": [
+   {
+    "label": "1 can (330 ml)",
+    "grams": 354
+   }
+  ],
+  "usdaId": 168749
+ },
+ {
+  "id": "usda-173190",
+  "name": "Red wine",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 2.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 85,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol"
+  ],
+  "servings": [
+   {
+    "label": "1 glass (150 ml)",
+    "grams": 147
+   },
+   {
+    "label": "1 large glass (250 ml)",
+    "grams": 245
+   }
+  ],
+  "usdaId": 173190
+ },
+ {
+  "id": "usda-174837",
+  "name": "White wine",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 2.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 82,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol"
+  ],
+  "servings": [
+   {
+    "label": "1 glass (150 ml)",
+    "grams": 147
+   },
+   {
+    "label": "1 large glass (250 ml)",
+    "grams": 245
+   }
+  ],
+  "usdaId": 174837
+ },
+ {
+  "id": "usda-173176",
+  "name": "Dessert wine (sweet)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 13.7,
+  "fatPer100g": 0,
+  "caloriesPer100g": 160,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol",
+   "port"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 29.5
+   },
+   {
+    "label": "1 glass",
+    "grams": 103
+   }
+  ],
+  "usdaId": 173176
+ },
+ {
+  "id": "usda-174815",
+  "name": "Spirits, 40% (vodka, gin, rum, whisky)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 231,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol",
+   "vodka",
+   "gin",
+   "whiskey",
+   "rum"
+  ],
+  "servings": [
+   {
+    "label": "1 shot (25 ml)",
+    "grams": 23
+   },
+   {
+    "label": "1 double (50 ml)",
+    "grams": 47
+   }
+  ],
+  "usdaId": 174815
+ },
+ {
+  "id": "usda-175097",
+  "name": "Coffee liqueur",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 46.8,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 336,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol",
+   "kahlua"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 34.8
+   },
+   {
+    "label": "1 serving 1.5 fl oz",
+    "grams": 52
+   }
+  ],
+  "usdaId": 175097
+ },
+ {
+  "id": "usda-169070",
+  "name": "Cooking wine",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 6.3,
+  "fatPer100g": 0,
+  "caloriesPer100g": 50,
+  "isLiquid": true,
+  "servings": [
+   {
+    "label": "1 tsp",
+    "grams": 4.9
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 29
+   }
+  ],
+  "usdaId": 169070
+ },
+ {
+  "id": "usda-169098",
+  "name": "Orange juice, fresh",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 10.4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 45,
+  "fiberPer100g": 0.2,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 glass (250 ml)",
+    "grams": 258
+   }
+  ],
+  "usdaId": 169098
+ },
+ {
+  "id": "usda-169099",
+  "name": "Orange juice, from concentrate",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.7,
+  "carbsPer100g": 11,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 47,
+  "fiberPer100g": 0.3,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 glass (250 ml)",
+    "grams": 249
+   }
+  ],
+  "usdaId": 169099
+ },
+ {
+  "id": "usda-173933",
+  "name": "Apple juice",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.1,
+  "carbsPer100g": 11.3,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 46,
+  "fiberPer100g": 0.2,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 glass (250 ml)",
+    "grams": 248
+   }
+  ],
+  "usdaId": 173933
+ },
+ {
+  "id": "usda-173042",
+  "name": "Grape juice",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 14.8,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 60,
+  "fiberPer100g": 0.2,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 253
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 31.6
+   }
+  ],
+  "usdaId": 173042
+ },
+ {
+  "id": "usda-171903",
+  "name": "Cranberry juice cocktail",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 13.5,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 54,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 31.6
+   },
+   {
+    "label": "1 cup",
+    "grams": 253
+   }
+  ],
+  "usdaId": 171903
+ },
+ {
+  "id": "usda-170545",
+  "name": "Tomato juice",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.9,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 17,
+  "fiberPer100g": 0.4,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 243
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 30.4
+   },
+   {
+    "label": "6 fl oz",
+    "grams": 182
+   }
+  ],
+  "usdaId": 170545
+ },
+ {
+  "id": "usda-169947",
+  "name": "Pineapple juice",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 12.9,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 53,
+  "fiberPer100g": 0.2,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 250
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 31.3
+   }
+  ],
+  "usdaId": 169947
+ },
+ {
+  "id": "usda-173039",
+  "name": "Grapefruit juice",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 9.2,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 39,
+  "fiberPer100g": 0.1,
+  "isLiquid": true,
+  "aliases": [
+   "juice"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 247
+   },
+   {
+    "label": "1 fl oz",
+    "grams": 30.9
+   }
+  ],
+  "usdaId": 173039
+ },
+ {
+  "id": "usda-174859",
+  "name": "Lemonade powder (dry)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 3.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 14,
+  "isLiquid": false,
+  "aliases": [
+   "drink mix"
+  ],
+  "servings": [
+   {
+    "label": "1 fl oz",
+    "grams": 33
+   },
+   {
+    "label": "1 cup 8 fl oz",
+    "grams": 264
+   }
+  ],
+  "usdaId": 174859
+ },
+ {
+  "id": "usda-174832",
+  "name": "Almond milk, unsweetened",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 1.3,
+  "fatPer100g": 1,
+  "caloriesPer100g": 15,
+  "fiberPer100g": 0.2,
+  "isLiquid": true,
+  "aliases": [
+   "plant milk",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 262
+   }
+  ],
+  "usdaId": 174832
+ },
+ {
+  "id": "usda-168751",
+  "name": "Almond milk, vanilla sweetened",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 6.6,
+  "fatPer100g": 1,
+  "caloriesPer100g": 38,
+  "fiberPer100g": 0.4,
+  "isLiquid": true,
+  "aliases": [
+   "plant milk",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "8 fl oz",
+    "grams": 240
+   },
+   {
+    "label": "1 cup",
+    "grams": 240
+   }
+  ],
+  "usdaId": 168751
+ },
+ {
+  "id": "usda-171942",
+  "name": "Rice milk, unsweetened",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 9.2,
+  "fatPer100g": 1,
+  "caloriesPer100g": 47,
+  "fiberPer100g": 0.3,
+  "isLiquid": true,
+  "aliases": [
+   "plant milk",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "8 fl oz",
+    "grams": 240
+   }
+  ],
+  "usdaId": 171942
+ },
+ {
+  "id": "usda-174116",
+  "name": "Coconut milk drink, sweetened",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 2.9,
+  "fatPer100g": 2.1,
+  "caloriesPer100g": 31,
+  "isLiquid": true,
+  "aliases": [
+   "plant milk",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 240
+   }
+  ],
+  "usdaId": 174116
+ },
+ {
+  "id": "usda-173210",
+  "name": "Energy drink (regular)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 10.2,
+  "fatPer100g": 0,
+  "caloriesPer100g": 43,
+  "isLiquid": true,
+  "aliases": [
+   "red bull",
+   "monster"
+  ],
+  "servings": [
+   {
+    "label": "1 can (250 ml)",
+    "grams": 258
+   }
+  ],
+  "usdaId": 173210
+ },
+ {
+  "id": "usda-174822",
+  "name": "Energy drink (sugar-free)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 0.4,
+  "fatPer100g": 0,
+  "caloriesPer100g": 4,
+  "isLiquid": true,
+  "aliases": [
+   "red bull",
+   "monster"
+  ],
+  "servings": [
+   {
+    "label": "8 fl oz",
+    "grams": 240
+   }
+  ],
+  "usdaId": 174822
+ },
+ {
+  "id": "usda-174117",
+  "name": "Chocolate syrup",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.1,
+  "carbsPer100g": 65.1,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 279,
+  "fiberPer100g": 2.6,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "1 serving 2 tbsp",
+    "grams": 39
+   },
+   {
+    "label": "1 cup",
+    "grams": 300
+   }
+  ],
+  "usdaId": 174117
+ },
+ {
+  "id": "usda-174122",
+  "name": "Hot chocolate mix, dry",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.7,
+  "carbsPer100g": 83.7,
+  "fatPer100g": 4,
+  "caloriesPer100g": 398,
+  "fiberPer100g": 3.7,
+  "isLiquid": false,
+  "aliases": [
+   "cocoa"
+  ],
+  "servings": [
+   {
+    "label": "1 serving",
+    "grams": 28
+   }
+  ],
+  "usdaId": 174122
+ },
+ {
+  "id": "usda-169593",
+  "name": "Cocoa powder, unsweetened",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19.6,
+  "carbsPer100g": 57.9,
+  "fatPer100g": 13.7,
+  "caloriesPer100g": 228,
+  "fiberPer100g": 37,
+  "isLiquid": false,
+  "aliases": [
+   "cacao",
+   "baking"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 86
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 5.4
+   }
+  ],
+  "usdaId": 169593
+ },
+ {
+  "id": "usda-167587",
+  "name": "Milk chocolate",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.7,
+  "carbsPer100g": 59.4,
+  "fatPer100g": 29.7,
+  "caloriesPer100g": 535,
+  "fiberPer100g": 3.4,
+  "isLiquid": false,
+  "aliases": [
+   "candy",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 square (10 g)",
+    "grams": 10
+   }
+  ],
+  "usdaId": 167587
+ },
+ {
+  "id": "usda-167976",
+  "name": "Dark chocolate, semisweet",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.2,
+  "carbsPer100g": 63.9,
+  "fatPer100g": 30,
+  "caloriesPer100g": 480,
+  "fiberPer100g": 5.9,
+  "isLiquid": false,
+  "aliases": [
+   "candy",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 square (10 g)",
+    "grams": 10
+   }
+  ],
+  "usdaId": 167976
+ },
+ {
+  "id": "usda-170273",
+  "name": "Dark chocolate, 70-85% cocoa",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.8,
+  "carbsPer100g": 45.9,
+  "fatPer100g": 42.6,
+  "caloriesPer100g": 598,
+  "fiberPer100g": 10.9,
+  "isLiquid": false,
+  "aliases": [
+   "candy",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 square (10 g)",
+    "grams": 10
+   }
+  ],
+  "usdaId": 170273
+ },
+ {
+  "id": "usda-167571",
+  "name": "White chocolate",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.9,
+  "carbsPer100g": 59.2,
+  "fatPer100g": 32.1,
+  "caloriesPer100g": 539,
+  "fiberPer100g": 0.2,
+  "isLiquid": false,
+  "aliases": [
+   "candy",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 bar",
+    "grams": 85
+   },
+   {
+    "label": "1 tbsp",
+    "grams": 14
+   },
+   {
+    "label": "1 cup chips",
+    "grams": 170
+   }
+  ],
+  "usdaId": 167571
+ },
+ {
+  "id": "usda-167989",
+  "name": "Jelly sweets (gummy)",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 98.9,
+  "fatPer100g": 0,
+  "caloriesPer100g": 396,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "aliases": [
+   "candy",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 cup gumdrops",
+    "grams": 182
+   },
+   {
+    "label": "10 gumdrops",
+    "grams": 36
+   },
+   {
+    "label": "10 gummy bears",
+    "grams": 22
+   }
+  ],
+  "usdaId": 167989
+ },
+ {
+  "id": "usda-167990",
+  "name": "Hard candy",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 98,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 394,
+  "isLiquid": false,
+  "aliases": [
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 piece",
+    "grams": 6
+   },
+   {
+    "label": "1 piece, small",
+    "grams": 3
+   }
+  ],
+  "usdaId": 167990
+ },
+ {
+  "id": "usda-169677",
+  "name": "Potato chips / crisps, plain",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.4,
+  "carbsPer100g": 53.8,
+  "fatPer100g": 34,
+  "caloriesPer100g": 532,
+  "fiberPer100g": 3.1,
+  "isLiquid": false,
+  "aliases": [
+   "crisps",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 small bag (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 169677
+ },
+ {
+  "id": "usda-167558",
+  "name": "Tortilla chips, plain",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.1,
+  "carbsPer100g": 67.8,
+  "fatPer100g": 20.7,
+  "caloriesPer100g": 472,
+  "fiberPer100g": 5.4,
+  "isLiquid": false,
+  "aliases": [
+   "nachos",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 serving (28 g)",
+    "grams": 28
+   }
+  ],
+  "usdaId": 167558
+ },
+ {
+  "id": "usda-167555",
+  "name": "Pretzels, hard",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 80.4,
+  "fatPer100g": 2.9,
+  "caloriesPer100g": 384,
+  "fiberPer100g": 3.4,
+  "isLiquid": false,
+  "aliases": [
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "10 twists",
+    "grams": 60
+   }
+  ],
+  "usdaId": 167555
+ },
+ {
+  "id": "usda-167542",
+  "name": "Granola bar, hard",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.1,
+  "carbsPer100g": 64.4,
+  "fatPer100g": 19.8,
+  "caloriesPer100g": 471,
+  "fiberPer100g": 5.3,
+  "isLiquid": false,
+  "aliases": [
+   "cereal bar",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 bar",
+    "grams": 25
+   }
+  ],
+  "usdaId": 167542
+ },
+ {
+  "id": "usda-167552",
+  "name": "Caramel popcorn",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.8,
+  "carbsPer100g": 79.1,
+  "fatPer100g": 12.8,
+  "caloriesPer100g": 431,
+  "fiberPer100g": 5.2,
+  "isLiquid": false,
+  "aliases": [
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 167552
+ },
+ {
+  "id": "usda-167969",
+  "name": "Trail mix, with chocolate chips",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14.2,
+  "carbsPer100g": 44.9,
+  "fatPer100g": 31.9,
+  "caloriesPer100g": 484,
+  "fiberPer100g": 5,
+  "isLiquid": false,
+  "aliases": [
+   "snack",
+   "nuts"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 146
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1.5 oz",
+    "grams": 42
+   }
+  ],
+  "usdaId": 167969
+ },
+ {
+  "id": "usda-170250",
+  "name": "Rice cakes (snack)",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 8.2,
+  "carbsPer100g": 81.5,
+  "fatPer100g": 2.8,
+  "caloriesPer100g": 387,
+  "fiberPer100g": 4.2,
+  "isLiquid": false,
+  "aliases": [
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 cake",
+    "grams": 9
+   },
+   {
+    "label": "2 cakes",
+    "grams": 18
+   }
+  ],
+  "usdaId": 170250
+ },
+ {
+  "id": "usda-174971",
+  "name": "Sugar cookies",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.4,
+  "carbsPer100g": 67.3,
+  "fatPer100g": 19.6,
+  "caloriesPer100g": 464,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "aliases": [
+   "biscuit",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 cookie",
+    "grams": 17
+   }
+  ],
+  "usdaId": 174971
+ },
+ {
+  "id": "usda-174934",
+  "name": "Chocolate cake with frosting",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 52.8,
+  "fatPer100g": 20.1,
+  "caloriesPer100g": 389,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "dessert",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 piece",
+    "grams": 138
+   },
+   {
+    "label": "1 cake",
+    "grams": 1660
+   },
+   {
+    "label": "1 piece",
+    "grams": 64
+   }
+  ],
+  "usdaId": 174934
+ },
+ {
+  "id": "usda-172758",
+  "name": "Glazed doughnut",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.1,
+  "carbsPer100g": 47.9,
+  "fatPer100g": 22.7,
+  "caloriesPer100g": 421,
+  "fiberPer100g": 2.1,
+  "isLiquid": false,
+  "aliases": [
+   "donut",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 doughnut",
+    "grams": 60
+   }
+  ],
+  "usdaId": 172758
+ },
+ {
+  "id": "usda-175011",
+  "name": "Apple pie",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.9,
+  "carbsPer100g": 34,
+  "fatPer100g": 11,
+  "caloriesPer100g": 237,
+  "fiberPer100g": 1.6,
+  "isLiquid": false,
+  "aliases": [
+   "dessert",
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 piece",
+    "grams": 125
+   },
+   {
+    "label": "1 piece",
+    "grams": 117
+   }
+  ],
+  "usdaId": 175011
+ },
+ {
+  "id": "usda-168809",
+  "name": "Ice cream, chocolate",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.8,
+  "carbsPer100g": 28.2,
+  "fatPer100g": 11,
+  "caloriesPer100g": 216,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [
+   "dessert"
+  ],
+  "servings": [
+   {
+    "label": "1 individual",
+    "grams": 58
+   },
+   {
+    "label": "0.5 cup",
+    "grams": 66
+   }
+  ],
+  "usdaId": 168809
+ },
+ {
+  "id": "usda-168815",
+  "name": "Frozen yogurt, vanilla soft-serve",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4,
+  "carbsPer100g": 24.2,
+  "fatPer100g": 5.6,
+  "caloriesPer100g": 159,
+  "isLiquid": false,
+  "aliases": [
+   "dessert",
+   "froyo"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 72
+   }
+  ],
+  "usdaId": 168815
+ },
+ {
+  "id": "usda-168778",
+  "name": "Chocolate pudding, ready-to-eat",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.1,
+  "carbsPer100g": 23,
+  "fatPer100g": 4.6,
+  "caloriesPer100g": 142,
+  "isLiquid": false,
+  "aliases": [
+   "dessert"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 168778
+ },
+ {
+  "id": "usda-168775",
+  "name": "Jelly (gelatin dessert), dry mix",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7.8,
+  "carbsPer100g": 90.5,
+  "fatPer100g": 0,
+  "caloriesPer100g": 381,
+  "isLiquid": false,
+  "aliases": [
+   "jello"
+  ],
+  "servings": [
+   {
+    "label": "1 package",
+    "grams": 85
+   }
+  ],
+  "usdaId": 168775
+ },
+ {
+  "id": "usda-167995",
+  "name": "Marshmallows",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 81.3,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 318,
+  "fiberPer100g": 0.1,
+  "isLiquid": false,
+  "aliases": [
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 cup of miniature",
+    "grams": 50
+   },
+   {
+    "label": "10 miniatures",
+    "grams": 7
+   },
+   {
+    "label": "1 regular",
+    "grams": 7.2
+   }
+  ],
+  "usdaId": 167995
+ },
+ {
+  "id": "usda-167992",
+  "name": "Chocolate candy bar (wafer/milk)",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.5,
+  "carbsPer100g": 64.6,
+  "fatPer100g": 26,
+  "caloriesPer100g": 518,
+  "fiberPer100g": 1,
+  "isLiquid": false,
+  "aliases": [
+   "sweets"
+  ],
+  "servings": [
+   {
+    "label": "1 bar",
+    "grams": 42
+   },
+   {
+    "label": "1 bar, miniature",
+    "grams": 10
+   },
+   {
+    "label": "1 bar",
+    "grams": 46
+   }
+  ],
+  "usdaId": 167992
+ },
+ {
+  "id": "usda-167577",
+  "name": "Sorbet / sherbet",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 30.4,
+  "fatPer100g": 2,
+  "caloriesPer100g": 144,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "aliases": [
+   "dessert",
+   "sorbet"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 74
+   },
+   {
+    "label": "1 bar",
+    "grams": 66
+   }
+  ],
+  "usdaId": 167577
+ },
+ {
+  "id": "usda-170693",
+  "name": "Hamburger, single patty (plain)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 16.5,
+  "carbsPer100g": 31.5,
+  "fatPer100g": 12,
+  "caloriesPer100g": 297,
+  "fiberPer100g": 1.7,
+  "isLiquid": false,
+  "aliases": [
+   "burger",
+   "fast food",
+   "takeaway"
+  ],
+  "servings": [
+   {
+    "label": "1 sandwich",
+    "grams": 78
+   }
+  ],
+  "usdaId": 170693
+ },
+ {
+  "id": "usda-170690",
+  "name": "Cheeseburger, single patty",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 16.5,
+  "carbsPer100g": 28,
+  "fatPer100g": 14.7,
+  "caloriesPer100g": 308,
+  "fiberPer100g": 2,
+  "isLiquid": false,
+  "aliases": [
+   "burger",
+   "fast food",
+   "takeaway"
+  ],
+  "servings": [
+   {
+    "label": "1 sandwich",
+    "grams": 91
+   }
+  ],
+  "usdaId": 170690
+ },
+ {
+  "id": "usda-173321",
+  "name": "Chicken tenders (fast-food style)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 19.2,
+  "carbsPer100g": 17.3,
+  "fatPer100g": 14,
+  "caloriesPer100g": 271,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [
+   "chicken strips",
+   "fast food"
+  ],
+  "servings": [
+   {
+    "label": "1 strip",
+    "grams": 30
+   },
+   {
+    "label": "1 serving",
+    "grams": 184
+   }
+  ],
+  "usdaId": 173321
+ },
+ {
+  "id": "usda-170725",
+  "name": "Chicken nuggets (fast-food style)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 16.5,
+  "carbsPer100g": 14.3,
+  "fatPer100g": 22.6,
+  "caloriesPer100g": 326,
+  "isLiquid": false,
+  "aliases": [
+   "mcnuggets",
+   "fast food"
+  ],
+  "servings": [
+   {
+    "label": "5 pieces",
+    "grams": 68
+   },
+   {
+    "label": "10 pieces",
+    "grams": 142
+   }
+  ],
+  "usdaId": 170725
+ },
+ {
+  "id": "usda-170317",
+  "name": "Cheese pizza, frozen (cooked)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.4,
+  "carbsPer100g": 29,
+  "fatPer100g": 12.3,
+  "caloriesPer100g": 268,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "takeaway"
+  ],
+  "servings": [
+   {
+    "label": "1 package 24 oz pizza",
+    "grams": 727
+   },
+   {
+    "label": "1 package 15.1 oz pizza",
+    "grams": 452
+   },
+   {
+    "label": "1 package 9.8 oz pizza",
+    "grams": 293
+   }
+  ],
+  "usdaId": 170317
+ },
+ {
+  "id": "usda-170715",
+  "name": "Meat-and-veg pizza, frozen (cooked)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 11.3,
+  "carbsPer100g": 25.1,
+  "fatPer100g": 14.4,
+  "caloriesPer100g": 276,
+  "fiberPer100g": 2.2,
+  "isLiquid": false,
+  "aliases": [
+   "takeaway"
+  ],
+  "servings": [
+   {
+    "label": "1 package 24.2 oz pizza",
+    "grams": 713
+   },
+   {
+    "label": "1 package 22.85 oz pizza",
+    "grams": 644
+   },
+   {
+    "label": "1 package 10.9 oz pizza",
+    "grams": 354
+   }
+  ],
+  "usdaId": 170715
+ },
+ {
+  "id": "usda-172038",
+  "name": "Bean burrito",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.5,
+  "carbsPer100g": 32.9,
+  "fatPer100g": 6.2,
+  "caloriesPer100g": 206,
+  "isLiquid": false,
+  "aliases": [
+   "fast food"
+  ],
+  "servings": [
+   {
+    "label": "2 pieces",
+    "grams": 217
+   }
+  ],
+  "usdaId": 172038
+ },
+ {
+  "id": "usda-167658",
+  "name": "Beef taco (fast-food style)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 12.6,
+  "carbsPer100g": 17.9,
+  "fatPer100g": 10.8,
+  "caloriesPer100g": 219,
+  "fiberPer100g": 1.5,
+  "isLiquid": false,
+  "aliases": [
+   "fast food"
+  ],
+  "servings": [
+   {
+    "label": "1 taco",
+    "grams": 134
+   },
+   {
+    "label": "2 taco",
+    "grams": 279
+   },
+   {
+    "label": "3 taco",
+    "grams": 389
+   }
+  ],
+  "usdaId": 167658
+ },
+ {
+  "id": "usda-171543",
+  "name": "Chicken noodle soup, condensed",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.4,
+  "carbsPer100g": 6.1,
+  "fatPer100g": 1.6,
+  "caloriesPer100g": 48,
+  "fiberPer100g": 0.9,
+  "isLiquid": false,
+  "aliases": [
+   "soup"
+  ],
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 124
+   }
+  ],
+  "usdaId": 171543
+ },
+ {
+  "id": "usda-172882",
+  "name": "Tomato soup, condensed",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.5,
+  "carbsPer100g": 15.2,
+  "fatPer100g": 0.4,
+  "caloriesPer100g": 66,
+  "fiberPer100g": 1.1,
+  "isLiquid": false,
+  "aliases": [
+   "soup"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 148
+   },
+   {
+    "label": "1 can",
+    "grams": 294
+   }
+  ],
+  "usdaId": 172882
+ },
+ {
+  "id": "usda-171549",
+  "name": "Lentil soup with ham, canned",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.7,
+  "carbsPer100g": 8.2,
+  "fatPer100g": 1.1,
+  "caloriesPer100g": 56,
+  "isLiquid": false,
+  "aliases": [
+   "soup"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 248
+   },
+   {
+    "label": "1 can",
+    "grams": 567
+   }
+  ],
+  "usdaId": 171549
+ },
+ {
+  "id": "usda-174536",
+  "name": "Chicken broth (stock)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 0.4,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 6,
+  "isLiquid": true,
+  "aliases": [
+   "soup",
+   "stock"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 249
+   }
+  ],
+  "usdaId": 174536
+ },
+ {
+  "id": "usda-171538",
+  "name": "Beef broth (stock)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 0,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 7,
+  "isLiquid": true,
+  "aliases": [
+   "soup",
+   "stock"
+  ],
+  "servings": [
+   {
+    "label": "1 cup",
+    "grams": 240
+   },
+   {
+    "label": "1 can 14.5 oz",
+    "grams": 435
+   },
+   {
+    "label": "1 container 32 oz",
+    "grams": 960
+   }
+  ],
+  "usdaId": 171538
+ },
+ {
+  "id": "usda-172104",
+  "name": "Chicken egg roll",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10.4,
+  "carbsPer100g": 28.5,
+  "fatPer100g": 4.5,
+  "caloriesPer100g": 197,
+  "fiberPer100g": 2.4,
+  "isLiquid": false,
+  "aliases": [
+   "spring roll",
+   "chinese takeaway"
+  ],
+  "servings": [
+   {
+    "label": "1 roll",
+    "grams": 80
+   },
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   }
+  ],
+  "usdaId": 172104
+ },
+ {
+  "id": "usda-169770",
+  "name": "Macaroni and cheese, box mix prepared",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.7,
+  "carbsPer100g": 23.1,
+  "fatPer100g": 5,
+  "caloriesPer100g": 164,
+  "fiberPer100g": 1.2,
+  "isLiquid": false,
+  "aliases": [
+   "mac and cheese"
+  ],
+  "servings": [
+   {
+    "label": "1 cup prepared",
+    "grams": 189
+   }
+  ],
+  "usdaId": 169770
+ },
+ {
+  "id": "usda-175009",
+  "name": "Pancakes, homemade",
+  "category": "other",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 6.4,
+  "carbsPer100g": 28.3,
+  "fatPer100g": 9.7,
+  "caloriesPer100g": 227,
+  "isLiquid": false,
+  "aliases": [
+   "crepes",
+   "breakfast"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 pancake",
+    "grams": 38
+   },
+   {
+    "label": "1 pancake",
+    "grams": 77
+   }
+  ],
+  "usdaId": 175009
+ },
+ {
+  "id": "usda-174998",
+  "name": "French toast, homemade",
+  "category": "other",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 7.7,
+  "carbsPer100g": 25,
+  "fatPer100g": 10.8,
+  "caloriesPer100g": 229,
+  "isLiquid": false,
+  "aliases": [
+   "breakfast"
+  ],
+  "servings": [
+   {
+    "label": "1 oz",
+    "grams": 28.4
+   },
+   {
+    "label": "1 slice",
+    "grams": 65
+   }
+  ],
+  "usdaId": 174998
+ },
+ {
+  "id": "usda-175160",
+  "name": "Tuna salad (with mayo)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 16,
+  "carbsPer100g": 9.4,
+  "fatPer100g": 9.3,
+  "caloriesPer100g": 187,
+  "isLiquid": false,
+  "aliases": [
+   "sandwich filling"
+  ],
+  "servings": [
+   {
+    "label": "3 oz",
+    "grams": 85
+   },
+   {
+    "label": "1 cup",
+    "grams": 205
+   }
+  ],
+  "usdaId": 175160
+ },
+ {
+  "id": "usda-173343",
+  "name": "Potato salad",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 16.2,
+  "fatPer100g": 9.4,
+  "caloriesPer100g": 157,
+  "fiberPer100g": 1.3,
+  "isLiquid": false,
+  "servings": [
+   {
+    "label": "0.5 cup",
+    "grams": 125
+   }
+  ],
+  "usdaId": 173343
+ },
+ {
+  "id": "bi-whey-protein-powder-typical-80-protein",
+  "name": "Whey protein powder (typical, 80% protein)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 78,
+  "carbsPer100g": 8,
+  "fatPer100g": 6,
+  "caloriesPer100g": 400,
+  "isLiquid": false,
+  "aliases": [
+   "whey",
+   "protein powder",
+   "shake",
+   "concentrate"
+  ],
+  "servings": [
+   {
+    "label": "1 scoop (30 g)",
+    "grams": 30
+   },
+   {
+    "label": "1 heaped scoop (35 g)",
+    "grams": 35
+   }
+  ],
+  "note": "Typical whey concentrate. Check your tub label."
+ },
+ {
+  "id": "bi-whey-protein-isolate",
+  "name": "Whey protein isolate",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 88,
+  "carbsPer100g": 3,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 380,
+  "isLiquid": false,
+  "aliases": [
+   "whey",
+   "protein powder",
+   "shake",
+   "isolate"
+  ],
+  "servings": [
+   {
+    "label": "1 scoop (30 g)",
+    "grams": 30
+   }
+  ],
+  "note": "Typical isolate. Check your tub label."
+ },
+ {
+  "id": "bi-casein-protein-powder",
+  "name": "Casein protein powder",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 75,
+  "carbsPer100g": 8,
+  "fatPer100g": 3,
+  "caloriesPer100g": 370,
+  "isLiquid": false,
+  "aliases": [
+   "micellar casein",
+   "protein powder",
+   "night protein"
+  ],
+  "servings": [
+   {
+    "label": "1 scoop (33 g)",
+    "grams": 33
+   }
+  ],
+  "note": "Typical micellar casein. Check your tub label."
+ },
+ {
+  "id": "bi-vegan-protein-powder-pea-rice-blend",
+  "name": "Vegan protein powder (pea/rice blend)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 72,
+  "carbsPer100g": 8,
+  "fatPer100g": 6,
+  "caloriesPer100g": 390,
+  "isLiquid": false,
+  "aliases": [
+   "plant protein",
+   "protein powder",
+   "shake"
+  ],
+  "servings": [
+   {
+    "label": "1 scoop (35 g)",
+    "grams": 35
+   }
+  ],
+  "note": "Typical plant blend. Check your tub label."
+ },
+ {
+  "id": "bi-pea-protein-isolate",
+  "name": "Pea protein isolate",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 80,
+  "carbsPer100g": 3,
+  "fatPer100g": 6,
+  "caloriesPer100g": 395,
+  "isLiquid": false,
+  "aliases": [
+   "plant protein",
+   "vegan"
+  ],
+  "servings": [
+   {
+    "label": "1 scoop (30 g)",
+    "grams": 30
+   }
+  ],
+  "note": "Typical values."
+ },
+ {
+  "id": "bi-collagen-peptides",
+  "name": "Collagen peptides",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 90,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 360,
+  "isLiquid": false,
+  "aliases": [
+   "collagen",
+   "protein powder"
+  ],
+  "servings": [
+   {
+    "label": "1 scoop (20 g)",
+    "grams": 20
+   }
+  ],
+  "note": "Typical values."
+ },
+ {
+  "id": "bi-mass-gainer-powder",
+  "name": "Mass gainer powder",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 20,
+  "carbsPer100g": 65,
+  "fatPer100g": 4,
+  "caloriesPer100g": 380,
+  "isLiquid": false,
+  "aliases": [
+   "gainer",
+   "weight gainer"
+  ],
+  "servings": [
+   {
+    "label": "1 serving (100 g)",
+    "grams": 100
+   }
+  ],
+  "note": "Typical values. Check your tub label."
+ },
+ {
+  "id": "bi-protein-bar-low-sugar-20-g-protein",
+  "name": "Protein bar, low-sugar (≈20 g protein)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 33,
+  "carbsPer100g": 33,
+  "fatPer100g": 13,
+  "caloriesPer100g": 350,
+  "fiberPer100g": 15,
+  "isLiquid": false,
+  "aliases": [
+   "bar",
+   "quest bar",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 bar (60 g)",
+    "grams": 60
+   }
+  ],
+  "note": "Typical low-sugar protein bar."
+ },
+ {
+  "id": "bi-protein-bar-chewy-crunchy-15-g-protein",
+  "name": "Protein bar, chewy / crunchy (≈15 g protein)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 30,
+  "carbsPer100g": 40,
+  "fatPer100g": 12,
+  "caloriesPer100g": 370,
+  "isLiquid": false,
+  "aliases": [
+   "bar",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 bar (50 g)",
+    "grams": 50
+   }
+  ],
+  "note": "Typical protein bar."
+ },
+ {
+  "id": "bi-protein-shake-ready-to-drink-30-g-protein",
+  "name": "Protein shake, ready-to-drink (≈30 g protein)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 9,
+  "carbsPer100g": 3,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 63,
+  "isLiquid": true,
+  "aliases": [
+   "rtd",
+   "shake",
+   "fairlife",
+   "core power"
+  ],
+  "servings": [
+   {
+    "label": "1 bottle (330 ml)",
+    "grams": 340
+   },
+   {
+    "label": "1 bottle (500 ml)",
+    "grams": 515
+   }
+  ],
+  "note": "Typical RTD protein milk shake."
+ },
+ {
+  "id": "bi-protein-shake-ready-to-drink-20-g-protein",
+  "name": "Protein shake, ready-to-drink (≈20 g protein)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6.5,
+  "carbsPer100g": 4,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 58,
+  "isLiquid": true,
+  "aliases": [
+   "rtd",
+   "shake"
+  ],
+  "servings": [
+   {
+    "label": "1 carton (250 ml)",
+    "grams": 258
+   }
+  ],
+  "note": "Typical RTD protein drink."
+ },
+ {
+  "id": "bi-protein-cookie-15-g-protein",
+  "name": "Protein cookie (≈15 g protein)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 22,
+  "carbsPer100g": 38,
+  "fatPer100g": 17,
+  "caloriesPer100g": 400,
+  "isLiquid": false,
+  "aliases": [
+   "cookie",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 cookie (60 g)",
+    "grams": 60
+   }
+  ],
+  "note": "Typical protein cookie."
+ },
+ {
+  "id": "bi-protein-pudding-dessert-pot",
+  "name": "Protein pudding / dessert pot",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 10,
+  "carbsPer100g": 9,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 90,
+  "isLiquid": false,
+  "aliases": [
+   "dessert",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 pot (200 g)",
+    "grams": 200
+   }
+  ],
+  "note": "Typical high-protein pudding."
+ },
+ {
+  "id": "bi-peanut-butter-powder-pb2-style",
+  "name": "Peanut butter powder (PB2-style)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 33,
+  "carbsPer100g": 40,
+  "fatPer100g": 12,
+  "caloriesPer100g": 380,
+  "fiberPer100g": 13,
+  "isLiquid": false,
+  "aliases": [
+   "pb2",
+   "nut butter"
+  ],
+  "servings": [
+   {
+    "label": "2 tbsp (12 g)",
+    "grams": 12
+   }
+  ],
+  "note": "Typical defatted peanut powder."
+ },
+ {
+  "id": "bi-creatine-monohydrate",
+  "name": "Creatine monohydrate",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 0,
+  "isLiquid": false,
+  "aliases": [
+   "creatine"
+  ],
+  "servings": [
+   {
+    "label": "1 serving (5 g)",
+    "grams": 5
+   }
+  ],
+  "note": "No calories."
+ },
+ {
+  "id": "bi-casein-style-overnight-pudding-casein-milk",
+  "name": "Casein-style overnight pudding (casein + milk)",
+  "category": "supplement",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 14,
+  "carbsPer100g": 5,
+  "fatPer100g": 1,
+  "caloriesPer100g": 95,
+  "isLiquid": false,
+  "aliases": [
+   "casein"
+  ],
+  "note": "Typical homemade values; adjust to your recipe."
+ },
+ {
+  "id": "bi-sweet-chili-sauce",
+  "name": "Sweet chili sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.3,
+  "carbsPer100g": 55,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 225,
+  "isLiquid": false,
+  "aliases": [
+   "thai sweet chilli"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 18
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-mayonnaise-extra-light-25-kcal-tbsp",
+  "name": "Mayonnaise, extra-light (≈ 25 kcal/tbsp)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.5,
+  "carbsPer100g": 5,
+  "fatPer100g": 15,
+  "caloriesPer100g": 165,
+  "isLiquid": false,
+  "aliases": [
+   "mayo",
+   "light mayonnaise"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "note": "Typical light mayonnaise."
+ },
+ {
+  "id": "bi-mayonnaise-zero-fat-sprayable",
+  "name": "Mayonnaise, zero-fat / sprayable",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.4,
+  "carbsPer100g": 5,
+  "fatPer100g": 1,
+  "caloriesPer100g": 31,
+  "isLiquid": false,
+  "aliases": [
+   "mayo",
+   "fat free mayonnaise"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-curry-sauce-tikka-masala-jar",
+  "name": "Curry sauce, tikka masala (jar)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 8,
+  "fatPer100g": 6.5,
+  "caloriesPer100g": 105,
+  "isLiquid": false,
+  "aliases": [
+   "curry",
+   "indian"
+  ],
+  "note": "Typical jar sauce."
+ },
+ {
+  "id": "bi-curry-sauce-korma-jar",
+  "name": "Curry sauce, korma (jar)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 9,
+  "fatPer100g": 12,
+  "caloriesPer100g": 165,
+  "isLiquid": false,
+  "aliases": [
+   "curry",
+   "indian"
+  ],
+  "note": "Typical jar sauce."
+ },
+ {
+  "id": "bi-curry-sauce-japanese-roux",
+  "name": "Curry sauce, Japanese (roux)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 6,
+  "carbsPer100g": 38,
+  "fatPer100g": 33,
+  "caloriesPer100g": 500,
+  "isLiquid": false,
+  "aliases": [
+   "curry",
+   "japanese"
+  ],
+  "note": "Typical roux block."
+ },
+ {
+  "id": "bi-tzatziki",
+  "name": "Tzatziki",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 3.5,
+  "fatPer100g": 5,
+  "caloriesPer100g": 80,
+  "isLiquid": false,
+  "aliases": [
+   "dip",
+   "yogurt"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-alfredo-sauce-jar",
+  "name": "Alfredo sauce (jar)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.5,
+  "carbsPer100g": 4,
+  "fatPer100g": 10,
+  "caloriesPer100g": 120,
+  "isLiquid": false,
+  "aliases": [
+   "pasta sauce",
+   "white sauce"
+  ],
+  "note": "Typical jar sauce."
+ },
+ {
+  "id": "bi-peri-peri-sauce",
+  "name": "Peri-peri sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 8,
+  "fatPer100g": 6,
+  "caloriesPer100g": 95,
+  "isLiquid": false,
+  "aliases": [
+   "piri piri",
+   "nandos"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-garlic-mayo",
+  "name": "Garlic mayo",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.6,
+  "carbsPer100g": 3,
+  "fatPer100g": 65,
+  "caloriesPer100g": 590,
+  "isLiquid": false,
+  "aliases": [
+   "aioli",
+   "mayo"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-sauce-korean-gochujang",
+  "name": "Sauce, Korean gochujang",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4,
+  "carbsPer100g": 45,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 215,
+  "isLiquid": false,
+  "aliases": [
+   "chilli paste"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-tomato-ketchup-no-added-sugar",
+  "name": "Tomato ketchup, no added sugar",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.1,
+  "carbsPer100g": 10,
+  "fatPer100g": 0.1,
+  "caloriesPer100g": 45,
+  "isLiquid": false,
+  "aliases": [
+   "catsup"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 17
+   }
+  ],
+  "note": "Typical reduced-sugar ketchup."
+ },
+ {
+  "id": "bi-light-bbq-sauce-low-sugar",
+  "name": "Light BBQ sauce, low sugar",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.8,
+  "carbsPer100g": 12,
+  "fatPer100g": 0.2,
+  "caloriesPer100g": 55,
+  "isLiquid": false,
+  "aliases": [
+   "barbecue"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 17
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-vinaigrette-light",
+  "name": "Vinaigrette, light",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 6,
+  "fatPer100g": 3,
+  "caloriesPer100g": 50,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "note": "Typical light vinaigrette."
+ },
+ {
+  "id": "bi-garlic-and-herb-dressing-dip",
+  "name": "Garlic and herb dressing / dip",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 4,
+  "fatPer100g": 48,
+  "caloriesPer100g": 450,
+  "isLiquid": false,
+  "aliases": [
+   "salad dressing"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-stock-cube-made-up-1-per-500-ml",
+  "name": "Stock cube (made up, 1 per 500 ml)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 0.3,
+  "fatPer100g": 0.3,
+  "caloriesPer100g": 5,
+  "isLiquid": true,
+  "aliases": [
+   "bouillon",
+   "broth"
+  ],
+  "note": "Typical diluted stock."
+ },
+ {
+  "id": "bi-oat-milk",
+  "name": "Oat milk",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 6.5,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 47,
+  "isLiquid": true,
+  "aliases": [
+   "plant milk",
+   "vegan"
+  ],
+  "note": "Typical oat drink."
+ },
+ {
+  "id": "bi-whole-milk-lactose-free",
+  "name": "Whole milk lactose-free",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 4.7,
+  "fatPer100g": 3.5,
+  "caloriesPer100g": 63,
+  "isLiquid": true,
+  "aliases": [
+   "milk"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-kombucha",
+  "name": "Kombucha",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 3,
+  "fatPer100g": 0,
+  "caloriesPer100g": 12,
+  "isLiquid": true,
+  "aliases": [
+   "tea"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-sports-drink-isotonic",
+  "name": "Sports drink (isotonic)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 25,
+  "isLiquid": true,
+  "aliases": [
+   "gatorade",
+   "powerade",
+   "electrolyte"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-latte-semi-skimmed-milk-no-sugar",
+  "name": "Latte (semi-skimmed milk, no sugar)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 4,
+  "fatPer100g": 1.4,
+  "caloriesPer100g": 40,
+  "isLiquid": true,
+  "aliases": [
+   "coffee",
+   "flat white",
+   "cappuccino"
+  ],
+  "servings": [
+   {
+    "label": "1 medium (350 ml)",
+    "grams": 360
+   }
+  ],
+  "note": "Typical café latte."
+ },
+ {
+  "id": "bi-cappuccino-semi-skimmed-milk",
+  "name": "Cappuccino (semi-skimmed milk)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2.9,
+  "carbsPer100g": 4,
+  "fatPer100g": 1.5,
+  "caloriesPer100g": 41,
+  "isLiquid": true,
+  "aliases": [
+   "coffee"
+  ],
+  "servings": [
+   {
+    "label": "1 medium (240 ml)",
+    "grams": 245
+   }
+  ],
+  "note": "Typical café cappuccino."
+ },
+ {
+  "id": "bi-zero-sugar-soda-any",
+  "name": "Zero-sugar soda (any)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 0,
+  "fatPer100g": 0,
+  "caloriesPer100g": 0,
+  "isLiquid": true,
+  "aliases": [
+   "diet soda",
+   "sparkling",
+   "pepsi max"
+  ],
+  "servings": [
+   {
+    "label": "1 can (330 ml)",
+    "grams": 335
+   }
+  ],
+  "note": "Calorie-free."
+ },
+ {
+  "id": "bi-cider-dry",
+  "name": "Cider, dry",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 2.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 45,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol"
+  ],
+  "servings": [
+   {
+    "label": "1 pint (568 ml)",
+    "grams": 575
+   }
+  ],
+  "note": "Typical dry cider."
+ },
+ {
+  "id": "bi-prosecco-sparkling-wine",
+  "name": "Prosecco / sparkling wine",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0.2,
+  "carbsPer100g": 1.5,
+  "fatPer100g": 0,
+  "caloriesPer100g": 70,
+  "isLiquid": true,
+  "aliases": [
+   "champagne",
+   "alcohol"
+  ],
+  "servings": [
+   {
+    "label": "1 flute (125 ml)",
+    "grams": 125
+   }
+  ],
+  "note": "Typical brut."
+ },
+ {
+  "id": "bi-gin-and-tonic",
+  "name": "Gin and tonic",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 3,
+  "fatPer100g": 0,
+  "caloriesPer100g": 55,
+  "isLiquid": true,
+  "aliases": [
+   "alcohol",
+   "cocktail"
+  ],
+  "note": "Typical 1:3 mix."
+ },
+ {
+  "id": "bi-hot-chocolate-made-with-milk",
+  "name": "Hot chocolate (made with milk)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.5,
+  "carbsPer100g": 11,
+  "fatPer100g": 3,
+  "caloriesPer100g": 83,
+  "isLiquid": true,
+  "aliases": [
+   "cocoa"
+  ],
+  "note": "Typical café hot chocolate."
+ },
+ {
+  "id": "bi-rice-crispy-cereal-bar",
+  "name": "Rice crispy cereal bar",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5,
+  "carbsPer100g": 78,
+  "fatPer100g": 9,
+  "caloriesPer100g": 400,
+  "isLiquid": false,
+  "aliases": [
+   "snack",
+   "cereal bar"
+  ],
+  "servings": [
+   {
+    "label": "1 bar (22 g)",
+    "grams": 22
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-beef-jerky-packaged",
+  "name": "Beef jerky (packaged)",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 33,
+  "carbsPer100g": 11,
+  "fatPer100g": 7,
+  "caloriesPer100g": 250,
+  "isLiquid": false,
+  "aliases": [
+   "dried meat",
+   "snack"
+  ],
+  "servings": [
+   {
+    "label": "1 pack (25 g)",
+    "grams": 25
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-biscoff-speculoos-biscuit",
+  "name": "Biscoff / speculoos biscuit",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5,
+  "carbsPer100g": 73,
+  "fatPer100g": 19,
+  "caloriesPer100g": 480,
+  "isLiquid": false,
+  "aliases": [
+   "biscuit",
+   "cookie",
+   "lotus"
+  ],
+  "servings": [
+   {
+    "label": "1 biscuit (8 g)",
+    "grams": 8
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-chocolate-protein-spread",
+  "name": "Chocolate protein spread",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7,
+  "carbsPer100g": 55,
+  "fatPer100g": 28,
+  "caloriesPer100g": 530,
+  "isLiquid": false,
+  "aliases": [
+   "spread"
+  ],
+  "servings": [
+   {
+    "label": "1 tbsp",
+    "grams": 15
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-hummus-crackers-snack-pot",
+  "name": "Hummus & crackers snack pot",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 7,
+  "carbsPer100g": 22,
+  "fatPer100g": 13,
+  "caloriesPer100g": 245,
+  "isLiquid": false,
+  "aliases": [
+   "snack"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-curry-sauce-generic-jar",
+  "name": "Curry sauce, generic (jar)",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1.8,
+  "carbsPer100g": 8,
+  "fatPer100g": 6,
+  "caloriesPer100g": 100,
+  "isLiquid": false,
+  "aliases": [
+   "curry",
+   "indian"
+  ],
+  "note": "Typical jar sauce."
+ },
+ {
+  "id": "bi-buffalo-wing-sauce",
+  "name": "Buffalo wing sauce",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 1,
+  "carbsPer100g": 5,
+  "fatPer100g": 15,
+  "caloriesPer100g": 160,
+  "isLiquid": false,
+  "aliases": [
+   "hot wings"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-guacamole",
+  "name": "Guacamole",
+  "category": "sauce",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 2,
+  "carbsPer100g": 8.5,
+  "fatPer100g": 14.5,
+  "caloriesPer100g": 160,
+  "fiberPer100g": 6,
+  "isLiquid": false,
+  "aliases": [
+   "dip",
+   "avocado"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-soy-milk-unsweetened",
+  "name": "Soy milk, unsweetened",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 0.5,
+  "fatPer100g": 1.9,
+  "caloriesPer100g": 33,
+  "isLiquid": true,
+  "aliases": [
+   "soya milk",
+   "plant milk",
+   "vegan"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-soy-milk-sweetened",
+  "name": "Soy milk, sweetened",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 3.3,
+  "carbsPer100g": 6.3,
+  "fatPer100g": 1.8,
+  "caloriesPer100g": 54,
+  "isLiquid": true,
+  "aliases": [
+   "soya milk",
+   "plant milk",
+   "vegan"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-cola-regular",
+  "name": "Cola (regular)",
+  "category": "beverage",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 0,
+  "carbsPer100g": 10.6,
+  "fatPer100g": 0,
+  "caloriesPer100g": 42,
+  "isLiquid": true,
+  "aliases": [
+   "coke",
+   "pepsi",
+   "soda",
+   "soft drink"
+  ],
+  "servings": [
+   {
+    "label": "1 can (330 ml)",
+    "grams": 340
+   }
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-chocolate-sandwich-cookies",
+  "name": "Chocolate sandwich cookies",
+  "category": "snack",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 4.5,
+  "carbsPer100g": 71,
+  "fatPer100g": 20,
+  "caloriesPer100g": 480,
+  "isLiquid": false,
+  "aliases": [
+   "oreo",
+   "biscuit",
+   "sweets"
+  ],
+  "note": "Typical label values."
+ },
+ {
+  "id": "bi-french-fries-fast-food-style",
+  "name": "French fries, fast-food style",
+  "category": "other",
+  "nutritionBasis": "cooked",
+  "proteinPer100g": 3.4,
+  "carbsPer100g": 41,
+  "fatPer100g": 15,
+  "caloriesPer100g": 323,
+  "isLiquid": false,
+  "aliases": [
+   "chips",
+   "fast food",
+   "takeaway"
+  ],
+  "note": "Typical fast-food fries."
+ },
+ {
+  "id": "bi-sushi-roll-fish-and-rice-typical",
+  "name": "Sushi roll (fish and rice, typical)",
+  "category": "other",
+  "nutritionBasis": "as-packaged",
+  "proteinPer100g": 5.5,
+  "carbsPer100g": 25,
+  "fatPer100g": 2,
+  "caloriesPer100g": 145,
+  "isLiquid": false,
+  "aliases": [
+   "maki"
+  ],
+  "note": "Typical sushi roll."
+ }
+]
