@@ -14,6 +14,7 @@ export function FoodDetailSheet() {
   const fav = useAppStore(s => (id ? s.settings.favoriteFoodIds.includes(id) : false));
   const toggleFav = useAppStore(s => s.toggleFavoriteFood);
   const deleteFood = useAppStore(s => s.deleteFood);
+  const restoreFood = useAppStore(s => s.restoreFood);
   const showToast = useAppStore(s => s.showToast);
   const navigate = useNavigate();
   const [confirmDelete, setConfirmDelete] = useState(false);
@@ -92,9 +93,9 @@ export function FoodDetailSheet() {
       </div>
       <Confirm
         open={confirmDelete} danger title="Delete this food?" confirmLabel="Delete"
-        message="Past log entries and recipes keep their saved numbers. The food will no longer appear in search."
+        message="Past log entries and recipes keep their saved numbers. You can undo this right after, or later from Settings → Recently deleted."
         onCancel={() => setConfirmDelete(false)}
-        onConfirm={async () => { await deleteFood(food.id); setConfirmDelete(false); close(); showToast('Food deleted'); }}
+        onConfirm={async () => { const id = food.id; await deleteFood(id); setConfirmDelete(false); close(); showToast('Food deleted', { actionLabel: 'Undo', onAction: () => void restoreFood(id) }); }}
       />
     </Sheet>
   );

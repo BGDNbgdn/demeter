@@ -14,13 +14,14 @@ interface UIState {
   offOpen: boolean;
   recipePickerOpen: boolean;
   introOpen: boolean;
+  trashOpen: boolean;
   open: (patch: Partial<Omit<UIState, 'open' | 'closeAll'>>) => void;
   closeAll: () => void;
 }
 
 const CLOSED = {
   searchOpen: false, addMenuOpen: false, logFood: null, logRecipe: null, editEntryId: null, foodDetailId: null,
-  foodForm: null, quickAddOpen: false, offOpen: false, recipePickerOpen: false, introOpen: false,
+  foodForm: null, quickAddOpen: false, offOpen: false, recipePickerOpen: false, introOpen: false, trashOpen: false,
 };
 
 export const useUI = create<UIState>(set => ({

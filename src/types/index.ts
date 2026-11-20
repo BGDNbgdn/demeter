@@ -51,6 +51,8 @@ export interface Food {
   barcode?: string;
   createdAt: number;
   updatedAt: number;
+  /** Soft delete: set when the food is moved to "Recently deleted". */
+  deletedAt?: number;
 }
 
 export interface RecipeIngredient {
@@ -88,6 +90,7 @@ export interface Recipe {
   isFavorite?: boolean;
   createdAt: number;
   updatedAt: number;
+  deletedAt?: number;
 }
 
 export interface MealLogEntry {
@@ -110,6 +113,7 @@ export interface MealLogEntry {
   cooking?: { rawWeightG: number; cookedWeightG: number; estimated?: boolean };
   createdAt: number;
   updatedAt: number;
+  deletedAt?: number;
 }
 
 export interface DailyTargets {
@@ -118,6 +122,8 @@ export interface DailyTargets {
   carbs: number;
   fat: number;
   fiber?: number;
+  /** Last edit time — used to merge targets between devices. */
+  updatedAt?: number;
 }
 
 export type ThemePref = 'dark' | 'light' | 'system';
@@ -131,6 +137,8 @@ export interface AppSettings {
   onlineLookupEnabled: boolean;
   backupReminderDays: number; // 0 = off
   lastExportAt?: number;
+  /** Last time favorites changed — used to merge favorites between devices. */
+  favoritesUpdatedAt?: number;
   createdAt: number;
 }
 
@@ -144,7 +152,7 @@ export interface FoodUsage {
   lastMealType?: MealType;
 }
 
-export const BACKUP_SCHEMA_VERSION = 1;
+export const BACKUP_SCHEMA_VERSION = 2;
 
 export interface BackupFile {
   app: 'Demeter';
@@ -159,4 +167,39 @@ export interface BackupFile {
     settings: AppSettings;
     usage: FoodUsage[];
   };
+}
+
+/** Everything stored locally (including soft-deleted records). */
+export interface AllData {
+  foods: Food[];
+  recipes: Recipe[];
+  logs: MealLogEntry[];
+  usage: FoodUsage[];
+  settings: AppSettings;
+  targets: DailyTargets;
+}
+
+/** One-slot "restore point" taken automatically before import / erase / restore. */
+export interface Snapshot {
+  id: 'restore-point';
+  createdAt: number;
+  reason: 'import' | 'erase' | 'restore';
+  data: AllData;
+}
+
+export type SyncErrorKind = 'auth' | 'network' | 'private' | 'other';
+
+/** GitHub sync configuration + bookkeeping. Stored in IndexedDB only — never exported in backups. */
+export interface SyncConfig {
+  token: string;
+  /** "owner/name" of the PRIVATE data repository. */
+  repo: string;
+  branch: string;
+  connectedAt: number;
+  lastSyncAt?: number;
+  lastError?: { kind: SyncErrorKind; message: string; at: number };
+  /** Per remote file: blob sha and hash of the local content at the last successful sync. */
+  files: Record<string, { sha: string; hash: string }>;
+  /** After import / restore: make the cloud copy match this device instead of merging. */
+  authoritative?: boolean;
 }

@@ -10,11 +10,12 @@ import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { evenPortionG, fmtNum, portionNutrition, remainingBatch } from '../../lib/engine';
 import {
-  calcDraft, draftFromRecipe, emptyDraft, eatenFromBatch, ingredientFromFood, recipeFromDraft, type DraftIngredient, type RecipeDraft,
+  applyDrift, calcDraft, describeDrift, draftFromRecipe, emptyDraft, eatenFromBatch, findIngredientDrift, ingredientFromFood, recipeFromDraft, scaleDraft, type DraftIngredient, type RecipeDraft,
 } from '../../lib/recipes';
 import { newId } from '../../utils/id';
 import { todayStr } from '../../utils/dates';
 import { IngredientPicker } from './IngredientPicker';
+import { ScaleSheet } from './ScaleSheet';
 import type { Food } from '../../types';
 
 export function RecipeEditorPage() {
@@ -42,6 +43,7 @@ function Editor({ recipeId }: { recipeId?: string }) {
   const logs = useAppStore(s => s.logs);
   const saveRecipe = useAppStore(s => s.saveRecipe);
   const deleteRecipe = useAppStore(s => s.deleteRecipe);
+  const restoreRecipe = useAppStore(s => s.restoreRecipe);
   const showToast = useAppStore(s => s.showToast);
   const isFav = useAppStore(s => (recipeId ? s.settings.favoriteRecipeIds.includes(recipeId) : false));
   const toggleFavRecipe = useAppStore(s => s.toggleFavoriteRecipe);
@@ -59,10 +61,13 @@ function Editor({ recipeId }: { recipeId?: string }) {
   const [focusId, setFocusId] = useState<string | null>(draft.ingredients[0]?.rawWeightG == null ? draft.ingredients[0]?.id ?? null : null);
   const [portion, setPortion] = useState<number | null>(existing?.portionSizesG[0] ?? null);
   const [confirmDelete, setConfirmDelete] = useState(false);
+  const [scaleOpen, setScaleOpen] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
   const [showCookedFor, setShowCookedFor] = useState<Set<string>>(() => new Set(draft.ingredients.filter(i => i.cookedWeightG).map(i => i.id)));
 
   const calc = useMemo(() => calcDraft(draft), [draft]);
+  const drifts = useMemo(() => findIngredientDrift(draft.ingredients, fid => foodMap.get(fid)), [draft.ingredients, foodMap]);
+  const changedDrifts = drifts.filter(d => d.kind === 'changed');
   const portionMacros = portion ? portionNutrition(calc, portion) : null;
   const hasWeights = draft.ingredients.some(i => (i.rawWeightG ?? 0) > 0);
   const canSave = draft.name.trim().length > 0 && draft.ingredients.length > 0 && hasWeights && calc.errors.length === 0;
@@ -111,6 +116,21 @@ function Editor({ recipeId }: { recipeId?: string }) {
     patch({ cookedTotalWeightG: null, batchStartedAt: todayStr() });
     showToast('New batch: weigh the finished dish, then save');
   };
+  const applyScale = (f: number) => {
+    const before = draft;
+    setDraft(scaleDraft(draft, f));
+    setScaleOpen(false);
+    showToast(`Scaled ×${fmtNum(f, 2)}${recipeId ? ' — tap Save to keep it' : ''}`, { actionLabel: 'Undo', onAction: () => setDraft(before) });
+  };
+  const copyScaled = async (f: number) => {
+    const scaled = scaleDraft(draft, f);
+    const copy: RecipeDraft = { ...scaled, id: newId('rec'), name: `${draft.name.trim() || 'Recipe'} ×${fmtNum(f, 2)}`, createdAt: Date.now(), batchStartedAt: scaled.cookedTotalWeightG ? todayStr() : undefined };
+    const rec = recipeFromDraft(copy);
+    await saveRecipe(rec);
+    setScaleOpen(false);
+    showToast(`Saved “${rec.name}”`, { tone: 'success' });
+    navigate(`/recipes/${rec.id}`);
+  };
   const back = () => (dirty ? setConfirmLeave(true) : navigate('/recipes'));
 
   const changeLabel = calc.change
@@ -137,6 +157,20 @@ function Editor({ recipeId }: { recipeId?: string }) {
         {/* ---------------- ingredients */}
         <section>
           <SectionTitle right={<span className="text-[13px] text-muted tabular">{fmtNum(calc.rawTotalWeightG, 0)} g raw</span>}>1 · Raw ingredients</SectionTitle>
+          {drifts.length > 0 && (
+            <div className="space-y-2 mb-3" data-testid="drift-banner">
+              {changedDrifts.map(d => (
+                <Notice key={d.ingredientId} tone="warn">
+                  <div className="text-[14px]"><b>{d.name}</b> changed in your foods: {describeDrift(d.before, d.after ?? d.before, !!d.food && draft.ingredients.find(i => i.id === d.ingredientId)?.nutritionBasis !== d.food.nutritionBasis)} (per 100 g).</div>
+                  <button className="mt-1.5 font-semibold text-accent" onClick={() => { setDraft(x => applyDrift(x, [d])); showToast(`${d.name} updated — tap Save`, { tone: 'success' }); }}>Update this recipe</button>
+                </Notice>
+              ))}
+              {changedDrifts.length > 1 && <Button size="sm" variant="secondary" onClick={() => { setDraft(x => applyDrift(x, changedDrifts)); showToast('All ingredients updated — tap Save', { tone: 'success' }); }}>Update all {changedDrifts.length}</Button>}
+              {drifts.filter(d => d.kind === 'missing').map(d => (
+                <p key={d.ingredientId} className="text-[12px] text-muted px-1">“{d.name}” was deleted from your foods — this recipe keeps its saved values.</p>
+              ))}
+            </div>
+          )}
           <Card className="!p-0 overflow-hidden">
             {draft.ingredients.length === 0 && (
               <div className="px-5 py-8 text-center text-muted text-[15px]">Add each ingredient with its <b>raw</b> weight (what you put in the pan).</div>
@@ -179,6 +213,11 @@ function Editor({ recipeId }: { recipeId?: string }) {
               <Icon name="plus" /> Add ingredient
             </button>
           </Card>
+          {hasWeights && (
+            <button type="button" onClick={() => setScaleOpen(true)} className="mt-2 w-full h-11 flex items-center justify-center gap-2 rounded-2xl text-[15px] font-medium text-ink bg-surface2 active:bg-surface3">
+              <Icon name="scale" size={18} /> Scale recipe (×0.5, ×1.5, ×2…)
+            </button>
+          )}
         </section>
 
         {/* ---------------- cooked weight */}
@@ -256,8 +295,15 @@ function Editor({ recipeId }: { recipeId?: string }) {
       </main>
 
       <IngredientPicker open={pickerOpen} onClose={() => setPickerOpen(false)} onPick={addIngredient} />
-      <Confirm open={confirmDelete} danger title="Delete this recipe?" confirmLabel="Delete" message="Past log entries keep their saved nutrition."
-        onCancel={() => setConfirmDelete(false)} onConfirm={async () => { if (recipeId) await deleteRecipe(recipeId); setConfirmDelete(false); showToast('Recipe deleted'); navigate('/recipes', { replace: true }); }} />
+      <ScaleSheet open={scaleOpen} onClose={() => setScaleOpen(false)} draft={draft} canCopy={!!recipeId} onApply={applyScale} onCopy={copyScaled} />
+      <Confirm open={confirmDelete} danger title="Delete this recipe?" confirmLabel="Delete" message="Past log entries keep their saved nutrition. You can undo this right after, or later from Settings → Recently deleted."
+        onCancel={() => setConfirmDelete(false)} onConfirm={async () => {
+          const rid = recipeId;
+          if (rid) await deleteRecipe(rid);
+          setConfirmDelete(false);
+          showToast('Recipe deleted', rid ? { actionLabel: 'Undo', onAction: () => { void restoreRecipe(rid); } } : {});
+          navigate('/recipes', { replace: true });
+        }} />
       <Confirm open={confirmLeave} title="Discard changes?" confirmLabel="Discard" danger message="You have unsaved changes to this recipe."
         onCancel={() => setConfirmLeave(false)} onConfirm={() => { setConfirmLeave(false); navigate('/recipes'); }} />
     </>

@@ -1,15 +1,16 @@
 import { openDB, type DBSchema, type IDBPDatabase } from 'idb';
-import type { AppSettings, DailyTargets, Food, FoodUsage, MealLogEntry, Recipe } from '../types';
+import type { AppSettings, DailyTargets, Food, FoodUsage, MealLogEntry, Recipe, Snapshot, SyncConfig } from '../types';
 
 export const DB_NAME = 'demeter';
-export const DB_VERSION = 1;
+export const DB_VERSION = 2;
 
 export interface DemeterDB extends DBSchema {
   foods: { key: string; value: Food };
   recipes: { key: string; value: Recipe };
   logs: { key: string; value: MealLogEntry; indexes: { 'by-date': string } };
   usage: { key: string; value: FoodUsage };
-  meta: { key: 'settings' | 'targets'; value: AppSettings | DailyTargets };
+  meta: { key: 'settings' | 'targets' | 'sync'; value: AppSettings | DailyTargets | SyncConfig };
+  snapshots: { key: string; value: Snapshot };
 }
 
 let dbPromise: Promise<IDBPDatabase<DemeterDB>> | null = null;
@@ -18,13 +19,19 @@ let dbPromise: Promise<IDBPDatabase<DemeterDB>> | null = null;
 export function getDB(): Promise<IDBPDatabase<DemeterDB>> {
   if (!dbPromise) {
     dbPromise = openDB<DemeterDB>(DB_NAME, DB_VERSION, {
-      upgrade(db) {
-        db.createObjectStore('foods', { keyPath: 'id' });
-        db.createObjectStore('recipes', { keyPath: 'id' });
-        const logs = db.createObjectStore('logs', { keyPath: 'id' });
-        logs.createIndex('by-date', 'date');
-        db.createObjectStore('usage', { keyPath: 'key' });
-        db.createObjectStore('meta');
+      upgrade(db, oldVersion) {
+        if (oldVersion < 1) {
+          db.createObjectStore('foods', { keyPath: 'id' });
+          db.createObjectStore('recipes', { keyPath: 'id' });
+          const logs = db.createObjectStore('logs', { keyPath: 'id' });
+          logs.createIndex('by-date', 'date');
+          db.createObjectStore('usage', { keyPath: 'key' });
+          db.createObjectStore('meta');
+        }
+        if (oldVersion < 2) {
+          // v2: restore points (soft delete needs no schema change — it is just a field on records)
+          db.createObjectStore('snapshots', { keyPath: 'id' });
+        }
       },
     });
   }

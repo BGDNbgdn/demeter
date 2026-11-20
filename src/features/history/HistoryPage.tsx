@@ -7,6 +7,8 @@ import { useAppStore } from '../../hooks/useAppStore';
 import { useThemeColors } from '../../hooks/useThemeColors';
 import { fmtKcal, fmtNum } from '../../lib/engine';
 import { dailyTotals } from '../../lib/logging';
+import { computeStreaks } from '../../lib/streak';
+import { Icon } from '../../components/ui/Icon';
 import { addDays, dateRange, endOfMonth, formatDayLabel, formatShort, monthTitle, parseDateStr, startOfMonth, startOfWeek, todayStr, weekdayShort } from '../../utils/dates';
 
 export default function HistoryPage() {
@@ -17,6 +19,7 @@ export default function HistoryPage() {
   const setSelectedDate = useAppStore(s => s.setSelectedDate);
   const navigate = useNavigate();
   const colors = useThemeColors();
+  const streak = useMemo(() => computeStreaks(logs, targets.protein), [logs, targets.protein]);
 
   const { from, to, title } = useMemo(() => {
     if (view === 'week') { const f = startOfWeek(anchor); const t = addDays(f, 6); return { from: f, to: t, title: `${formatShort(f)} – ${formatShort(t)}` }; }
@@ -70,6 +73,14 @@ export default function HistoryPage() {
       />
       <main className="px-4 pb-8 max-w-xl mx-auto space-y-4 pt-3">
         <Segmented value={view} onChange={v => { setView(v); setAnchor(todayStr()); }} options={[{ value: 'week', label: 'Week' }, { value: 'month', label: 'Month' }]} />
+
+        <Card className="!p-4 flex items-center gap-4" data-testid="streak-card">
+          <span className="h-11 w-11 rounded-full bg-accentsoft text-accent flex items-center justify-center shrink-0"><Icon name="flame" filled={streak.current > 0} /></span>
+          <div className="flex-1 min-w-0">
+            <div className="text-[17px] font-bold leading-tight">{streak.current} day streak <span className="text-muted font-medium text-[13px]">· best {streak.best}</span></div>
+            <div className="text-[12px] text-muted leading-snug mt-0.5">A day counts when you reach {Math.round(streak.threshold * 100)}% of your protein goal ({fmtNum(targets.protein * streak.threshold, 0)} g). Meals and calories don’t matter.</div>
+          </div>
+        </Card>
 
         {logged.length === 0 ? (
           <EmptyState icon="history" title="No entries in this period" body="Log some food and your trends will show up here." />

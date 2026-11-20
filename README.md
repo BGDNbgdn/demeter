@@ -13,12 +13,15 @@ cookedPer100g = rawPer100g × rawWeightG / cookedWeightG
         → eat 300 g → 75 g protein · 412.5 kcal
 ```
 
-It is a **Progressive Web App**: no backend, no account, no ads, no analytics. After the first load it works fully offline, and everything you log lives in IndexedDB on your device.
+It is a **Progressive Web App**: no server of its own, no account, no ads, no analytics. After the first load it works fully offline, and everything you log lives in IndexedDB on your device. Optionally it can keep several devices in sync through **your own private GitHub repository** (free) — see [Sync across devices](#sync-across-devices-optional-free).
 
 - 900+ foods (USDA FoodData Central), raw / cooked / as-packaged variants with typical cooking yields
 - Raw → cooked converter on every food, and a recipe builder (ingredients → total cooked weight → any portion)
 - Daily dashboard (protein first), weekly/monthly history charts, editable log
 - Fuzzy search, favorites, recents, custom foods, protein-density filters
+- **Protein streak**: consecutive days with ≥ 75% of your protein goal (nothing else counts)
+- **Safety nets**: undo for every delete, a 60-day *Recently deleted* list, a restore point before import/erase, recipe scaling (×1.5…), and a heads-up when an ingredient's food changed
+- **Optional auto-sync** between devices via a private GitHub repo (no button — it just happens)
 - JSON export/import backups (Files app / iCloud Drive), erase-all
 - Optional Open Food Facts lookup (barcode scan / search) — never required
 
@@ -55,7 +58,7 @@ Requires Node 20+.
 ```bash
 npm install
 npm run dev        # http://localhost:5173  (service worker is disabled in dev)
-npm test           # unit tests (engine, database, search, backup, Open Food Facts parsing)
+npm test           # unit + integration tests (engine, database, search, backup, sync, streak, scaling…)
 npm run build      # type-checks, then builds to dist/
 npm run preview    # serve the production build at http://localhost:4173 (service worker active)
 ```
@@ -87,6 +90,41 @@ Connect the repo, then: **Build command** `npm run build` · **Output directory*
 
 > Your data is not on the server in any of these cases — only the app code is. Each device keeps its own data.
 
+## Sync across devices (optional, free)
+
+Demeter can keep your iPhone, iPad and computer in step. There is no Demeter server: your data goes to **a private repository in your own GitHub account**, and only you can read it. It is free (private repos are free on personal accounts).
+
+### One-time setup
+1. On GitHub, create a **private** repository, e.g. `demeter-data` (don't make it public — Demeter refuses to sync to a public repo).
+2. Create a token for it: GitHub → Settings → Developer settings → *Fine-grained tokens* → **Generate new token** (the link in the app pre-fills the name and permission).
+   - **Repository access:** *Only select repositories* → your `demeter-data` repo
+   - **Permissions → Repository → Contents:** *Read and write* (Metadata read-only is added automatically)
+   - Expiration: up to 1 year (put a reminder in your calendar; the app shows a clear message when it expires).
+3. In Demeter: **Settings → Sync across devices**, enter `yourname/demeter-data`, paste the token, **Connect and sync**. Repeat on each device.
+
+### How it behaves
+- **Automatic, no button:** Demeter syncs when you open it, when you come back to it, a few seconds after you change something, and when the connection returns.
+- **Merging:** each record carries an edit time; the newest edit wins, per record. Deleting is remembered too, so a delete on one device removes it everywhere, and *Restore* on any device brings it back. Two devices adding different things at the same time both keep their additions.
+- **What syncs:** log entries, recipes, custom foods, targets, favorites and frequent-food history. *Not* synced (per device): theme, onboarding, reminder settings, and the token itself.
+- **Files on GitHub:** `settings.json`, `foods.json`, `recipes.json` and one `logs/YYYY-MM.json` per month — small, human-readable JSON, one record per line, with git history for free. Only files that changed are downloaded or uploaded.
+- **Importing a backup / restoring a restore point** while connected makes the cloud copy match this device; anything the file didn't contain is tombstoned (still recoverable from *Recently deleted* for 60 days).
+- **Erase all local data** disconnects sync and leaves the GitHub copy alone; reconnect to pull it back.
+
+### Security notes
+- The token is stored in IndexedDB on that device only and is **never** included in JSON backups or uploaded. Use a fine-grained token limited to the one repo, so a leaked token can't touch anything else.
+- On every app open Demeter checks the repo is still **private** and refuses to sync if it isn't.
+- Data is plain JSON in your private repo (no extra encryption). Anyone with access to your GitHub account could read it.
+- iOS web apps cannot sync in the background: a device catches up the next time it is opened.
+- Free tiers and GitHub's rules change; sync uses ordinary REST API calls, well inside GitHub's normal rate limits.
+
+## Undo, safety nets & streak
+
+- **Undo:** deleting a log entry, recipe or custom food shows an *Undo* toast. Anything deleted stays in **Settings → Recently deleted** for 60 days (then it is removed for good).
+- **Restore point:** before an import, a restore-from-restore-point, or *Erase all*, Demeter keeps a copy of everything on the device. **Settings → Restore previous data** swaps it back (and keeps the replaced data as the new restore point, so you can switch back again).
+- **Scale a recipe:** in a recipe, *Scale recipe* multiplies every weight (×0.5, ×1.5, ×2, any factor, or "aim for N g cooked"). Per-100 g nutrition never changes; totals scale. Save as a new recipe (keeps your batch tracking) or scale in place.
+- **Ingredient changed?** Recipes keep a snapshot of each ingredient so they never change behind your back. If you later edit the food (or an app update changes a built-in value), the recipe shows *“Chicken changed: protein 20 → 24 g — Update this recipe”*. Past log entries are never rewritten.
+- **Streak:** a day counts when your protein reaches **75% of your protein target** (so 120 g for a 160 g target) — the number of meals or calories doesn't matter. Today never breaks a streak while it is still in progress. Uses your current target for past days.
+
 ## Backup & restore format
 
 *Settings → Export all data as JSON* writes a human-readable, versioned file (`demeter-backup-YYYY-MM-DD.json`):
@@ -101,7 +139,7 @@ Connect the repo, then: **Build command** `npm run build` · **Output directory*
 }
 ```
 
-It contains your custom foods, recipes, log entries, targets, settings and usage history (the built-in database ships with the app). On iPhone the export opens the share sheet — choose **Save to Files**. *Import* validates the file, shows a summary, and **warns before replacing** everything on the device. A newer `schemaVersion` than the app understands is refused with a clear message. *Erase all local data* lives in the Danger zone, behind a confirmation.
+It contains your custom foods, recipes, log entries, targets, settings and usage history (the built-in database ships with the app). Items in *Recently deleted* and the GitHub sync token are **not** exported. On iPhone the export opens the share sheet — choose **Save to Files**. *Import* validates the file, shows a summary, and **warns before replacing** everything on the device. A newer `schemaVersion` than the app understands is refused with a clear message. *Erase all local data* lives in the Danger zone, behind a confirmation.
 
 ## How the numbers work
 
@@ -146,7 +184,8 @@ src/
   components/   shared UI (bottom sheets, inputs, nav, rows…)
   features/     today · foods · recipes · history · settings · openfoodfacts · onboarding
   lib/          engine/ (raw↔cooked, recipes, rounding) · search · logging · Open Food Facts client
-  db/           IndexedDB schema (idb), repository, backup/restore + validation
+  db/           IndexedDB schema (idb, v2), repository, backup/restore + validation
+  lib/sync/     merge rules, GitHub client, sync engine + orchestrator (see tests for two-device scenarios)
   data/         bundled food database (JSON)
   hooks/        app store (zustand), UI store, theme
   types/        data model
@@ -159,10 +198,18 @@ Tech: Vite · React · TypeScript · Tailwind CSS 4 · idb · Recharts · Fuse.j
 
 ## Privacy
 
-No accounts, servers, analytics or ads. The only network request Demeter can ever make is the **optional** Open Food Facts lookup you trigger yourself (a product name or barcode is sent to `world.openfoodfacts.org`). Turn it off in Settings → Online features.
+No accounts, analytics or ads, and no Demeter server. Demeter makes network requests only if you opt in: the **optional** Open Food Facts lookup you trigger yourself (a product name or barcode goes to `world.openfoodfacts.org`; turn it off in Settings → Online features), and **optional sync** to *your own private GitHub repo* (`api.github.com`). With neither enabled, nothing ever leaves the device.
 
 ## Credits & licences
 
 - Nutrition data: USDA FoodData Central (public domain, CC0).
 - Optional product data: [Open Food Facts](https://world.openfoodfacts.org) — database under the ODbL.
 - App code: yours to use and modify for personal use.
+
+### Testing sync against real GitHub (optional)
+
+`src/lib/sync/real.test.ts` runs the two-device scenario against the real GitHub API; it is skipped unless you provide a token and a **scratch branch** of your data repo:
+
+```bash
+DEMETER_SYNC_TOKEN=<token> DEMETER_SYNC_REPO=you/demeter-data DEMETER_SYNC_BRANCH=sync-test npx vitest run src/lib/sync/real.test.ts
+```

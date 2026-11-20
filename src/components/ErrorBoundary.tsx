@@ -4,7 +4,16 @@ import { Component, type ReactNode } from 'react';
 export class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
   state = { error: null as Error | null };
   static getDerivedStateFromError(error: Error) { return { error }; }
-  componentDidCatch(error: Error) { console.error('Demeter crashed:', error); }
+  componentDidCatch(error: Error) {
+    console.error('Demeter crashed:', error);
+    // A lazy screen's file is gone after an update → reload once to pick up the new version.
+    if (/dynamically imported module|importing a module script failed|ChunkLoadError/i.test(error.message)) {
+      try {
+        const last = Number(sessionStorage.getItem('demeter-chunk-reload') ?? 0);
+        if (Date.now() - last > 15_000) { sessionStorage.setItem('demeter-chunk-reload', String(Date.now())); location.reload(); }
+      } catch { /* sessionStorage unavailable: the Reload button still works */ }
+    }
+  }
   render() {
     if (!this.state.error) return this.props.children;
     return (

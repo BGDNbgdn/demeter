@@ -12,6 +12,7 @@ import { useAppStore } from './hooks/useAppStore';
 import { useTheme } from './hooks/useTheme';
 import { UpdateBanner } from './components/UpdateBanner';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { initSync } from './lib/sync/orchestrator';
 
 const HistoryPage = lazy(() => import('./features/history/HistoryPage'));
 
@@ -26,7 +27,7 @@ export default function App() {
   const ready = useAppStore(s => s.ready);
   const loadError = useAppStore(s => s.loadError);
   useTheme();
-  useEffect(() => { void init(); }, [init]);
+  useEffect(() => { void init().then(() => initSync()); }, [init]);
 
   if (!ready) {
     return <div className="h-full flex items-center justify-center text-muted" role="status">Loading…</div>;

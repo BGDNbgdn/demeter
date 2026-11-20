@@ -20,7 +20,7 @@ export function EntryEditSheet() {
 function Inner({ entry }: { entry: MealLogEntry }) {
   const updateLog = useAppStore(s => s.updateLog);
   const deleteLog = useAppStore(s => s.deleteLog);
-  const addLog = useAppStore(s => s.addLog);
+  const restoreLog = useAppStore(s => s.restoreLog);
   const showToast = useAppStore(s => s.showToast);
   const close = () => useUI.setState({ editEntryId: null });
   const scalable = entry.consumedWeightG > 0;
@@ -42,10 +42,9 @@ function Inner({ entry }: { entry: MealLogEntry }) {
     close();
   };
   const remove = async () => {
-    const copy = entry;
     await deleteLog(entry.id);
     close();
-    showToast('Entry deleted', { actionLabel: 'Undo', onAction: () => void addLog(copy) });
+    showToast('Entry deleted', { actionLabel: 'Undo', onAction: () => void restoreLog(entry.id) });
   };
 
   return (

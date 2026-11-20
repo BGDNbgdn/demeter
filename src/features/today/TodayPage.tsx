@@ -11,6 +11,8 @@ import { addDays, defaultMealForNow, formatDayLabel, parseDateStr, todayStr } fr
 import { MEAL_LABEL } from '../foods/LogFoodSheet';
 import { cn } from '../../utils/cn';
 import { BackupReminder } from '../settings/BackupReminder';
+import { SyncAlert } from '../settings/SyncAlert';
+import { StreakChip } from './StreakChip';
 
 export function TodayPage() {
   const date = useAppStore(s => s.selectedDate);
@@ -56,6 +58,7 @@ export function TodayPage() {
         }
       />
       <main className="px-4 pb-6 max-w-xl mx-auto">
+        <SyncAlert />
         <BackupReminder />
 
         {/* ---- progress card */}
@@ -98,6 +101,8 @@ export function TodayPage() {
             ))}
           </div>
         </Card>
+
+        <StreakChip />
 
         <QuickAddRow />
 

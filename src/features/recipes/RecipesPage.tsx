@@ -5,11 +5,12 @@ import { Card, EmptyState, PageHeader } from '../../components/ui/misc';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { fmtNum, remainingBatch } from '../../lib/engine';
-import { eatenFromBatch } from '../../lib/recipes';
+import { eatenFromBatch, findIngredientDrift } from '../../lib/recipes';
 
 export function RecipesPage() {
   const recipes = useAppStore(s => s.recipes);
   const logs = useAppStore(s => s.logs);
+  const foodMap = useAppStore(s => s.foodMap);
   const favs = useAppStore(s => s.settings.favoriteRecipeIds);
   const toggleFav = useAppStore(s => s.toggleFavoriteRecipe);
   const navigate = useNavigate();
@@ -32,11 +33,13 @@ export function RecipesPage() {
               const per100 = r.per100Cooked ?? r.per100Raw;
               const rem = remainingBatch(r.cookedTotalWeightG, eatenFromBatch(r, logs));
               const fav = favs.includes(r.id);
+              const changed = findIngredientDrift(r.ingredients, id => foodMap.get(id)).filter(d => d.kind === 'changed').length;
               return (
                 <Card key={r.id} className="!p-0 overflow-hidden">
                   <div className="flex items-stretch">
                     <button type="button" className="flex-1 min-w-0 text-left p-4 active:bg-surface2" onClick={() => navigate(`/recipes/${r.id}`)}>
                       <div className="text-[18px] font-semibold truncate">{r.name}</div>
+                      {changed > 0 && <div className="inline-block mt-1 text-[11px] font-semibold text-warn px-2 py-0.5 rounded-md bg-warn/15" style={{ background: 'color-mix(in srgb, var(--warn) 15%, transparent)' }}>{changed} ingredient{changed === 1 ? '' : 's'} changed — open to update</div>}
                       <div className="text-[13px] text-muted mt-0.5 tabular">
                         {r.ingredients.length} ingredient{r.ingredients.length === 1 ? '' : 's'} · {r.cookedTotalWeightG ? `${fmtNum(r.cookedTotalWeightG, 0)} g cooked` : <span className="text-warn">cooked weight not entered</span>}
                       </div>

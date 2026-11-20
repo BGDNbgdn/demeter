@@ -5,7 +5,10 @@ import {
 import { DEFAULT_TARGETS, defaultSettings } from './defaults';
 import type { AllData } from './repo';
 
-export function buildBackup(data: AllData, now = new Date()): BackupFile {
+/** Backups contain live data only (trash is not exported) and never include the GitHub token. */
+export function buildBackup(allData: AllData, now = new Date()): BackupFile {
+  const live = <T extends { deletedAt?: number }>(xs: T[]) => xs.filter(x => !x.deletedAt);
+  const data: AllData = { ...allData, foods: live(allData.foods), recipes: live(allData.recipes), logs: live(allData.logs) };
   return {
     app: 'Demeter',
     schemaVersion: BACKUP_SCHEMA_VERSION,

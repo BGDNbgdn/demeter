@@ -1,16 +1,10 @@
-import type { AppSettings, DailyTargets, Food, FoodUsage, MealLogEntry, Recipe } from '../types';
+import type { AllData, AppSettings, DailyTargets, Food, FoodUsage, MealLogEntry, Recipe, Snapshot, SyncConfig } from '../types';
 import { DEFAULT_TARGETS, defaultSettings } from './defaults';
 import { getDB } from './index';
 
-export interface AllData {
-  foods: Food[];
-  recipes: Recipe[];
-  logs: MealLogEntry[];
-  usage: FoodUsage[];
-  settings: AppSettings;
-  targets: DailyTargets;
-}
+export type { AllData };
 
+/** Loads everything, INCLUDING soft-deleted records (the store splits live vs. trash). */
 export async function loadAll(): Promise<AllData> {
   const db = await getDB();
   const [foods, recipes, logs, usage, settings, targets] = await Promise.all([
@@ -29,6 +23,7 @@ export async function loadAll(): Promise<AllData> {
 }
 
 export async function putFood(food: Food) { await (await getDB()).put('foods', food); }
+export async function putFoods(foods: Food[]) { const tx = (await getDB()).transaction('foods', 'readwrite'); foods.forEach(f => tx.store.put(f)); await tx.done; }
 export async function deleteFoodById(id: string) { await (await getDB()).delete('foods', id); }
 export async function putRecipe(recipe: Recipe) { await (await getDB()).put('recipes', recipe); }
 export async function deleteRecipeById(id: string) { await (await getDB()).delete('recipes', id); }
@@ -38,7 +33,7 @@ export async function putUsage(usage: FoodUsage) { await (await getDB()).put('us
 export async function putSettings(settings: AppSettings) { await (await getDB()).put('meta', settings, 'settings'); }
 export async function putTargets(targets: DailyTargets) { await (await getDB()).put('meta', targets, 'targets'); }
 
-/** Replace the entire database contents in a single transaction (used by import & erase). */
+/** Replace the entire database contents in a single transaction (used by import, restore & sync). */
 export async function replaceAll(data: AllData): Promise<void> {
   const db = await getDB();
   const tx = db.transaction(['foods', 'recipes', 'logs', 'usage', 'meta'], 'readwrite');
@@ -47,7 +42,12 @@ export async function replaceAll(data: AllData): Promise<void> {
     tx.objectStore('recipes').clear(),
     tx.objectStore('logs').clear(),
     tx.objectStore('usage').clear(),
-    tx.objectStore('meta').clear(),
+    // keep the sync configuration: it is not part of the data set
+    (async () => {
+      const meta = tx.objectStore('meta');
+      await meta.delete('settings');
+      await meta.delete('targets');
+    })(),
   ]);
   for (const f of data.foods) tx.objectStore('foods').put(f);
   for (const r of data.recipes) tx.objectStore('recipes').put(r);
@@ -65,3 +65,13 @@ export async function eraseEverything(): Promise<void> {
     targets: { ...DEFAULT_TARGETS },
   });
 }
+
+// ---------------------------------------------------------------- restore point
+export async function getSnapshot(): Promise<Snapshot | undefined> { return (await getDB()).get('snapshots', 'restore-point'); }
+export async function putSnapshot(s: Snapshot) { await (await getDB()).put('snapshots', s); }
+export async function deleteSnapshot() { await (await getDB()).delete('snapshots', 'restore-point'); }
+
+// ---------------------------------------------------------------- sync config
+export async function getSyncConfig(): Promise<SyncConfig | undefined> { return (await (await getDB()).get('meta', 'sync')) as SyncConfig | undefined; }
+export async function putSyncConfig(c: SyncConfig) { await (await getDB()).put('meta', c, 'sync'); }
+export async function deleteSyncConfig() { await (await getDB()).delete('meta', 'sync'); }

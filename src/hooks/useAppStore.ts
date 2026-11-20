@@ -4,10 +4,11 @@ import { DEFAULT_TARGETS, defaultSettings } from '../db/defaults';
 import * as repo from '../db/repo';
 import { BUILTIN_FOODS } from '../data';
 import { createFoodSearcher, type FoodSearcher } from '../lib/search';
+import { purgeExpired, splitLive } from '../lib/trash';
 import { newId } from '../utils/id';
 import { todayStr } from '../utils/dates';
 import type {
-  AppSettings, DailyTargets, Food, FoodUsage, MealLogEntry, MealType, Recipe,
+  AllData, AppSettings, DailyTargets, Food, FoodUsage, MealLogEntry, MealType, Recipe, Snapshot, SyncErrorKind,
 } from '../types';
 
 export interface Toast {
@@ -17,6 +18,26 @@ export interface Toast {
   actionLabel?: string;
   onAction?: () => void;
 }
+
+export interface SyncUiState {
+  configured: boolean;
+  repo?: string;
+  status: 'idle' | 'syncing' | 'error' | 'offline';
+  lastSyncAt?: number;
+  error?: { kind: SyncErrorKind; message: string };
+}
+
+/** Hooks the sync module plugs into (kept here so the store never imports the sync module → no import cycle). */
+export const syncHooks = {
+  /** called after any local change that should reach the other devices */
+  onChange: () => {},
+  /** make the cloud copy match this device on the next sync (after import / restore) */
+  markAuthoritative: async () => {},
+  /** forget the GitHub connection (used by "erase all") */
+  disconnect: async () => {},
+};
+
+export interface Trash { foods: Food[]; recipes: Recipe[]; logs: MealLogEntry[] }
 
 interface AppState {
   ready: boolean;
@@ -28,13 +49,19 @@ interface AppState {
   searcher: FoodSearcher;
   recipes: Recipe[];
   logs: MealLogEntry[];
+  trash: Trash;
   usage: Record<string, FoodUsage>;
   settings: AppSettings;
   targets: DailyTargets;
   selectedDate: string;
   toast: Toast | null;
+  restorePoint: Pick<Snapshot, 'createdAt' | 'reason'> | null;
+  sync: SyncUiState;
 
   init(): Promise<void>;
+  /** Replace in-memory state from a full data set (live + soft-deleted). */
+  applyData(data: AllData): void;
+  fullData(): AllData;
   setSelectedDate(date: string): void;
   showToast(message: string, opts?: Partial<Omit<Toast, 'id' | 'message'>>): void;
   dismissToast(): void;
@@ -42,12 +69,15 @@ interface AppState {
   addLog(entry: MealLogEntry): Promise<void>;
   updateLog(entry: MealLogEntry): Promise<void>;
   deleteLog(id: string): Promise<void>;
+  restoreLog(id: string): Promise<void>;
 
   saveFood(food: Food): Promise<void>;
   deleteFood(id: string): Promise<void>;
+  restoreFood(id: string): Promise<void>;
   toggleFavoriteFood(id: string): Promise<void>;
   saveRecipe(recipe: Recipe): Promise<void>;
   deleteRecipe(id: string): Promise<void>;
+  restoreRecipe(id: string): Promise<void>;
   toggleFavoriteRecipe(id: string): Promise<void>;
 
   setTargets(t: DailyTargets): Promise<void>;
@@ -56,8 +86,9 @@ interface AppState {
 
   exportJSON(): { text: string; fileName: string };
   markExported(): Promise<void>;
-  importAll(data: repo.AllData): Promise<void>;
+  importAll(data: AllData): Promise<void>;
   eraseAll(): Promise<void>;
+  restoreFromRestorePoint(): Promise<void>;
 }
 
 function mergeFoods(custom: Food[]) {
@@ -73,15 +104,23 @@ function mergeFoods(custom: Food[]) {
 
 let toastSeq = 0;
 let toastTimer: ReturnType<typeof setTimeout> | undefined;
-
 const initialFoods = mergeFoods([]);
+const EMPTY_TRASH: Trash = { foods: [], recipes: [], logs: [] };
 
 export const useAppStore = create<AppState>((set, get) => {
   const guard = async (fn: () => Promise<void>, errMsg = 'Could not save to this device. Storage may be full or blocked.') => {
-    try { await fn(); } catch (e) {
+    try { await fn(); syncHooks.onChange(); } catch (e) {
       console.error(e);
       get().showToast(errMsg, { tone: 'error' });
     }
+  };
+  const byId = <T extends { id: string }>(xs: T[], id: string) => xs.find(x => x.id === id);
+
+  /** Take a restore point of everything currently on the device (live + trash). */
+  const takeRestorePoint = async (reason: Snapshot['reason']) => {
+    const snap: Snapshot = { id: 'restore-point', createdAt: Date.now(), reason, data: structuredClone(get().fullData()) };
+    await repo.putSnapshot(snap);
+    set({ restorePoint: { createdAt: snap.createdAt, reason } });
   };
 
   return {
@@ -90,26 +129,55 @@ export const useAppStore = create<AppState>((set, get) => {
     ...initialFoods,
     recipes: [],
     logs: [],
+    trash: EMPTY_TRASH,
     usage: {},
     settings: defaultSettings(),
     targets: { ...DEFAULT_TARGETS },
     selectedDate: todayStr(),
     toast: null,
+    restorePoint: null,
+    sync: { configured: false, status: 'idle' },
+
+    applyData(data) {
+      const foods = splitLive(data.foods); const recipes = splitLive(data.recipes); const logs = splitLive(data.logs);
+      set({
+        ...mergeFoods(foods.live),
+        recipes: recipes.live.sort((a, b) => b.updatedAt - a.updatedAt),
+        logs: logs.live,
+        trash: { foods: foods.trash, recipes: recipes.trash, logs: logs.trash },
+        usage: Object.fromEntries(data.usage.map(u => [u.key, u])),
+        settings: data.settings,
+        targets: data.targets,
+      });
+    },
+
+    fullData() {
+      const s = get();
+      return {
+        foods: [...s.customFoods, ...s.trash.foods],
+        recipes: [...s.recipes, ...s.trash.recipes],
+        logs: [...s.logs, ...s.trash.logs],
+        usage: Object.values(s.usage),
+        settings: s.settings,
+        targets: s.targets,
+      };
+    },
 
     async init() {
       if (get().ready) return;
       try {
-        const data = await repo.loadAll();
-        set({
-          ...mergeFoods(data.foods),
-          recipes: data.recipes,
-          logs: data.logs,
-          usage: Object.fromEntries(data.usage.map(u => [u.key, u])),
-          settings: data.settings,
-          targets: data.targets,
-          ready: true,
-        });
-        // First run: persist the default settings so the DB is never "half empty".
+        let data = await repo.loadAll();
+        // forget soft-deleted records past the retention window
+        const purged = purgeExpired(data);
+        if (purged.removed.foods.length + purged.removed.recipes.length + purged.removed.logs.length > 0) {
+          data = purged.data;
+          await Promise.all([
+            ...purged.removed.foods.map(repo.deleteFoodById), ...purged.removed.recipes.map(repo.deleteRecipeById), ...purged.removed.logs.map(repo.deleteLogById),
+          ]).catch(() => {});
+        }
+        get().applyData(data);
+        const snap = await repo.getSnapshot().catch(() => undefined);
+        set({ ready: true, restorePoint: snap ? { createdAt: snap.createdAt, reason: snap.reason } : null });
         void repo.putSettings(data.settings).catch(() => {});
       } catch (e) {
         console.error(e);
@@ -131,7 +199,7 @@ export const useAppStore = create<AppState>((set, get) => {
       clearTimeout(toastTimer);
       const id = ++toastSeq;
       set({ toast: { id, message, ...opts } });
-      toastTimer = setTimeout(() => { if (get().toast?.id === id) set({ toast: null }); }, opts.onAction ? 6000 : 2800);
+      toastTimer = setTimeout(() => { if (get().toast?.id === id) set({ toast: null }); }, opts.onAction ? 7000 : 2800);
     },
     dismissToast: () => set({ toast: null }),
 
@@ -146,8 +214,17 @@ export const useAppStore = create<AppState>((set, get) => {
       await guard(() => repo.putLog(next));
     },
     async deleteLog(id) {
-      set(s => ({ logs: s.logs.filter(l => l.id !== id) }));
-      await guard(() => repo.deleteLogById(id));
+      const cur = byId(get().logs, id); if (!cur) return;
+      const gone = { ...cur, deletedAt: Date.now(), updatedAt: Date.now() };
+      set(s => ({ logs: s.logs.filter(l => l.id !== id), trash: { ...s.trash, logs: [gone, ...s.trash.logs] } }));
+      await guard(() => repo.putLog(gone));
+    },
+    async restoreLog(id) {
+      const cur = byId(get().trash.logs, id); if (!cur) return;
+      const { deletedAt: _d, ...rest } = cur; void _d;
+      const back: MealLogEntry = { ...rest, updatedAt: Date.now() };
+      set(s => ({ logs: [...s.logs, back], trash: { ...s.trash, logs: s.trash.logs.filter(l => l.id !== id) } }));
+      await guard(() => repo.putLog(back));
     },
 
     // ---------------------------------------------------------------- foods
@@ -159,15 +236,21 @@ export const useAppStore = create<AppState>((set, get) => {
       await guard(() => repo.putFood(next));
     },
     async deleteFood(id) {
-      set(mergeFoods(get().customFoods.filter(f => f.id !== id)));
-      await guard(() => repo.deleteFoodById(id));
-      if (get().settings.favoriteFoodIds.includes(id)) {
-        await get().updateSettings({ favoriteFoodIds: get().settings.favoriteFoodIds.filter(x => x !== id) });
-      }
+      const cur = byId(get().customFoods, id); if (!cur) return;
+      const gone = { ...cur, deletedAt: Date.now(), updatedAt: Date.now() };
+      set(s => ({ ...mergeFoods(s.customFoods.filter(f => f.id !== id)), trash: { ...s.trash, foods: [gone, ...s.trash.foods] } }));
+      await guard(() => repo.putFood(gone));
+    },
+    async restoreFood(id) {
+      const cur = byId(get().trash.foods, id); if (!cur) return;
+      const { deletedAt: _d, ...rest } = cur; void _d;
+      const back: Food = { ...rest, updatedAt: Date.now() };
+      set(s => ({ ...mergeFoods([back, ...s.customFoods]), trash: { ...s.trash, foods: s.trash.foods.filter(f => f.id !== id) } }));
+      await guard(() => repo.putFood(back));
     },
     async toggleFavoriteFood(id) {
       const favs = get().settings.favoriteFoodIds;
-      await get().updateSettings({ favoriteFoodIds: favs.includes(id) ? favs.filter(x => x !== id) : [...favs, id] });
+      await get().updateSettings({ favoriteFoodIds: favs.includes(id) ? favs.filter(x => x !== id) : [...favs, id], favoritesUpdatedAt: Date.now() });
     },
 
     // ---------------------------------------------------------------- recipes
@@ -177,18 +260,31 @@ export const useAppStore = create<AppState>((set, get) => {
       await guard(() => repo.putRecipe(next));
     },
     async deleteRecipe(id) {
-      set(s => ({ recipes: s.recipes.filter(r => r.id !== id) }));
-      await guard(() => repo.deleteRecipeById(id));
+      const cur = byId(get().recipes, id); if (!cur) return;
+      const gone = { ...cur, deletedAt: Date.now(), updatedAt: Date.now() };
+      set(s => ({ recipes: s.recipes.filter(r => r.id !== id), trash: { ...s.trash, recipes: [gone, ...s.trash.recipes] } }));
+      await guard(() => repo.putRecipe(gone));
+    },
+    async restoreRecipe(id) {
+      const cur = byId(get().trash.recipes, id); if (!cur) return;
+      const { deletedAt: _d, ...rest } = cur; void _d;
+      const back: Recipe = { ...rest, updatedAt: Date.now() };
+      set(s => ({ recipes: [back, ...s.recipes], trash: { ...s.trash, recipes: s.trash.recipes.filter(r => r.id !== id) } }));
+      await guard(() => repo.putRecipe(back));
     },
     async toggleFavoriteRecipe(id) {
       const favs = get().settings.favoriteRecipeIds;
-      await get().updateSettings({ favoriteRecipeIds: favs.includes(id) ? favs.filter(x => x !== id) : [...favs, id] });
+      await get().updateSettings({ favoriteRecipeIds: favs.includes(id) ? favs.filter(x => x !== id) : [...favs, id], favoritesUpdatedAt: Date.now() });
     },
 
     // ---------------------------------------------------------------- targets / settings / usage
     async setTargets(t) {
-      set({ targets: t });
-      await guard(() => repo.putTargets(t));
+      const cur = get().targets;
+      // no-op when nothing really changed (defensive: a save must never trigger itself)
+      if (cur.calories === t.calories && cur.protein === t.protein && cur.carbs === t.carbs && cur.fat === t.fat && (cur.fiber ?? 0) === (t.fiber ?? 0)) return;
+      const next = { ...t, updatedAt: Date.now() };
+      set({ targets: next });
+      await guard(() => repo.putTargets(next));
     },
     async updateSettings(patch) {
       const next = { ...get().settings, ...patch };
@@ -204,7 +300,7 @@ export const useAppStore = create<AppState>((set, get) => {
       await guard(() => repo.putUsage(next));
     },
 
-    // ---------------------------------------------------------------- backup
+    // ---------------------------------------------------------------- backup / restore point
     exportJSON() {
       const s = get();
       const backup = buildBackup({
@@ -217,21 +313,30 @@ export const useAppStore = create<AppState>((set, get) => {
       await get().updateSettings({ lastExportAt: Date.now() });
     },
     async importAll(data) {
-      await repo.replaceAll(data);
-      set({
-        ...mergeFoods(data.foods),
-        recipes: data.recipes, logs: data.logs,
-        usage: Object.fromEntries(data.usage.map(u => [u.key, u])),
-        settings: data.settings, targets: data.targets,
-      });
+      await takeRestorePoint('import');
+      const now = Date.now();
+      const next: AllData = { ...data, targets: { ...data.targets, updatedAt: now }, settings: { ...data.settings, favoritesUpdatedAt: now } };
+      await repo.replaceAll(next);
+      get().applyData(next);
+      await syncHooks.markAuthoritative();
+      syncHooks.onChange();
     },
     async eraseAll() {
+      await takeRestorePoint('erase');
       await repo.eraseEverything();
-      const data = await repo.loadAll();
-      set({
-        ...mergeFoods([]),
-        recipes: [], logs: [], usage: {}, settings: data.settings, targets: data.targets,
-      });
+      await syncHooks.disconnect(); // the cloud copy is left untouched; reconnect to bring it back
+      get().applyData(await repo.loadAll());
+    },
+    async restoreFromRestorePoint() {
+      const snap = await repo.getSnapshot();
+      if (!snap) return;
+      await takeRestorePoint('restore'); // swap: the data being replaced becomes the new restore point
+      const now = Date.now();
+      const next: AllData = { ...snap.data, targets: { ...snap.data.targets, updatedAt: now }, settings: { ...snap.data.settings, favoritesUpdatedAt: now } };
+      await repo.replaceAll(next);
+      get().applyData(next);
+      await syncHooks.markAuthoritative();
+      syncHooks.onChange();
     },
   };
 });

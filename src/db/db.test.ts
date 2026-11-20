@@ -3,7 +3,8 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { buildBackup, parseBackup, serializeBackup, backupFileName } from './backup';
 import { DEFAULT_TARGETS, defaultSettings } from './defaults';
 import { DB_NAME, resetDBConnection } from './index';
-import { eraseEverything, loadAll, putFood, putLog, putRecipe, putSettings, putTargets, putUsage, replaceAll } from './repo';
+import { deleteSnapshot, deleteSyncConfig, eraseEverything, getSnapshot, getSyncConfig, loadAll, putFood, putLog, putRecipe, putSettings, putSnapshot, putSyncConfig, putTargets, putUsage, replaceAll } from './repo';
+import { openDB } from 'idb';
 import type { Food, MealLogEntry, Recipe } from '../types';
 
 const now = Date.now();
@@ -64,7 +65,7 @@ describe('IndexedDB repo', () => {
     await putFood(food); await putRecipe(recipe); await putLog(log);
     await putTargets({ ...DEFAULT_TARGETS, calories: 2500 });
     const text = serializeBackup(buildBackup(await loadAll(), new Date('2026-11-20T10:00:00Z')));
-    expect(text).toContain('"schemaVersion": 1'); // human-readable & versioned
+    expect(text).toContain('"schemaVersion": 2'); // human-readable & versioned
     expect(text).toContain('\n  "data"');
     await eraseEverything();
     expect((await loadAll()).logs).toHaveLength(0);
@@ -121,5 +122,68 @@ describe('backup validation', () => {
   });
   it('names backup files by date', () => {
     expect(backupFileName(new Date(2026, 10, 5))).toBe('demeter-backup-2026-11-05.json');
+  });
+});
+
+describe('database v2', () => {
+  beforeEach(wipe);
+
+  it('upgrades an existing v1 database without losing data and adds the restore-point store', async () => {
+    const v1 = await openDB(DB_NAME, 1, {
+      upgrade(db) {
+        db.createObjectStore('foods', { keyPath: 'id' });
+        db.createObjectStore('recipes', { keyPath: 'id' });
+        db.createObjectStore('logs', { keyPath: 'id' }).createIndex('by-date', 'date');
+        db.createObjectStore('usage', { keyPath: 'key' });
+        db.createObjectStore('meta');
+      },
+    });
+    await v1.put('logs', log);
+    await v1.put('foods', food);
+    v1.close();
+    const all = await loadAll(); // opens at v2 → runs the upgrade
+    expect(all.logs[0].id).toBe('l1');
+    expect(all.foods[0].id).toBe('custom-1');
+    expect(all.logs[0].deletedAt).toBeUndefined(); // old records are simply "live"
+    expect(await getSnapshot()).toBeUndefined();
+  });
+
+  it('keeps soft-deleted records in the DB but never exports them', async () => {
+    await putLog({ ...log, id: 'gone', deletedAt: now });
+    await putLog(log);
+    await putFood({ ...food, id: 'gone-food', deletedAt: now });
+    const all = await loadAll();
+    expect(all.logs).toHaveLength(2);
+    const backup = buildBackup(all);
+    expect(backup.data.logs.map(l => l.id)).toEqual(['l1']);
+    expect(backup.data.foods).toHaveLength(0);
+    expect(backup.counts.logs).toBe(1);
+  });
+
+  it('stores one restore point and can clear it', async () => {
+    const data = await loadAll();
+    await putSnapshot({ id: 'restore-point', createdAt: now, reason: 'import', data });
+    expect((await getSnapshot())?.reason).toBe('import');
+    await deleteSnapshot();
+    expect(await getSnapshot()).toBeUndefined();
+  });
+
+  it('never puts the GitHub token in a backup, and import/erase leave the sync config alone', async () => {
+    await putSyncConfig({ token: 'ghp_secret', repo: 'me/demeter-data', branch: 'main', connectedAt: now, files: {} });
+    await putFood(food);
+    const text = serializeBackup(buildBackup(await loadAll()));
+    expect(text).not.toContain('ghp_secret');
+    expect(text).not.toContain('demeter-data');
+    await replaceAll({ foods: [], recipes: [], logs: [], usage: [], settings: defaultSettings(), targets: DEFAULT_TARGETS });
+    expect((await getSyncConfig())?.token).toBe('ghp_secret');
+    await deleteSyncConfig();
+    expect(await getSyncConfig()).toBeUndefined();
+  });
+
+  it('accepts both v1 and v2 backup files', () => {
+    for (const v of [1, 2]) {
+      const r = parseBackup(JSON.stringify({ app: 'Demeter', schemaVersion: v, exportedAt: '2026-01-01T00:00:00Z', data: { logs: [log] } }));
+      expect(r.ok, `v${v}`).toBe(true);
+    }
   });
 });
