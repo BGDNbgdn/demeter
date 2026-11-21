@@ -8,6 +8,7 @@ import { NumInput } from '../../components/ui/NumInput';
 import { Chip, WeightInput } from '../../components/ui/WeightInput';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
+import { currencyOf, fmtMoney, portionCost, recipeCost } from '../../lib/cost';
 import { evenPortionG, fmtNum, portionNutrition, remainingBatch } from '../../lib/engine';
 import {
   applyDrift, calcDraft, describeDrift, draftFromRecipe, emptyDraft, eatenFromBatch, findIngredientDrift, ingredientFromFood, recipeFromDraft, scaleDraft, type DraftIngredient, type RecipeDraft,
@@ -40,6 +41,8 @@ function Editor({ recipeId }: { recipeId?: string }) {
   const [params] = useSearchParams();
   const existing = useAppStore(s => s.recipes.find(r => r.id === recipeId));
   const foodMap = useAppStore(s => s.foodMap);
+  const prices = useAppStore(s => s.prices);
+  const currency = useAppStore(s => currencyOf(s.settings));
   const logs = useAppStore(s => s.logs);
   const saveRecipe = useAppStore(s => s.saveRecipe);
   const deleteRecipe = useAppStore(s => s.deleteRecipe);
@@ -69,6 +72,11 @@ function Editor({ recipeId }: { recipeId?: string }) {
   const drifts = useMemo(() => findIngredientDrift(draft.ingredients, fid => foodMap.get(fid)), [draft.ingredients, foodMap]);
   const changedDrifts = drifts.filter(d => d.kind === 'changed');
   const portionMacros = portion ? portionNutrition(calc, portion) : null;
+  const cost = useMemo(
+    () => recipeCost({ ingredients: draft.ingredients, cookedTotalWeightG: calc.cookedTotalWeightG, totals: calc.totals }, fid => prices[fid]),
+    [draft.ingredients, calc.cookedTotalWeightG, calc.totals, prices],
+  );
+  const portionPrice = portion ? portionCost(cost, portion) : null;
   const hasWeights = draft.ingredients.some(i => (i.rawWeightG ?? 0) > 0);
   const canSave = draft.name.trim().length > 0 && draft.ingredients.length > 0 && hasWeights && calc.errors.length === 0;
   const eaten = existing ? eatenFromBatch(existing, logs) : 0;
@@ -251,6 +259,15 @@ function Editor({ recipeId }: { recipeId?: string }) {
             </div>
 
             <CompareTable raw={calc.rawTotalWeightG ? calc.per100Raw : null} cooked={calc.per100Cooked} />
+            {cost.priced > 0 && (
+              <div className="rounded-2xl bg-surface2 p-3.5 text-[14px] tabular space-y-1" data-testid="recipe-cost">
+                <div className="flex justify-between"><span className="text-muted">Ingredients cost</span><b className="text-[17px]">{fmtMoney(cost.total, currency)}{cost.missing.length > 0 ? '+' : ''}</b></div>
+                {cost.per100Cooked != null && <div className="flex justify-between"><span className="text-muted">Per 100 g cooked</span><b>{fmtMoney(cost.per100Cooked, currency)}</b></div>}
+                {portion != null && portionPrice != null && <div className="flex justify-between"><span className="text-muted">Your {fmtNum(portion, 0)} g portion</span><b>{fmtMoney(portionPrice, currency)}</b></div>}
+                {cost.per20gProtein != null && <div className="flex justify-between"><span className="text-muted">20 g of protein costs</span><b className="text-protein">{fmtMoney(cost.per20gProtein, currency)}</b></div>}
+                {cost.missing.length > 0 && <p className="text-[12px] text-muted pt-1">No price for {cost.missing.slice(0, 4).join(', ')}{cost.missing.length > 4 ? '…' : ''} — the real cost is a bit higher. Add prices in Kitchen → Value.</p>}
+              </div>
+            )}
             {calc.status === 'raw-only' && <p className="text-[13px] text-muted">Enter the cooked weight above to see nutrition per 100 g of the finished dish.</p>}
             {calc.explanation && <p className="text-[14px] leading-snug" data-testid="explanation">{calc.explanation}</p>}
           </Card>

@@ -3,7 +3,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { buildBackup, parseBackup, serializeBackup, backupFileName } from './backup';
 import { DEFAULT_TARGETS, defaultSettings } from './defaults';
 import { DB_NAME, resetDBConnection } from './index';
-import { deleteSnapshot, deleteSyncConfig, eraseEverything, getSnapshot, getSyncConfig, loadAll, putFood, putLog, putRecipe, putSettings, putSnapshot, putSyncConfig, putTargets, putUsage, replaceAll } from './repo';
+import { deleteSnapshot, deleteSyncConfig, eraseEverything, getSnapshot, getSyncConfig, loadAll, putFood, putLog, putPantry, putPlanLine, putPrice, putRecipe, putSettings, putSnapshot, putSyncConfig, putTargets, putUsage, replaceAll } from './repo';
 import { openDB } from 'idb';
 import type { Food, MealLogEntry, Recipe } from '../types';
 
@@ -65,7 +65,7 @@ describe('IndexedDB repo', () => {
     await putFood(food); await putRecipe(recipe); await putLog(log);
     await putTargets({ ...DEFAULT_TARGETS, calories: 2500 });
     const text = serializeBackup(buildBackup(await loadAll(), new Date('2026-11-20T10:00:00Z')));
-    expect(text).toContain('"schemaVersion": 2'); // human-readable & versioned
+    expect(text).toContain('"schemaVersion": 3'); // human-readable & versioned
     expect(text).toContain('\n  "data"');
     await eraseEverything();
     expect((await loadAll()).logs).toHaveLength(0);
@@ -84,7 +84,7 @@ describe('IndexedDB repo', () => {
   it('import replaces existing data rather than merging', async () => {
     await putFood(food);
     const other = { ...food, id: 'custom-2', name: 'Other' };
-    await replaceAll({ foods: [other], recipes: [], logs: [], usage: [], settings: defaultSettings(), targets: DEFAULT_TARGETS });
+    await replaceAll({ foods: [other], recipes: [], logs: [], usage: [], pantry: [], prices: [], plan: [], settings: defaultSettings(), targets: DEFAULT_TARGETS });
     const all = await loadAll();
     expect(all.foods.map(f => f.id)).toEqual(['custom-2']);
   });
@@ -174,16 +174,83 @@ describe('database v2', () => {
     const text = serializeBackup(buildBackup(await loadAll()));
     expect(text).not.toContain('ghp_secret');
     expect(text).not.toContain('demeter-data');
-    await replaceAll({ foods: [], recipes: [], logs: [], usage: [], settings: defaultSettings(), targets: DEFAULT_TARGETS });
+    await replaceAll({ foods: [], recipes: [], logs: [], usage: [], pantry: [], prices: [], plan: [], settings: defaultSettings(), targets: DEFAULT_TARGETS });
     expect((await getSyncConfig())?.token).toBe('ghp_secret');
     await deleteSyncConfig();
     expect(await getSyncConfig()).toBeUndefined();
   });
 
-  it('accepts both v1 and v2 backup files', () => {
-    for (const v of [1, 2]) {
+  it('accepts v1, v2 and v3 backup files', () => {
+    for (const v of [1, 2, 3]) {
       const r = parseBackup(JSON.stringify({ app: 'Demeter', schemaVersion: v, exportedAt: '2026-01-01T00:00:00Z', data: { logs: [log] } }));
       expect(r.ok, `v${v}`).toBe(true);
     }
+  });
+});
+
+describe('database v3 (fridge, prices, plan)', () => {
+  beforeEach(wipe);
+
+  it('upgrades a v2 database without losing data and adds the new stores', async () => {
+    const v2 = await openDB(DB_NAME, 2, {
+      upgrade(db) {
+        db.createObjectStore('foods', { keyPath: 'id' });
+        db.createObjectStore('recipes', { keyPath: 'id' });
+        db.createObjectStore('logs', { keyPath: 'id' }).createIndex('by-date', 'date');
+        db.createObjectStore('usage', { keyPath: 'key' });
+        db.createObjectStore('meta');
+        db.createObjectStore('snapshots', { keyPath: 'id' });
+      },
+    });
+    await v2.put('logs', log); await v2.put('foods', food);
+    v2.close();
+    const all = await loadAll();
+    expect(all.logs).toHaveLength(1); expect(all.foods).toHaveLength(1);
+    expect(all.pantry).toEqual([]); expect(all.prices).toEqual([]); expect(all.plan).toEqual([]);
+  });
+
+  it('persists fridge items, prices and plan lines, and replaceAll/erase handle them', async () => {
+    await putPantry({ id: 'p1', name: 'Skyr', foodId: 'custom-1', amountG: 450, createdAt: now, updatedAt: now });
+    await putPrice({ id: 'custom-1', foodId: 'custom-1', packPrice: 1.5, packG: 450, updatedAt: now });
+    await putPlanLine({ id: 'pl1', week: '2026-11-16', name: 'Bowl', recipeId: 'r1', batches: 2, createdAt: now, updatedAt: now });
+    await resetDBConnection();
+    const all = await loadAll();
+    expect(all.pantry[0]).toMatchObject({ name: 'Skyr', amountG: 450 });
+    expect(all.prices[0].packPrice).toBe(1.5);
+    expect(all.plan[0].batches).toBe(2);
+    await eraseEverything();
+    const empty = await loadAll();
+    expect(empty.pantry).toEqual([]); expect(empty.prices).toEqual([]); expect(empty.plan).toEqual([]);
+  });
+
+  it('backups include the new data (live only) and old backups import with empty collections', async () => {
+    await putPantry({ id: 'p1', name: 'Skyr', createdAt: now, updatedAt: now });
+    await putPantry({ id: 'p2', name: 'Ran out', createdAt: now, updatedAt: now, deletedAt: now });
+    await putPrice({ id: 'f', foodId: 'f', packPrice: 2, packG: 500, updatedAt: now });
+    const backup = buildBackup(await loadAll());
+    expect(backup.data.pantry?.map(p => p.id)).toEqual(['p1']);
+    expect(backup.counts).toMatchObject({ pantry: 1, prices: 1, plan: 0 });
+    const parsed = parseBackup(serializeBackup(backup));
+    expect(parsed.ok).toBe(true);
+    if (parsed.ok) { expect(parsed.data.pantry).toHaveLength(1); expect(parsed.data.prices[0].packG).toBe(500); }
+    const old = parseBackup(JSON.stringify({ app: 'Demeter', schemaVersion: 2, data: { logs: [log] } }));
+    expect(old.ok).toBe(true);
+    if (old.ok) { expect(old.data.pantry).toEqual([]); expect(old.data.plan).toEqual([]); }
+  });
+
+  it('drops junk fridge / price / plan records instead of crashing', () => {
+    const r = parseBackup(JSON.stringify({
+      app: 'Demeter', schemaVersion: 3,
+      data: {
+        pantry: [{ id: 'ok', name: 'Fine' }, { id: 1 }, null, { id: 'noname' }],
+        prices: [{ id: 'f', foodId: 'f', packPrice: 2, packG: 0 }, { id: 'g', foodId: 'g', packPrice: -1, packG: 100 }, { id: 'h', foodId: 'h', packPrice: 2, packG: 100 }],
+        plan: [{ id: 'p', week: 'nope', name: 'x' }, { id: 'q', week: '2026-11-16', name: 'ok', recipeId: 'r' }],
+      },
+    }));
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    expect(r.data.pantry.map(p => p.id)).toEqual(['ok']);
+    expect(r.data.prices.map(p => p.id)).toEqual(['h']);
+    expect(r.data.plan.map(p => p.id)).toEqual(['q']);
   });
 });

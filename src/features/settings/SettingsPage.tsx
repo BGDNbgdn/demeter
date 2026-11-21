@@ -83,6 +83,18 @@ export function SettingsPage() {
           </label>
         </Card>
 
+        <SectionTitle>Prices</SectionTitle>
+        <Card className="space-y-1">
+          <label className="flex items-center justify-between gap-4 min-h-12">
+            <span><span className="block text-[16px]">Currency symbol</span><span className="block text-[13px] text-muted">Used for prices and costs on this device</span></span>
+            <input
+              value={settings.currency ?? '€'} maxLength={3} aria-label="Currency symbol" onChange={e => update({ currency: e.target.value })}
+              onBlur={e => { if (!e.target.value.trim()) update({ currency: '€' }); }}
+              className="w-16 h-11 rounded-xl bg-surface2 text-center text-[18px] font-semibold outline-none border border-transparent focus:border-accent"
+            />
+          </label>
+        </Card>
+
         <SectionTitle>Help</SectionTitle>
         <Card className="!p-0 overflow-hidden">
           <button className="w-full flex items-center justify-between px-4 h-14 text-left active:bg-surface2" onClick={() => useUI.setState({ introOpen: true })}>

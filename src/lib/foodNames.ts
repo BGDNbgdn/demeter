@@ -7,6 +7,12 @@ export function cookedName(name: string): string {
   return `${name} (cooked)`;
 }
 
+/** Compact label for chips: drops "(skinless)" style qualifiers and trims long names. */
+export function chipName(name: string, max = 28): string {
+  const s = name.replace(/\s*\([^)]*\)/g, '').replace(/\s+,/g, ',').trim();
+  return s.length > max ? `${s.slice(0, max - 1).trimEnd()}…` : s;
+}
+
 export function shortName(name: string): string {
   return name.split(',')[0].trim();
 }

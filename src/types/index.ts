@@ -93,6 +93,56 @@ export interface Recipe {
   deletedAt?: number;
 }
 
+/**
+ * Something that is in the fridge / freezer / cupboard right now ("my fridge").
+ * Taking it out ("ran out") is a soft delete, so it syncs and can be put back with one tap.
+ */
+export interface PantryItem {
+  id: string;
+  /** Food in the database (built-in or custom). Missing while a scanned barcode is still unidentified. */
+  foodId?: string;
+  name: string;
+  brand?: string;
+  barcode?: string;
+  /** Optional: grams left. Unknown = "I have it". */
+  amountG?: number;
+  /** Size of one pack in grams, when known (from the label or the lookup). */
+  packG?: number;
+  createdAt: number;
+  updatedAt: number;
+  deletedAt?: number;
+}
+
+/** What a food costs. One record per food (`id` = `foodId`). */
+export interface FoodPrice {
+  id: string;
+  foodId: string;
+  /** Price of one pack in the user's currency… */
+  packPrice: number;
+  /** …and what is in that pack, in grams (liquids: 1 ml = 1 g). */
+  packG: number;
+  updatedAt: number;
+  deletedAt?: number;
+}
+
+/** One line of the weekly meal-prep plan: a recipe to cook (× batches) or a food to buy in grams. */
+export interface PlanLine {
+  id: string;
+  /** Monday of the planned week, YYYY-MM-DD. */
+  week: string;
+  recipeId?: string;
+  foodId?: string;
+  /** Display name snapshot (survives deleting the recipe). */
+  name: string;
+  /** Recipe lines: how many batches (1 = the recipe as written). */
+  batches?: number;
+  /** Food lines: grams for the week. */
+  grams?: number;
+  createdAt: number;
+  updatedAt: number;
+  deletedAt?: number;
+}
+
 export interface MealLogEntry {
   id: string;
   /** Local date, YYYY-MM-DD. */
@@ -136,6 +186,8 @@ export interface AppSettings {
   introSeen: boolean;
   onlineLookupEnabled: boolean;
   backupReminderDays: number; // 0 = off
+  /** Currency symbol for prices (this device only). Defaults to €. */
+  currency?: string;
   lastExportAt?: number;
   /** Last time favorites changed — used to merge favorites between devices. */
   favoritesUpdatedAt?: number;
@@ -152,7 +204,7 @@ export interface FoodUsage {
   lastMealType?: MealType;
 }
 
-export const BACKUP_SCHEMA_VERSION = 2;
+export const BACKUP_SCHEMA_VERSION = 3;
 
 export interface BackupFile {
   app: 'Demeter';
@@ -166,6 +218,10 @@ export interface BackupFile {
     targets: DailyTargets;
     settings: AppSettings;
     usage: FoodUsage[];
+    /** Added in schema 3 (older backups simply don't have them). */
+    pantry?: PantryItem[];
+    prices?: FoodPrice[];
+    plan?: PlanLine[];
   };
 }
 
@@ -177,6 +233,9 @@ export interface AllData {
   usage: FoodUsage[];
   settings: AppSettings;
   targets: DailyTargets;
+  pantry: PantryItem[];
+  prices: FoodPrice[];
+  plan: PlanLine[];
 }
 
 /** One-slot "restore point" taken automatically before import / erase / restore. */

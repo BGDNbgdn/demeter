@@ -9,6 +9,9 @@ import { OffSheet } from '../features/openfoodfacts/OffSheet';
 import { IntroSheet } from '../features/onboarding/IntroSheet';
 import { LogRecipeSheet } from '../features/recipes/LogRecipeSheet';
 import { TrashSheet } from '../features/settings/TrashSheet';
+import { FridgeItemSheet } from '../features/kitchen/FridgeItemSheet';
+import { PriceSheet } from '../features/kitchen/PriceSheet';
+import { ScanSheet } from '../features/kitchen/ScanSheet';
 import { RecipePicker } from '../features/recipes/RecipePicker';
 import { ToastHost } from './ui/misc';
 
@@ -27,6 +30,9 @@ export function Overlays() {
       <QuickAddSheet />
       <OffSheet />
       <TrashSheet />
+      <FridgeItemSheet />
+      <ScanSheet />
+      <PriceSheet />
       <IntroSheet />
       <ToastHost />
     </>

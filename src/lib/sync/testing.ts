@@ -1,6 +1,6 @@
 // Test helper: an in-memory stand-in for the GitHub repository (same stale-sha rule as the real API).
 import { defaultSettings, DEFAULT_TARGETS } from '../../db/defaults';
-import type { AllData, Food, MealLogEntry, Recipe, SyncConfig } from '../../types';
+import type { AllData, Food, MealLogEntry, PantryItem, Recipe, SyncConfig } from '../../types';
 import { LocalChangedError, runSync } from './engine';
 import { SyncConflict, SyncError, type RemoteStore } from './github';
 import { fingerprint, isSyncedPath } from './merge';
@@ -34,7 +34,7 @@ let clock = 1_000_000;
 export const tick = () => ++clock;
 
 export class Device {
-  data: AllData = { foods: [], recipes: [], logs: [], usage: [], settings: defaultSettings(), targets: { ...DEFAULT_TARGETS } };
+  data: AllData = { foods: [], recipes: [], logs: [], usage: [], pantry: [], prices: [], plan: [], settings: defaultSettings(), targets: { ...DEFAULT_TARGETS } };
   config: SyncConfig = { token: 't', repo: 'me/data', branch: 'main', connectedAt: 0, files: {} };
   constructor(public remote: FakeRemote, public name = 'dev') {}
   async sync(now = tick()) {
@@ -61,6 +61,12 @@ export class Device {
     const f: Food = { id, name: id, category: 'custom', proteinPer100g: protein, carbsPer100g: 0, fatPer100g: 1, caloriesPer100g: 90, isLiquid: false, nutritionBasis: 'raw', source: 'custom', createdAt: t, updatedAt: t };
     this.data.foods.push(f);
     return f;
+  }
+  pantryItem(id: string, name = id, foodId?: string): PantryItem {
+    const t = tick();
+    const p: PantryItem = { id, name, ...(foodId ? { foodId } : {}), createdAt: t, updatedAt: t };
+    this.data.pantry.push(p);
+    return p;
   }
   recipe(id: string): Recipe {
     const t = tick();

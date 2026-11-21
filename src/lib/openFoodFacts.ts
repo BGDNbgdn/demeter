@@ -4,6 +4,7 @@
  * and every failure path ends with "add it manually".
  */
 import type { Food } from '../types';
+import { parsePackGrams } from './openFoodFactsPack';
 
 const BASE = 'https://world.openfoodfacts.org';
 const FIELDS = 'code,product_name,brands,nutriments,serving_size,serving_quantity,quantity';
@@ -24,6 +25,8 @@ export interface OffProduct {
   fiberPer100g?: number;
   servingG?: number;
   servingLabel?: string;
+  /** Size of the whole pack in grams (from the "quantity" label), when readable. */
+  packG?: number;
 }
 
 type Nutriments = Record<string, number | string | undefined>;
@@ -34,6 +37,7 @@ interface RawProduct {
   nutriments?: Nutriments;
   serving_size?: string;
   serving_quantity?: number | string;
+  quantity?: string;
 }
 
 const num = (v: unknown): number | undefined => {
@@ -55,6 +59,7 @@ export function parseOffProduct(p: RawProduct): OffProduct | null {
   }
   if (!name || kcal === undefined || (protein === undefined && carbs === undefined && fat === undefined)) return null;
   const servingG = num(p.serving_quantity);
+  const packG = parsePackGrams(p.quantity);
   return {
     code: String(p.code ?? ''),
     name,
@@ -65,6 +70,7 @@ export function parseOffProduct(p: RawProduct): OffProduct | null {
     caloriesPer100g: Math.round(kcal),
     ...(num(n['fiber_100g']) !== undefined ? { fiberPer100g: num(n['fiber_100g']) } : {}),
     ...(servingG && servingG > 0 ? { servingG, servingLabel: p.serving_size || `${servingG} g` } : {}),
+    ...(packG ? { packG } : {}),
   };
 }
 

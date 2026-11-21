@@ -125,6 +125,19 @@ Demeter can keep your iPhone, iPad and computer in step. There is no Demeter ser
 - **Ingredient changed?** Recipes keep a snapshot of each ingredient so they never change behind your back. If you later edit the food (or an app update changes a built-in value), the recipe shows *“Chicken changed: protein 20 → 24 g — Update this recipe”*. Past log entries are never rewritten.
 - **Streak:** a day counts when your protein reaches **75% of your protein target** (so 120 g for a 160 g target) — the number of meals or calories doesn't matter. Today never breaks a streak while it is still in progress. Uses your current target for past days.
 
+## Kitchen: fridge, week plan, shopping list, protein value
+
+The **Kitchen** tab has four views.
+
+- **Fridge** — what you have right now. After shopping tap **Scan groceries** and beep each barcode: the camera stays open, every product is looked up (Open Food Facts, online) and goes straight into your fridge — a green "Added" appears each time. Scan the same product twice and it says "Already in your fridge". A barcode that can't be identified (offline, unknown) is still saved and shows under *Needs a name*, where you can look it up later or pick the matching food. Without a camera, type the barcode number. You can also add or remove any food by name (type in the search box, tap to flip it on/off) or use **Quick toggle** chips of your usual foods. **✕** means *ran out* (undo is one tap). An item can optionally record how many grams are left and the pack size.
+- **Plan** — pick this week's recipes (× batches, in halves) and extra foods. It shows the protein and kcal per day the plan delivers against your goal, and the ingredient cost. *Copy last week's plan* in one tap.
+- **Shop** — the plan's raw ingredient weights added up, minus your fridge. If the fridge has a food and you didn't record an amount, it counts as *enough*; if you did record grams, only the shortfall is listed. With a price and pack size it rounds up to whole packs and estimates the total. Tap the circle when you've got something and it moves into the fridge. **Share** copies/sends the list as text.
+- **Value** — protein per euro. Add what a pack costs and weighs (from the scan sheet's *Price* button, the fridge item, a food's detail sheet, or here) and the foods are ranked by what **20 g of protein** costs. Recipes show their cost per batch, per 100 g cooked, per portion and per 20 g of protein (ingredients without a price are named; the total is then a lower bound). The currency symbol is in *Settings → Prices* (default €, per device).
+
+Weekly review (in **History → Weekly review**): average protein vs last week, days that reached 75% of your goal, protein by day and by meal, your top protein sources, your weakest weekday over the last 8 weeks — and one concrete suggestion that only ever uses foods you actually eat. Days with nothing logged are not counted as zero; today only counts once it already reaches the threshold. Everything is computed on the device from your log.
+
+Fridge, prices and plan are part of the data set: they sync through the same private GitHub repo (`pantry.json`, `prices.json`, `plan.json`), are included in JSON backups (schema 3; older backups still import) and ran-out/removed items sit in the 60-day tombstone window like everything else.
+
 ## Backup & restore format
 
 *Settings → Export all data as JSON* writes a human-readable, versioned file (`demeter-backup-YYYY-MM-DD.json`):
@@ -132,14 +145,14 @@ Demeter can keep your iPhone, iPad and computer in step. There is no Demeter ser
 ```json
 {
   "app": "Demeter",
-  "schemaVersion": 1,
+  "schemaVersion": 3,
   "exportedAt": "2026-11-20T18:00:00.000Z",
-  "counts": { "foods": 3, "recipes": 2, "logs": 120 },
-  "data": { "foods": [], "recipes": [], "logs": [], "targets": {}, "settings": {}, "usage": [] }
+  "counts": { "foods": 3, "recipes": 2, "logs": 120, "pantry": 12, "prices": 9, "plan": 4 },
+  "data": { "foods": [], "recipes": [], "logs": [], "targets": {}, "settings": {}, "usage": [], "pantry": [], "prices": [], "plan": [] }
 }
 ```
 
-It contains your custom foods, recipes, log entries, targets, settings and usage history (the built-in database ships with the app). Items in *Recently deleted* and the GitHub sync token are **not** exported. On iPhone the export opens the share sheet — choose **Save to Files**. *Import* validates the file, shows a summary, and **warns before replacing** everything on the device. A newer `schemaVersion` than the app understands is refused with a clear message. *Erase all local data* lives in the Danger zone, behind a confirmation.
+It contains your custom foods, recipes, log entries, fridge, prices, weekly plan, targets, settings and usage history (the built-in database ships with the app). Items in *Recently deleted* and the GitHub sync token are **not** exported. On iPhone the export opens the share sheet — choose **Save to Files**. *Import* validates the file, shows a summary, and **warns before replacing** everything on the device. A newer `schemaVersion` than the app understands is refused with a clear message. *Erase all local data* lives in the Danger zone, behind a confirmation.
 
 ## How the numbers work
 
@@ -182,9 +195,9 @@ npm run icons     # regenerates apple-touch-icon, 192, 512 and maskable PNGs
 ```
 src/
   components/   shared UI (bottom sheets, inputs, nav, rows…)
-  features/     today · foods · recipes · history · settings · openfoodfacts · onboarding
-  lib/          engine/ (raw↔cooked, recipes, rounding) · search · logging · Open Food Facts client
-  db/           IndexedDB schema (idb, v2), repository, backup/restore + validation
+  features/     today · foods · recipes · kitchen (fridge, plan, shop, value) · history (+ weekly review) · settings · openfoodfacts · onboarding
+  lib/          engine/ (raw↔cooked, recipes, rounding) · search · logging · Open Food Facts client · cost · kitchen (fridge/plan/shopping list) · pantry (barcode → fridge) · review
+  db/           IndexedDB schema (idb, v3), repository, backup/restore + validation
   lib/sync/     merge rules, GitHub client, sync engine + orchestrator (see tests for two-device scenarios)
   data/         bundled food database (JSON)
   hooks/        app store (zustand), UI store, theme

@@ -64,7 +64,7 @@ describe('trash retention', () => {
   const data = (): AllData => ({
     foods: [food({ id: 'a' }), food({ id: 'b', deletedAt: now - 10 * DAY }), food({ id: 'c', deletedAt: now - 61 * DAY })],
     recipes: [], logs: [log('2026-11-20', 10, { id: 'old', deletedAt: now - 90 * DAY }), log('2026-11-20', 10, { id: 'new', deletedAt: now - 1 * DAY })],
-    usage: [], settings: defaultSettings(), targets: { ...DEFAULT_TARGETS },
+    usage: [], pantry: [], prices: [], plan: [], settings: defaultSettings(), targets: { ...DEFAULT_TARGETS },
   });
   it('removes only soft-deleted records older than the window', () => {
     const { data: out, removed } = purgeExpired(data(), now);

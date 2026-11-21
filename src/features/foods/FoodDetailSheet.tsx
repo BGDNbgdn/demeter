@@ -5,7 +5,10 @@ import { BasisBadge, Confirm, MacroGrid, Notice, SectionTitle } from '../../comp
 import { Sheet } from '../../components/ui/Sheet';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
+import { currencyOf, fmtMoney, isLivePrice, pricePerKg, proteinValue } from '../../lib/cost';
 import { fmtNum, foodPer100, nutritionForWeight, scaleMacros } from '../../lib/engine';
+import { pantryItemForFood } from '../../lib/kitchen';
+import { Icon } from '../../components/ui/Icon';
 import { categoryLabel } from './FoodFormSheet';
 
 export function FoodDetailSheet() {
@@ -16,6 +19,12 @@ export function FoodDetailSheet() {
   const deleteFood = useAppStore(s => s.deleteFood);
   const restoreFood = useAppStore(s => s.restoreFood);
   const showToast = useAppStore(s => s.showToast);
+  const price = useAppStore(s => (id ? s.prices[id] : undefined));
+  const currency = useAppStore(s => currencyOf(s.settings));
+  const fridgeItemId = useAppStore(s => (id ? pantryItemForFood(s.pantry, id)?.id : undefined));
+  const addToFridge = useAppStore(s => s.addFoodToFridge);
+  const removeFromFridge = useAppStore(s => s.removePantryItem);
+  const restoreToFridge = useAppStore(s => s.restorePantryItem);
   const navigate = useNavigate();
   const [confirmDelete, setConfirmDelete] = useState(false);
   const close = () => useUI.setState({ foodDetailId: null });
@@ -74,6 +83,27 @@ export function FoodDetailSheet() {
             </div>
           </div>
         )}
+
+        <div className="grid grid-cols-2 gap-2.5">
+          <button type="button" aria-pressed={!!fridgeItemId} data-testid="fridge-toggle"
+            className={`flex items-center gap-2.5 rounded-2xl px-3.5 h-14 text-left active:opacity-70 ${fridgeItemId ? 'bg-accentsoft text-accent' : 'bg-surface2'}`}
+            onClick={async () => {
+              if (fridgeItemId) { const iid = fridgeItemId; await removeFromFridge(iid); showToast('Out of the fridge', { actionLabel: 'Undo', onAction: () => { void restoreToFridge(iid); } }); }
+              else { await addToFridge(food); showToast(`${food.name} is in your fridge`, { tone: 'success' }); }
+            }}>
+            <Icon name={fridgeItemId ? 'check' : 'fridge'} size={20} />
+            <span className="text-[14px] font-medium leading-tight">{fridgeItemId ? 'In my fridge' : 'Add to my fridge'}</span>
+          </button>
+          <button type="button" className="flex items-center gap-2.5 rounded-2xl px-3.5 h-14 bg-surface2 text-left active:opacity-70" data-testid="price-button"
+            onClick={() => useUI.setState({ priceFoodId: food.id })}>
+            <Icon name="tag" size={20} className="text-muted" />
+            <span className="text-[14px] font-medium leading-tight">
+              {isLivePrice(price)
+                ? <>{fmtMoney(pricePerKg(price), currency)}/kg{(() => { const v = proteinValue(food, price); return v ? <span className="block text-[12px] text-muted font-normal">{fmtMoney(v.per20g, currency)} per 20 g protein</span> : null; })()}</>
+                : 'Add a price'}
+            </span>
+          </button>
+        </div>
 
         <div className="text-[13px] text-muted px-1">Source: {sourceLabel}</div>
         {food.note && <p className="text-[13px] text-muted px-1">{food.note}</p>}

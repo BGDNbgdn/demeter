@@ -118,8 +118,12 @@ export function applySettingsDoc(settings: AppSettings, doc: SettingsDoc): AppSe
 export const FILE_FOODS = 'foods.json';
 export const FILE_RECIPES = 'recipes.json';
 export const FILE_SETTINGS = 'settings.json';
+export const FILE_PANTRY = 'pantry.json';
+export const FILE_PRICES = 'prices.json';
+export const FILE_PLAN = 'plan.json';
 export const logsPath = (month: string) => `logs/${month}.json`;
-export const isSyncedPath = (p: string) => p === FILE_FOODS || p === FILE_RECIPES || p === FILE_SETTINGS || /^logs\/\d{4}-\d{2}\.json$/.test(p);
+export const isSyncedPath = (p: string) =>
+  p === FILE_FOODS || p === FILE_RECIPES || p === FILE_SETTINGS || p === FILE_PANTRY || p === FILE_PRICES || p === FILE_PLAN || /^logs\/\d{4}-\d{2}\.json$/.test(p);
 export const isLogsPath = (p: string) => p.startsWith('logs/');
 
 export interface RecordsDoc { records: Syncable[] }
@@ -132,6 +136,9 @@ export function buildFiles(data: AllData): Record<string, SyncDoc> {
   const files: Record<string, SyncDoc> = {};
   if (data.foods.length) files[FILE_FOODS] = { records: [...data.foods].sort(byId) };
   if (data.recipes.length) files[FILE_RECIPES] = { records: [...data.recipes].sort(byId) };
+  if (data.pantry.length) files[FILE_PANTRY] = { records: [...data.pantry].sort(byId) };
+  if (data.prices.length) files[FILE_PRICES] = { records: [...data.prices].sort(byId) };
+  if (data.plan.length) files[FILE_PLAN] = { records: [...data.plan].sort(byId) };
   const months = new Map<string, Syncable[]>();
   for (const l of data.logs) {
     const m = l.date.slice(0, 7);
@@ -191,5 +198,8 @@ export function parseDoc(path: string, text: string): SyncDoc {
 /** Fingerprint of everything that syncs (used to tell whether a merge changed this device). */
 export function fingerprint(data: AllData): string {
   const sort = <T extends Syncable>(xs: T[]) => [...xs].sort(byId);
-  return hashString(stableStringify({ foods: sort(data.foods), recipes: sort(data.recipes), logs: sort(data.logs), settings: settingsDocFromLocal(data) }));
+  return hashString(stableStringify({
+    foods: sort(data.foods), recipes: sort(data.recipes), logs: sort(data.logs),
+    pantry: sort(data.pantry), prices: sort(data.prices), plan: sort(data.plan), settings: settingsDocFromLocal(data),
+  }));
 }

@@ -12,7 +12,7 @@ import { SyncConflict, SyncError, type RemoteStore } from './github';
 import {
   CorruptFileError, buildFiles, docHash, emptyRecordsDoc, fingerprint, isEmptyDoc, isLogsPath, isSyncedPath, mergeRecords,
   mergeSettingsDoc, parseDoc, serializeDoc, settingsDocFromLocal, applySettingsDoc,
-  FILE_FOODS, FILE_RECIPES, FILE_SETTINGS, type RecordsDoc, type SettingsDoc, type SyncDoc, type Syncable,
+  FILE_FOODS, FILE_PANTRY, FILE_PLAN, FILE_PRICES, FILE_RECIPES, FILE_SETTINGS, type RecordsDoc, type SettingsDoc, type SyncDoc, type Syncable,
 } from './merge';
 
 /** Thrown by saveLocal when the user edited something while the sync was running — just run again. */
@@ -75,6 +75,9 @@ async function attemptSync(deps: SyncDeps): Promise<SyncOutcome> {
     foods: mergeRecords(local.foods, recordsOf(FILE_FOODS) as typeof local.foods, opts),
     recipes: mergeRecords(local.recipes, recordsOf(FILE_RECIPES) as typeof local.recipes, opts),
     logs: mergeRecords(local.logs, remoteLogs as typeof local.logs, opts),
+    pantry: mergeRecords(local.pantry, recordsOf(FILE_PANTRY) as typeof local.pantry, opts),
+    prices: mergeRecords(local.prices, recordsOf(FILE_PRICES) as typeof local.prices, opts),
+    plan: mergeRecords(local.plan, recordsOf(FILE_PLAN) as typeof local.plan, opts),
     usage: mergedSettings.usage,
     targets: mergedSettings.targets,
     settings: applySettingsDoc(local.settings, mergedSettings),

@@ -8,6 +8,10 @@ import { RecipeEditorPage } from './features/recipes/RecipeEditorPage';
 import { RecipesPage } from './features/recipes/RecipesPage';
 import { SettingsPage } from './features/settings/SettingsPage';
 import { TodayPage } from './features/today/TodayPage';
+import { FridgePage } from './features/kitchen/FridgePage';
+import { PlanPage } from './features/kitchen/PlanPage';
+import { ShopPage } from './features/kitchen/ShopPage';
+import { ValuePage } from './features/kitchen/ValuePage';
 import { useAppStore } from './hooks/useAppStore';
 import { useTheme } from './hooks/useTheme';
 import { UpdateBanner } from './components/UpdateBanner';
@@ -15,6 +19,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { initSync } from './lib/sync/orchestrator';
 
 const HistoryPage = lazy(() => import('./features/history/HistoryPage'));
+const ReviewPage = lazy(() => import('./features/history/ReviewPage'));
 
 function ScrollReset() {
   const { pathname } = useLocation();
@@ -45,7 +50,12 @@ export default function App() {
             <Route path="/foods" element={<FoodsPage />} />
             <Route path="/recipes" element={<RecipesPage />} />
             <Route path="/recipes/:id" element={<RecipeEditorPage />} />
+            <Route path="/fridge" element={<FridgePage />} />
+            <Route path="/plan" element={<PlanPage />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/value" element={<ValuePage />} />
             <Route path="/history" element={<HistoryPage />} />
+            <Route path="/review" element={<ReviewPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<TodayPage />} />
           </Routes>

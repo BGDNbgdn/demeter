@@ -1,4 +1,4 @@
-import type { AppSettings, DailyTargets } from '../types';
+import type { AllData, AppSettings, DailyTargets } from '../types';
 
 export const DEFAULT_TARGETS: DailyTargets = {
   calories: 2200,
@@ -19,4 +19,9 @@ export function defaultSettings(): AppSettings {
     backupReminderDays: 14,
     createdAt: Date.now(),
   };
+}
+
+/** Fill in collections that older snapshots / backups did not have yet. */
+export function normalizeAllData(d: Omit<AllData, 'pantry' | 'prices' | 'plan'> & Partial<Pick<AllData, 'pantry' | 'prices' | 'plan'>>): AllData {
+  return { ...d, pantry: d.pantry ?? [], prices: d.prices ?? [], plan: d.plan ?? [] };
 }

@@ -15,6 +15,12 @@ interface UIState {
   recipePickerOpen: boolean;
   introOpen: boolean;
   trashOpen: boolean;
+  /** "Scan groceries" sheet (continuous barcode scanning into My fridge). */
+  scanOpen: boolean;
+  /** Price sheet for this food. */
+  priceFoodId: string | null;
+  /** Fridge item detail sheet. */
+  pantryItemId: string | null;
   open: (patch: Partial<Omit<UIState, 'open' | 'closeAll'>>) => void;
   closeAll: () => void;
 }
@@ -22,6 +28,7 @@ interface UIState {
 const CLOSED = {
   searchOpen: false, addMenuOpen: false, logFood: null, logRecipe: null, editEntryId: null, foodDetailId: null,
   foodForm: null, quickAddOpen: false, offOpen: false, recipePickerOpen: false, introOpen: false, trashOpen: false,
+  scanOpen: false, priceFoodId: null, pantryItemId: null,
 };
 
 export const useUI = create<UIState>(set => ({

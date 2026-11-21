@@ -8,6 +8,7 @@ import { useThemeColors } from '../../hooks/useThemeColors';
 import { fmtKcal, fmtNum } from '../../lib/engine';
 import { dailyTotals } from '../../lib/logging';
 import { computeStreaks } from '../../lib/streak';
+import { buildWeekReview } from '../../lib/review';
 import { Icon } from '../../components/ui/Icon';
 import { addDays, dateRange, endOfMonth, formatDayLabel, formatShort, monthTitle, parseDateStr, startOfMonth, startOfWeek, todayStr, weekdayShort } from '../../utils/dates';
 
@@ -20,6 +21,7 @@ export default function HistoryPage() {
   const navigate = useNavigate();
   const colors = useThemeColors();
   const streak = useMemo(() => computeStreaks(logs, targets.protein), [logs, targets.protein]);
+  const reviewTeaser = useMemo(() => buildWeekReview(logs, targets.protein, todayStr()).insight, [logs, targets.protein]);
 
   const { from, to, title } = useMemo(() => {
     if (view === 'week') { const f = startOfWeek(anchor); const t = addDays(f, 6); return { from: f, to: t, title: `${formatShort(f)} – ${formatShort(t)}` }; }
@@ -81,6 +83,16 @@ export default function HistoryPage() {
             <div className="text-[12px] text-muted leading-snug mt-0.5">A day counts when you reach {Math.round(streak.threshold * 100)}% of your protein goal ({fmtNum(targets.protein * streak.threshold, 0)} g). Meals and calories don’t matter.</div>
           </div>
         </Card>
+
+        <button type="button" onClick={() => navigate('/review')} data-testid="review-link"
+          className="w-full text-left rounded-3xl bg-surface border border-line/70 p-4 flex items-center gap-4 active:bg-surface2">
+          <span className="h-11 w-11 rounded-full bg-accentsoft text-accent flex items-center justify-center shrink-0"><Icon name="sparkle" /></span>
+          <span className="flex-1 min-w-0">
+            <span className="block text-[17px] font-bold leading-tight">Weekly review</span>
+            <span className="block text-[13px] text-muted leading-snug mt-0.5 truncate">{reviewTeaser.title}</span>
+          </span>
+          <Icon name="chevR" size={18} className="text-muted" />
+        </button>
 
         {logged.length === 0 ? (
           <EmptyState icon="history" title="No entries in this period" body="Log some food and your trends will show up here." />

@@ -11,7 +11,14 @@ import type { Food, NutritionBasis } from '../../types';
 import { newId } from '../../utils/id';
 
 /** Pick an ingredient from the food database, or create a custom one on the spot. */
-export function IngredientPicker({ open, onClose, onPick }: { open: boolean; onClose: () => void; onPick: (food: Food) => void }) {
+export function IngredientPicker({ open, onClose, onPick, title, hint = true, allowCustom = true }: {
+  open: boolean; onClose: () => void; onPick: (food: Food) => void;
+  /** Sheet title (default "Add ingredient"). */
+  title?: string;
+  /** Show the "pick the raw version" tip (recipes only). */
+  hint?: boolean;
+  allowCustom?: boolean;
+}) {
   const [mode, setMode] = useState<'search' | 'custom'>('search');
   const [q, setQ] = useState('');
   const dq = useDeferredValue(q);
@@ -29,9 +36,9 @@ export function IngredientPicker({ open, onClose, onPick }: { open: boolean; onC
   const pick = (f: Food) => { setQ(''); setMode('search'); onPick(f); };
 
   return (
-    <Sheet open={open} onClose={() => { setMode('search'); onClose(); }} tall title={mode === 'search' ? 'Add ingredient' : 'Custom ingredient'} zIndex={75}>
+    <Sheet open={open} onClose={() => { setMode('search'); onClose(); }} tall title={mode === 'search' ? (title ?? 'Add ingredient') : 'Custom ingredient'} zIndex={75}>
       <div className="sticky top-0 -mx-5 px-5 pb-2 pt-1 bg-surface z-10 space-y-2.5">
-        <Segmented value={mode} onChange={setMode} options={[{ value: 'search', label: 'Search foods' }, { value: 'custom', label: 'Create custom' }]} />
+        {allowCustom && <Segmented value={mode} onChange={setMode} options={[{ value: 'search', label: 'Search foods' }, { value: 'custom', label: 'Create custom' }]} />}
         {mode === 'search' && (
           <div className="relative">
             <Icon name="search" size={20} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
@@ -45,7 +52,7 @@ export function IngredientPicker({ open, onClose, onPick }: { open: boolean; onC
       </div>
       {mode === 'search' ? (
         <>
-          <Notice tone="info" className="mt-1"><span className="text-[13px]">Pick the <b>raw</b> (or as-packaged) version of ingredients — you weigh them before cooking, then enter the finished dish weight.</span></Notice>
+          {hint && <Notice tone="info" className="mt-1"><span className="text-[13px]">Pick the <b>raw</b> (or as-packaged) version of ingredients — you weigh them before cooking, then enter the finished dish weight.</span></Notice>}
           {dq.trim() ? (
             results.map(f => <FoodRow key={f.id} food={f} onClick={() => pick(f)} />)
           ) : (

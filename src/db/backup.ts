@@ -1,14 +1,17 @@
 import {
   BACKUP_SCHEMA_VERSION, FOOD_CATEGORIES, MEAL_TYPES,
-  type AppSettings, type BackupFile, type DailyTargets, type Food, type FoodUsage, type MealLogEntry, type Recipe,
+  type AppSettings, type BackupFile, type DailyTargets, type Food, type FoodPrice, type FoodUsage, type MealLogEntry, type PantryItem, type PlanLine, type Recipe,
 } from '../types';
-import { DEFAULT_TARGETS, defaultSettings } from './defaults';
+import { DEFAULT_TARGETS, defaultSettings, normalizeAllData } from './defaults';
 import type { AllData } from './repo';
 
 /** Backups contain live data only (trash is not exported) and never include the GitHub token. */
 export function buildBackup(allData: AllData, now = new Date()): BackupFile {
   const live = <T extends { deletedAt?: number }>(xs: T[]) => xs.filter(x => !x.deletedAt);
-  const data: AllData = { ...allData, foods: live(allData.foods), recipes: live(allData.recipes), logs: live(allData.logs) };
+  const data: AllData = {
+    ...allData, foods: live(allData.foods), recipes: live(allData.recipes), logs: live(allData.logs),
+    pantry: live(allData.pantry), prices: live(allData.prices), plan: live(allData.plan),
+  };
   return {
     app: 'Demeter',
     schemaVersion: BACKUP_SCHEMA_VERSION,
@@ -17,6 +20,9 @@ export function buildBackup(allData: AllData, now = new Date()): BackupFile {
       foods: data.foods.length,
       recipes: data.recipes.length,
       logs: data.logs.length,
+      pantry: data.pantry.length,
+      prices: data.prices.length,
+      plan: data.plan.length,
     },
     data: {
       foods: data.foods,
@@ -25,6 +31,9 @@ export function buildBackup(allData: AllData, now = new Date()): BackupFile {
       targets: data.targets,
       settings: data.settings,
       usage: data.usage,
+      pantry: data.pantry,
+      prices: data.prices,
+      plan: data.plan,
     },
   };
 }
@@ -40,7 +49,7 @@ export function backupFileName(now = new Date()): string {
 }
 
 export type ParseResult =
-  | { ok: true; data: AllData; backup: BackupFile; summary: { foods: number; recipes: number; logs: number; exportedAt: string } }
+  | { ok: true; data: AllData; backup: BackupFile; summary: { foods: number; recipes: number; logs: number; pantry: number; exportedAt: string } }
   | { ok: false; error: string };
 
 const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v);
@@ -127,6 +136,27 @@ export function parseBackup(text: string): ParseResult {
     lastMealType: MEAL_TYPES.includes(u.lastMealType as never) ? (u.lastMealType as FoodUsage['lastMealType']) : undefined,
   }));
 
+  const pantry: PantryItem[] = [];
+  for (const x of arr('pantry')) {
+    if (!isObj(x) || typeof x.id !== 'string' || typeof x.name !== 'string') continue;
+    pantry.push({
+      ...(x as unknown as PantryItem),
+      createdAt: num(x.createdAt, Date.now()), updatedAt: num(x.updatedAt, Date.now()),
+      ...(typeof x.amountG === 'number' && x.amountG >= 0 ? { amountG: x.amountG } : {}),
+      ...(typeof x.packG === 'number' && x.packG > 0 ? { packG: x.packG } : {}),
+    });
+  }
+  const prices: FoodPrice[] = [];
+  for (const x of arr('prices')) {
+    if (!isObj(x) || typeof x.id !== 'string' || typeof x.foodId !== 'string' || num(x.packG) <= 0 || num(x.packPrice, -1) < 0) continue;
+    prices.push({ ...(x as unknown as FoodPrice), packPrice: num(x.packPrice), packG: num(x.packG), updatedAt: num(x.updatedAt, Date.now()) });
+  }
+  const plan: PlanLine[] = [];
+  for (const x of arr('plan')) {
+    if (!isObj(x) || typeof x.id !== 'string' || typeof x.week !== 'string' || !DATE_RE.test(x.week) || typeof x.name !== 'string') continue;
+    plan.push({ ...(x as unknown as PlanLine), createdAt: num(x.createdAt, Date.now()), updatedAt: num(x.updatedAt, Date.now()) });
+  }
+
   const t = isObj(d.targets) ? d.targets : {};
   const targets: DailyTargets = {
     calories: num(t.calories, DEFAULT_TARGETS.calories), protein: num(t.protein, DEFAULT_TARGETS.protein),
@@ -144,10 +174,10 @@ export function parseBackup(text: string): ParseResult {
     introSeen: true,
   };
 
-  const data: AllData = { foods, recipes, logs, usage, settings, targets };
+  const data: AllData = normalizeAllData({ foods, recipes, logs, usage, settings, targets, pantry, prices, plan });
   const backup = buildBackup(data, new Date(str(raw.exportedAt, new Date().toISOString())));
   return {
     ok: true, data, backup,
-    summary: { foods: foods.length, recipes: recipes.length, logs: logs.length, exportedAt: str(raw.exportedAt, 'unknown') },
+    summary: { foods: foods.length, recipes: recipes.length, logs: logs.length, pantry: pantry.length, exportedAt: str(raw.exportedAt, 'unknown') },
   };
 }
