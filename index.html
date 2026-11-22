@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Demeter</title>
     <meta name="description" content="Offline calorie & protein tracker with raw-to-cooked conversion." />
-    <meta name="theme-color" content="#0c1210" />
+    <meta name="theme-color" content="#1d1435" />
     <meta name="color-scheme" content="dark light" />
     <!-- iOS "Add to Home Screen" -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -21,11 +21,11 @@
         var t = localStorage.getItem('demeter-theme-hint');
         var dark = t === 'dark' || (t !== 'light' && (t === 'system' ? matchMedia('(prefers-color-scheme: dark)').matches : true));
         document.documentElement.dataset.theme = dark ? 'dark' : 'light';
-        document.querySelector('meta[name=theme-color]').setAttribute('content', dark ? '#0c1210' : '#f5f3ec');
+        document.querySelector('meta[name=theme-color]').setAttribute('content', dark ? '#1d1435' : '#efe8fb');
       } catch (e) {}
     </script>
-    <script type="module" crossorigin src="/demeter/assets/index-D8GisHFs.js"></script>
-    <link rel="stylesheet" crossorigin href="/demeter/assets/index-f4g-YxLk.css">
+    <script type="module" crossorigin src="/demeter/assets/index-DBfkc13M.js"></script>
+    <link rel="stylesheet" crossorigin href="/demeter/assets/index-DWKoTikt.css">
   <link rel="manifest" href="/demeter/manifest.webmanifest"></head>
   <body>
     <div id="root"></div>
