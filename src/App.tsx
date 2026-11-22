@@ -41,7 +41,7 @@ export default function App() {
     <ErrorBoundary>
     <HashRouter>
       <ScrollReset />
-      <div className="min-h-full pb-[calc(86px+env(safe-area-inset-bottom))]">
+      <div className="min-h-full pb-[calc(112px+env(safe-area-inset-bottom))]">
         {loadError && <div className="p-4 pt-safe"><Notice tone="error">{loadError}</Notice></div>}
         <UpdateBanner />
         <Suspense fallback={<div className="p-10 text-center text-muted">Loading…</div>}>

@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useAppStore } from './useAppStore';
 
-const DARK_BG = '#0c1210';
-const LIGHT_BG = '#f5f3ec';
+const DARK_BG = '#1d1435';
+const LIGHT_BG = '#efe8fb';
 
 /** Applies the theme preference to <html> + the iOS status-bar colour, and keeps a tiny hint for flash-free startup. */
 export function useTheme() {

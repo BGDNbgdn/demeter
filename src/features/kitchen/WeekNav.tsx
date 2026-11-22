@@ -13,7 +13,7 @@ export function WeekNav() {
   const week = useWeek(s => s.week);
   const setWeek = useWeek(s => s.setWeek);
   return (
-    <div className="flex items-center gap-1 rounded-2xl bg-surface border border-line/70 px-1.5 py-1">
+    <div className="glass flex items-center gap-1 rounded-full px-1.5 py-1">
       <IconButton icon="chevL" label="Previous week" onClick={() => setWeek(addDays(week, -7))} />
       <button type="button" className="flex-1 text-center active:opacity-60" onClick={() => setWeek(weekStart(todayStr()))} aria-label="Jump to this week">
         <div className="text-[16px] font-semibold leading-tight">{weekLabel(week)}</div>

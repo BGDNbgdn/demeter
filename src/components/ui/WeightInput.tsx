@@ -41,7 +41,7 @@ export function WeightInput({
   };
   const stopHold = () => { if (hold.current) { clearInterval(hold.current); clearTimeout(hold.current as unknown as number); hold.current = null; } };
 
-  const stepBtn = 'h-12 w-12 shrink-0 rounded-2xl bg-surface2 text-ink flex items-center justify-center active:bg-surface3 select-none';
+  const stepBtn = 'h-12 w-12 shrink-0 rounded-full glass-btn text-ink flex items-center justify-center active:opacity-70 select-none';
   return (
     <div className="space-y-2.5">
       <div className="flex items-center gap-2">
@@ -77,8 +77,8 @@ export function Chip({ active, accent, className, children, ...rest }: { active?
     <button
       type="button"
       className={cn(
-        'shrink-0 h-10 px-3.5 rounded-full text-[15px] font-medium border transition-colors select-none whitespace-nowrap',
-        active ? 'bg-accent text-accentink border-accent' : accent ? 'bg-accentsoft text-accent border-transparent active:opacity-70' : 'bg-surface2 text-ink border-transparent active:bg-surface3',
+        'shrink-0 h-10 px-4 rounded-full text-[15px] font-semibold border transition-colors select-none whitespace-nowrap',
+        active ? 'pill-on border-transparent' : accent ? 'bg-accentsoft text-accent border-transparent active:opacity-70' : 'bg-surface2 text-ink border-line active:bg-surface3',
         className,
       )}
       {...rest}

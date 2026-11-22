@@ -11,16 +11,16 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const VARIANTS = {
-  primary: 'bg-accent text-accentink font-semibold active:opacity-80',
-  secondary: 'bg-surface2 text-ink active:bg-surface3',
+  primary: 'bg-grad font-bold active:opacity-80',
+  secondary: 'glass-btn text-ink active:opacity-70',
   ghost: 'bg-transparent text-accent active:bg-accentsoft',
   outline: 'bg-transparent text-ink border border-line active:bg-surface2',
-  danger: 'bg-danger/15 text-danger font-semibold active:bg-danger/25',
+  danger: 'bg-danger/15 text-danger font-semibold border border-danger/30 active:bg-danger/25',
 };
 const SIZES = {
-  sm: 'h-9 px-3 text-[14px] rounded-xl gap-1.5',
-  md: 'h-12 px-4 text-[16px] rounded-2xl gap-2',
-  lg: 'h-14 px-5 text-[17px] rounded-2xl gap-2',
+  sm: 'h-9 px-3.5 text-[14px] rounded-full gap-1.5',
+  md: 'h-12 px-5 text-[16px] rounded-full gap-2',
+  lg: 'h-14 px-6 text-[17px] rounded-full gap-2',
 };
 
 export function Button({ variant = 'secondary', size = 'md', icon, block, className, children, type = 'button', ...rest }: Props) {
@@ -39,12 +39,19 @@ export function Button({ variant = 'secondary', size = 'md', icon, block, classN
   );
 }
 
-export function IconButton({ icon, label, className, size = 44, filled, ...rest }: { icon: IconName; label: string; size?: number; filled?: boolean } & ButtonHTMLAttributes<HTMLButtonElement>) {
+const TONES = {
+  ghost: 'text-ink active:bg-surface2',
+  glass: 'glass-btn text-ink active:opacity-70',
+  accent: 'bg-grad active:opacity-80',
+};
+
+/** Round icon button. `glass` = frosted circle (headers), `accent` = gradient (the main "+" of a page), `ghost` = bare icon. */
+export function IconButton({ icon, label, className, size = 44, filled, tone = 'ghost', ...rest }: { icon: IconName; label: string; size?: number; filled?: boolean; tone?: keyof typeof TONES } & ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
       type="button"
       aria-label={label}
-      className={cn('inline-flex items-center justify-center rounded-full text-ink active:bg-surface2 select-none disabled:opacity-40', className)}
+      className={cn('inline-flex items-center justify-center rounded-full select-none disabled:opacity-40 shrink-0', TONES[tone], className)}
       style={{ width: size, height: size }}
       {...rest}
     >

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Demeter \u2014 offline-first calorie & protein tracker with raw-to-cooked conversion",
+  "description": "Demeter — offline-first calorie & protein tracker with raw-to-cooked conversion",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
@@ -16,6 +16,8 @@
     "deploy": "node scripts/deploy-gh-pages.mjs"
   },
   "dependencies": {
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource/doto": "^5.3.0",
     "@zxing/browser": "^0.2.1",
     "@zxing/library": "^0.23.0",
     "fuse.js": "^7.5.0",

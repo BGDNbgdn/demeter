@@ -38,7 +38,7 @@ export function Sheet({ open, onClose, title, tall, children, footer, headerRigh
       <div
         ref={ref}
         className={cn(
-          'relative w-full max-w-xl bg-surface anim-sheet flex flex-col rounded-t-[28px] border-t border-line shadow-2xl',
+          'relative w-full max-w-xl sheet-glass anim-sheet flex flex-col rounded-t-[32px]',
           tall ? 'h-[calc(100dvh-env(safe-area-inset-top)-12px)]' : 'max-h-[92dvh]',
         )}
       >
@@ -46,10 +46,10 @@ export function Sheet({ open, onClose, title, tall, children, footer, headerRigh
           <div className="absolute left-1/2 top-2 -translate-x-1/2 h-1 w-10 rounded-full bg-surface3" />
           <h2 className="flex-1 min-w-0 text-[19px] font-semibold leading-tight line-clamp-3 pt-2">{title}</h2>
           <div className="pt-1">{headerRight}</div>
-          <IconButton icon="x" label="Close" onClick={onClose} className="mt-1" />
+          <IconButton icon="x" label="Close" tone="glass" onClick={onClose} className="mt-1" />
         </div>
         <div className="flex-1 overflow-y-auto overscroll-contain px-5 pb-4 scrollbar-none">{children}</div>
-        {footer && <div className="shrink-0 px-5 pt-3 pb-safe border-t border-line bg-surface"><div className="pb-3">{footer}</div></div>}
+        {footer && <div className="shrink-0 px-5 pt-3 pb-safe border-t border-line"><div className="pb-3">{footer}</div></div>}
         {!footer && <div className="pb-safe" />}
       </div>
     </div>,

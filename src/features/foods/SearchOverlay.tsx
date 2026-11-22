@@ -60,7 +60,7 @@ export function SearchOverlay() {
 
   return (
     <Sheet open={open} onClose={close} tall title="Search foods & recipes" zIndex={70}>
-      <div className="sticky top-0 -mx-5 px-5 pb-2 pt-1 bg-surface z-10">
+      <div className="sticky top-0 -mx-5 px-5 pb-2 pt-1 [background:var(--sheet)] z-10">
         <div className="relative">
           <Icon name="search" size={20} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
           <input

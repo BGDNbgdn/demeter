@@ -1,50 +1,88 @@
 @import "tailwindcss";
+/* Fonts are bundled with the app (no requests to Google): Figtree for text, Doto for the dot-matrix numbers. */
+@import "@fontsource-variable/figtree/wght.css";
+@import "@fontsource/doto/latin-700.css";
+@import "@fontsource/doto/latin-800.css";
 
-/* ---------------------------------------------------------------- design tokens */
+/* ---------------------------------------------------------------- design tokens: "liquid glass" */
 :root,
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0c1210;
-  --surface: #141c18;
-  --surface-2: #1b2621;
-  --surface-3: #243029;
-  --border: #26332d;
-  --text: #eaf2ed;
-  --muted: #8d9f95;
-  --accent: #e9b949;
-  --accent-ink: #1b1403;
-  --accent-soft: rgba(233, 185, 73, 0.14);
-  --protein: #f2b84b;
-  --calories: #7cc4ff;
-  --carbs: #7fdc9a;
-  --fat: #f28b82;
-  --fiber: #c3a6ff;
-  --danger: #ff6b6b;
-  --ok: #5ed38a;
-  --warn: #f5b942;
-  --overlay: rgba(0, 0, 0, 0.6);
+  --bg: #0b0812;
+  /* glass fills are translucent: what is behind them (the gradient page) shows through */
+  --surface: rgba(255, 255, 255, 0.09);
+  --surface-2: rgba(255, 255, 255, 0.11);
+  --surface-3: rgba(255, 255, 255, 0.19);
+  --border: rgba(255, 255, 255, 0.17);
+  --text: #f8f4ff;
+  --muted: rgba(248, 244, 255, 0.7);
+  --accent: #f9b38e; /* text accent (links, icons) */
+  --accent-ink: #1a1030;
+  --accent-soft: rgba(249, 179, 142, 0.18);
+  --pill: #ffffff; /* selected chip / tab / day */
+  --pill-ink: #1a1030;
+  --protein: #7ee8d6;
+  --calories: #b69bff;
+  --carbs: #f9b38e;
+  --fat: #ff8fb8;
+  --fiber: #8fc8ff;
+  --danger: #ff7a8a;
+  --ok: #7ee8d6;
+  --warn: #ffc470;
+  --overlay: rgba(8, 4, 18, 0.62);
+  --grad: linear-gradient(135deg, #7ee8d6 0%, #f9b38e 50%, #b69bff 100%);
+  --grad-ink: #1a1030;
+  --glass-edge: rgba(255, 255, 255, 0.17);
+  --glass-fill: linear-gradient(150deg, rgba(255, 255, 255, 0.17), rgba(255, 255, 255, 0.05) 55%, rgba(255, 255, 255, 0.09));
+  --glass-sheen: radial-gradient(120% 60% at 12% -12%, rgba(255, 255, 255, 0.24), transparent 55%);
+  --glass-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -1px 1px rgba(255, 255, 255, 0.07), 0 14px 34px -10px rgba(6, 2, 18, 0.55);
+  --sheet: rgba(30, 22, 58, 0.88);
+  --page-bg:
+    radial-gradient(75% 38% at 0% 0%, rgba(118, 134, 46, 0.8), transparent 70%),
+    radial-gradient(85% 46% at 104% 14%, rgba(150, 100, 245, 0.95), transparent 70%),
+    radial-gradient(90% 40% at 30% 46%, rgba(88, 64, 168, 0.55), transparent 72%),
+    linear-gradient(180deg, #372c60 0%, #1d1435 46%, #0b0812 100%);
+  --page-blobs:
+    radial-gradient(260px 260px at 100% 62%, rgba(160, 120, 255, 0.42), transparent 70%),
+    radial-gradient(240px 240px at 0% 88%, rgba(255, 120, 190, 0.26), transparent 70%);
 }
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f5f3ec;
-  --surface: #ffffff;
-  --surface-2: #efece3;
-  --surface-3: #e5e1d5;
-  --border: #ddd8c9;
-  --text: #17211c;
-  --muted: #667a6f;
-  --accent: #b67f0c;
+  --bg: #f1ecf9;
+  --surface: rgba(255, 255, 255, 0.62);
+  --surface-2: rgba(26, 16, 48, 0.06);
+  --surface-3: rgba(26, 16, 48, 0.13);
+  --border: rgba(26, 16, 48, 0.12);
+  --text: #1a1030;
+  --muted: rgba(26, 16, 48, 0.64);
+  --accent: #6b45e0;
   --accent-ink: #ffffff;
-  --accent-soft: rgba(182, 127, 12, 0.12);
-  --protein: #b57600;
-  --calories: #1c75bc;
-  --carbs: #25894c;
-  --fat: #cc4a3f;
-  --fiber: #7a53c9;
-  --danger: #cc3b3b;
-  --ok: #1f8f4d;
-  --warn: #a86d00;
-  --overlay: rgba(20, 28, 24, 0.45);
+  --accent-soft: rgba(107, 69, 224, 0.12);
+  --pill: #1a1030;
+  --pill-ink: #ffffff;
+  --protein: #0b9b88;
+  --calories: #6b45e0;
+  --carbs: #d46a2a;
+  --fat: #d1397d;
+  --fiber: #2878c8;
+  --danger: #d23a56;
+  --ok: #0b9b88;
+  --warn: #b06a00;
+  --overlay: rgba(26, 16, 48, 0.42);
+  --grad: linear-gradient(135deg, #7ee8d6 0%, #f9b38e 50%, #b69bff 100%);
+  --grad-ink: #1a1030;
+  --glass-edge: rgba(255, 255, 255, 0.9);
+  --glass-fill: linear-gradient(150deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.66));
+  --glass-sheen: radial-gradient(120% 60% at 12% -12%, rgba(255, 255, 255, 0.7), transparent 55%);
+  --glass-shadow: inset 0 1px 1px #fff, inset 0 -1px 1px rgba(26, 16, 48, 0.04), 0 14px 30px -14px rgba(90, 60, 160, 0.38);
+  --sheet: rgba(251, 248, 255, 0.92);
+  --page-bg:
+    radial-gradient(70% 40% at 0% 0%, rgba(126, 232, 214, 0.55), transparent 70%),
+    radial-gradient(80% 46% at 104% 12%, rgba(182, 155, 255, 0.62), transparent 70%),
+    radial-gradient(80% 40% at 10% 100%, rgba(249, 179, 142, 0.5), transparent 70%),
+    linear-gradient(180deg, #f6f1ff 0%, #efe8fb 50%, #f9eee8 100%);
+  --page-blobs:
+    radial-gradient(260px 260px at 100% 70%, rgba(255, 143, 184, 0.28), transparent 70%);
 }
 
 @theme inline {
@@ -58,6 +96,8 @@
   --color-accent: var(--accent);
   --color-accentink: var(--accent-ink);
   --color-accentsoft: var(--accent-soft);
+  --color-pill: var(--pill);
+  --color-pillink: var(--pill-ink);
   --color-protein: var(--protein);
   --color-kcal: var(--calories);
   --color-carbs: var(--carbs);
@@ -66,7 +106,8 @@
   --color-danger: var(--danger);
   --color-ok: var(--ok);
   --color-warn: var(--warn);
-  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Figtree Variable', 'Figtree', -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-dot: 'Doto', 'DotGothic16', ui-monospace, monospace;
 }
 
 /* ---------------------------------------------------------------- base */
@@ -76,7 +117,7 @@ html, body, #root { height: 100%; }
 html { background: var(--bg); }
 body {
   margin: 0;
-  background: var(--bg);
+  background: transparent;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 16px;
@@ -86,12 +127,73 @@ body {
   -webkit-text-size-adjust: 100%;
   touch-action: manipulation;
 }
+/* the glowing gradient page, painted once behind everything */
+body::before, body::after { content: ''; position: fixed; inset: 0; pointer-events: none; }
+body::before { z-index: -2; background: var(--page-bg); }
+body::after { z-index: -1; background: var(--page-blobs); }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; touch-action: manipulation; }
 input, select, textarea { font-size: 16px; } /* 16px prevents iOS zoom-on-focus */
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: 0.8; }
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+select option { color: #1a1030; }
+:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+}
+
+/* ---------------------------------------------------------------- liquid glass */
+@layer components {
+  /* frosted, translucent surface with a lit top edge */
+  .glass {
+    position: relative;
+    background: var(--glass-fill);
+    border: 1px solid var(--glass-edge);
+    -webkit-backdrop-filter: blur(22px) saturate(170%);
+    backdrop-filter: blur(22px) saturate(170%);
+    box-shadow: var(--glass-shadow);
+  }
+  .glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 0;
+    background: var(--glass-sheen);
+  }
+  .glass > * { position: relative; z-index: 1; }
+  /* bottom sheets & dialogs: more opaque so text stays easy to read */
+  .sheet-glass {
+    background: var(--sheet);
+    border-top: 1px solid var(--glass-edge);
+    -webkit-backdrop-filter: blur(34px) saturate(180%);
+    backdrop-filter: blur(34px) saturate(180%);
+    box-shadow: 0 -20px 60px -20px rgba(6, 2, 18, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  }
+  .bg-grad {
+    background-image: var(--grad);
+    color: var(--grad-ink);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.7), 0 16px 34px -12px rgba(182, 155, 255, 0.6);
+  }
+  /* round / pill glass controls */
+  .glass-btn {
+    background: var(--surface-2);
+    border: 1px solid var(--glass-edge);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.28);
+  }
+  :root[data-theme='light'] .glass-btn { box-shadow: inset 0 1px 1px #fff; background: rgba(255, 255, 255, 0.55); }
+  .pill-on { background: var(--pill); color: var(--pill-ink); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22); }
+  /* glossy sphere used for empty-state icons */
+  .orb {
+    color: #fff;
+    background: radial-gradient(circle at 30% 24%, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.12) 46%, rgba(182, 155, 255, 0.3) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    box-shadow: inset 0 2px 6px rgba(255, 255, 255, 0.65), inset 0 -16px 32px rgba(120, 80, 220, 0.5), 0 26px 50px -10px rgba(150, 110, 255, 0.65);
+  }
+  :root[data-theme='light'] .orb {
+    background: radial-gradient(circle at 30% 24%, rgba(255, 255, 255, 0.85), rgba(182, 155, 255, 0.5) 50%, rgba(107, 69, 224, 0.55) 100%);
+  }
+  .font-dot { font-family: var(--font-dot); font-weight: 800; letter-spacing: 0.04em; }
 }
 .tabular { font-variant-numeric: tabular-nums; }
 .pt-safe { padding-top: env(safe-area-inset-top); }
@@ -109,4 +211,8 @@ input[type='number']::-webkit-inner-spin-button { -webkit-appearance: none; marg
 .anim-toast { animation: toast-in 0.22s ease-out; }
 @media (prefers-reduced-motion: reduce) {
   .anim-sheet, .anim-fade, .anim-pop, .anim-toast { animation: none; }
+}
+/* browsers without backdrop-filter get a slightly more opaque glass */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass { background: var(--sheet); }
 }

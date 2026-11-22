@@ -61,7 +61,7 @@ export function NumInput({
           onChange(v);
         }}
         className={cn(
-          'w-full h-12 rounded-2xl bg-surface2 border border-transparent px-4 text-[18px] font-medium tabular placeholder:text-muted/70 focus:border-accent outline-none',
+          'w-full h-12 rounded-2xl bg-surface2 border border-line px-4 text-[18px] font-medium tabular focus:border-accent outline-none',
           suffix ? 'pr-12' : '', invalid && 'border-danger', inputClassName,
         )}
       />

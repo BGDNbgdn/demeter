@@ -22,9 +22,9 @@ export function UpdateBanner() {
   if (!needRefresh) return null;
   return (
     <div className="fixed top-0 inset-x-0 z-[85] pt-safe">
-      <div className="mx-3 mt-2 flex items-center gap-3 rounded-2xl bg-accent text-accentink px-4 py-2.5 shadow-lg">
+      <div className="mx-3 mt-2 flex items-center gap-3 rounded-2xl bg-grad px-4 py-2.5">
         <span className="flex-1 text-[14px] font-medium">A new version of Demeter is ready.</span>
-        <Button size="sm" variant="secondary" className="!bg-black/15 !text-accentink" onClick={() => void update?.()}>Update</Button>
+        <Button size="sm" variant="secondary" className="!bg-black/15 !text-[#1a1030]" onClick={() => void update?.()}>Update</Button>
       </div>
     </div>
   );

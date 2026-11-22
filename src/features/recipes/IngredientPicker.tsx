@@ -37,7 +37,7 @@ export function IngredientPicker({ open, onClose, onPick, title, hint = true, al
 
   return (
     <Sheet open={open} onClose={() => { setMode('search'); onClose(); }} tall title={mode === 'search' ? (title ?? 'Add ingredient') : 'Custom ingredient'} zIndex={75}>
-      <div className="sticky top-0 -mx-5 px-5 pb-2 pt-1 bg-surface z-10 space-y-2.5">
+      <div className="sticky top-0 -mx-5 px-5 pb-2 pt-1 [background:var(--sheet)] z-10 space-y-2.5">
         {allowCustom && <Segmented value={mode} onChange={setMode} options={[{ value: 'search', label: 'Search foods' }, { value: 'custom', label: 'Create custom' }]} />}
         {mode === 'search' && (
           <div className="relative">

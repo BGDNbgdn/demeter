@@ -33,8 +33,8 @@ export default function ReviewPage() {
     <>
       <PageHeader
         title="Weekly review" subtitle={`${formatShort(r.from)} – ${formatShort(r.to)}${isCurrent ? ' · this week' : ''}`}
-        left={<IconButton icon="chevL" label="Previous week" onClick={() => setAnchor(a => addDays(a, -7))} />}
-        right={<IconButton icon="chevR" label="Next week" onClick={() => setAnchor(a => addDays(a, 7))} disabled={isCurrent} />}
+        left={<IconButton icon="chevL" label="Previous week" tone="glass" onClick={() => setAnchor(a => addDays(a, -7))} />}
+        right={<IconButton icon="chevR" label="Next week" tone="glass" onClick={() => setAnchor(a => addDays(a, 7))} disabled={isCurrent} />}
       />
       <main className="px-4 pb-8 max-w-xl mx-auto space-y-4 pt-3">
         <button type="button" onClick={() => navigate('/history')} className="text-[14px] text-accent font-medium flex items-center gap-1 -mb-1 h-8"><Icon name="chevL" size={15} />Trends &amp; history</button>

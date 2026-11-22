@@ -207,6 +207,8 @@ scripts/        build-foods.mjs + food-spec/, generate-icons.mjs
 public/         icons, favicon
 ```
 
+Design: a "liquid glass" look (frosted translucent cards over a soft gradient page, floating tab bar, dot-matrix numbers for protein and streak), in dark, light and automatic. Fonts (Figtree, Doto) are bundled with the app — no requests to Google. The tokens live in `src/index.css`; surfaces use the `glass` / `sheet-glass` / `bg-grad` classes.
+
 Tech: Vite · React · TypeScript · Tailwind CSS 4 · idb · Recharts · Fuse.js · vite-plugin-pwa (Workbox) · Vitest.
 
 ## Privacy

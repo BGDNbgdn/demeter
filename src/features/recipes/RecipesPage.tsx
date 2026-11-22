@@ -19,14 +19,23 @@ export function RecipesPage() {
   return (
     <>
       <PageHeader title="Recipes" subtitle="Cooked dishes & meal-prep batches"
-        right={<IconButton icon="plus" label="New recipe" className="bg-accentsoft text-accent" onClick={() => navigate('/recipes/new')} />} />
+        right={<IconButton icon="plus" label="New recipe" tone="accent" onClick={() => navigate('/recipes/new')} />} />
       <main className="px-4 pb-8 max-w-xl mx-auto">
         {sorted.length === 0 ? (
-          <EmptyState
-            icon="recipes" title="No recipes yet"
-            body="Add raw ingredients, weigh the finished dish, and Demeter works out the exact nutrition per 100 g cooked — then any portion."
-            action={<Button variant="primary" size="lg" icon="plus" onClick={() => navigate('/recipes/new')}>Create a recipe</Button>}
-          />
+          <>
+            <EmptyState
+              icon="recipes" title="No recipes yet."
+              body="Add raw ingredients, weigh the finished dish, and Demeter works out the exact nutrition per 100 g cooked — then any portion."
+            />
+            <ol className="glass rounded-[26px] py-1.5 list-none">
+              {['Add the raw ingredients', 'Weigh the finished dish', 'Get nutrition per 100 g cooked'].map((t, i) => (
+                <li key={t} className="flex items-center gap-3.5 px-[18px] py-[11px] text-[16px] font-semibold border-t border-line first:border-t-0">
+                  <span className="bg-grad h-[30px] w-[30px] rounded-full flex items-center justify-center text-[14px] font-extrabold shrink-0" style={{ boxShadow: 'none' }}>{i + 1}</span>{t}
+                </li>
+              ))}
+            </ol>
+            <Button variant="primary" size="lg" block icon="plus" className="mt-3.5 !h-[60px] text-[17px]" onClick={() => navigate('/recipes/new')}>Create a recipe</Button>
+          </>
         ) : (
           <div className="space-y-3 pt-3">
             {sorted.map(r => {
@@ -38,7 +47,7 @@ export function RecipesPage() {
                 <Card key={r.id} className="!p-0 overflow-hidden">
                   <div className="flex items-stretch">
                     <button type="button" className="flex-1 min-w-0 text-left p-4 active:bg-surface2" onClick={() => navigate(`/recipes/${r.id}`)}>
-                      <div className="text-[18px] font-semibold truncate">{r.name}</div>
+                      <div className="text-[19px] font-bold tracking-[-0.01em] truncate">{r.name}</div>
                       {changed > 0 && <div className="inline-block mt-1 text-[11px] font-semibold text-warn px-2 py-0.5 rounded-md bg-warn/15" style={{ background: 'color-mix(in srgb, var(--warn) 15%, transparent)' }}>{changed} ingredient{changed === 1 ? '' : 's'} changed — open to update</div>}
                       <div className="text-[13px] text-muted mt-0.5 tabular">
                         {r.ingredients.length} ingredient{r.ingredients.length === 1 ? '' : 's'} · {r.cookedTotalWeightG ? `${fmtNum(r.cookedTotalWeightG, 0)} g cooked` : <span className="text-warn">cooked weight not entered</span>}
@@ -50,11 +59,11 @@ export function RecipesPage() {
                       </div>
                       {rem && <div className="text-[13px] mt-2 text-muted">{rem.remainingG > 0 ? <><b className="text-ink">{fmtNum(rem.remainingG, 0)} g</b> left in this batch</> : 'Batch finished'}</div>}
                     </button>
-                    <div className="flex flex-col border-l border-line/60">
-                      <button aria-label={fav ? 'Unfavorite' : 'Favorite'} className={`flex-1 w-14 flex items-center justify-center ${fav ? 'text-accent' : 'text-muted/60'}`} onClick={() => toggleFav(r.id)}>
+                    <div className="flex flex-col items-center justify-center gap-1.5 pr-3.5 pl-1">
+                      <button aria-label={fav ? 'Unfavorite' : 'Favorite'} className={`h-10 w-10 rounded-full flex items-center justify-center active:bg-surface2 ${fav ? 'text-[var(--carbs)]' : 'text-muted'}`} onClick={() => toggleFav(r.id)}>
                         <Icon name="star" filled={fav} />
                       </button>
-                      <button aria-label={`Log a portion of ${r.name}`} className="flex-1 w-14 flex items-center justify-center text-accent bg-accentsoft active:opacity-60 border-t border-line/60" onClick={() => useUI.setState({ logRecipe: { recipeId: r.id } })}>
+                      <button aria-label={`Log a portion of ${r.name}`} className="bg-grad h-11 w-11 rounded-full flex items-center justify-center active:opacity-70" style={{ boxShadow: 'none' }} onClick={() => useUI.setState({ logRecipe: { recipeId: r.id } })}>
                         <Icon name="plus" strokeWidth={2.4} />
                       </button>
                     </div>

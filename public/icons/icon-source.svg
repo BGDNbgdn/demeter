@@ -1,24 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- Demeter placeholder icon. Replace this file (keep it square, 1024x1024) and run `npm run icons`. -->
+  <!-- Demeter icon (liquid-glass palette). Replace this file (keep it square, 1024x1024) and run `npm run icons`. -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1a2d24"/>
-      <stop offset="1" stop-color="#0a100e"/>
+      <stop offset="0" stop-color="#3a2d66"/>
+      <stop offset="1" stop-color="#0b0812"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
-      <stop offset="0" stop-color="#e9b949" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#e9b949" stop-opacity="0"/>
+      <stop offset="0" stop-color="#9b6bff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#9b6bff" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f6d27a"/>
-      <stop offset="1" stop-color="#d79f2a"/>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7ee8d6"/>
+      <stop offset="0.5" stop-color="#f9b38e"/>
+      <stop offset="1" stop-color="#b69bff"/>
+    </linearGradient>
+    <linearGradient id="goldU" gradientUnits="userSpaceOnUse" x1="-170" y1="300" x2="170" y2="900">
+      <stop offset="0" stop-color="#7ee8d6"/>
+      <stop offset="0.5" stop-color="#f9b38e"/>
+      <stop offset="1" stop-color="#b69bff"/>
     </linearGradient>
     <ellipse id="grain" cx="0" cy="0" rx="40" ry="92" fill="url(#gold)"/>
   </defs>
   <rect width="1024" height="1024" fill="url(#bg)"/>
   <rect width="1024" height="1024" fill="url(#glow)"/>
   <g transform="translate(512 0)">
-    <path d="M0 905 C0 760 0 640 0 470" stroke="#e9b949" stroke-width="26" stroke-linecap="round" fill="none"/>
+    <path d="M0 905 C0 760 0 640 0 470" stroke="url(#goldU)" stroke-width="26" stroke-linecap="round" fill="none"/>
     <use href="#grain" transform="translate(0 300)"/>
     <use href="#grain" transform="translate(-74 396) rotate(-32)"/>
     <use href="#grain" transform="translate(74 396) rotate(32)"/>
@@ -26,6 +32,6 @@
     <use href="#grain" transform="translate(86 524) rotate(36)"/>
     <use href="#grain" transform="translate(-92 652) rotate(-40)"/>
     <use href="#grain" transform="translate(92 652) rotate(40)"/>
-    <path d="M0 780 C-60 740 -120 760 -150 820 M0 810 C60 770 120 790 150 850" stroke="#e9b949" stroke-width="22" stroke-linecap="round" fill="none" opacity="0.9"/>
+    <path d="M0 780 C-60 740 -120 760 -150 820 M0 810 C60 770 120 790 150 850" stroke="url(#goldU)" stroke-width="22" stroke-linecap="round" fill="none" opacity="0.9"/>
   </g>
 </svg>

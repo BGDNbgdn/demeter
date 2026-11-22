@@ -8,23 +8,28 @@ import { Icon, type IconName } from './Icon';
 import { useAppStore } from '../../hooks/useAppStore';
 
 // ------------------------------------------------------------------ layout
-export function PageHeader({ title, subtitle, right, left }: { title: ReactNode; subtitle?: ReactNode; right?: ReactNode; left?: ReactNode }) {
-  return (
-    <header className="sticky top-0 z-20 bg-bg/90 backdrop-blur-xl pt-safe border-b border-line/60">
-      <div className="flex items-center gap-1 px-3 min-h-[56px]">
-        {left}
-        <div className="flex-1 min-w-0 pl-2">
-          <h1 className="text-[24px] font-bold tracking-tight leading-tight truncate">{title}</h1>
-          {subtitle && <div className="text-[13px] text-muted -mt-0.5">{subtitle}</div>}
-        </div>
-        {right}
+/**
+ * Page title block. Default: a large title that scrolls away (the date / context sits above it).
+ * `sticky` = compact bar that stays on top — used by long editors where Save must stay reachable.
+ */
+export function PageHeader({ title, subtitle, right, left, sticky }: { title: ReactNode; subtitle?: ReactNode; right?: ReactNode; left?: ReactNode; sticky?: boolean }) {
+  const inner = (
+    <div className={cn('flex gap-2 px-4 max-w-xl mx-auto', sticky ? 'items-center min-h-[60px]' : 'items-end pt-3 pb-3.5')}>
+      {left}
+      <div className="flex-1 min-w-0">
+        {subtitle && <div className={cn('text-muted leading-tight truncate', sticky ? 'text-[12px]' : 'text-[14px] mb-0.5')}>{subtitle}</div>}
+        <h1 className={cn('font-bold tracking-[-0.02em] leading-[1.05] truncate', sticky ? 'text-[22px]' : 'text-[36px]')}>{title}</h1>
       </div>
-    </header>
+      {right && <div className="flex items-center gap-2 shrink-0">{right}</div>}
+    </div>
   );
+  return sticky
+    ? <header className="sticky top-0 z-20 pt-safe backdrop-blur-2xl border-b border-line" style={{ background: 'color-mix(in srgb, var(--bg) 52%, transparent)' }}>{inner}</header>
+    : <header className="pt-safe">{inner}</header>;
 }
 
 export function Card({ className, children, ...rest }: React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={cn('rounded-3xl bg-surface border border-line/70 p-4', className)} {...rest}>{children}</div>;
+  return <div className={cn('glass rounded-[28px] p-4', className)} {...rest}>{children}</div>;
 }
 
 export function SectionTitle({ children, right }: { children: ReactNode; right?: ReactNode }) {
@@ -49,7 +54,7 @@ export function Field({ label, hint, children, className }: { label: ReactNode; 
 export function TextInput({ className, ...rest }: React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <input
-      className={cn('w-full h-12 rounded-2xl bg-surface2 border border-transparent px-4 text-[17px] placeholder:text-muted/70 focus:border-accent outline-none', className)}
+      className={cn('w-full h-12 rounded-2xl bg-surface2 border border-line px-4 text-[17px] focus:border-accent outline-none', className)}
       {...rest}
     />
   );
@@ -57,11 +62,11 @@ export function TextInput({ className, ...rest }: React.InputHTMLAttributes<HTML
 
 export function EmptyState({ icon, title, body, action }: { icon: IconName; title: string; body?: ReactNode; action?: ReactNode }) {
   return (
-    <div className="flex flex-col items-center text-center px-8 py-12 gap-3">
-      <div className="h-14 w-14 rounded-full bg-surface2 flex items-center justify-center text-muted"><Icon name={icon} size={26} /></div>
-      <div className="text-[17px] font-semibold">{title}</div>
-      {body && <div className="text-[15px] text-muted max-w-xs">{body}</div>}
-      {action}
+    <div className="flex flex-col items-center text-center px-6 py-10 gap-3">
+      <div className="orb h-[104px] w-[104px] rounded-full flex items-center justify-center"><Icon name={icon} size={44} strokeWidth={1.6} /></div>
+      <div className="text-[26px] font-bold tracking-[-0.02em] leading-tight mt-3">{title}</div>
+      {body && <div className="text-[16px] leading-snug text-muted max-w-[320px]">{body}</div>}
+      {action && <div className="mt-2">{action}</div>}
     </div>
   );
 }
@@ -71,7 +76,7 @@ export function Segmented<T extends string>({ value, onChange, options, classNam
   value: T; onChange: (v: T) => void; options: Array<{ value: T; label: ReactNode }>; className?: string;
 }) {
   return (
-    <div role="tablist" className={cn('flex p-1 rounded-2xl bg-surface2 gap-1', className)}>
+    <div role="tablist" className={cn('glass flex p-[5px] rounded-full gap-1', className)}>
       {options.map(o => (
         <button
           key={o.value}
@@ -80,8 +85,8 @@ export function Segmented<T extends string>({ value, onChange, options, classNam
           type="button"
           onClick={() => onChange(o.value)}
           className={cn(
-            'flex-1 h-10 rounded-xl text-[15px] font-medium transition-colors select-none',
-            value === o.value ? 'bg-accentsoft text-accent font-semibold ring-1 ring-accent/50' : 'text-muted active:text-ink',
+            'flex-1 h-11 rounded-full text-[15px] font-semibold transition-colors select-none px-1 truncate',
+            value === o.value ? 'pill-on' : 'text-muted active:text-ink',
           )}
         >
           {o.label}
@@ -133,17 +138,9 @@ export function MacroGrid({ m, big = false }: { m: Macros; big?: boolean }) {
   );
 }
 
-const BASIS_LABEL: Record<NutritionBasis, string> = { raw: 'RAW', cooked: 'COOKED', 'as-packaged': 'AS PACKED' };
+const BASIS_LABEL: Record<NutritionBasis, string> = { raw: 'Raw', cooked: 'Cooked', 'as-packaged': 'As packed' };
 export function BasisBadge({ basis, className }: { basis: NutritionBasis; className?: string }) {
-  const color = basis === 'raw' ? 'var(--fat)' : basis === 'cooked' ? 'var(--carbs)' : 'var(--muted)';
-  return (
-    <span
-      className={cn('inline-block text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded-md align-middle', className)}
-      style={{ color, background: 'color-mix(in srgb, currentColor 14%, transparent)' }}
-    >
-      {BASIS_LABEL[basis]}
-    </span>
-  );
+  return <span className={cn('inline-block text-[11.5px] font-semibold px-2 py-px rounded-[9px] bg-surface3 text-ink align-middle leading-[1.5]', className)}>{BASIS_LABEL[basis]}</span>;
 }
 
 export function Notice({ tone = 'info', children, className }: { tone?: 'info' | 'warn' | 'error' | 'ok'; children: ReactNode; className?: string }) {
@@ -164,8 +161,8 @@ export function ToastHost() {
   if (!toast) return null;
   const tone = toast.tone === 'error' ? 'var(--danger)' : toast.tone === 'success' ? 'var(--ok)' : 'var(--text)';
   return createPortal(
-    <div className="fixed left-0 right-0 z-[80] flex justify-center px-4 pointer-events-none" style={{ bottom: 'calc(158px + env(safe-area-inset-bottom))' }}>
-      <div key={toast.id} className="anim-toast pointer-events-auto max-w-md w-full flex items-center gap-3 rounded-2xl bg-surface3 border border-line px-4 py-3 shadow-xl text-[15px]" role="status">
+    <div className="fixed left-0 right-0 z-[80] flex justify-center px-4 pointer-events-none" style={{ bottom: 'calc(112px + env(safe-area-inset-bottom))' }}>
+      <div key={toast.id} className="anim-toast pointer-events-auto max-w-md w-full flex items-center gap-3 rounded-2xl sheet-glass border border-line px-4 py-3 text-[15px]" role="status">
         <span className="flex-1" style={{ color: tone }}>{toast.message}</span>
         {toast.actionLabel && (
           <button className="font-semibold text-accent px-1 h-8" onClick={() => { toast.onAction?.(); dismiss(); }}>{toast.actionLabel}</button>
@@ -189,7 +186,7 @@ export function Confirm({ open, title, message, confirmLabel = 'Confirm', danger
   return createPortal(
     <div className="fixed inset-0 z-[90] flex items-center justify-center px-6" role="alertdialog" aria-modal="true">
       <div className="absolute inset-0 anim-fade" style={{ background: 'var(--overlay)' }} onClick={onCancel} />
-      <div className="relative anim-pop w-full max-w-sm rounded-3xl bg-surface border border-line p-5 shadow-2xl">
+      <div className="relative anim-pop w-full max-w-sm rounded-[28px] sheet-glass border border-line p-5">
         <h2 className="text-[19px] font-semibold">{title}</h2>
         {message && <div className="text-[15px] text-muted mt-2 leading-snug">{message}</div>}
         <div className="flex gap-2 mt-5">

@@ -2,11 +2,12 @@ import { useDeferredValue, useMemo, useState } from 'react';
 import { FoodRow } from '../../components/FoodRow';
 import { Button, IconButton } from '../../components/ui/Button';
 import { Icon } from '../../components/ui/Icon';
-import { EmptyState, PageHeader } from '../../components/ui/misc';
+import { Card, EmptyState, PageHeader } from '../../components/ui/misc';
 import { Chip } from '../../components/ui/WeightInput';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import type { FoodCategory } from '../../types';
+import { cn } from '../../utils/cn';
 import { FOOD_CATEGORIES, type Food } from '../../types';
 import type { FoodSort } from '../../lib/search';
 import { categoryLabel } from './FoodFormSheet';
@@ -60,18 +61,18 @@ export function FoodsPage() {
     <>
       <PageHeader
         title="Foods" subtitle={`${results.length} shown`}
-        right={<IconButton icon="plus" label="Create custom food" onClick={() => useUI.setState({ foodForm: {} })} className="bg-accentsoft text-accent" />}
+        right={<IconButton icon="plus" label="Create custom food" tone="accent" onClick={() => useUI.setState({ foodForm: {} })} />}
       />
       <main className="px-4 pb-8 max-w-xl mx-auto">
-        <div className="sticky top-[calc(56px+env(safe-area-inset-top))] z-10 bg-bg pt-3 pb-2 -mx-4 px-4">
-          <div className="relative">
-            <Icon name="search" size={20} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
+        <div className="sticky top-0 z-10 pt-[calc(env(safe-area-inset-top)+6px)] pb-2.5 -mx-4 px-4 backdrop-blur-2xl" style={{ background: 'color-mix(in srgb, var(--bg) 40%, transparent)' }}>
+          <label className="glass flex items-center gap-2.5 h-[54px] rounded-full px-[18px] text-muted">
+            <Icon name="search" size={20} />
             <input
               value={q} onChange={e => { setQ(e.target.value); reset(); }} type="search" enterKeyHint="search" autoCapitalize="none" autoCorrect="off" spellCheck={false}
               placeholder="Search foods (fuzzy)…" aria-label="Search foods"
-              className="w-full h-12 rounded-2xl bg-surface pl-11 pr-4 text-[17px] outline-none border border-line focus:border-accent"
+              className="flex-1 min-w-0 h-11 bg-transparent outline-none text-[16px] text-ink"
             />
-          </div>
+          </label>
           <div className="flex gap-2 overflow-x-auto scrollbar-none -mx-4 px-4 mt-2.5">
             <Chip active={cat === 'all'} onClick={() => { setCat('all'); reset(); }}>All</Chip>
             <Chip active={cat === 'favorites'} onClick={() => { setCat('favorites'); reset(); }}>★ Favorites</Chip>
@@ -80,10 +81,10 @@ export function FoodsPage() {
             {FOOD_CATEGORIES.filter(c => c !== 'custom').map(c => <Chip key={c} active={cat === c} onClick={() => { setCat(c); reset(); }}>{categoryLabel(c)}</Chip>)}
           </div>
           <div className="flex gap-2 overflow-x-auto scrollbar-none -mx-4 px-4 mt-2 items-center">
-            {QUICK.map(f => <Chip key={f.id} accent active={quick.has(f.id)} onClick={() => { toggleQuick(f.id); reset(); }} className="!h-9 text-[14px]">{f.label}</Chip>)}
+            {QUICK.map(f => <Chip key={f.id} active={quick.has(f.id)} onClick={() => { toggleQuick(f.id); reset(); }} className={cn('!h-[34px] !text-[13px]', !quick.has(f.id) && '!bg-transparent')}>{f.label}</Chip>)}
             <select
               value={sort} onChange={e => setSort(e.target.value as FoodSort)} aria-label="Sort"
-              className="shrink-0 h-9 rounded-full bg-surface2 px-3 text-[14px] font-medium outline-none"
+              className="glass-btn shrink-0 h-[34px] rounded-full px-3 text-[13px] font-semibold outline-none"
             >
               <option value="relevance">Sort: best match</option>
               <option value="name">Sort: name</option>
@@ -101,13 +102,13 @@ export function FoodsPage() {
             action={q.trim() ? <Button variant="primary" onClick={() => useUI.setState({ foodForm: { name: q.trim(), logAfter: false } })}>Create “{q.trim()}”</Button> : undefined}
           />
         ) : (
-          <div className="mt-1">
+          <Card className="!p-0 overflow-hidden mt-1">
             {shown.map(f => (
               <FoodRow key={f.id} food={f} favorite={favSet.has(f.id)} onToggleFavorite={() => toggleFav(f.id)}
                 onClick={() => useUI.setState({ foodDetailId: f.id })} onAdd={() => useUI.setState({ logFood: { foodId: f.id } })} />
             ))}
-            {results.length > limit && <Button className="mt-3" block onClick={() => setLimit(l => l + 80)}>Show more ({results.length - limit} left)</Button>}
-          </div>
+            {results.length > limit && <div className="p-3"><Button block onClick={() => setLimit(l => l + 80)}>Show more ({results.length - limit} left)</Button></div>}
+          </Card>
         )}
       </main>
     </>

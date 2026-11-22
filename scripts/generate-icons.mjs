@@ -10,7 +10,7 @@ import sharp from 'sharp';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'public', 'icons');
 const src = fs.existsSync(path.join(root, 'icon-source.png')) ? path.join(root, 'icon-source.png') : path.join(root, 'icon-source.svg');
-const BG = '#0c1210';
+const BG = '#1d1435';
 
 const render = (size, file) => sharp(src, { density: 384 }).resize(size, size).flatten({ background: BG }).png().toFile(path.join(root, file));
 

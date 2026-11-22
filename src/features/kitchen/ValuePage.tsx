@@ -56,7 +56,7 @@ export function ValuePage() {
               {rows.map((r, i) => (
                 <button key={r.food.id} type="button" onClick={() => useUI.setState({ priceFoodId: r.food.id })}
                   className="w-full flex items-center gap-3 py-3 px-2 text-left border-b border-line/60 last:border-b-0 active:opacity-60">
-                  <span className={cn('h-7 w-7 rounded-full flex items-center justify-center text-[13px] font-bold shrink-0 tabular', i === 0 ? 'bg-accent text-accentink' : 'bg-surface2 text-muted')}>{i + 1}</span>
+                  <span className={cn('h-7 w-7 rounded-full flex items-center justify-center text-[13px] font-bold shrink-0 tabular', i === 0 ? 'bg-grad' : 'bg-surface2 text-muted')}>{i + 1}</span>
                   <span className="flex-1 min-w-0">
                     <span className="block text-[16px] font-medium leading-snug line-clamp-2">{r.food.name}</span>
                     <span className="block text-[12px] text-muted tabular">

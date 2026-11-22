@@ -105,14 +105,14 @@ export function FridgePage() {
       <div className="space-y-3 pt-2">
         <Button variant="primary" size="lg" block icon="scan" onClick={() => useUI.setState({ scanOpen: true })}>Scan groceries</Button>
 
-        <div className="relative">
-          <Icon name="search" size={20} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
+        <label className="glass flex items-center gap-2.5 h-[54px] rounded-full px-[18px] text-muted">
+          <Icon name="search" size={20} />
           <input
             value={q} onChange={e => setQ(e.target.value)} type="search" enterKeyHint="search" autoCapitalize="none" autoCorrect="off" spellCheck={false}
             placeholder="Add or remove a food by name…" aria-label="Find a food"
-            className="w-full h-12 rounded-2xl bg-surface pl-11 pr-4 text-[17px] outline-none border border-line focus:border-accent"
+            className="flex-1 min-w-0 h-11 bg-transparent outline-none text-[16px] text-ink"
           />
-        </div>
+        </label>
       </div>
 
       {dq.trim().length >= 2 ? (
@@ -123,7 +123,7 @@ export function FridgePage() {
             return (
               <button key={f.id} type="button" onClick={() => void toggle(f)} aria-pressed={have}
                 className="w-full flex items-center gap-3 py-2.5 px-2 text-left border-b border-line/60 last:border-b-0 active:opacity-60">
-                <span className={cn('h-8 w-8 rounded-full flex items-center justify-center shrink-0', have ? 'bg-accent text-accentink' : 'bg-surface2 text-muted')}>
+                <span className={cn('h-8 w-8 rounded-full flex items-center justify-center shrink-0', have ? 'pill-on' : 'bg-surface2 text-muted')}>
                   <Icon name={have ? 'check' : 'plus'} size={18} strokeWidth={2.4} />
                 </span>
                 <span className="flex-1 min-w-0">

@@ -4,6 +4,7 @@ import { Bar, BarChart, CartesianGrid, Cell, ReferenceLine, ResponsiveContainer,
 import { IconButton } from '../../components/ui/Button';
 import { Card, EmptyState, PageHeader, ProgressBar, Segmented } from '../../components/ui/misc';
 import { useAppStore } from '../../hooks/useAppStore';
+import { cn } from '../../utils/cn';
 import { useThemeColors } from '../../hooks/useThemeColors';
 import { fmtKcal, fmtNum } from '../../lib/engine';
 import { dailyTotals } from '../../lib/logging';
@@ -70,23 +71,26 @@ export default function HistoryPage() {
     <>
       <PageHeader
         title="History" subtitle={title}
-        left={<IconButton icon="chevL" label="Previous" onClick={() => step(-1)} />}
-        right={<><IconButton icon="chevR" label="Next" onClick={() => step(1)} disabled={to >= addDays(today, view === 'week' ? 6 : 31) && from > today} /></>}
+        left={<IconButton icon="chevL" label="Previous" tone="glass" onClick={() => step(-1)} />}
+        right={<><IconButton icon="chevR" label="Next" tone="glass" onClick={() => step(1)} disabled={to >= addDays(today, view === 'week' ? 6 : 31) && from > today} /></>}
       />
       <main className="px-4 pb-8 max-w-xl mx-auto space-y-4 pt-3">
         <Segmented value={view} onChange={v => { setView(v); setAnchor(todayStr()); }} options={[{ value: 'week', label: 'Week' }, { value: 'month', label: 'Month' }]} />
 
-        <Card className="!p-4 flex items-center gap-4" data-testid="streak-card">
-          <span className="h-11 w-11 rounded-full bg-accentsoft text-accent flex items-center justify-center shrink-0"><Icon name="flame" filled={streak.current > 0} /></span>
-          <div className="flex-1 min-w-0">
-            <div className="text-[17px] font-bold leading-tight">{streak.current} day streak <span className="text-muted font-medium text-[13px]">· best {streak.best}</span></div>
-            <div className="text-[12px] text-muted leading-snug mt-0.5">A day counts when you reach {Math.round(streak.threshold * 100)}% of your protein goal ({fmtNum(targets.protein * streak.threshold, 0)} g). Meals and calories don’t matter.</div>
+        <Card className="!px-[18px] !py-3.5" data-testid="streak-card">
+          <div className="flex items-center gap-3.5">
+            <p className="font-dot text-[54px] leading-none tabular-nums">{streak.current}</p>
+            <div>
+              <b className="block text-[20px] font-bold leading-tight">day streak</b>
+              <span className="text-[13px] text-muted">best {streak.best}</span>
+            </div>
           </div>
+          <p className="text-[13px] leading-snug text-muted mt-2">A day counts when you reach {Math.round(streak.threshold * 100)}% of your protein goal ({fmtNum(targets.protein * streak.threshold, 0)} g). Meals and calories don’t matter.</p>
         </Card>
 
         <button type="button" onClick={() => navigate('/review')} data-testid="review-link"
-          className="w-full text-left rounded-3xl bg-surface border border-line/70 p-4 flex items-center gap-4 active:bg-surface2">
-          <span className="h-11 w-11 rounded-full bg-accentsoft text-accent flex items-center justify-center shrink-0"><Icon name="sparkle" /></span>
+          className="w-full text-left rounded-[28px] glass p-4 flex items-center gap-4 active:opacity-80">
+          <span className="bg-grad h-11 w-11 rounded-full flex items-center justify-center shrink-0" style={{ boxShadow: 'none' }}><Icon name="sparkle" /></span>
           <span className="flex-1 min-w-0">
             <span className="block text-[17px] font-bold leading-tight">Weekly review</span>
             <span className="block text-[13px] text-muted leading-snug mt-0.5 truncate">{reviewTeaser.title}</span>
@@ -98,11 +102,18 @@ export default function HistoryPage() {
           <EmptyState icon="history" title="No entries in this period" body="Log some food and your trends will show up here." />
         ) : (
           <>
-            <div className="grid grid-cols-3 gap-2.5">
-              <Card className="!p-3 text-center"><div className="text-[11px] uppercase tracking-wide text-muted font-semibold">Avg protein</div><div className="text-[24px] font-bold text-protein tabular">{fmtNum(avg('protein'), 0)}<span className="text-[12px] text-muted"> g</span></div></Card>
-              <Card className="!p-3 text-center"><div className="text-[11px] uppercase tracking-wide text-muted font-semibold">Avg kcal</div><div className="text-[24px] font-bold text-kcal tabular">{fmtKcal(avg('calories'))}</div></Card>
-              <Card className="!p-3 text-center"><div className="text-[11px] uppercase tracking-wide text-muted font-semibold">Protein goal</div><div className="text-[24px] font-bold tabular">{hitDays}<span className="text-[12px] text-muted">/{logged.length} d</span></div></Card>
-            </div>
+            <Card className="!px-0 !py-3 grid grid-cols-3">
+              {[
+                { label: 'Avg protein', value: fmtNum(avg('protein'), 0), unit: ' g' },
+                { label: 'Avg kcal', value: fmtKcal(avg('calories')), unit: '' },
+                { label: 'Protein goal', value: String(hitDays), unit: `/${logged.length} d` },
+              ].map((x, i) => (
+                <div key={x.label} className={cn('px-4', i > 0 && 'border-l border-line')}>
+                  <p className="text-[12px] text-muted font-semibold">{x.label}</p>
+                  <b className="block text-[30px] leading-[1.1] font-bold tracking-[-0.02em] tabular mt-0.5">{x.value}<small className="text-[13px] font-semibold text-muted tracking-normal">{x.unit}</small></b>
+                </div>
+              ))}
+            </Card>
             {chart('protein', targets.protein, colors.protein, 'g')}
             {chart('calories', targets.calories, colors.calories, 'kcal')}
           </>

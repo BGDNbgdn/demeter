@@ -69,7 +69,7 @@ export function ShopPage() {
     <div key={r.key} className="flex items-center gap-3 py-2.5 border-b border-line/60 last:border-b-0">
       <button type="button" aria-label={covered ? `${r.name}: take out of the fridge` : `Got ${r.name}`} aria-pressed={covered}
         onClick={() => void (covered ? putBack(r) : got(r))}
-        className={`h-9 w-9 shrink-0 rounded-full border-2 flex items-center justify-center active:scale-95 transition-transform ${covered ? 'bg-accent border-accent text-accentink' : 'border-muted/50 text-transparent'}`}>
+        className={`h-9 w-9 shrink-0 rounded-full border-2 flex items-center justify-center active:scale-95 transition-transform ${covered ? 'bg-grad border-transparent' : 'border-muted/50 text-transparent'}`}>
         <Icon name="check" size={18} strokeWidth={3} />
       </button>
       <div className="flex-1 min-w-0">

@@ -24,8 +24,8 @@ export default defineConfig({
         lang: 'en',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#0c1210',
-        theme_color: '#0c1210',
+        background_color: '#0b0812',
+        theme_color: '#1d1435',
         categories: ['health', 'food', 'lifestyle'],
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },

@@ -21,7 +21,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode }, { error: E
         <div className="text-[22px] font-bold">Something went wrong</div>
         <p className="text-muted max-w-xs">Your data is safe — it is stored on this device. Reload to continue.</p>
         <pre className="text-[11px] text-muted max-w-full overflow-auto">{this.state.error.message}</pre>
-        <button className="h-12 px-6 rounded-2xl bg-accent text-accentink font-semibold" onClick={() => { location.hash = '#/'; location.reload(); }}>Reload</button>
+        <button className="h-12 px-6 rounded-full bg-grad font-bold" onClick={() => { location.hash = '#/'; location.reload(); }}>Reload</button>
       </div>
     );
   }

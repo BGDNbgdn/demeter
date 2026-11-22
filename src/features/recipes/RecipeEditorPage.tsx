@@ -28,7 +28,7 @@ export function RecipeEditorPage() {
   if (!isNew && !existing) {
     return (
       <>
-        <PageHeader title="Recipe" left={<IconButton icon="chevL" label="Back" onClick={() => navigate('/recipes')} />} />
+        <PageHeader title="Recipe" left={<IconButton icon="chevL" label="Back" tone="glass" onClick={() => navigate('/recipes')} />} />
         <EmptyState icon="recipes" title="Recipe not found" action={<Button onClick={() => navigate('/recipes')}>Back to recipes</Button>} />
       </>
     );
@@ -148,11 +148,12 @@ function Editor({ recipeId }: { recipeId?: string }) {
   return (
     <>
       <PageHeader
+        sticky
         title={recipeId ? 'Recipe' : 'New recipe'}
-        left={<IconButton icon="chevL" label="Back" onClick={back} />}
+        left={<IconButton icon="chevL" label="Back" tone="glass" onClick={back} />}
         right={
           <>
-            {recipeId && <IconButton icon="star" label="Favorite" filled={isFav} className={isFav ? 'text-accent' : 'text-muted'} onClick={() => toggleFavRecipe(recipeId)} />}
+            {recipeId && <IconButton icon="star" label="Favorite" filled={isFav} tone="glass" className={isFav ? 'text-[var(--carbs)]' : 'text-muted'} onClick={() => toggleFavRecipe(recipeId)} />}
             <Button variant="primary" size="sm" className="mr-1 !h-10 px-4" disabled={!canSave || (!dirty && !!recipeId)} onClick={() => void save()}>Save</Button>
           </>
         }
