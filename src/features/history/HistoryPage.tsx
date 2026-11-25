@@ -40,7 +40,7 @@ export default function HistoryPage() {
   const axis = { stroke: colors.muted, fontSize: 11, tickLine: false, axisLine: false } as const;
 
   const chart = (key: 'protein' | 'calories', target: number, color: string, unit: string) => (
-    <Card className="!p-3 !pt-4">
+    <Card className="!p-3 !pt-4" data-no-swipe>
       <div className="flex items-baseline justify-between px-2 mb-2">
         <h3 className="text-[15px] font-semibold">{key === 'protein' ? 'Protein' : 'Calories'}</h3>
         <span className="text-[12px] text-muted">target {fmtNum(target, 0)} {unit}</span>

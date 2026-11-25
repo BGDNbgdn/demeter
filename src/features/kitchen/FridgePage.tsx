@@ -1,14 +1,16 @@
 import { useDeferredValue, useMemo, useState } from 'react';
 import { Button } from '../../components/ui/Button';
 import { Icon } from '../../components/ui/Icon';
-import { Card, EmptyState, Notice, SectionTitle } from '../../components/ui/misc';
+import { Card, EmptyState, Notice, SectionTitle, Segmented } from '../../components/ui/misc';
+import { SwipeRow } from '../../components/ui/SwipeRow';
 import { Chip } from '../../components/ui/WeightInput';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { currencyOf, fmtMoney, isLivePrice, pricePerKg } from '../../lib/cost';
 import { fmtNum } from '../../lib/engine';
 import { chipName } from '../../lib/foodNames';
-import { CATEGORY_ORDER, pantryItemForFood } from '../../lib/kitchen';
+import { CATEGORY_ORDER, ageInDays, boughtLabel, byOldest, pantryItemForFood } from '../../lib/kitchen';
+import { todayStr } from '../../utils/dates';
 import type { Food, FoodCategory, PantryItem } from '../../types';
 import { categoryLabel } from '../foods/FoodFormSheet';
 import { KitchenShell } from './KitchenShell';
@@ -32,7 +34,9 @@ export function FridgePage() {
   const restoreItem = useAppStore(s => s.restorePantryItem);
   const showToast = useAppStore(s => s.showToast);
   const [q, setQ] = useState('');
+  const [sort, setSort] = useState<'type' | 'oldest'>('type');
   const dq = useDeferredValue(q);
+  const today = todayStr();
 
   const results = useMemo(() => (dq.trim().length >= 2 ? searcher.search(dq, undefined, 'relevance', 12) : []), [searcher, dq]);
 
@@ -67,36 +71,47 @@ export function FridgePage() {
     const groups = CATEGORY_ORDER.filter(c => by.has(c)).map(c => ({ cat: c, items: (by.get(c) as PantryItem[]).sort((a, b) => a.name.localeCompare(b.name)) }));
     return { unidentified, groups };
   }, [pantry, foodMap]);
+  const oldestFirst = useMemo(() => pantry.filter(i => i.foodId).sort(byOldest), [pantry]);
+  const oldest = useMemo(() => [...pantry].sort(byOldest)[0], [pantry]);
+
+  const ranOut = async (item: PantryItem) => {
+    await removeItem(item.id);
+    showToast(`${short(item.name)} — ran out`, { actionLabel: 'Undo', onAction: () => { void restoreItem(item.id); } });
+  };
 
   const row = (item: PantryItem) => {
     const food = item.foodId ? foodMap.get(item.foodId) : undefined;
     const p = item.foodId ? prices[item.foodId] : undefined;
+    const age = ageInDays(item, today);
     const sub = [
       item.brand,
       item.amountG != null ? `${fmtNum(item.amountG, 0)} g left` : null,
       isLivePrice(p) ? `${fmtMoney(pricePerKg(p), currency)}/kg` : null,
     ].filter(Boolean).join(' · ');
     return (
-      <div key={item.id} className="flex items-center border-b border-line/60 last:border-b-0">
-        <button type="button" className="flex-1 min-w-0 text-left py-3 pl-1 pr-2 active:opacity-60" onClick={() => useUI.setState({ pantryItemId: item.id })}>
-          <div className="text-[16px] font-medium leading-snug line-clamp-2">{item.name}</div>
-          {sub && <div className="text-[13px] text-muted truncate tabular">{sub}</div>}
-          {!item.foodId && <div className="text-[12px] text-warn font-medium">Tap to name it</div>}
-        </button>
-        {food && (
-          <div className="text-right shrink-0 pr-1" aria-hidden>
-            <div className="text-[17px] font-bold text-protein tabular leading-none">{fmtNum(food.proteinPer100g, 1)}<span className="text-[11px] font-semibold ml-0.5">g</span></div>
-            <div className="text-[10px] uppercase tracking-wider text-muted mt-0.5">protein</div>
-          </div>
-        )}
-        <button
-          type="button" aria-label={`${item.name}: ran out`}
-          className="h-11 w-11 shrink-0 flex items-center justify-center rounded-full text-muted/70 active:bg-surface2 active:text-danger"
-          onClick={async () => { await removeItem(item.id); showToast(`${short(item.name)} — ran out`, { actionLabel: 'Undo', onAction: () => { void restoreItem(item.id); } }); }}
-        >
-          <Icon name="x" size={20} />
-        </button>
-      </div>
+      <SwipeRow key={item.id} radius="" actionLabel="Ran out" icon="x" className="border-b border-line/60 last:border-b-0" onAction={() => void ranOut(item)}>
+        <div className="flex items-center">
+          <button type="button" className="flex-1 min-w-0 text-left py-3 pl-1 pr-2 active:opacity-60" onClick={() => useUI.setState({ pantryItemId: item.id })}>
+            <div className="text-[16px] font-medium leading-snug line-clamp-2">{item.name}</div>
+            {sub && <div className="text-[13px] text-muted truncate tabular">{sub}</div>}
+            <div className={cn('text-[12px] tabular', age >= 7 ? 'text-warn font-medium' : 'text-muted')} data-testid="bought-label">{boughtLabel(item, today)}</div>
+            {!item.foodId && <div className="text-[12px] text-warn font-medium">Tap to name it</div>}
+          </button>
+          {food && (
+            <div className="text-right shrink-0 pr-1" aria-hidden>
+              <div className="text-[17px] font-bold text-protein tabular leading-none">{fmtNum(food.proteinPer100g, 1)}<span className="text-[11px] font-semibold ml-0.5">g</span></div>
+              <div className="text-[10px] uppercase tracking-wider text-muted mt-0.5">protein</div>
+            </div>
+          )}
+          <button
+            type="button" aria-label={`${item.name}: ran out`}
+            className="h-11 w-11 shrink-0 flex items-center justify-center rounded-full text-muted/70 active:bg-surface2 active:text-danger"
+            onClick={() => void ranOut(item)}
+          >
+            <Icon name="x" size={20} />
+          </button>
+        </div>
+      </SwipeRow>
     );
   };
 
@@ -145,11 +160,20 @@ export function FridgePage() {
             </>
           )}
 
+          {pantry.length > 1 && (
+            <div className="mt-3 space-y-2">
+              <Segmented value={sort} onChange={setSort} options={[{ value: 'type', label: 'By type' }, { value: 'oldest', label: 'Oldest first' }]} />
+              {oldest && ageInDays(oldest, today) >= 3 && <p className="text-[13px] text-muted px-1" data-testid="oldest-hint">Oldest: <b className="text-ink">{short(oldest.name, 34)}</b> — {boughtLabel(oldest, today).toLowerCase()}.</p>}
+            </div>
+          )}
+
           {pantry.length === 0 ? (
             <EmptyState
               icon="fridge" title="Your fridge is empty"
               body="After shopping, tap Scan groceries and beep each barcode — or tap foods below to mark what you have."
             />
+          ) : sort === 'oldest' ? (
+            <Card className="!p-2 mt-3">{oldestFirst.map(row)}</Card>
           ) : (
             groups.map(g => (
               <div key={g.cat}>

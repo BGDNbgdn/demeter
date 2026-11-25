@@ -12,6 +12,8 @@ import { OffError, lookupBarcode } from '../../lib/openFoodFacts';
 import { foodFromOffProduct } from '../../lib/openFoodFactsPack';
 import type { Food, PantryItem } from '../../types';
 import { newId } from '../../utils/id';
+import { boughtDate, boughtLabel } from '../../lib/kitchen';
+import { todayStr } from '../../utils/dates';
 import { IngredientPicker } from '../recipes/IngredientPicker';
 
 export function FridgeItemSheet() {
@@ -31,6 +33,7 @@ function Inner({ item }: { item: PantryItem }) {
   const [name, setName] = useState(item.name);
   const [amount, setAmount] = useState<number | null>(item.amountG ?? null);
   const [pack, setPack] = useState<number | null>(item.packG ?? null);
+  const [bought, setBought] = useState(boughtDate(item));
   const [picking, setPicking] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -39,6 +42,7 @@ function Inner({ item }: { item: PantryItem }) {
     const next: PantryItem = { ...item, name: item.foodId ? item.name : (name.trim() || item.name) };
     if (amount != null && amount >= 0) next.amountG = amount; else delete next.amountG;
     if (pack != null && pack > 0) next.packG = pack; else delete next.packG;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(bought)) next.boughtAt = bought;
     return next;
   };
   const save = async () => { await savePantryItem(patchFromAmounts()); close(); };
@@ -105,6 +109,18 @@ function Inner({ item }: { item: PantryItem }) {
             <Field label="Pack size" hint="One pack, in grams">
               <NumInput value={pack} onChange={setPack} suffix="g" placeholder="–" aria-label="Pack size in grams" />
             </Field>
+          </div>
+
+          <div>
+            <div className="text-[13px] font-medium text-muted mb-1.5 px-1">Bought</div>
+            <div className="flex items-center gap-2">
+              <input
+                type="date" value={bought} max={todayStr()} onChange={e => e.target.value && setBought(e.target.value)} aria-label="Date bought"
+                className="flex-1 min-w-0 h-12 rounded-2xl bg-surface2 border border-line px-4 text-[17px] outline-none focus:border-accent"
+              />
+              {bought !== todayStr() && <button type="button" className="glass-btn h-12 px-4 rounded-full text-[15px] font-semibold" onClick={() => setBought(todayStr())}>Today</button>}
+            </div>
+            <p className="text-[12px] text-muted mt-1 px-1">{boughtLabel({ boughtAt: bought, createdAt: item.createdAt }, todayStr())}</p>
           </div>
 
           {item.foodId && (

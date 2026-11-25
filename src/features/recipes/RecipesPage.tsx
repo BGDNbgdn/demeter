@@ -2,10 +2,11 @@ import { useNavigate } from 'react-router-dom';
 import { Button, IconButton } from '../../components/ui/Button';
 import { Icon } from '../../components/ui/Icon';
 import { Card, EmptyState, PageHeader } from '../../components/ui/misc';
+import { SwipeRow } from '../../components/ui/SwipeRow';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { fmtNum, remainingBatch } from '../../lib/engine';
-import { eatenFromBatch, findIngredientDrift } from '../../lib/recipes';
+import { eatenFromBatch, findIngredientDrift, portionCount, portionWeightG } from '../../lib/recipes';
 
 export function RecipesPage() {
   const recipes = useAppStore(s => s.recipes);
@@ -13,6 +14,9 @@ export function RecipesPage() {
   const foodMap = useAppStore(s => s.foodMap);
   const favs = useAppStore(s => s.settings.favoriteRecipeIds);
   const toggleFav = useAppStore(s => s.toggleFavoriteRecipe);
+  const deleteRecipe = useAppStore(s => s.deleteRecipe);
+  const restoreRecipe = useAppStore(s => s.restoreRecipe);
+  const showToast = useAppStore(s => s.showToast);
   const navigate = useNavigate();
   const sorted = [...recipes].sort((a, b) => Number(favs.includes(b.id)) - Number(favs.includes(a.id)) || b.updatedAt - a.updatedAt);
 
@@ -44,7 +48,9 @@ export function RecipesPage() {
               const fav = favs.includes(r.id);
               const changed = findIngredientDrift(r.ingredients, id => foodMap.get(id)).filter(d => d.kind === 'changed').length;
               return (
-                <Card key={r.id} className="!p-0 overflow-hidden">
+                <SwipeRow key={r.id} radius="rounded-[28px]" actionLabel="Delete"
+                  onAction={async () => { await deleteRecipe(r.id); showToast(`“${r.name}” deleted`, { actionLabel: 'Undo', onAction: () => void restoreRecipe(r.id) }); }}>
+                <Card className="!p-0 overflow-hidden">
                   <div className="flex items-stretch">
                     <button type="button" className="flex-1 min-w-0 text-left p-4 active:bg-surface2" onClick={() => navigate(`/recipes/${r.id}`)}>
                       <div className="text-[19px] font-bold tracking-[-0.01em] truncate">{r.name}</div>
@@ -57,7 +63,8 @@ export function RecipesPage() {
                         <span><b className="text-[17px] text-kcal">{fmtNum(per100.calories, 0)}</b><span className="text-[12px] text-muted"> kcal</span></span>
                         <span className="text-[12px] text-muted">per 100 g {r.per100Cooked ? 'cooked' : 'raw'}</span>
                       </div>
-                      {rem && <div className="text-[13px] mt-2 text-muted">{rem.remainingG > 0 ? <><b className="text-ink">{fmtNum(rem.remainingG, 0)} g</b> left in this batch</> : 'Batch finished'}</div>}
+                      <div className="text-[13px] mt-2 text-muted tabular">{fmtNum(portionCount(r), 2)} portion{portionCount(r) === 1 ? '' : 's'} · {fmtNum(portionWeightG(r), 0)} g each</div>
+                      {rem && <div className="text-[13px] mt-0.5 text-muted">{rem.remainingG > 0 ? <><b className="text-ink">{fmtNum(rem.remainingG / portionWeightG(r), 1)} portions</b> left in this batch</> : 'Batch finished'}</div>}
                     </button>
                     <div className="flex flex-col items-center justify-center gap-1.5 pr-3.5 pl-1">
                       <button aria-label={fav ? 'Unfavorite' : 'Favorite'} className={`h-10 w-10 rounded-full flex items-center justify-center active:bg-surface2 ${fav ? 'text-[var(--carbs)]' : 'text-muted'}`} onClick={() => toggleFav(r.id)}>
@@ -69,6 +76,7 @@ export function RecipesPage() {
                     </div>
                   </div>
                 </Card>
+                </SwipeRow>
               );
             })}
           </div>

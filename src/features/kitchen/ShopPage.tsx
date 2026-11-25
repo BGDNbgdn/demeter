@@ -6,7 +6,7 @@ import { Card, EmptyState, Notice, SectionTitle } from '../../components/ui/misc
 import { useAppStore } from '../../hooks/useAppStore';
 import { currencyOf, fmtMoney } from '../../lib/cost';
 import { buildShoppingList, fmtWeight, shoppingText, type PlanLookups, type ShopRow } from '../../lib/kitchen';
-import { formatShort, addDays } from '../../utils/dates';
+import { formatShort, addDays, todayStr } from '../../utils/dates';
 import { newId } from '../../utils/id';
 import { categoryLabel } from '../foods/FoodFormSheet';
 import { KitchenShell } from './KitchenShell';
@@ -44,7 +44,7 @@ export function ShopPage() {
     } else {
       const now = Date.now();
       id = newId('pan');
-      await savePantryItem({ id, name: row.name, createdAt: now, updatedAt: now });
+      await savePantryItem({ id, name: row.name, boughtAt: todayStr(), createdAt: now, updatedAt: now });
     }
     showToast(`${row.name} → in the fridge`, { tone: 'success', actionLabel: wasNew ? 'Undo' : undefined, onAction: wasNew ? () => { void removePantryItem(id); } : undefined });
   };

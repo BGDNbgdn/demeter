@@ -4,6 +4,7 @@ import { Button, IconButton } from '../../components/ui/Button';
 import { Icon } from '../../components/ui/Icon';
 import { Card, EmptyState, ProgressBar, SectionTitle } from '../../components/ui/misc';
 import { NumInput } from '../../components/ui/NumInput';
+import { SwipeRow } from '../../components/ui/SwipeRow';
 import { Sheet } from '../../components/ui/Sheet';
 import { useAppStore } from '../../hooks/useAppStore';
 import { currencyOf, fmtMoney } from '../../lib/cost';
@@ -83,7 +84,8 @@ export function PlanPage() {
             {d.rows.map(r => {
               const l = r.line;
               return (
-                <Card key={l.id} className="!p-3.5">
+                <SwipeRow key={l.id} radius="rounded-[28px]" actionLabel="Remove" onAction={() => void remove(l.id, r.name)}>
+                <Card className="!p-3.5">
                   <div className="flex items-start gap-3">
                     <span className="h-10 w-10 rounded-xl bg-accentsoft text-accent flex items-center justify-center shrink-0"><Icon name={r.kind === 'recipe' ? 'recipes' : 'foods'} /></span>
                     <div className="flex-1 min-w-0">
@@ -114,6 +116,7 @@ export function PlanPage() {
                     </div>
                   )}
                 </Card>
+                </SwipeRow>
               );
             })}
           </div>

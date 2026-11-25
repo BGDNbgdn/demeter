@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import { Icon } from '../../components/ui/Icon';
 import { IconButton } from '../../components/ui/Button';
 import { EmptyState, MacroLine, PageHeader, ProgressBar } from '../../components/ui/misc';
+import { SwipeRow } from '../../components/ui/SwipeRow';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { fmtKcal, fmtNum } from '../../lib/engine';
@@ -162,7 +163,7 @@ function WeekStrip({ date, setDate, loggedDates }: { date: string; setDate: (d: 
   const start = useRef<{ x: number; y: number } | null>(null);
   return (
     <section
-      className="glass grid grid-cols-7 p-[7px] rounded-[30px] touch-pan-y" aria-label="Week"
+      className="glass grid grid-cols-7 p-[7px] rounded-[30px] touch-pan-y" aria-label="Week" data-no-swipe
       onTouchStart={e => { start.current = { x: e.touches[0].clientX, y: e.touches[0].clientY }; }}
       onTouchEnd={e => {
         const s = start.current; start.current = null;
@@ -231,12 +232,17 @@ function ProteinHero({ protein, goal, isToday, streak }: { protein: number; goal
 }
 
 function EntryRow({ e }: { e: MealLogEntry }) {
+  const deleteLog = useAppStore(s => s.deleteLog);
+  const restoreLog = useAppStore(s => s.restoreLog);
+  const showToast = useAppStore(s => s.showToast);
   const small = [
+    e.portions ? `${fmtNum(e.portions, 2)} portion${e.portions === 1 ? '' : 's'}` : null,
     e.consumedWeightG > 0 ? `${fmtNum(e.consumedWeightG, 1)} g` : null,
     `${fmtKcal(e.calories)} kcal`,
     e.cooking ? 'converted from raw' : null,
   ].filter(Boolean).join(' · ');
   return (
+    <SwipeRow actionLabel="Delete" onAction={async () => { await deleteLog(e.id); showToast('Entry deleted', { actionLabel: 'Undo', onAction: () => void restoreLog(e.id) }); }}>
     <button type="button" onClick={() => useUI.setState({ editEntryId: e.id })} className="glass w-full flex items-center gap-3 rounded-[26px] py-2.5 pl-2.5 pr-4 text-left active:opacity-80">
       <span className="bg-grad h-[52px] w-[52px] shrink-0 rounded-[18px] flex items-center justify-center" style={{ boxShadow: 'none' }}>
         <Icon name={e.recipeId ? 'recipes' : 'foods'} size={24} />
@@ -254,6 +260,7 @@ function EntryRow({ e }: { e: MealLogEntry }) {
         <span className="text-[12px] text-muted">g protein</span>
       </div>
     </button>
+    </SwipeRow>
   );
 }
 

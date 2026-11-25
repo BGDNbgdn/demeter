@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { fmtNum } from '../lib/engine';
 import type { Food } from '../types';
 import { cn } from '../utils/cn';
@@ -13,11 +14,14 @@ interface Props {
   onAdd?: () => void;
   className?: string;
   sub?: string;
+  /** Something before the name (a selection check, for instance). */
+  leading?: ReactNode;
 }
 
-export function FoodRow({ food, onClick, favorite, onToggleFavorite, onInfo, onAdd, className, sub }: Props) {
+export function FoodRow({ food, onClick, favorite, onToggleFavorite, onInfo, onAdd, className, sub, leading }: Props) {
   return (
     <div className={cn('flex items-center gap-1 pl-4 pr-2 py-2.5 border-b border-line/70 last:border-b-0', className)}>
+      {leading}
       <button type="button" onClick={onClick} className="flex-1 min-w-0 text-left py-0.5 pr-1 active:opacity-60">
         <div className="text-[16px] font-semibold leading-[1.2] line-clamp-2">{food.name}</div>
         <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12.5px] text-muted min-w-0 mt-1.5">

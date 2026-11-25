@@ -113,6 +113,7 @@ export function parseBackup(text: string): ParseResult {
       rawTotalWeightG: num(r.rawTotalWeightG),
       totals: cleanMacros(r.totals),
       per100Raw: cleanMacros(r.per100Raw),
+      portions: typeof r.portions === 'number' && r.portions > 0 ? r.portions : undefined,
       portionSizesG: Array.isArray(r.portionSizesG) ? (r.portionSizesG as unknown[]).filter(x => typeof x === 'number' && x > 0) as number[] : [],
       createdAt: num(r.createdAt, Date.now()), updatedAt: num(r.updatedAt, Date.now()),
     });
@@ -144,6 +145,7 @@ export function parseBackup(text: string): ParseResult {
       createdAt: num(x.createdAt, Date.now()), updatedAt: num(x.updatedAt, Date.now()),
       ...(typeof x.amountG === 'number' && x.amountG >= 0 ? { amountG: x.amountG } : {}),
       ...(typeof x.packG === 'number' && x.packG > 0 ? { packG: x.packG } : {}),
+      boughtAt: typeof x.boughtAt === 'string' && DATE_RE.test(x.boughtAt) ? x.boughtAt : undefined,
     });
   }
   const prices: FoodPrice[] = [];

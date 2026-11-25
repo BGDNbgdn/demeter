@@ -138,6 +138,14 @@ Weekly review (in **History → Weekly review**): average protein vs last week, 
 
 Fridge, prices and plan are part of the data set: they sync through the same private GitHub repo (`pantry.json`, `prices.json`, `plan.json`), are included in JSON backups (schema 3; older backups still import) and ran-out/removed items sit in the 60-day tombstone window like everything else.
 
+## Portions, swipes & scanning everywhere
+
+- **Recipe portions:** a recipe says how many portions it makes (*This recipe makes 4 portions*). Logging it asks for **portions**, not grams: a 1 kg dish that makes 4 portions logs 500 g — and half of every macro — when you log 2 portions; a 150 g dish set as 1 portion logs 150 g with all its protein. Half portions work too (0.5 steps), and a *Grams* tab is there for odd amounts. Recipes made before this existed take their old saved portion size. Entries show "2 portions · 700 g".
+- **Scan a barcode wherever you add food:** the search in *Add food*, the *Foods* page and the ingredient picker (recipes, plan, prices) all have a scan button. A product you already have is found offline; otherwise it is looked up on Open Food Facts and saved as a food. In the recipe maker scanning keeps going so you can scan several ingredients. The ingredient picker also lists **what is in your fridge** (oldest first) and lets you tick several at once.
+- **Fridge:** every item remembers **when it was bought** (today by default; editable). Rows show "Bought 3 days ago" (amber from a week), there is an *Oldest first* sort and a note about the oldest item.
+- **Swipes:** swipe a row **left** to reveal *Delete* / *Ran out* (a long swipe does it straight away, and every one has *Undo*) — on Today entries, recipes, fridge items and plan lines. Swipe **left/right anywhere** on a page to go to the next/previous tab (Today → Foods → Recipes → Kitchen views → History → Settings). Sideways-scrolling strips, the week strip and open sheets are left alone, and the screen edges still belong to iOS.
+- **iPhone keyboard:** bottom sheets are sized to the visible area (the visual viewport), so when the keyboard opens the sheet shrinks above it instead of sliding off-screen.
+
 ## Backup & restore format
 
 *Settings → Export all data as JSON* writes a human-readable, versioned file (`demeter-backup-YYYY-MM-DD.json`):

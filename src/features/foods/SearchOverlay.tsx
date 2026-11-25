@@ -4,6 +4,7 @@ import { Icon } from '../../components/ui/Icon';
 import { SectionTitle } from '../../components/ui/misc';
 import { Sheet } from '../../components/ui/Sheet';
 import { useAppStore } from '../../hooks/useAppStore';
+import { ScanButton, ScanFoodSheet } from '../openfoodfacts/ScanFoodSheet';
 import { useUI } from '../../hooks/useUI';
 import { fmtNum } from '../../lib/engine';
 import { normalize } from '../../lib/search';
@@ -14,6 +15,7 @@ export function SearchOverlay() {
   const open = useUI(s => s.searchOpen);
   const close = () => useUI.setState({ searchOpen: false });
   const [q, setQ] = useState('');
+  const [scanning, setScanning] = useState(false);
   const dq = useDeferredValue(q);
   const searcher = useAppStore(s => s.searcher);
   const recipes = useAppStore(s => s.recipes);
@@ -61,14 +63,17 @@ export function SearchOverlay() {
   return (
     <Sheet open={open} onClose={close} tall title="Search foods & recipes" zIndex={70}>
       <div className="sticky top-0 -mx-5 px-5 pb-2 pt-1 [background:var(--sheet)] z-10">
-        <div className="relative">
-          <Icon name="search" size={20} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
-          <input
-            autoFocus value={q} onChange={e => setQ(e.target.value)} type="search" enterKeyHint="search" autoCapitalize="none" autoCorrect="off" spellCheck={false}
-            placeholder="Chicken breast, rice, whey…"
-            className="w-full h-12 rounded-2xl bg-surface2 pl-11 pr-4 text-[17px] outline-none border border-transparent focus:border-accent"
-            aria-label="Search foods and recipes"
-          />
+        <div className="flex items-center gap-2">
+          <div className="relative flex-1">
+            <Icon name="search" size={20} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted" />
+            <input
+              autoFocus value={q} onChange={e => setQ(e.target.value)} type="search" enterKeyHint="search" autoCapitalize="none" autoCorrect="off" spellCheck={false}
+              placeholder="Chicken breast, rice, whey…"
+              className="w-full h-12 rounded-2xl bg-surface2 pl-11 pr-4 text-[17px] outline-none border border-line focus:border-accent"
+              aria-label="Search foods and recipes"
+            />
+          </div>
+          <ScanButton onClick={() => setScanning(true)} className="!h-12 !w-12" />
         </div>
       </div>
 
@@ -103,6 +108,7 @@ export function SearchOverlay() {
           </div>
         </>
       )}
+      <ScanFoodSheet open={scanning} onClose={() => setScanning(false)} onFood={pickFood} title="Scan a product" />
     </Sheet>
   );
 }

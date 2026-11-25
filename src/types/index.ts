@@ -83,8 +83,10 @@ export interface Recipe {
   totals: Macros;
   per100Raw: Macros;
   per100Cooked?: Macros;
-  /** Saved portion sizes in grams of cooked dish. */
+  /** Saved portion sizes in grams of cooked dish (the first one is "a portion"). Kept in sync with `portions`. */
   portionSizesG: number[];
+  /** How many portions the whole dish makes. Logging "2 portions" of a 4-portion recipe logs half of it. */
+  portions?: number;
   /** Portions logged on/after this date count as eaten from the current batch (YYYY-MM-DD). */
   batchStartedAt?: string;
   isFavorite?: boolean;
@@ -108,6 +110,8 @@ export interface PantryItem {
   amountG?: number;
   /** Size of one pack in grams, when known (from the label or the lookup). */
   packG?: number;
+  /** Day it was bought / put in the fridge, YYYY-MM-DD. Older items fall back to the day they were added. */
+  boughtAt?: string;
   createdAt: number;
   updatedAt: number;
   deletedAt?: number;
@@ -153,6 +157,8 @@ export interface MealLogEntry {
   /** Snapshot so history survives later edits / deletions. */
   name: string;
   consumedWeightG: number;
+  /** Set when the entry was logged as a number of recipe portions. */
+  portions?: number;
   protein: number;
   carbs: number;
   fat: number;

@@ -5,11 +5,11 @@ import { Button, IconButton } from '../../components/ui/Button';
 import { Icon } from '../../components/ui/Icon';
 import { Card, Confirm, EmptyState, Field, MacroGrid, Notice, PageHeader, SectionTitle, TextInput } from '../../components/ui/misc';
 import { NumInput } from '../../components/ui/NumInput';
-import { Chip, WeightInput } from '../../components/ui/WeightInput';
+import { Chip } from '../../components/ui/WeightInput';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { currencyOf, fmtMoney, portionCost, recipeCost } from '../../lib/cost';
-import { evenPortionG, fmtNum, portionNutrition, remainingBatch } from '../../lib/engine';
+import { fmtNum, remainingBatch, scaleMacros } from '../../lib/engine';
 import {
   applyDrift, calcDraft, describeDrift, draftFromRecipe, emptyDraft, eatenFromBatch, findIngredientDrift, ingredientFromFood, recipeFromDraft, scaleDraft, type DraftIngredient, type RecipeDraft,
 } from '../../lib/recipes';
@@ -62,7 +62,6 @@ function Editor({ recipeId }: { recipeId?: string }) {
   const dirty = JSON.stringify(draft) !== initialJson.current;
   const [pickerOpen, setPickerOpen] = useState(false);
   const [focusId, setFocusId] = useState<string | null>(draft.ingredients[0]?.rawWeightG == null ? draft.ingredients[0]?.id ?? null : null);
-  const [portion, setPortion] = useState<number | null>(existing?.portionSizesG[0] ?? null);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [scaleOpen, setScaleOpen] = useState(false);
   const [confirmLeave, setConfirmLeave] = useState(false);
@@ -71,33 +70,38 @@ function Editor({ recipeId }: { recipeId?: string }) {
   const calc = useMemo(() => calcDraft(draft), [draft]);
   const drifts = useMemo(() => findIngredientDrift(draft.ingredients, fid => foodMap.get(fid)), [draft.ingredients, foodMap]);
   const changedDrifts = drifts.filter(d => d.kind === 'changed');
-  const portionMacros = portion ? portionNutrition(calc, portion) : null;
+  // one portion = the whole dish ÷ how many portions it makes
+  const totalG = calc.cookedTotalWeightG ?? calc.rawTotalWeightG;
+  const portions = draft.portions > 0 ? draft.portions : 1;
+  const portionW = totalG > 0 ? totalG / portions : 0;
+  const portionMacros = totalG > 0 ? scaleMacros(calc.totals, 1 / portions) : null;
   const cost = useMemo(
     () => recipeCost({ ingredients: draft.ingredients, cookedTotalWeightG: calc.cookedTotalWeightG, totals: calc.totals }, fid => prices[fid]),
     [draft.ingredients, calc.cookedTotalWeightG, calc.totals, prices],
   );
-  const portionPrice = portion ? portionCost(cost, portion) : null;
+  const portionPrice = portionW > 0 ? portionCost(cost, portionW) : null;
   const hasWeights = draft.ingredients.some(i => (i.rawWeightG ?? 0) > 0);
   const canSave = draft.name.trim().length > 0 && draft.ingredients.length > 0 && hasWeights && calc.errors.length === 0;
   const eaten = existing ? eatenFromBatch(existing, logs) : 0;
-  const remaining = remainingBatch(draft.cookedTotalWeightG, eaten, portion);
+  const remaining = remainingBatch(draft.cookedTotalWeightG, eaten, portionW > 0 ? portionW : null);
   const patch = (p: Partial<RecipeDraft>) => setDraft(d => ({ ...d, ...p }));
   const patchIng = (iid: string, p: Partial<DraftIngredient>) => setDraft(d => ({ ...d, ingredients: d.ingredients.map(i => (i.id === iid ? { ...i, ...p } : i)) }));
 
-  const addIngredient = (food: Food) => {
-    const ing = ingredientFromFood(food, null);
-    setDraft(d => ({ ...d, ingredients: [...d.ingredients, ing] }));
-    setFocusId(ing.id);
+  const addIngredients = (foods: Food[]) => {
+    const added = foods.map(f => ingredientFromFood(f, null));
+    if (added.length === 0) { setPickerOpen(false); return; }
+    setDraft(d => ({ ...d, ingredients: [...d.ingredients, ...added] }));
+    setFocusId(added[0].id);
     setPickerOpen(false);
   };
 
   const save = async (): Promise<string | null> => {
     if (!canSave) return null;
-    const portions = portion && !draft.portionSizesG.includes(portion) && draft.portionSizesG.length === 0 ? [portion] : draft.portionSizesG;
-    const recipe = recipeFromDraft({ ...draft, portionSizesG: portions, batchStartedAt: draft.batchStartedAt ?? (draft.cookedTotalWeightG ? todayStr() : undefined) });
+    const recipe = recipeFromDraft({ ...draft, batchStartedAt: draft.batchStartedAt ?? (draft.cookedTotalWeightG ? todayStr() : undefined) });
     await saveRecipe(recipe);
-    initialJson.current = JSON.stringify({ ...draft, portionSizesG: portions, batchStartedAt: recipe.batchStartedAt });
-    setDraft(d => ({ ...d, portionSizesG: portions, batchStartedAt: recipe.batchStartedAt }));
+    const saved = { ...draft, portions: recipe.portions ?? 1, portionSizesG: recipe.portionSizesG, batchStartedAt: recipe.batchStartedAt };
+    initialJson.current = JSON.stringify(saved);
+    setDraft(saved);
     showToast('Recipe saved', { tone: 'success' });
     if (!recipeId) navigate(`/recipes/${recipe.id}`, { replace: true });
     return recipe.id;
@@ -105,14 +109,7 @@ function Editor({ recipeId }: { recipeId?: string }) {
 
   const logPortion = async () => {
     const rid = dirty || !recipeId ? await save() : recipeId;
-    if (rid && portion) useUI.setState({ logRecipe: { recipeId: rid, weightG: portion } });
-    else if (rid) useUI.setState({ logRecipe: { recipeId: rid } });
-  };
-
-  const savePortionSize = () => {
-    if (!portion) return;
-    patch({ portionSizesG: [...new Set([...draft.portionSizesG, portion])].sort((a, b) => a - b) });
-    showToast(`Saved ${fmtNum(portion, 0)} g portion size`);
+    if (rid) useUI.setState({ logRecipe: { recipeId: rid, portions: 1 } });
   };
   const duplicate = async () => {
     const copy = { ...draft, id: newId('rec'), name: `${draft.name || 'Recipe'} (copy)`, createdAt: Date.now(), batchStartedAt: undefined };
@@ -264,7 +261,7 @@ function Editor({ recipeId }: { recipeId?: string }) {
               <div className="rounded-2xl bg-surface2 p-3.5 text-[14px] tabular space-y-1" data-testid="recipe-cost">
                 <div className="flex justify-between"><span className="text-muted">Ingredients cost</span><b className="text-[17px]">{fmtMoney(cost.total, currency)}{cost.missing.length > 0 ? '+' : ''}</b></div>
                 {cost.per100Cooked != null && <div className="flex justify-between"><span className="text-muted">Per 100 g cooked</span><b>{fmtMoney(cost.per100Cooked, currency)}</b></div>}
-                {portion != null && portionPrice != null && <div className="flex justify-between"><span className="text-muted">Your {fmtNum(portion, 0)} g portion</span><b>{fmtMoney(portionPrice, currency)}</b></div>}
+                {portionPrice != null && <div className="flex justify-between"><span className="text-muted">One portion ({fmtNum(portionW, 0)} g)</span><b>{fmtMoney(portionPrice, currency)}</b></div>}
                 {cost.per20gProtein != null && <div className="flex justify-between"><span className="text-muted">20 g of protein costs</span><b className="text-protein">{fmtMoney(cost.per20gProtein, currency)}</b></div>}
                 {cost.missing.length > 0 && <p className="text-[12px] text-muted pt-1">No price for {cost.missing.slice(0, 4).join(', ')}{cost.missing.length > 4 ? '…' : ''} — the real cost is a bit higher. Add prices in Kitchen → Value.</p>}
               </div>
@@ -274,32 +271,29 @@ function Editor({ recipeId }: { recipeId?: string }) {
           </Card>
         </section>
 
-        {/* ---------------- portion */}
+        {/* ---------------- portions */}
         <section>
-          <SectionTitle>4 · Your portion</SectionTitle>
+          <SectionTitle>4 · Portions</SectionTitle>
           <Card className="space-y-4">
-            <WeightInput
-              value={portion} onChange={setPortion} step={25}
-              servings={draft.portionSizesG.map(g => ({ label: 'Saved', grams: g }))}
-              chips={[200, 250, 300, 350, 400, 500]}
-              aria-label="Portion size in grams"
-            />
-            {calc.cookedTotalWeightG && (
-              <div className="flex gap-2 overflow-x-auto scrollbar-none -mx-4 px-4">
-                {[2, 3, 4, 5, 6].map(n => <Chip key={n} className="!h-9 !text-[14px]" onClick={() => setPortion(Math.round(evenPortionG(calc.cookedTotalWeightG, n)! * 10) / 10)}>÷ {n} · {fmtNum(calc.cookedTotalWeightG! / n, 0)} g</Chip>)}
+            <Field label="This recipe makes" hint="When you log it, you pick how many portions you ate — 2 portions of a 4-portion recipe is half of everything.">
+              <NumInput value={draft.portions} onChange={v => patch({ portions: v ?? 0 })} suffix="portions" decimals={2} placeholder="1" aria-label="Number of portions the recipe makes" />
+            </Field>
+            <div className="flex gap-2 overflow-x-auto scrollbar-none -mx-4 px-4">
+              {[1, 2, 3, 4, 5, 6, 8, 10].map(n => <Chip key={n} active={portions === n} className="!h-9 !text-[14px]" onClick={() => patch({ portions: n })}>{n}</Chip>)}
+            </div>
+            {portionMacros ? (
+              <div data-testid="portion-macros" className="space-y-2">
+                <p className="text-[14px] px-1">1 portion = <b>{fmtNum(portionW, 0)} g</b>{calc.cookedTotalWeightG ? '' : ' (raw weight — enter the cooked weight above for the real one)'}</p>
+                <MacroGrid m={portionMacros} big />
               </div>
-            )}
-            {portionMacros ? <div data-testid="portion-macros"><MacroGrid m={portionMacros} big /></div> : <p className="text-[14px] text-muted">Pick a portion size to see its exact protein, calories, carbs and fat.</p>}
-            {remaining && (
+            ) : <p className="text-[14px] text-muted">Add ingredient weights to see what one portion gives you.</p>}
+            {remaining && portionW > 0 && (
               <p className="text-[13px] text-muted">
-                <b className="text-ink">{fmtNum(remaining.remainingG, 0)} g</b> left of {fmtNum(remaining.totalG, 0)} g{remaining.portionsLeft != null && portion ? ` · ≈ ${fmtNum(remaining.portionsLeft, 1)} portions` : ''}
+                <b className="text-ink">{fmtNum(remaining.remainingG / portionW, 1)} portions</b> left ({fmtNum(remaining.remainingG, 0)} g of {fmtNum(remaining.totalG, 0)} g)
                 {existing ? ` · ${fmtNum(eaten, 0)} g already logged` : ''}
               </p>
             )}
-            <div className="grid grid-cols-2 gap-2">
-              <Button icon="plus" disabled={!portion || draft.portionSizesG.includes(portion)} onClick={savePortionSize}>Save size</Button>
-              <Button variant="primary" icon="check" disabled={!canSave || !portion} onClick={logPortion}>Log portion</Button>
-            </div>
+            <Button variant="primary" block icon="check" disabled={!canSave} onClick={logPortion}>Log 1 portion</Button>
           </Card>
         </section>
 
@@ -312,7 +306,7 @@ function Editor({ recipeId }: { recipeId?: string }) {
         )}
       </main>
 
-      <IngredientPicker open={pickerOpen} onClose={() => setPickerOpen(false)} onPick={addIngredient} />
+      <IngredientPicker open={pickerOpen} onClose={() => setPickerOpen(false)} onPick={f => addIngredients([f])} onPickMany={addIngredients} />
       <ScaleSheet open={scaleOpen} onClose={() => setScaleOpen(false)} draft={draft} canCopy={!!recipeId} onApply={applyScale} onCopy={copyScaled} />
       <Confirm open={confirmDelete} danger title="Delete this recipe?" confirmLabel="Delete" message="Past log entries keep their saved nutrition. You can undo this right after, or later from Settings → Recently deleted."
         onCancel={() => setConfirmDelete(false)} onConfirm={async () => {

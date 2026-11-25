@@ -33,13 +33,13 @@ export function Sheet({ open, onClose, title, tall, children, footer, headerRigh
   }, [open, onClose]);
   if (!open) return null;
   return createPortal(
-    <div className="fixed inset-0 flex items-end justify-center" style={{ zIndex }} role="dialog" aria-modal="true">
+    <div className="fixed inset-x-0 flex items-end justify-center" style={{ zIndex, top: 'var(--vvt, 0px)', height: 'var(--vvh, 100dvh)' }} role="dialog" aria-modal="true">
       <div className="absolute inset-0 anim-fade" style={{ background: 'var(--overlay)' }} onClick={onClose} />
       <div
         ref={ref}
         className={cn(
           'relative w-full max-w-xl sheet-glass anim-sheet flex flex-col rounded-t-[32px]',
-          tall ? 'h-[calc(100dvh-env(safe-area-inset-top)-12px)]' : 'max-h-[92dvh]',
+          tall ? 'h-[calc(var(--vvh,100dvh)-env(safe-area-inset-top)-12px)]' : 'max-h-[calc(var(--vvh,100dvh)*0.92)]',
         )}
       >
         <div className="flex items-center gap-2 pl-5 pr-2 pt-2 min-h-[56px] shrink-0">

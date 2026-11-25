@@ -1,5 +1,5 @@
 import type { Food, MealLogEntry, Macros, NutritionBasis, Recipe, RecipeIngredient } from '../types';
-import { calculateRecipe, foodPer100, nutritionForWeight, type RecipeResult } from './engine';
+import { calculateRecipe, foodPer100, nutritionForWeight, scaleMacros, type RecipeResult } from './engine';
 import { newId } from '../utils/id';
 import { cookedName } from './foodNames';
 
@@ -21,14 +21,48 @@ export interface RecipeDraft {
   ingredients: DraftIngredient[];
   cookedTotalWeightG: number | null;
   portionSizesG: number[];
+  /** How many portions the whole dish makes (default 1: logging the recipe logs all of it). */
+  portions: number;
   batchStartedAt?: string;
   isFavorite?: boolean;
   createdAt: number;
 }
 
 export function emptyDraft(): RecipeDraft {
-  return { id: newId('rec'), name: '', ingredients: [], cookedTotalWeightG: null, portionSizesG: [], createdAt: Date.now() };
+  return { id: newId('rec'), name: '', ingredients: [], cookedTotalWeightG: null, portionSizesG: [], portions: 1, createdAt: Date.now() };
 }
+
+// ---------------------------------------------------------------- portions
+type PortionInfo = Pick<Recipe, 'portions' | 'portionSizesG' | 'cookedTotalWeightG' | 'rawTotalWeightG'>;
+const r2 = (n: number) => Math.round(n * 100) / 100;
+
+/** Weight of the whole finished dish: cooked if you weighed it, otherwise the raw total. */
+export function recipeTotalWeightG(r: Pick<Recipe, 'cookedTotalWeightG' | 'rawTotalWeightG'>): number {
+  return r.cookedTotalWeightG ?? r.rawTotalWeightG;
+}
+
+/** Grams in ONE portion. Recipes made before portions existed use their first saved portion size. */
+export function portionWeightG(r: PortionInfo): number {
+  const total = recipeTotalWeightG(r);
+  if (r.portions && r.portions > 0) return total / r.portions;
+  return r.portionSizesG[0] && r.portionSizesG[0] > 0 ? r.portionSizesG[0] : total;
+}
+
+/** How many portions the dish makes. */
+export function portionCount(r: PortionInfo): number {
+  const w = portionWeightG(r);
+  return w > 0 ? r2(recipeTotalWeightG(r) / w) : 1;
+}
+
+/** Nutrition of `n` portions: the whole recipe's totals × n ÷ portions (exact, whatever the weights are). */
+export function nutritionForPortions(r: PortionInfo & Pick<Recipe, 'totals'>, n: number): Macros {
+  const count = portionCount(r);
+  return scaleMacros(r.totals, count > 0 ? n / count : 0);
+}
+
+/** Grams in `n` portions. */
+export const portionsToGrams = (r: PortionInfo, n: number) => n * portionWeightG(r);
+export const gramsToPortions = (r: PortionInfo, g: number) => { const w = portionWeightG(r); return w > 0 ? g / w : 0; };
 
 export function ingredientFromFood(food: Food, rawWeightG: number | null = 100): DraftIngredient {
   return {
@@ -50,7 +84,7 @@ export function draftFromRecipe(r: Recipe): RecipeDraft {
       rawWeightG: i.rawWeightG, cookedWeightG: i.cookedWeightG ?? null, defaultRetentionPercent: i.defaultRetentionPercent,
     })),
     cookedTotalWeightG: r.cookedTotalWeightG ?? null,
-    portionSizesG: r.portionSizesG, batchStartedAt: r.batchStartedAt, isFavorite: r.isFavorite, createdAt: r.createdAt,
+    portionSizesG: r.portionSizesG, portions: portionCount(r), batchStartedAt: r.batchStartedAt, isFavorite: r.isFavorite, createdAt: r.createdAt,
   };
 }
 
@@ -59,6 +93,14 @@ export function calcDraft(d: RecipeDraft): RecipeResult {
     ingredients: d.ingredients.map(i => ({ id: i.id, name: i.name, per100g: i.per100g, rawWeightG: i.rawWeightG, cookedWeightG: i.cookedWeightG })),
     cookedTotalWeightG: d.cookedTotalWeightG,
   });
+}
+
+/** `portions` and the matching one-portion weight (first in portionSizesG, other saved sizes kept after it). */
+function portionFields(d: RecipeDraft, totalG: number): { portions: number; portionSizesG: number[] } {
+  const portions = d.portions > 0 ? r2(d.portions) : 1;
+  const pw = totalG > 0 ? Math.round((totalG / portions) * 10) / 10 : 0;
+  const others = [...new Set(d.portionSizesG.filter(p => p > 0 && Math.abs(p - pw) > 0.05))].sort((a, b) => a - b);
+  return { portions, portionSizesG: pw > 0 ? [pw, ...others] : others };
 }
 
 /** Turn an editable draft into a persistable Recipe with all calculated fields filled in. */
@@ -81,7 +123,7 @@ export function recipeFromDraft(d: RecipeDraft, now = Date.now()): Recipe {
     totals: calc.totals,
     per100Raw: calc.per100Raw,
     ...(calc.per100Cooked ? { per100Cooked: calc.per100Cooked } : {}),
-    portionSizesG: [...new Set(d.portionSizesG.filter(p => p > 0))].sort((a, b) => a - b),
+    ...portionFields(d, calc.cookedTotalWeightG ?? calc.rawTotalWeightG),
     ...(d.batchStartedAt ? { batchStartedAt: d.batchStartedAt } : {}),
     ...(d.isFavorite ? { isFavorite: true } : {}),
     createdAt: d.createdAt,
@@ -97,6 +139,7 @@ export function batchRecipeFromFood(food: Food, rawWeightG: number, cookedWeight
     ingredients: [ingredientFromFood(food, rawWeightG)],
     cookedTotalWeightG: cookedWeightG,
     portionSizesG: portionG ? [portionG] : [],
+    portions: portionG && portionG > 0 ? Math.max(1, cookedWeightG / portionG) : 1,
     batchStartedAt: today,
   };
   return recipeFromDraft(draft);

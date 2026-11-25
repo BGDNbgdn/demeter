@@ -6,7 +6,7 @@ interface UIState {
   searchOpen: boolean;
   addMenuOpen: boolean;
   logFood: { foodId: string; meal?: MealType; weightG?: number } | null;
-  logRecipe: { recipeId: string; weightG?: number; meal?: MealType } | null;
+  logRecipe: { recipeId: string; weightG?: number; portions?: number; meal?: MealType } | null;
   editEntryId: string | null;
   foodDetailId: string | null;
   foodForm: { foodId?: string; duplicate?: boolean; name?: string; prefill?: Partial<import('../types').Food>; logAfter?: boolean } | null;

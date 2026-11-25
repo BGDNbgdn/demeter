@@ -322,11 +322,11 @@ export const useAppStore = create<AppState>((set, get) => {
       if (gone) {
         // it ran out and is back: reuse the record (keeps barcode & pack size); the old amount is no longer valid
         const { deletedAt: _d, amountG: _a, ...rest } = gone; void _d; void _a;
-        item = { ...rest, ...extra, updatedAt: now };
+        item = { ...rest, ...extra, boughtAt: todayStr(), updatedAt: now };
       } else {
         item = {
           id: newId('pan'), foodId: food.id, name: food.name, ...(food.brand ? { brand: food.brand } : {}),
-          ...(food.barcode ? { barcode: food.barcode } : {}), ...extra, createdAt: now, updatedAt: now,
+          ...(food.barcode ? { barcode: food.barcode } : {}), ...extra, boughtAt: todayStr(), createdAt: now, updatedAt: now,
         };
       }
       set(s => ({ pantry: [item, ...s.pantry], trash: { ...s.trash, pantry: s.trash.pantry.filter(i => i.id !== item.id) } }));
@@ -335,7 +335,7 @@ export const useAppStore = create<AppState>((set, get) => {
     },
     async addUnidentifiedToFridge(barcode, name) {
       const now = Date.now();
-      const item: PantryItem = { id: newId('pan'), name: name?.trim() || `Unknown product ${barcode}`, barcode, createdAt: now, updatedAt: now };
+      const item: PantryItem = { id: newId('pan'), name: name?.trim() || `Unknown product ${barcode}`, barcode, boughtAt: todayStr(), createdAt: now, updatedAt: now };
       set(s => ({ pantry: [item, ...s.pantry] }));
       await guard(() => repo.putPantry(item));
       return item;

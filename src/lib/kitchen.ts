@@ -7,7 +7,7 @@
 import type { Food, FoodCategory, FoodPrice, Macros, PantryItem, PlanLine, Recipe } from '../types';
 import { addMacros, foodPer100, nutritionForWeight, scaleMacros, ZERO_MACROS } from './engine';
 import { costOfGrams, isLivePrice, recipeCost } from './cost';
-import { startOfWeek } from '../utils/dates';
+import { daysBetween, startOfWeek, toDateStr, formatShort } from '../utils/dates';
 
 export const normName = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').trim();
 /** Barcodes: UPC-A (12) and EAN-13 (13, leading 0) are the same product. */
@@ -215,4 +215,29 @@ export function shoppingText(list: ShoppingList, title: string, fmtG: (g: number
 export function fmtWeight(g: number): string {
   if (g >= 1000) return `${Math.round((g / 1000) * 100) / 100} kg`;
   return `${Math.round(g)} g`;
+}
+
+// ------------------------------------------------------------------ when was it bought?
+/** Day the item was bought (items from before this existed fall back to the day they were added). */
+export function boughtDate(item: Pick<PantryItem, 'boughtAt' | 'createdAt'>): string {
+  return item.boughtAt ?? toDateStr(new Date(item.createdAt));
+}
+
+/** Whole days since it was bought (0 = today). Never negative. */
+export function ageInDays(item: Pick<PantryItem, 'boughtAt' | 'createdAt'>, today: string): number {
+  return Math.max(0, daysBetween(boughtDate(item), today));
+}
+
+/** "Bought today", "Bought yesterday", "Bought 5 days ago", and a date once it is more than a month. */
+export function boughtLabel(item: Pick<PantryItem, 'boughtAt' | 'createdAt'>, today: string): string {
+  const d = ageInDays(item, today);
+  if (d === 0) return 'Bought today';
+  if (d === 1) return 'Bought yesterday';
+  if (d <= 30) return `Bought ${d} days ago`;
+  return `Bought ${formatShort(boughtDate(item))}`;
+}
+
+/** Oldest first (the thing to use up first), then by name. */
+export function byOldest(a: PantryItem, b: PantryItem): number {
+  return boughtDate(a).localeCompare(boughtDate(b)) || a.name.localeCompare(b.name);
 }

@@ -161,7 +161,7 @@ export function ToastHost() {
   if (!toast) return null;
   const tone = toast.tone === 'error' ? 'var(--danger)' : toast.tone === 'success' ? 'var(--ok)' : 'var(--text)';
   return createPortal(
-    <div className="fixed left-0 right-0 z-[80] flex justify-center px-4 pointer-events-none" style={{ bottom: 'calc(112px + env(safe-area-inset-bottom))' }}>
+    <div className="fixed left-0 right-0 z-[80] flex justify-center px-4 pointer-events-none" style={{ bottom: 'calc(112px + env(safe-area-inset-bottom))' }} data-toast>
       <div key={toast.id} className="anim-toast pointer-events-auto max-w-md w-full flex items-center gap-3 rounded-2xl sheet-glass border border-line px-4 py-3 text-[15px]" role="status">
         <span className="flex-1" style={{ color: tone }}>{toast.message}</span>
         {toast.actionLabel && (
@@ -184,7 +184,7 @@ export function Confirm({ open, title, message, confirmLabel = 'Confirm', danger
   }, [open, onCancel]);
   if (!open) return null;
   return createPortal(
-    <div className="fixed inset-0 z-[90] flex items-center justify-center px-6" role="alertdialog" aria-modal="true">
+    <div className="fixed inset-x-0 z-[90] flex items-center justify-center px-6" style={{ top: 'var(--vvt, 0px)', height: 'var(--vvh, 100dvh)' }} role="alertdialog" aria-modal="true">
       <div className="absolute inset-0 anim-fade" style={{ background: 'var(--overlay)' }} onClick={onCancel} />
       <div className="relative anim-pop w-full max-w-sm rounded-[28px] sheet-glass border border-line p-5">
         <h2 className="text-[19px] font-semibold">{title}</h2>

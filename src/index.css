@@ -198,6 +198,10 @@ select option { color: #1a1030; }
 .tabular { font-variant-numeric: tabular-nums; }
 .pt-safe { padding-top: env(safe-area-inset-top); }
 .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+/* while the on-screen keyboard is open: no floating tab bar, no home-indicator padding */
+:root[data-keyboard='open'] nav[aria-label='Main'] { display: none; }
+:root[data-keyboard='open'] .pb-safe { padding-bottom: 0; }
+:root[data-keyboard='open'] [data-toast] { bottom: 12px !important; }
 .scrollbar-none { scrollbar-width: none; }
 .scrollbar-none::-webkit-scrollbar { display: none; }
 
@@ -209,8 +213,12 @@ select option { color: #1a1030; }
 .anim-fade { animation: fade-in 0.2s ease-out; }
 .anim-pop { animation: pop 0.18s ease-out; }
 .anim-toast { animation: toast-in 0.22s ease-out; }
+@keyframes page-fwd { from { transform: translateX(32px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes page-back { from { transform: translateX(-32px); opacity: 0; } to { transform: none; opacity: 1; } }
+.anim-page-fwd { animation: page-fwd 0.24s cubic-bezier(0.2, 0.9, 0.3, 1); }
+.anim-page-back { animation: page-back 0.24s cubic-bezier(0.2, 0.9, 0.3, 1); }
 @media (prefers-reduced-motion: reduce) {
-  .anim-sheet, .anim-fade, .anim-pop, .anim-toast { animation: none; }
+  .anim-sheet, .anim-fade, .anim-pop, .anim-toast, .anim-page-fwd, .anim-page-back { animation: none; }
 }
 /* browsers without backdrop-filter get a slightly more opaque glass */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {

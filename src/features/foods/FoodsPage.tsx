@@ -11,6 +11,7 @@ import { cn } from '../../utils/cn';
 import { FOOD_CATEGORIES, type Food } from '../../types';
 import type { FoodSort } from '../../lib/search';
 import { categoryLabel } from './FoodFormSheet';
+import { ScanButton, ScanFoodSheet } from '../openfoodfacts/ScanFoodSheet';
 
 type CatFilter = 'all' | 'favorites' | 'recent' | 'custom-only' | FoodCategory;
 const QUICK: Array<{ id: 'high' | 'lean' | 'low'; label: string }> = [
@@ -32,6 +33,7 @@ export function FoodsPage() {
   const [quick, setQuick] = useState<Set<string>>(new Set());
   const [sort, setSort] = useState<FoodSort>('relevance');
   const [limit, setLimit] = useState(60);
+  const [scanning, setScanning] = useState(false);
   const favSet = useMemo(() => new Set(favIds), [favIds]);
 
   const results: Food[] = useMemo(() => {
@@ -72,6 +74,7 @@ export function FoodsPage() {
               placeholder="Search foods (fuzzy)…" aria-label="Search foods"
               className="flex-1 min-w-0 h-11 bg-transparent outline-none text-[16px] text-ink"
             />
+            <ScanButton onClick={() => setScanning(true)} className="-mr-2.5" />
           </label>
           <div className="flex gap-2 overflow-x-auto scrollbar-none -mx-4 px-4 mt-2.5">
             <Chip active={cat === 'all'} onClick={() => { setCat('all'); reset(); }}>All</Chip>
@@ -111,6 +114,7 @@ export function FoodsPage() {
           </Card>
         )}
       </main>
+      <ScanFoodSheet open={scanning} onClose={() => setScanning(false)} onFood={f => useUI.setState({ foodDetailId: f.id })} title="Scan a product" />
     </>
   );
 }

@@ -37,7 +37,9 @@ function Inner({ entry }: { entry: MealLogEntry }) {
     : { protein: man.p, carbs: man.c, fat: man.f, calories: man.k, fiber: 0 };
 
   const save = async () => {
-    await updateLog({ ...entry, name: name.trim() || entry.name, mealType: meal, date, notes: notes.trim() || undefined, consumedWeightG: scalable ? (weight ?? entry.consumedWeightG) : 0, ...macros });
+    const portions = entry.portions && scalable && factor > 0 ? Math.round(entry.portions * factor * 100) / 100 : undefined;
+    const { portions: _old, ...rest } = entry; void _old;
+    await updateLog({ ...rest, ...(portions ? { portions } : {}), name: name.trim() || entry.name, mealType: meal, date, notes: notes.trim() || undefined, consumedWeightG: scalable ? (weight ?? entry.consumedWeightG) : 0, ...macros });
     showToast('Entry updated', { tone: 'success' });
     close();
   };

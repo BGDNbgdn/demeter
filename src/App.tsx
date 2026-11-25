@@ -1,6 +1,7 @@
 import { Suspense, lazy, useEffect } from 'react';
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { BottomNav } from './components/BottomNav';
+import { PageTransition, SwipeNav } from './components/SwipeNav';
 import { Overlays } from './components/Overlays';
 import { Notice } from './components/ui/misc';
 import { FoodsPage } from './features/foods/FoodsPage';
@@ -14,6 +15,7 @@ import { ShopPage } from './features/kitchen/ShopPage';
 import { ValuePage } from './features/kitchen/ValuePage';
 import { useAppStore } from './hooks/useAppStore';
 import { useTheme } from './hooks/useTheme';
+import { useVisualViewport } from './hooks/useVisualViewport';
 import { UpdateBanner } from './components/UpdateBanner';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { initSync } from './lib/sync/orchestrator';
@@ -32,6 +34,7 @@ export default function App() {
   const ready = useAppStore(s => s.ready);
   const loadError = useAppStore(s => s.loadError);
   useTheme();
+  useVisualViewport();
   useEffect(() => { void init().then(() => initSync()); }, [init]);
 
   if (!ready) {
@@ -41,10 +44,12 @@ export default function App() {
     <ErrorBoundary>
     <HashRouter>
       <ScrollReset />
+      <SwipeNav />
       <div className="min-h-full pb-[calc(112px+env(safe-area-inset-bottom))]">
         {loadError && <div className="p-4 pt-safe"><Notice tone="error">{loadError}</Notice></div>}
         <UpdateBanner />
         <Suspense fallback={<div className="p-10 text-center text-muted">Loading…</div>}>
+          <PageTransition>
           <Routes>
             <Route path="/" element={<TodayPage />} />
             <Route path="/foods" element={<FoodsPage />} />
@@ -59,6 +64,7 @@ export default function App() {
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<TodayPage />} />
           </Routes>
+          </PageTransition>
         </Suspense>
       </div>
       <BottomNav />

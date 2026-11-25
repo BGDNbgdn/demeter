@@ -6,7 +6,7 @@ import { Sheet } from '../../components/ui/Sheet';
 import { useAppStore } from '../../hooks/useAppStore';
 import { useUI } from '../../hooks/useUI';
 import { fmtNum, remainingBatch } from '../../lib/engine';
-import { eatenFromBatch } from '../../lib/recipes';
+import { eatenFromBatch, portionCount, portionWeightG } from '../../lib/recipes';
 
 export function RecipePicker() {
   const open = useUI(s => s.recipePickerOpen);
@@ -29,7 +29,7 @@ export function RecipePicker() {
                 <div className="h-10 w-10 rounded-xl bg-accentsoft text-accent flex items-center justify-center"><Icon name="recipes" /></div>
                 <div className="flex-1 min-w-0">
                   <div className="font-medium truncate">{r.name}</div>
-                  <div className="text-[13px] text-muted">{fmtNum((r.per100Cooked ?? r.per100Raw).protein, 1)} g protein / 100 g{rem ? ` · ${fmtNum(rem.remainingG, 0)} g left` : ''}</div>
+                  <div className="text-[13px] text-muted">{fmtNum(portionCount(r), 2)} portion{portionCount(r) === 1 ? '' : 's'} · {fmtNum(r.totals.protein / Math.max(portionCount(r), 0.01), 0)} g protein each{rem ? ` · ${fmtNum(rem.remainingG / portionWeightG(r), 1)} left` : ''}</div>
                 </div>
                 <Icon name="chevR" size={18} className="text-muted" />
               </button>
